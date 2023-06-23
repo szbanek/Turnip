@@ -281,8 +281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f32937b182b17045b81a5437c75827e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 2
-  jumpSpeed: 4
+  normalSpeed: 6
+  jumpSpeed: 6
   cameraParent: {fileID: 971071066969080055}
   cameraSesitivity: 0.1
   lookXLimit: 45
