@@ -36,8 +36,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool wasWalkingLastFrame = true;
 
-    private const float epsilon = 0.0001f;
-
     [System.Serializable]
     private class PlayerMovementSnapshot
     {
@@ -55,8 +53,6 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         playerJump = GetComponent<PlayerJump>();
-
-        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemies"), false);
     }
 
     public void Move(Vector2 value)
@@ -123,21 +119,5 @@ public class PlayerMovement : MonoBehaviour
                 //animationController.StartWalking();
             }
         }
-    }
-
-    private void RotateTowardsDefaultPosition()
-    {
-        if ( Mathf.Abs(Quaternion.Dot(playerXRotationRoot.transform.localRotation, Quaternion.Euler(0, 0, 0))) >= 1 - epsilon)
-        {
-            playerXRotationRoot.transform.localRotation = Quaternion.Euler(0, 0, 0);
-            return;
-        }
-        playerXRotationRoot.transform.localRotation *= Quaternion.Euler(-Mathf.MoveTowards(0, xRotation, 100 * Time.deltaTime), 0, 0);
-    }
-
-    private void StopMovement()
-    {
-        inputSpeed = Vector2.zero;
-        movementVelocity = Vector3.zero;
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(AudioSource))]
 public class PlayerJump : MonoBehaviour
 {
     [Header("References")]
@@ -35,12 +34,9 @@ public class PlayerJump : MonoBehaviour
     private bool isJumping = false;
     private float jumpTimeCounter;
 
-    private float jumpBufferCounter = 0;
-    private bool canJump = false;
     private float ySpeed = 0;
 
     private Vector3 lastPosition;
-    private bool isDead = false;
     private bool wasGroundedLastFrame = true;
 
     public void StartJump()
@@ -63,11 +59,6 @@ public class PlayerJump : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isDead)
-        {
-            jumpInput = false;
-        }
-
         ySpeed = CalculateJumpVelocity(ySpeed);
 
         ApplyGravityIfNeeded();
@@ -75,8 +66,6 @@ public class PlayerJump : MonoBehaviour
         characterController.Move(new Vector3(0, 1, 0) * ySpeed * Time.fixedDeltaTime);
 
         UpdateAnimations();
-
-        UpdateJumpBuffer();
     }
 
     private void UpdateAnimations()
@@ -116,7 +105,7 @@ public class PlayerJump : MonoBehaviour
         }
         if (jumpInput)
         {
-            if (groundDetector.IsGrounded || canJump)
+            if (groundDetector.IsGrounded)
             {
                 isJumping = true;
                 jumpTimeCounter = Time.fixedDeltaTime;
@@ -139,22 +128,5 @@ public class PlayerJump : MonoBehaviour
             }
         }
         return currentYVelocity;
-    }
-
-    private void UpdateJumpBuffer()
-    {
-        if (groundDetector.IsGrounded)
-        {
-            jumpBufferCounter = 0;
-            canJump = true;
-        }
-        else if (canJump)
-        {
-            jumpBufferCounter += Time.fixedDeltaTime;
-            if (jumpBufferCounter >= jumpBuffer)
-            {
-                canJump = false;
-            }
-        }
     }
 }
