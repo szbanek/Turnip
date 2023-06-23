@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class EnvironmentInteractor : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField]
     private float interactionRange;
-    [SerializeField]
-    private LayerMask interactionLayerMask;
 
     [Header("References")]
     [SerializeField]
@@ -19,38 +19,56 @@ public class EnvironmentInteractor : MonoBehaviour
     private bool debugInfo;
 
     private GameObject selectedObject = null;
+    private CharacterController characterController;
+
+    private HashSet<GameObject> selectedObjects = new HashSet<GameObject>();
+
+    private void Start()
+    {
+        characterController = GetComponent<CharacterController>();
+    }
 
     private void Update()
     {
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit raycastHit, interactionRange, interactionLayerMask))
+        Vector3 boxCenter = transform.position + transform.forward * (interactionRange / 2 + characterController.radius);
+        Vector3 halfExtents = new Vector3(interactionRange, characterController.height, interactionRange) / 2;
+        Collider[] colliders = Physics.OverlapBox(boxCenter, halfExtents, transform.rotation);
+        selectedObjects.Clear();
+        foreach (Collider collider in colliders)
         {
-            Vector3 hitPosition = playerCamera.WorldToScreenPoint(raycastHit.point);
-            GameObject hitObject = raycastHit.collider.gameObject;
-            if (hitObject.CompareTag("Interactive") && IsScreenPointInViewport(hitPosition))
+            if (collider.CompareTag("Interactive"))
             {
-                if (selectedObject != hitObject && debugInfo)
-                {
-                    Debug.LogFormat("Selected object '{0}'", hitObject.name);
-                }
-                selectedObject = hitObject;
-            }
-            else
-            {
-                if (selectedObject != null && debugInfo)
-                {
-                    Debug.LogFormat("Selected nothing");
-                }
-                selectedObject = null;
+                selectedObjects.Add(collider.gameObject);
             }
         }
-        else
+        UpdateSelectedObject();
+    }
+
+    private void UpdateSelectedObject()
+    {
+        GameObject minSelect = null;
+        float minDistance = Mathf.Infinity;
+        foreach (GameObject select in selectedObjects)
         {
-            if (selectedObject != null && debugInfo)
+            float distance = (select.transform.position - transform.position).magnitude;
+            if (distance <= minDistance)
+            {
+                minDistance = distance;
+                minSelect = select;
+            }
+        }
+        if (selectedObject != minSelect && debugInfo)
+        {
+            if (minSelect == null)
             {
                 Debug.LogFormat("Selected nothing");
             }
-            selectedObject = null;
+            else
+            {
+                Debug.LogFormat("Selected object '{0}'", minSelect.name);
+            }
         }
+        selectedObject = minSelect;
     }
 
     private bool IsScreenPointInViewport(Vector3 screenPos)
@@ -71,5 +89,18 @@ public class EnvironmentInteractor : MonoBehaviour
             }
             //selectedObject.GetComponent<Triggers.InteractiveTrigger>()?.Interact();
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (characterController == null)
+        {
+            return;
+        }
+        Gizmos.color = Color.yellow;
+        Vector3 boxCenter = Vector3.forward * (interactionRange / 2 + characterController.radius);
+        Vector3 size = new Vector3(interactionRange, characterController.height, interactionRange);
+        Gizmos.matrix = transform.localToWorldMatrix;
+        Gizmos.DrawWireCube(boxCenter, size);
     }
 }

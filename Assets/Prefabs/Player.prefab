@@ -231,12 +231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcb42e5503088544ae50a45ec7f5279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRange: 0
-  interactionLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
+  interactionRange: 2
   playerCamera: {fileID: 2196193311756998979}
-  debugInfo: 0
+  debugInfo: 1
 --- !u!143 &-1584771697723614778
 CharacterController:
   m_ObjectHideFlags: 0
@@ -402,19 +399,7 @@ MonoBehaviour:
     m_ActionId: 0ff53a3a-c37e-46b7-a6ef-cdf7f62d1b4c
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -1161634678213818434}
-        m_TargetAssemblyTypeName: PlayerInputAdapter, Assembly-CSharp
-        m_MethodName: Interact
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 08267af4-7393-4d8c-9d3e-128470b018ff
     m_ActionName: Player/Interact[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
