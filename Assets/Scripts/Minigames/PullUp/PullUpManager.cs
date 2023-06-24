@@ -5,16 +5,21 @@ using UnityEngine;
 
 public class PullUpManager : MonoBehaviour, IMinigameManager
 {
-    private PullUpInputAdadpter adadpter;
+    private PullUpInputAdapter adadpter;
+    private PullUpLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    public void EndMinigame(bool win)
-    {
-        adadpter.Stopped = true;
-        OnMinigameEndEvent?.Invoke(this, win);
-    }
-
     private void Start()
     {
-        adadpter = GetComponent<PullUpInputAdadpter>();
+        adadpter = GetComponent<PullUpInputAdapter>();
+        logic = GetComponent<PullUpLogic>();
+        logic.OnLoseEvent += (_,_) => EndMinigame(false);
+        logic.OnWinEvent += (_,_) => EndMinigame(true);
+    }
+    private void EndMinigame(bool win)
+    {
+        if(win) Debug.Log("You won");
+        if(!win) Debug.Log("You lost");
+        adadpter.Stopped = true;
+        OnMinigameEndEvent?.Invoke(this, win);
     }
 }

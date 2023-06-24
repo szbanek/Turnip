@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4322711869705882287}
   - component: {fileID: 4322711869705882283}
   - component: {fileID: 4322711869705882284}
-  - component: {fileID: 4322711869705882285}
+  - component: {fileID: 1563060371574991010}
   m_Layer: 5
   m_Name: PullUp
   m_TagString: Untagged
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLimit: 100
---- !u!114 &4322711869705882285
+--- !u!114 &1563060371574991010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4322711869705882289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381259b1f392949439e1533db973806d, type: 3}
+  m_Script: {fileID: 11500000, guid: 26ac7c5c6ef904b4baebf0a144fa1c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Stopped: 0

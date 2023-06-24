@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PullUpInputAdadpter : MonoBehaviour, IInputAdapter
+public class PullUpInputAdapter : MonoBehaviour, IInputAdapter
 {
     private PullUpLogic logic;
     [HideInInspector]
