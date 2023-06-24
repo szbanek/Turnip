@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6739707992413037421}
   - component: {fileID: 7132839732814677181}
   - component: {fileID: 4309596538605417110}
-  m_Layer: 0
+  - component: {fileID: 5773820603716707394}
+  m_Layer: 6
   m_Name: FrontGate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0.15690628, z: 0.34810725}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4734099269873008929}
   m_RootOrder: 2
@@ -51,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -81,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5773820603716707394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739334094892906307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18888314, y: 0.30767292, z: 0.02628523}
+  m_Center: {x: 0, y: 0.15383646, z: -0.0075740805}
 --- !u!1 &2052796861564823693
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +108,8 @@ GameObject:
   - component: {fileID: 1328795725504669945}
   - component: {fileID: 8819045087614732870}
   - component: {fileID: 4409247816793965992}
-  m_Layer: 0
+  - component: {fileID: 8210285054597277919}
+  m_Layer: 6
   m_Name: BackGate.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,6 +126,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.18082401, y: 0.1574601, z: -0.32157165}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4734099269873008929}
   m_RootOrder: 1
@@ -132,6 +150,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -162,6 +181,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8210285054597277919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052796861564823693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18005832, y: 0.36480004, z: 0.017871678}
+  m_Center: {x: -0.09002916, y: 0.18240002, z: 0.00045901537}
 --- !u!1 &3559725668430117782
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +205,8 @@ GameObject:
   - component: {fileID: 8071060917957863859}
   - component: {fileID: 248191511206336942}
   - component: {fileID: 2931941806348812663}
-  m_Layer: 0
+  - component: {fileID: 6126650447934969414}
+  m_Layer: 6
   m_Name: BackGate.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,6 +223,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.17929265, y: 0.1574601, z: -0.32157165}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4734099269873008929}
   m_RootOrder: 0
@@ -213,6 +247,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -243,6 +278,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6126650447934969414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3559725668430117782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18005835, y: 0.36480004, z: 0.017871678}
+  m_Center: {x: 0.09002917, y: 0.18240002, z: 0.00045901537}
 --- !u!1 &5402409257600015259
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4734099269873008929}
   - component: {fileID: 3575692042616688671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallEntranceAndExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,6 +318,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8071060917957863859}
   - {fileID: 1328795725504669945}
@@ -303,7 +352,7 @@ GameObject:
   - component: {fileID: 6322025155243745920}
   - component: {fileID: 5797564987031293514}
   - component: {fileID: 610538108413632439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,6 +369,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4734099269873008929}
   m_RootOrder: 3
@@ -343,6 +393,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
