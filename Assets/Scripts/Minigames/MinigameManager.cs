@@ -20,6 +20,7 @@ public class MinigameManager : Singleton<MinigameManager>
 
     public void SpawnMinigame(GameObject minigame, GameObject spawner)
     {
+        CursorManager.Instance.UnlockCursor();
         minigamePanel.gameObject.SetActive(true);
         currentMinigame = Instantiate(minigame, minigameCanvas);
         currentMinigameSpawner = spawner;
@@ -29,10 +30,10 @@ public class MinigameManager : Singleton<MinigameManager>
 
     private void OnMinigameEnd(bool win)
     {
+        CursorManager.Instance.LockCursor();
         minigamePanel.gameObject.SetActive(false);
         playerInputAdapter.inputAdapter = null;
         Destroy(currentMinigame);
-        Destroy(currentMinigameSpawner);
         print(win ? "Juhu!!" : "Buuu!!!");
     }
 }
