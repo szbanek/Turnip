@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4954493305871755921, guid: b30e1d3636b35114f901d562030195bc, type: 3}
   inventoryIcon: {fileID: 21300000, guid: 1e7144f69a452e040a827f277e9d2c28, type: 3}
-  slot: 1
+  slot: 2
