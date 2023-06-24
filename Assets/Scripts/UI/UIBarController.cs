@@ -5,8 +5,25 @@ using UnityEngine.UI;
 
 public class UIBarController : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField]
-    private List<Image> images;
+    private List<SlicedFilledImage> images = new List<SlicedFilledImage>();
+
+    [Header("Config")]
+    [SerializeField]
+    private bool animateColor;
+    [SerializeField]
+    private Gradient gradient;
+
+    [Header("Debug")]
+    [SerializeField]
+    [Range(0, 1)]
+    private float value;
+
+    private void OnValidate()
+    {
+        ChangeValue(value, 1);
+    }
 
     public void ChangeValueInverted(float current, float maxVal)
     {
@@ -15,9 +32,15 @@ public class UIBarController : MonoBehaviour
 
     public void ChangeValue(float current, float maxVal)
     {
-        foreach (Image image in images)
+        foreach (SlicedFilledImage image in images)
         {
-            image.fillAmount = current / maxVal;
+            float t = current / maxVal;
+            image.fillAmount = t;
+
+            if (animateColor)
+            {
+                image.color = gradient.Evaluate(1 - t);
+            }
         }
     }
 
