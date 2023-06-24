@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CursorManager : MonoBehaviour
+public class CursorManager : Singleton<CursorManager>
 {
     private void Start()
     {
