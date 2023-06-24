@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 6400004}
   - component: {fileID: 6400002}
   - component: {fileID: 6400000}
+  - component: {fileID: 7088325150635764427}
+  - component: {fileID: 2762461323003749371}
   m_Layer: 0
   m_Name: wood bridge stairs 1
   m_TagString: Untagged
@@ -36,7 +38,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3300000
 MeshFilter:
@@ -158,3 +160,29 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: f983e0e4df4ff0246b3fef20e2ce08e0, type: 3}
+--- !u!65 &7088325150635764427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16632128, y: 6.264412, z: 5.261612}
+  m_Center: {x: -0.9168508, y: 1.6115774, z: -0.0054009613}
+--- !u!65 &2762461323003749371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18578133, y: 6.2466636, z: 5.261612}
+  m_Center: {x: 0.9070864, y: 1.6027069, z: -0.005400985}
