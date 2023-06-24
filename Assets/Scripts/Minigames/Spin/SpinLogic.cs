@@ -68,6 +68,6 @@ public class SpinLogic : MonoBehaviour
         {
             angle = 360 - angle * -1;
         }
-        return (angle);
+        return (360-angle);
     }
 }
