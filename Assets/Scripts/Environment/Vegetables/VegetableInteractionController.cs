@@ -23,7 +23,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     public void Interact()
     {
         int index = Random.Range(0, vegetable.Minigames.Count);
-        MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], gameObject);
+        MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], this);
     }
 
     public void Select()
@@ -42,6 +42,15 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         selected = false;
         interactionIconController.OnHideEvent += (_, _) => Destroy(interactionIconController.gameObject);
         interactionIconController.HideIcon();
+    }
+
+    public void MinigameEnd(bool win)
+    {
+        if (win)
+        {
+            FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 1);
+        }
+        Destroy(gameObject);
     }
 
     private void Start()

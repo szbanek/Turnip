@@ -9,7 +9,7 @@ public class MinigameManager : Singleton<MinigameManager>
     private PlayerInputAdapter playerInputAdapter;
 
     private GameObject currentMinigame = null;
-    private GameObject currentMinigameSpawner = null;
+    private VegetableInteractionController currentMinigameSpawner = null;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class MinigameManager : Singleton<MinigameManager>
         playerInputAdapter = FindObjectOfType<PlayerInputAdapter>();
     }
 
-    public void SpawnMinigame(GameObject minigame, GameObject spawner)
+    public void SpawnMinigame(GameObject minigame, VegetableInteractionController spawner)
     {
         CursorManager.Instance.UnlockCursor();
         minigamePanel.gameObject.SetActive(true);
@@ -34,6 +34,6 @@ public class MinigameManager : Singleton<MinigameManager>
         minigamePanel.gameObject.SetActive(false);
         playerInputAdapter.inputAdapter = null;
         Destroy(currentMinigame);
-        print(win ? "Juhu!!" : "Buuu!!!");
+        currentMinigameSpawner.MinigameEnd(win);
     }
 }

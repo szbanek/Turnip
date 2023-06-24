@@ -7,6 +7,8 @@ public class UIMenuVisibilityManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject menuObject;
+    [SerializeField]
+    private UIVegetableInventory inventory;
 
     private bool menuShown;
 
@@ -41,6 +43,10 @@ public class UIMenuVisibilityManager : MonoBehaviour
         {
             CursorManager.Instance.UnlockCursor();
             FindObjectOfType<PlayerInputAdapter>().EnableMovement = false;
+            foreach (var item in FindObjectOfType<PlayerVegetableInventory>().Inventory)
+            {
+                inventory.UpdateVegetable(item.Key, item.Value);
+            }
         }
         else
         {
