@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 3
   m_EditorClassIdentifier: 
-  text: "Przepraszam, czy m\xF3g\u0142by\u015B mi pom\xF3c? Poszukuj\u0119 {QUANTITY}
-    {NAME} do mojej specjalnej zupy. Potrzebuj\u0119 ich jak najszybciej, wi\u0119c
-    je\u015Bli masz jakiekolwiek warzywa do oddania, by\u0142bym bardzo wdzi\u0119czny."
+  text: "Witaj! Czy by\u0142by\u015B tak mi\u0142y i dostarczy\u0142 mi {QUANTITY}
+    {NAME}? Mamy zbli\u017Caj\u0105ce si\u0119 \u015Bwi\u0119to, a moja rodzina uwielbia
+    tradycyjne ziemniaki puree. Twoja pomoc w tej kwestii by\u0142aby naprawd\u0119
+    cenna!"

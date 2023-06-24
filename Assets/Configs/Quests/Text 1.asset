@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 1
   m_EditorClassIdentifier: 
-  text: "Przepraszam, czy m\xF3g\u0142by\u015B mi pom\xF3c? Poszukuj\u0119 {QUANTITY}
-    {NAME} do mojej specjalnej zupy. Potrzebuj\u0119 ich jak najszybciej, wi\u0119c
-    je\u015Bli masz jakiekolwiek warzywa do oddania, by\u0142bym bardzo wdzi\u0119czny."
+  text: "Dzie\u0144 dobry! Czy przypadkiem nie masz w zapasie {QUANTITY} {NAME}?
+    Organizuj\u0119 przyj\u0119cie w moim ogrodzie, a brakuje mi tego warzywa do
+    sa\u0142atek. Je\u015Bli mo\u017Cesz mi pom\xF3c, b\u0119d\u0119 bardzo wdzi\u0119czny!"
