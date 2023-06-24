@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionRange: 2
   playerCamera: {fileID: 2196193311756998979}
-  debugInfo: 1
+  debugInfo: 0
 --- !u!143 &-1584771697723614778
 CharacterController:
   m_ObjectHideFlags: 0

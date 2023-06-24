@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 
 public interface IInputAdapter
 {
-    public void MouseMove(InputAction.CallbackContext context);
-    public void KeyboardW(InputAction.CallbackContext context);
-    public void KeyboardA(InputAction.CallbackContext context);
-    public void KeyboardS(InputAction.CallbackContext context);
-    public void KeyboardD(InputAction.CallbackContext context);
-    public void MouseClick(InputAction.CallbackContext context);
+    public void MouseMove(Vector2 deltaPos);
+    public void KeyboardW(bool pressed);
+    public void KeyboardA(bool pressed);
+    public void KeyboardS(bool pressed);
+    public void KeyboardD(bool pressed);
+    public void MouseClick(bool pressed);
     
 }

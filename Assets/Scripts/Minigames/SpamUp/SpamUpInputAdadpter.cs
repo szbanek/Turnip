@@ -15,35 +15,35 @@ public class SpamUpInputAdadpter : MonoBehaviour, IInputAdapter
     }
 
 
-    public void MouseMove(InputAction.CallbackContext context)
+    public void MouseMove(Vector2 deltaPos)
     {
         return;
     }
 
-    public void KeyboardW(InputAction.CallbackContext context)
+    public void KeyboardW(bool pressed)
     {
         return;
     }
 
-    public void KeyboardA(InputAction.CallbackContext context)
+    public void KeyboardA(bool pressed)
     {
         return;
     }
 
-    public void KeyboardS(InputAction.CallbackContext context)
+    public void KeyboardS(bool pressed)
     {
         return;
     }
 
-    public void KeyboardD(InputAction.CallbackContext context)
+    public void KeyboardD(bool pressed)
     {
         return;
     }
 
-    public void MouseClick(InputAction.CallbackContext context)
+    public void MouseClick(bool pressed)
     {
         if (Stopped) return;
-        if (context.started)
+        if (pressed)
         {
             logic.IncreaseClicks();
             Debug.Log("increased");
