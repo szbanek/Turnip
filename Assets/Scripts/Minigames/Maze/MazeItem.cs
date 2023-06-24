@@ -1,10 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class MazeItem : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class MazeItem : MonoBehaviour
     private MazeLogic logic;
     [SerializeField]
     private float speed = 1f;
+    [SerializeField]
+    private float upSpeed = 1f;
     public event EventHandler<bool> OnGoalReachedEvent;
     private float goalHeight;
     private bool left = false;
@@ -24,14 +27,14 @@ public class MazeItem : MonoBehaviour
         }
         logic.NewLettuce(this);
         RectTransform logicTransform = logic.transform as RectTransform;
-        goalHeight = logicTransform.rect.yMax - logicTransform.rect.yMin - (transform as RectTransform).rect.height / 2;
+        goalHeight = logicTransform.rect.yMax;
     }
     private void Update()
     {
-        float x = moving ? 0.1f * speed : 0;
+        float x = moving ? speed : 0;
         x = left ? -x : x;
-        transform.position += new Vector3(x, 0.1f, 0);
-        if (transform.position.y > goalHeight)
+        transform.position += new Vector3(x, upSpeed, 0) * Time.deltaTime;
+        if (transform.localPosition.y > goalHeight)
         {
             OnGoalReachedEvent?.Invoke(this, true);
         }
