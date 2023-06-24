@@ -31,10 +31,29 @@ ModelImporter:
       warnings that might lower retargeting quality:\nNote: Activate translation
       DOF on avatar to improve retargeting quality.\n\t'Chest' is inbetween humanoid
       transforms and has rotation animation that will be discarded.\n"
-    animationRetargetingWarnings: 
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Armature|ArmatureAction.001':\n\tLeftLowerLeg
+      average position error 597.5 mm and maximum position error 674.8 mm at time
+      0:44 (62.9%) Frame 44\n\tLeftFoot average position error 809.8 mm and maximum
+      position error 1049.8 mm at time 0:49 (70.0%) Frame 49\n\tRightLowerLeg average
+      position error 616.9 mm and maximum position error 663.6 mm at time 0: 9 (12.9%)
+      Frame 9\n\tRightFoot average position error 780.4 mm and maximum position error
+      1031.6 mm at time 0:23 (32.9%) Frame 23\n\tLeftUpperArm average position error
+      859.7 mm and maximum position error 867.6 mm at time 1:10 (100.0%) Frame 70\n\tLeftLowerArm
+      average position error 1031.7 mm and maximum position error 1243.8 mm at time
+      0:32 (45.7%) Frame 32\n\tLeftHand average position error 973.0 mm and maximum
+      position error 1379.2 mm at time 0:33 (47.1%) Frame 33\n\tRightUpperArm average
+      position error 864.3 mm and maximum position error 877.0 mm at time 0: 7 (10.0%)
+      Frame 7\n\tRightLowerArm average position error 1057.3 mm and maximum position
+      error 1217.9 mm at time 1: 5 (92.9%) Frame 65\n\tRightHand average position
+      error 1052.0 mm and maximum position error 1396.5 mm at time 1: 4 (91.4%) Frame
+      64\n\tHead average position error 921.4 mm and maximum position error 936.9
+      mm at time 0: 9 (12.9%) Frame 9\n\tLeftFoot average orientation error 2.3 deg
+      and maximum orientation error 15.1 deg at time 0:36 (51.4%) Frame 36\n\tRightFoot
+      average orientation error 0.1 deg and maximum orientation error 0.6 deg at
+      time 0: 5 (7.1%) Frame 5\n"
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
+    importConstraints: 1
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
