@@ -15,4 +15,5 @@ MonoBehaviour:
   type: 2
   description: "Najcz\u0119\u015Bciej sk\u0142adowana w Pojemniku."
   icon: {fileID: 21300000, guid: fc630e306736a074caa19bba8a4be92e, type: 3}
-  minigames: []
+  minigames:
+  - {fileID: 249285008473608460, guid: 6e2932d544a2179478954e43c77728ed, type: 3}

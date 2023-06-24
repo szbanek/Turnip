@@ -61,7 +61,6 @@ public class PlayerInputAdapter : MonoBehaviour
 
     public void Look(InputAction.CallbackContext context)
     {
-        CursorManager.Instance.Move(context.ReadValue<Vector2>());
         if (ignoreInputThisFrame)
         {
             return;
@@ -70,7 +69,7 @@ public class PlayerInputAdapter : MonoBehaviour
         if (inputAdapter != null)
         {
             inputAdapter.MouseMoveRelative(context.ReadValue<Vector2>());
-            inputAdapter.MouseMovePosition(CursorManager.Instance.Position);
+            inputAdapter.MouseMovePosition(Mouse.current.position.ReadUnprocessedValue());
             return;
         }
 
