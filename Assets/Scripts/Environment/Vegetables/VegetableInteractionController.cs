@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(RandomSoundPlayer))]
 public class VegetableInteractionController : MonoBehaviour, IInteractable
 {
     [Header("Config")]
@@ -22,10 +23,13 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     public Vector3 Position => transform.position;
     private bool selected = false;
 
+    private RandomSoundPlayer soundPlayer;
+
     public void Interact()
     {
         int index = Random.Range(0, vegetable.Minigames.Count);
         MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], this);
+        soundPlayer.PlayRandom();
         Unselect();
     }
 
@@ -71,6 +75,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         {
             Debug.LogError("No interactionIconData in VegatableInteractionController");
         }
+        soundPlayer = GetComponent<RandomSoundPlayer>();
     }
 
     private void OnDrawGizmosSelected()
