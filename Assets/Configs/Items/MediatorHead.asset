@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MediatorHead
   m_EditorClassIdentifier: 
   meshPrefab: {fileID: 5419198047270644057, guid: 988c61df42063b641b5b12defb1a1ad6, type: 3}
-  inventoryIcon: {fileID: 0}
+  inventoryIcon: {fileID: 21300000, guid: 3db20d1d8f07bf24daa62b07541fc8e6, type: 3}

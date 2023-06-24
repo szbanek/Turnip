@@ -7,14 +7,16 @@ public class PlayerItemsInventory : MonoBehaviour
 {
     [Header("References")]
     [SerializeField]
-    private SerializedDictionary<PlayerItem.ItemSlot, SkinnedMeshRenderer> headRenderers;
+    private SerializedDictionary<PlayerItem.ItemSlotType, SkinnedMeshRenderer> renderers;
 
     [Header("Slots")]
     [SerializeField]
-    private SerializedDictionary<PlayerItem.ItemSlot, PlayerItem> slotsContent;
+    private SerializedDictionary<PlayerItem.ItemSlotType, PlayerItem> slotsContent;
+    public SerializedDictionary<PlayerItem.ItemSlotType, PlayerItem> Slots => slotsContent;
 
     [SerializeField]
     private List<PlayerItem> items;
+    public List<PlayerItem> Items => items;
 
     private void Start()
     {
@@ -23,11 +25,11 @@ public class PlayerItemsInventory : MonoBehaviour
 
     private void UpdateItemsInSlots()
     {
-        PlayerItem.ItemSlot[] slots = (PlayerItem.ItemSlot[])Enum.GetValues(typeof(PlayerItem.ItemSlot));
-        foreach (PlayerItem.ItemSlot slot in slots)
+        PlayerItem.ItemSlotType[] slots = (PlayerItem.ItemSlotType[])Enum.GetValues(typeof(PlayerItem.ItemSlotType));
+        foreach (PlayerItem.ItemSlotType slot in slots)
         {
-            headRenderers[slot].sharedMaterials = slotsContent[slot].Materials;
-            headRenderers[slot].sharedMesh = slotsContent[slot].Mesh;
+            renderers[slot].sharedMaterials = slotsContent[slot].Materials;
+            renderers[slot].sharedMesh = slotsContent[slot].Mesh;
         }
     }
 }

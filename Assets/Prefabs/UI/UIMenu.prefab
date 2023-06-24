@@ -94,7 +94,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuObject: {fileID: 2105218959262748418}
-  inventory: {fileID: 4883717081682457730}
+  vegetables: {fileID: 4883717081682457730}
+  items: {fileID: 7076464929380554533}
 --- !u!1001 &1772620885427339743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1865,3 +1866,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8000966781605958695, guid: 34569d0ca6b69294a82fcb18c2130780, type: 3}
   m_PrefabInstance: {fileID: 7644224109610221534}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7076464929380554533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 585778082052827387, guid: 34569d0ca6b69294a82fcb18c2130780, type: 3}
+  m_PrefabInstance: {fileID: 7644224109610221534}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368338277332806648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981fabd38be1cbf4bb865cefe17b9970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runStartThreshold: 2
-  runCost: 0
+  runCost: 2
 --- !u!114 &5315703240809581415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7a6ac4052d8d5418227af6c6a06582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headRenderers:
+  renderers:
     pairs:
     - Key:
         item: 2

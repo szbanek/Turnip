@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Scriptable Objects/Player item")]
 public class PlayerItem : ScriptableObject
 {
-    public enum ItemSlot
+    public enum ItemSlotType
     {
         Head,
         Body,
@@ -16,8 +16,10 @@ public class PlayerItem : ScriptableObject
     private SkinnedMeshRenderer meshPrefab;
     [SerializeField]
     private Sprite inventoryIcon;
+    public Sprite InventoryIcon => inventoryIcon;
 
-    private ItemSlot slot;
+    [SerializeField]
+    private ItemSlotType slot;
 
     public Mesh Mesh => meshPrefab.sharedMesh;
     public Material[] Materials => meshPrefab.sharedMaterials;

@@ -8,7 +8,9 @@ public class UIMenuVisibilityManager : MonoBehaviour
     [SerializeField]
     private GameObject menuObject;
     [SerializeField]
-    private UIVegetableInventory inventory;
+    private UIVegetableInventory vegetables;
+    [SerializeField]
+    private UIItemInventory items;
 
     private bool menuShown;
 
@@ -45,8 +47,9 @@ public class UIMenuVisibilityManager : MonoBehaviour
             FindObjectOfType<PlayerInputAdapter>().EnableMovement = false;
             foreach (var item in FindObjectOfType<PlayerVegetableInventory>().Inventory)
             {
-                inventory.UpdateVegetable(item.Key, item.Value);
+                vegetables.UpdateVegetable(item.Key, item.Value);
             }
+            items.OnMenuEnabled();
         }
         else
         {
