@@ -85,7 +85,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Text
-      value: Character
+      value: Postac
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Type
@@ -216,7 +216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Text
-      value: Vegetables
+      value: Warzywa
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Type
@@ -349,7 +349,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Text
-      value: Inventory
+      value: Ekwipunek
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Type

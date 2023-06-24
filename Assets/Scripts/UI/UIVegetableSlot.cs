@@ -11,11 +11,11 @@ public class UIVegetableSlot : MonoBehaviour
     [SerializeField]
     private Image icon;
     [SerializeField]
-    private TextMeshProUGUI amountText;
+    private Text amountText;
     [SerializeField]
-    private TextMeshProUGUI vegetableName;
+    private Text vegetableName;
     [SerializeField]
-    private TextMeshProUGUI vegetableDescription;
+    private Text vegetableDescription;
 
     public Vegetable.VegetableType VegetableType => vegetable.Type;
 
