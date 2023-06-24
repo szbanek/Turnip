@@ -10,8 +10,6 @@ public class SpinLogic : MonoBehaviour
     [SerializeField]
     private int requiredSpins = 10;
     [SerializeField]
-    private float reduceClicksCooldown = 1f;
-    [SerializeField]
     private float timeLimit = 10;
     [SerializeField]
     private UIBarController timer;
