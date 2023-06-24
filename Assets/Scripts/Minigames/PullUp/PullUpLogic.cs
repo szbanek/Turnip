@@ -8,7 +8,6 @@ public class PullUpLogic : MonoBehaviour
 {
     [SerializeField]
     private float timeLimit = 10;
-    private IMinigameManager manager;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private List<PullUpItem> carrots;
@@ -48,7 +47,6 @@ public class PullUpLogic : MonoBehaviour
     }
     private void Start()
     {
-        manager = GetComponent<IMinigameManager>();
         StartCoroutine(TimeCourutine());
     }
 
