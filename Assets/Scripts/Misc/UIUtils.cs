@@ -10,26 +10,17 @@ public static class UIUtils
 
     public static IEnumerator ChangeLocalScaleCoroutine(GameObject gameObject, Vector3 targetScale, float duration, Func<bool> additionalConditions = null)
     {
-        Func<bool> func;
-        if (additionalConditions == null)
-        {
-            func = () => true;
-        }
-        else
-        {
-            func = additionalConditions;
-        }
+        additionalConditions ??= () => true;
 
         Vector3 beginningScale = gameObject.transform.localScale;
         float timer = 0;
-        while (timer < duration && func())
+        while (timer < duration && additionalConditions())
         {
             yield return null;
             timer += Time.deltaTime;
-            float x = Mathf.Lerp(beginningScale.x, targetScale.x, timer);
-            gameObject.transform.localScale = Vector3.Lerp(beginningScale, targetScale, timer/duration);
+            gameObject.transform.localScale = Vector3.Lerp(beginningScale, targetScale, timer / duration);
         }
-        if (func())
+        if (additionalConditions())
         {
             gameObject.transform.localScale = targetScale;
         }
@@ -37,15 +28,7 @@ public static class UIUtils
 
     public static IEnumerator TextFadeCoroutine(TextMeshProUGUI text, float duration, Fade fadeDirection, Func<bool> additionalConditions = null)
     {
-        Func<bool> func;
-        if (additionalConditions == null)
-        {
-            func = () => true;
-        }
-        else
-        {
-            func = additionalConditions;
-        }
+        additionalConditions ??= () => true;
 
         float counter = 0;
         float start = fadeDirection == Fade.FadeIn ? 0 : 1;
@@ -58,7 +41,7 @@ public static class UIUtils
 
         Color vertexColor = text.color;
 
-        while (counter < duration && func())
+        while (counter < duration && additionalConditions())
         {
             counter += Time.unscaledDeltaTime;
 
@@ -69,9 +52,39 @@ public static class UIUtils
             yield return null;
         }
 
-        if (fadeDirection == Fade.FadeOut && func())
+        if (fadeDirection == Fade.FadeOut && additionalConditions())
         {
             text.gameObject.SetActive(false);
+        }
+    }
+
+    public static IEnumerator CanvasGroupFadeCoroutine(CanvasGroup canvasGroup, float duration, Fade fadeDirection, Func<bool> additionalConditions = null)
+    {
+        additionalConditions ??= () => true;
+
+        float counter = 0;
+        float start = fadeDirection == Fade.FadeIn ? 0 : 1;
+        float end = fadeDirection == Fade.FadeIn ? 1 : 0;
+
+        if (!canvasGroup.gameObject.activeSelf)
+        {
+            canvasGroup.gameObject.SetActive(true);
+        }
+
+        while (counter < duration && additionalConditions())
+        {
+            counter += Time.unscaledDeltaTime;
+
+            float alpha = Mathf.Lerp(start, end, counter / duration);
+
+            canvasGroup.alpha = alpha;
+
+            yield return null;
+        }
+
+        if (fadeDirection == Fade.FadeOut && additionalConditions())
+        {
+            canvasGroup.gameObject.SetActive(false);
         }
     }
 }

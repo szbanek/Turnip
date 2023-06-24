@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3674099792132172260}
   - component: {fileID: 5852137712819748675}
+  - component: {fileID: 1545839107918800781}
   m_Layer: 5
   m_Name: InteractionIcon
   m_TagString: Untagged
@@ -262,5 +263,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d318bddc9a9b1a48b5a12da246e6aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeDuration: 0.1
   text: {fileID: 4045474232842338270}
   icon: {fileID: 2380783413750702774}
+  canvasGroup: {fileID: 1545839107918800781}
+--- !u!225 &1545839107918800781
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8376920458564338007}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
