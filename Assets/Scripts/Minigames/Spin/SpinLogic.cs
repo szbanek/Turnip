@@ -15,10 +15,15 @@ public class SpinLogic : MonoBehaviour
     private UIBarController timer;
     [SerializeField]
     private UIBarController spins;
+    [SerializeField]
+    private RectTransform lettuce;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private float currentAngle = 0;
     private int currentSpins = 0;
+
+    private float totalCurrentAngle => currentAngle + 360 * currentSpins;
+    private float totalRequiredAngle => 360 * requiredSpins;
 
     public void Move(Vector2 vector)
     {
@@ -34,7 +39,8 @@ public class SpinLogic : MonoBehaviour
             currentSpins++;
             Debug.Log(currentSpins);
         }
-        spins.ChangeValue(currentAngle + 360 * currentSpins, 360 * requiredSpins);
+        spins.ChangeValue(totalCurrentAngle, totalRequiredAngle);
+        lettuce.rotation = Quaternion.Euler(0, 0, -totalCurrentAngle);
         if (currentSpins >= requiredSpins)
         {
             OnWinEvent?.Invoke(this, null);

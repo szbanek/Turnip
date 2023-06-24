@@ -2047,7 +2047,7 @@ MonoBehaviour:
   iconPosition: {x: 0, y: 1, z: 0}
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: bfe6b04bfdb47d44ca33df44cbff4b2a, type: 2}
-  vegetable: {fileID: 11400000, guid: 574a249a2150d3f45b8318839fd7f6a0, type: 2}
+  vegetable: {fileID: 11400000, guid: 79b51cb2d4bb47745855e886259ad4d7, type: 2}
 --- !u!224 &1903955603 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1225644013961045071, guid: 168391d2459a5b3408487c400865e6ff, type: 3}
