@@ -9,7 +9,7 @@ public class OsuLogic : MonoBehaviour
     [SerializeField]
     private float speed = 1f;
     [SerializeField]
-    private float hitAccuracy = 0.5f;
+    private Vector2 hitAccuracy;
     // [SerializeField]
     // private UIBarController timer;
     public event EventHandler OnWinEvent;
