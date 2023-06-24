@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1190053436516994123}
   - component: {fileID: 7106472764622761103}
+  - component: {fileID: 927491207851553430}
   m_Layer: 6
   m_Name: NPC
   m_TagString: Untagged
@@ -47,6 +48,44 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &927491207851553430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8627d6c37e930b4bae56b0ef12a7878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers:
+    pairs:
+    - Key:
+        item: 2
+      Value: {fileID: 722751923411893114}
+    - Key:
+        item: 1
+      Value: {fileID: 8187572149002930886}
+    - Key:
+        item: 0
+      Value: {fileID: 4691841067893744395}
+  sets:
+    pairs:
+    - Key:
+        item: 2
+      Value:
+      - {fileID: 11400000, guid: bb832204d75c808438ed354b6f5a51ff, type: 2}
+    - Key:
+        item: 1
+      Value:
+      - {fileID: 11400000, guid: 116efd31918495848bd830379c356b4d, type: 2}
+    - Key:
+        item: 0
+      Value:
+      - {fileID: 11400000, guid: b15aaa9003ed64640b3ab8fd01999657, type: 2}
+      - {fileID: 11400000, guid: ab89856b351352f43938e0b9fb426c90, type: 2}
 --- !u!1001 &78315980998511163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255,6 +294,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 80ff7768236b54e47b4de15667819732, type: 3}
   m_PrefabInstance: {fileID: 78315980998511163}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &722751923411893114 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 797560393476419905, guid: 80ff7768236b54e47b4de15667819732, type: 3}
+  m_PrefabInstance: {fileID: 78315980998511163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &997356181345941354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 80ff7768236b54e47b4de15667819732, type: 3}
@@ -292,3 +336,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5663a004c51c69648b4cc7a8eddbd219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!137 &4691841067893744395 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4608590414276826832, guid: 80ff7768236b54e47b4de15667819732, type: 3}
+  m_PrefabInstance: {fileID: 78315980998511163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &8187572149002930886 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1101655103521914627, guid: 80ff7768236b54e47b4de15667819732, type: 3}
+  m_PrefabInstance: {fileID: 78315980998511163}
+  m_PrefabAsset: {fileID: 0}
