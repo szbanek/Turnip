@@ -18,17 +18,11 @@ public class UITabsController : MonoBehaviour
     [SerializeField]
     private SerializedDictionary<Tab, GameObject> screens;
 
-    [Header("Sprites")]
-    [SerializeField]
-    private Sprite selectedTabButtonImage;
-
     private Tab currentTab;
-    private Sprite defaultButtonImage;
 
     private void Start()
     {
         currentTab = Tab.Inventory;
-        defaultButtonImage = buttons[currentTab].image.sprite;
         ChangeTab(currentTab);
 
         InitButtons();
@@ -52,10 +46,8 @@ public class UITabsController : MonoBehaviour
 
         foreach (Button button in buttons.Values)
         {
-            button.image.sprite = defaultButtonImage;
             button.interactable = true;
         }
-        buttons[tab].image.sprite = selectedTabButtonImage;
         buttons[tab].interactable = false;
     }
 }
