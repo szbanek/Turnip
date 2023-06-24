@@ -9,10 +9,8 @@ public class ClickItem : MonoBehaviour
     [SerializeField]
     private ClickLogic logic;
     public event EventHandler OnPulledUpEvent;
-    private Vector3 initialPosition;
     void Start()
     {
-        initialPosition = transform.position;
         if (logic == null)
         {
             logic = GetComponentInParent<ClickLogic>();
