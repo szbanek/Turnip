@@ -17,3 +17,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 2bc05d27d66053845afaf443881275a6, type: 3}
   minigames:
   - {fileID: 707958366025699345, guid: 8736c47c7eac89643885e0af8b61812b, type: 3}
+  - {fileID: 7903948005427713481, guid: bbbcf3769ba0c514895c99295294ab88, type: 3}
