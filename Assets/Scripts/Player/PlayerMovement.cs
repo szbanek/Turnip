@@ -175,5 +175,10 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            sprint = false;
+            animationController.StopRunning();
+        }
     }
 }
