@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 1896393468317315262}
   - component: {fileID: 6741387975173446621}
   - component: {fileID: 5315703240809581415}
+  - component: {fileID: 7370878092730852031}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -501,6 +502,41 @@ MonoBehaviour:
     - Key:
         item: 0
       Value: 0
+--- !u!114 &7370878092730852031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7a6ac4052d8d5418227af6c6a06582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headRenderers:
+    pairs:
+    - Key:
+        item: 2
+      Value: {fileID: 722751923411893114}
+    - Key:
+        item: 1
+      Value: {fileID: 8187572149002930886}
+    - Key:
+        item: 0
+      Value: {fileID: 4691841067893744395}
+  slotsContent:
+    pairs:
+    - Key:
+        item: 2
+      Value: {fileID: 11400000, guid: 2f939e6bff7e82c47ba7349dce5c3315, type: 2}
+    - Key:
+        item: 1
+      Value: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
+    - Key:
+        item: 0
+      Value: {fileID: 11400000, guid: fc6e8df24ce99f74fa3c0b827fc551be, type: 2}
+  items: []
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +669,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 80ff7768236b54e47b4de15667819732, type: 3}
   m_PrefabInstance: {fileID: 78315980998511163}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &722751923411893114 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 797560393476419905, guid: 80ff7768236b54e47b4de15667819732, type: 3}
+  m_PrefabInstance: {fileID: 78315980998511163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &997356181345941354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 80ff7768236b54e47b4de15667819732, type: 3}
@@ -670,3 +711,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5663a004c51c69648b4cc7a8eddbd219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!137 &4691841067893744395 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4608590414276826832, guid: 80ff7768236b54e47b4de15667819732, type: 3}
+  m_PrefabInstance: {fileID: 78315980998511163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &8187572149002930886 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1101655103521914627, guid: 80ff7768236b54e47b4de15667819732, type: 3}
+  m_PrefabInstance: {fileID: 78315980998511163}
+  m_PrefabAsset: {fileID: 0}
