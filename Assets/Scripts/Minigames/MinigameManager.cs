@@ -9,6 +9,7 @@ public class MinigameManager : Singleton<MinigameManager>
     private PlayerInputAdapter playerInputAdapter;
 
     private GameObject currentMinigame = null;
+    private GameObject currentMinigameSpawner = null;
 
     private void Start()
     {
@@ -17,10 +18,11 @@ public class MinigameManager : Singleton<MinigameManager>
         playerInputAdapter = FindObjectOfType<PlayerInputAdapter>();
     }
 
-    public void SpawnMinigame(GameObject minigame)
+    public void SpawnMinigame(GameObject minigame, GameObject spawner)
     {
         minigamePanel.gameObject.SetActive(true);
         currentMinigame = Instantiate(minigame, minigameCanvas);
+        currentMinigameSpawner = spawner;
         playerInputAdapter.inputAdapter = currentMinigame.GetComponent<IInputAdapter>();
         currentMinigame.GetComponent<IMinigameManager>().OnMinigameEndEvent += (_, e) => OnMinigameEnd(e);
     }
@@ -29,6 +31,8 @@ public class MinigameManager : Singleton<MinigameManager>
     {
         minigamePanel.gameObject.SetActive(false);
         playerInputAdapter.inputAdapter = null;
+        Destroy(currentMinigame);
+        Destroy(currentMinigameSpawner);
         print(win ? "Juhu!!" : "Buuu!!!");
     }
 }

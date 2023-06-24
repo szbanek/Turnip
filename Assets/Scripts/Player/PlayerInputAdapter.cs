@@ -13,11 +13,18 @@ public class PlayerInputAdapter : MonoBehaviour
 
     [HideInInspector]
     public bool EnableMovement = true;
-    [HideInInspector]
-    public IInputAdapter inputAdapter = null;
+    public IInputAdapter inputAdapter { set { ignoreInputThisFrame = true; _inputAdapter = value; } private get => _inputAdapter; }
+
+    private IInputAdapter _inputAdapter = null;
+    private bool ignoreInputThisFrame = false;
 
     public void Move(InputAction.CallbackContext context)
     {
+        if (ignoreInputThisFrame)
+        {
+            return;
+        }
+
         if (inputAdapter != null)
         {
             return;
@@ -32,6 +39,11 @@ public class PlayerInputAdapter : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
+        if (ignoreInputThisFrame)
+        {
+            return;
+        }
+
         if (inputAdapter != null)
         {
             return;
@@ -49,6 +61,11 @@ public class PlayerInputAdapter : MonoBehaviour
 
     public void Look(InputAction.CallbackContext context)
     {
+        if (ignoreInputThisFrame)
+        {
+            return;
+        }
+
         if (inputAdapter != null)
         {
             inputAdapter.MouseMoveRelative(context.ReadValue<Vector2>());
@@ -64,6 +81,11 @@ public class PlayerInputAdapter : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
+        if (ignoreInputThisFrame)
+        {
+            return;
+        }
+
         if (inputAdapter != null)
         {
             if (context.started || context.canceled)
@@ -130,7 +152,7 @@ public class PlayerInputAdapter : MonoBehaviour
 
     public void Sprint(InputAction.CallbackContext context)
     {
-        if(context.started)
+        if (context.started)
         {
             movement.SetSprintState(true);
         }
@@ -138,5 +160,10 @@ public class PlayerInputAdapter : MonoBehaviour
         {
             movement.SetSprintState(false);
         }
+    }
+
+    private void Update()
+    {
+        ignoreInputThisFrame = false;
     }
 }

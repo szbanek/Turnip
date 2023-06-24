@@ -23,7 +23,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     public void Interact()
     {
         int index = Random.Range(0, minigames.Count);
-        MinigameManager.Instance.SpawnMinigame(minigames[index]);
+        MinigameManager.Instance.SpawnMinigame(minigames[index], gameObject);
     }
 
     public void Select()
