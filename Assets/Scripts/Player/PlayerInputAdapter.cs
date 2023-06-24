@@ -25,27 +25,97 @@ public class PlayerInputAdapter : MonoBehaviour
             switch (moveInput.x)
             {
                 case > 0:
+                    switch (lastMoveInput.x)
+                    {
+                        case < 0:
+                            inputAdapter.KeyboardA(false);
+                            inputAdapter.KeyboardD(true);
+                            break;
+
+                        case 0:
+                            inputAdapter.KeyboardD(true);
+                            break;
+                    }
                     break;
 
                 case < 0:
+                    switch (lastMoveInput.x)
+                    {
+                        case > 0:
+                            inputAdapter.KeyboardD(false);
+                            inputAdapter.KeyboardA(true);
+                            break;
+
+                        case 0:
+                            inputAdapter.KeyboardA(true);
+                            break;
+                    }
                     break;
 
-                default:
+                case 0:
                     switch(lastMoveInput.x)
                     {
                         case > 0:
-                            
+                            inputAdapter.KeyboardD(false);
                             break;
 
                         case < 0:
+                            inputAdapter.KeyboardA(false);
                             break;
                     }
                     break;
             }
+
+            switch (moveInput.y)
+            {
+                case > 0:
+                    switch (lastMoveInput.y)
+                    {
+                        case < 0:
+                            inputAdapter.KeyboardS(false);
+                            inputAdapter.KeyboardW(true);
+                            break;
+
+                        case 0:
+                            inputAdapter.KeyboardW(true);
+                            break;
+                    }
+                    break;
+
+                case < 0:
+                    switch (lastMoveInput.y)
+                    {
+                        case > 0:
+                            inputAdapter.KeyboardW(false);
+                            inputAdapter.KeyboardS(true);
+                            break;
+
+                        case 0:
+                            inputAdapter.KeyboardS(true);
+                            break;
+                    }
+                    break;
+
+                case 0:
+                    switch (lastMoveInput.y)
+                    {
+                        case > 0:
+                            inputAdapter.KeyboardW(false);
+                            break;
+
+                        case < 0:
+                            inputAdapter.KeyboardS(false);
+                            break;
+                    }
+                    break;
+            }
+            lastMoveInput = moveInput;
+            return;
         }
 
         if (!EnableMovement)
         {
+            lastMoveInput = moveInput;
             return;
         }
         movement.Move(moveInput);
@@ -74,6 +144,7 @@ public class PlayerInputAdapter : MonoBehaviour
         if (inputAdapter != null)
         {
             inputAdapter.MouseMove(context.ReadValue<Vector2>());
+            return;
         }
 
         if (!EnableMovement)
@@ -91,6 +162,7 @@ public class PlayerInputAdapter : MonoBehaviour
             {
                 inputAdapter.MouseClick(context.started);
             }
+            return;
         }
     }
 
