@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class SpamUpLogic : MonoBehaviour
 {
@@ -16,6 +15,9 @@ public class SpamUpLogic : MonoBehaviour
     private UIBarController timer;
     [SerializeField]
     private UIBarController clickCounter;
+    [SerializeField]
+    private RectTransform carrot;
+    private Vector2 YSpan = Vector2.zero;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private int currentClicks = 0;
@@ -23,7 +25,7 @@ public class SpamUpLogic : MonoBehaviour
     public void IncreaseClicks()
     {
         currentClicks++;
-        clickCounter.ChangeValue(currentClicks, requiredClicks);
+        ChangedValue();
         Debug.Log(currentClicks);
         if (currentClicks >= requiredClicks)
         {
@@ -33,10 +35,20 @@ public class SpamUpLogic : MonoBehaviour
 
     private void Start()
     {
-        clickCounter.ChangeValue(currentClicks, requiredClicks);
+        YSpan.x = carrot.position.y;
+        YSpan.y = carrot.position.y + carrot.rect.height / 2;
+        ChangedValue();
         timer.ChangeValueInverted(0, timeLimit);
         StartCoroutine(ReduceClicksCourutine());
         StartCoroutine(TimeCourutine());
+    }
+
+    private void ChangedValue()
+    {
+        Vector3 newPos = carrot.position;
+        newPos.y = Mathf.Lerp(YSpan.x, YSpan.y, (float)currentClicks / (float)requiredClicks);
+        carrot.position = newPos;
+        clickCounter.ChangeValue(currentClicks, requiredClicks);
     }
 
     private IEnumerator ReduceClicksCourutine()
@@ -47,7 +59,7 @@ public class SpamUpLogic : MonoBehaviour
             if (currentClicks > 0)
             {
                 currentClicks--;
-                clickCounter.ChangeValue(currentClicks, requiredClicks);
+                ChangedValue();
             }
         }
     }
