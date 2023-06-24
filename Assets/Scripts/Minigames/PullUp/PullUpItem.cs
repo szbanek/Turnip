@@ -14,7 +14,7 @@ public class PullUpItem : MonoBehaviour
     private bool held = false;
     void Start()
     {
-        pullUpDistance = (transform as RectTransform).rect.height;
+        pullUpDistance = (transform as RectTransform).rect.height / 2;
         initialPosition = transform.position;
         if(logic==null)
         {
@@ -30,6 +30,7 @@ public class PullUpItem : MonoBehaviour
         transform.position = new Vector3(transform.position.x, vector.y, transform.position.z);
         if (Vector3.Distance(initialPosition, transform.position) > pullUpDistance)
         {
+            held = false;
             OnPulledUpEvent?.Invoke(this, null);
             gameObject.SetActive(false);
         }

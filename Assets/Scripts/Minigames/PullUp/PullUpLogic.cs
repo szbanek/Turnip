@@ -8,6 +8,8 @@ public class PullUpLogic : MonoBehaviour
 {
     [SerializeField]
     private float timeLimit = 10;
+    [SerializeField]
+    private UIBarController timer;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private List<PullUpItem> carrots;
@@ -47,14 +49,17 @@ public class PullUpLogic : MonoBehaviour
     }
     private void Start()
     {
+        timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());
     }
 
     private IEnumerator TimeCourutine()
     {
-        for (int i = 0; i <= timeLimit; i++)
+        float counter = 0;
+        while ((counter += Time.deltaTime) < timeLimit)
         {
-            yield return new WaitForSeconds(1);
+            timer.ChangeValueInverted(counter, timeLimit);
+            yield return null;
         }
         OnLoseEvent?.Invoke(this, null);
     }
