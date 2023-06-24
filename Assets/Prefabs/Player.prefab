@@ -403,10 +403,10 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIMenuVisibilityManager, Assembly-CSharp
+      - m_Target: {fileID: -1161634678213818434}
+        m_TargetAssemblyTypeName: PlayerInputAdapter, Assembly-CSharp
         m_MethodName: SwitchMenu
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

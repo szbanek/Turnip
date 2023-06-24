@@ -163,6 +163,24 @@ public class PlayerInputAdapter : MonoBehaviour
         }
     }
 
+    public void SwitchMenu(InputAction.CallbackContext context)
+    {
+        if (ignoreInputThisFrame)
+        {
+            return;
+        }
+
+        if (inputAdapter != null)
+        {
+            return;
+        }
+
+        if (context.started)
+        {
+            UIHUDController.Instance.MenuVisibilityManager.SwitchMenu();
+        }
+    }
+
     private void Update()
     {
         ignoreInputThisFrame = false;

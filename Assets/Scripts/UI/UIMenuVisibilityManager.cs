@@ -32,13 +32,10 @@ public class UIMenuVisibilityManager : MonoBehaviour
         ApplyVisibilityChange();
     }
 
-    public void SwitchMenu(InputAction.CallbackContext context)
+    public void SwitchMenu()
     {
-        if (context.started)
-        {
-            menuShown = !menuShown;
-            ApplyVisibilityChange();
-        }
+        menuShown = !menuShown;
+        ApplyVisibilityChange();
     }
 
     private void ApplyVisibilityChange()

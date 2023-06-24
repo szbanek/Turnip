@@ -13,9 +13,12 @@ public class UIHUDController : Singleton<UIHUDController>
     private RectTransform minigameCanvas;
     [SerializeField]
     private UIBarController staminaBar;
+    [SerializeField]
+    private UIMenuVisibilityManager menuVisibilityManager;
 
     public RectTransform InteractionIconCanvas => interactionIconCanvas;
     public RectTransform MinigamePanel => minigamePanel;
     public RectTransform MinigameCanvas => minigameCanvas;
     public UIBarController StaminaBar => staminaBar;
+    public UIMenuVisibilityManager MenuVisibilityManager => menuVisibilityManager;
 }
