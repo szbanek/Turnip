@@ -113,5 +113,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
-  interactionIconData: {fileID: 11400000, guid: bfe6b04bfdb47d44ca33df44cbff4b2a, type: 2}
+  interactionIconData: {fileID: 11400000, guid: e960763ed11a5ea4e9eeb2062cf78bf2, type: 2}
   vegetable: {fileID: 11400000, guid: d53703fa0edf692499539079eed4dd7a, type: 2}
