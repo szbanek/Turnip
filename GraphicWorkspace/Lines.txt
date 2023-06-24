@@ -1,0 +1,31 @@
+Sałaciany dziadyga
+
+1.IN
+Witaj, czcigodny nieznajomy! Wybacz moją śmiałość, ale na twoim miejscu nie nosiłbym tego purpurowego ubioru: nasze królestwo nie ma najlepszych stosunków z legitymującymi się nim wampirami chrzanowymi, i mogą spotkać cię nieprzyjemności w zetknięciu ze strażami pałacowymi. A szkoda... Chrzan jest bardzo cenną przyprawą, ja niby mogę prowadzić twoje swoje własne pola sałaty ale tęsknię za czasem kiedy można było bez problemu importować chrzan... Słuchaj, może mógłbyś mi pomóc? Widzę, żeś światowy człowiek. Przynieś mi 8 JEDNOSTEK CHRZANU, a obiecuję ci, że nie pożałujesz!
+
+1.OUT
+Aaach, chrzan! Dziękuję, to cenny nabytek dla mnie i mojej rodziny. Mam nadzieję że nie miałeś problemów z Chrzanzą - te wampiry potrafią być na prawdę nieobliczalne. Proszę, przyjmij ten kapelusz jako dowód mojej wdzięczności. Był w mojej rodzinie od pokoleń, a należał do mojego dalekiego przodka, który z nim na głowie żeglował po morzach i oceanach, daleko od brzegów tej wyspy. Teraz należy do ciebie. Proszę, noś go z dumą.
+
+Strażnik sałaty
+
+2.IN
+Mediator! Słyszałem o tym że do nas zmierzasz. Tak się jednak składa że jestem dosyć nieufny wobec nieznajomych i mam opory przed wpuszczeniem kogoś kto nie dowiedzie swojej przyjaźni do naszego królestwa. Przynieś mi 6 JEDNOSTEK SAŁATY, symbolu naszej gospodarki, aby dowieść, że jesteś godzien naszego zaufania. Wtedy pozwolę ci przejść.
+
+2.OUT
+Hm...? A, to ty. Widzę że masz sałatę. Dowiodłeś swej determinacji, zatem daj mi ten list - masz moje słowo że dostarczę go do Jego Wysokości. Ty natomiast musisz natychmiast ruszać w drogę: niedawne spięcie na granicy z Chrzanowym Imperium doprowadziło do zaognienia naszych stosunków z wampirami i tylko ty możesz powstrzymać nadchodzącą wojnę. Śpiesz się, Hrabia Gahlammon nie będzie zwlekał wiecznie z wydaniem swoim wojskom rozkazu do ataku więc jak najszybciej musisz mu dostarczyć ten list. Weź jeszcze ten pancerz: nie chcemy by stała ci się przypadkowa krzywda gdy będziesz wchodził na terytorium wampirów.
+
+Wampir pogranicznik
+
+3.IN
+Stać! Ktoś ty...? Ach. Mediator. Chcesz zatrzymać tę wojnę, co? Hej, nie obawiaj się, może i jesteśmy wampirami ale to nie czyni z nas bezmyślnych monstrów. Kto wie, może nawet ci się uda, Hrabia Gahlammon, choć potrafi wpaść w wielki gniew, zawsze chętnie słucha rozsądnych argumentów. Przy okazji, mam do ciebie taką osobistą sprawę. Rozbiliśmy tu obóz dobrych kilka tygodni temu i powoli kończą się nam zapasy żywności. Co gorsza, jakiś sabotażyszta podłożył do naszej strawy czosnek i kilku chłopaków porządnie się struło. Wsparłbyś nas może? Wszystko o co proszę to 7 JEDNOSTEK PAPRYKI. Możesz znaleźć ją w pustynnym kraju na wschodzie. Z tego co mi wiadomo, zwykle rośnie na rozległych, otwartych przestrzeniach, możesz też zawitać na plantację na północnym zachodzie stąd, by mieć bogate zbiory. Z góry dziękuję ci za pomoc.
+
+3.OUT
+
+
+Wampir strażnik zamku
+
+4.IN
+Mediator... Mogę cię przpuścić, ale odradzam. Hrabia Gahlammon jest obecnie w bardzo, bardzo złym nastroju, sugeruję ci spacer po okolicy by to przeczekać i powrócić tutaj po jakimś czasie. Przy okazji, może rozejrzałbyś się za pewnymi składnikami, których brakuje naszemu kucharzowi do przyrządzenia Hrabiemu posiłku? Potrzeba nam jedynie 1 PAPRYKI, 2 SAŁAT i 3 MARCHWI. Dobry posiłek i chwila odpoczynku na pewno pomogą naszemu Panu w ochłonięciu z obecnego stanu.
+
+4.OUT
+Przyniosłeś składniki, wspaniale. Hrabia Gahlammon na pewno się ucieszy, osobiście dostarczę mu gotowy posiłek razem z twoim listem pokojowym, Hrabia uspokoił się już i jest chętny do rokowań. Zdołałeś właśnie utrzymać pokój w bardzo ryzykownej sytuacji, nie pora jednak świętować. Przygotowywaliśmy się na wypadek walki od dłuższego czasu i postawiliśmy naszych sojuszników na tyłach sałacierzy w stan gotowości. Jeśli nie otrzymają oni listu wstrzymującego podpisanego przez Hrabiego Gahlammona, za parę dni przypuszczą atak. Musisz jak najprędzej dostarczyć ten list aby zapobiec rozlewowi krwi i utrzymać pokój w Pięciu Królestwach.
