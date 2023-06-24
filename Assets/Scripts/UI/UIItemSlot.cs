@@ -21,6 +21,8 @@ public class UIItemSlot : MonoBehaviour
     private Image image;
     private Button button;
 
+    public event System.EventHandler<PlayerItem> OnItemPressed;
+
     public void Start()
     {
         image = GetComponent<Image>();
@@ -46,6 +48,6 @@ public class UIItemSlot : MonoBehaviour
 
     private void OnClick()
     {
-        Debug.Log("Clicked");
+        OnItemPressed?.Invoke(this, item);
     }
 }

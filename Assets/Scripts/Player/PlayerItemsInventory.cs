@@ -23,7 +23,7 @@ public class PlayerItemsInventory : MonoBehaviour
         UpdateItemsInSlots();
     }
 
-    private void UpdateItemsInSlots()
+    public void UpdateItemsInSlots()
     {
         PlayerItem.ItemSlotType[] slots = (PlayerItem.ItemSlotType[])Enum.GetValues(typeof(PlayerItem.ItemSlotType));
         foreach (PlayerItem.ItemSlotType slot in slots)

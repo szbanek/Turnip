@@ -35,6 +35,7 @@ public class UIItemInventory : MonoBehaviour
         foreach(PlayerItem item in inventory.Items)
         {
             inventorySlots[i].Item = item;
+            inventorySlots[i].OnItemPressed += (slot, item) => EquipItem((UIItemSlot)slot, item);
             i++;
         }
     }
@@ -46,5 +47,14 @@ public class UIItemInventory : MonoBehaviour
         {
             equippedSlots[slot].Item = inventory.Slots[slot];
         }
+    }
+
+    private void EquipItem(UIItemSlot slot, PlayerItem item)
+    {
+        PlayerItem.ItemSlotType slotType = item.Slot;
+        PlayerItem currentInSlot = inventory.Slots[slotType];
+        inventory.Slots[slotType] = item;
+        inventory.UpdateItemsInSlots();
+        slot.Item = currentInSlot;
     }
 }
