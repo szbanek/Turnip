@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animation))]
+[RequireComponent(typeof(Animator))]
 public class NPCAnimationController : MonoBehaviour
 {
     [SerializeField]
