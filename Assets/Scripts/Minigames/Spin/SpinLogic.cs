@@ -13,12 +13,16 @@ public class SpinLogic : MonoBehaviour
     private float reduceClicksCooldown = 1f;
     [SerializeField]
     private float timeLimit = 10;
+    [SerializeField]
+    private UIBarController timer;
+    [SerializeField]
+    private UIBarController spins;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private float currentAngle = 0;
     private int currentSpins = 0;
 
-    public void IncreaseClicks(Vector2 vector)
+    public void Move(Vector2 vector)
     {
         Vector3 tmp = center.transform.position - new Vector3(vector.x, vector.y, 0);
         float angle = SignedAngleBetween(center.transform.position, tmp);
@@ -32,6 +36,7 @@ public class SpinLogic : MonoBehaviour
             currentSpins++;
             Debug.Log(currentSpins);
         }
+        spins.ChangeValue(currentAngle + 360 * currentSpins, 360 * requiredSpins);
         if (currentSpins >= requiredSpins)
         {
             OnWinEvent?.Invoke(this, null);
@@ -40,14 +45,18 @@ public class SpinLogic : MonoBehaviour
 
     private void Start()
     {
+        spins.ChangeValue(0, 1);
+        timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());
     }
 
     private IEnumerator TimeCourutine()
     {
-        for (int i = 0; i <= timeLimit; i++)
+        float counter = 0;
+        while ((counter += Time.deltaTime) < timeLimit)
         {
-            yield return new WaitForSeconds(1);
+            timer.ChangeValueInverted(counter, timeLimit);
+            yield return null;
         }
         OnLoseEvent?.Invoke(this, null);
     }

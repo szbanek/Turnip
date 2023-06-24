@@ -23,7 +23,7 @@ public class SpinInputAdadpter : MonoBehaviour, IInputAdapter
     public void MouseMovePosition(Vector2 pos)
     {
         if(Stopped) return;
-        logic.IncreaseClicks(pos);
+        logic.Move(pos);
     }
 
     public void KeyboardW(bool pressed)
