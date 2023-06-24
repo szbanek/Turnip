@@ -27,7 +27,7 @@ public class Vegetable : ScriptableObject
 
     public string Name => TypeToString(type);
 
-    private string TypeToString(VegetableType type)
+    public static string TypeToString(VegetableType type)
     {
         switch (type)
         {
