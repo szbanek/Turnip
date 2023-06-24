@@ -11,6 +11,7 @@ public class SpamUpManager : MonoBehaviour, IMinigameManager
     private void Start()
     {
         adadpter = GetComponent<SpamUpInputAdadpter>();
+        logic = GetComponent<SpamUpLogic>();
         logic.OnLoseEvent += (_,_) => EndMinigame(false);
         logic.OnWinEvent += (_,_) => EndMinigame(true);
     }
