@@ -13,7 +13,7 @@ public class PlayerItem : ScriptableObject
     }
 
     [SerializeField]
-    private SkinnedMeshRenderer meshPrefab;
+    private GameObject prefab;
     [SerializeField]
     private Sprite inventoryIcon;
     public Sprite InventoryIcon => inventoryIcon;
@@ -21,6 +21,16 @@ public class PlayerItem : ScriptableObject
     [SerializeField]
     private ItemSlotType slot;
 
-    public Mesh Mesh => meshPrefab.sharedMesh;
-    public Material[] Materials => meshPrefab.sharedMaterials;
+    private SkinnedMeshRenderer meshRenderer; 
+
+    public Mesh Mesh => meshRenderer.sharedMesh;
+    public Material[] Materials => meshRenderer.sharedMaterials;
+
+    private void OnValidate()
+    {
+        if(prefab != null)
+        {
+            meshRenderer = prefab.GetComponentInChildren<SkinnedMeshRenderer>();
+        }
+    }
 }

@@ -83,6 +83,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 882173438764671139}
     m_Modifications:
+    - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
+      propertyPath: m_Text
+      value: Character
+      objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Type
       value: 1
@@ -210,6 +214,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 882173438764671139}
     m_Modifications:
+    - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
+      propertyPath: m_Text
+      value: Vegetables
+      objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Type
       value: 1
@@ -339,6 +347,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 882173438764671139}
     m_Modifications:
+    - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
+      propertyPath: m_Text
+      value: Inventory
+      objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Type
       value: 1
