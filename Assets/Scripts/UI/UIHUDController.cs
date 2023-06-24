@@ -8,8 +8,11 @@ public class UIHUDController : Singleton<UIHUDController>
     [SerializeField]
     private RectTransform interactionIconCanvas;
     [SerializeField]
+    private RectTransform minigamePanel;
+    [SerializeField]
     private RectTransform minigameCanvas;
 
     public RectTransform InteractionIconCanvas => interactionIconCanvas;
+    public RectTransform MinigamePanel => minigamePanel;
     public RectTransform MinigameCanvas => minigameCanvas;
 }

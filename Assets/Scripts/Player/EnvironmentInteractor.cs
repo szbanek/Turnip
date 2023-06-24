@@ -108,7 +108,7 @@ public class EnvironmentInteractor : MonoBehaviour
             {
                 Debug.LogFormat("Interacting with object");
             }
-            //selectedObject.GetComponent<Triggers.InteractiveTrigger>()?.Interact();
+            selectedObject.Interact();
         }
     }
 

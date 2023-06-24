@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: -4460253253598149906}
+  interactor: {fileID: 7237087009769299724}
   EnableMovement: 1
 --- !u!114 &-4460253253598149906
 MonoBehaviour:

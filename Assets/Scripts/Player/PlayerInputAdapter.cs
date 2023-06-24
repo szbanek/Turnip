@@ -8,6 +8,8 @@ public class PlayerInputAdapter : MonoBehaviour
     [Header("References")]
     [SerializeField]
     private PlayerMovement movement;
+    [SerializeField]
+    private EnvironmentInteractor interactor;
 
     [HideInInspector]
     public bool EnableMovement = true;
@@ -70,6 +72,12 @@ public class PlayerInputAdapter : MonoBehaviour
             }
             return;
         }
+
+        if (!EnableMovement)
+        {
+            return;
+        }
+        interactor.InteractWithSelected();
     }
 
     public void KeyboardW(InputAction.CallbackContext context)
