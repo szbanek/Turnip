@@ -15,3 +15,9 @@ MonoBehaviour:
   text: "Dzie\u0144 dobry! Czy przypadkiem nie masz w zapasie {QUANTITY} {NAME}?
     Organizuj\u0119 przyj\u0119cie w moim ogrodzie, a brakuje mi tego warzywa do
     sa\u0142atek. Je\u015Bli mo\u017Cesz mi pom\xF3c, b\u0119d\u0119 bardzo wdzi\u0119czny!"
+  positiveAnswer: "Niesamowite! Dzi\u0119kuj\u0119 za dostarczenie {QUANTITY} {NAME}.
+    Moje sa\u0142atki b\u0119d\u0105 teraz kompletnie smakowite na przyj\u0119ciu.
+    Tw\xF3j wk\u0142ad jest niezast\u0105piony. Jeszcze raz, dzi\u0119kuj\u0119!"
+  negativeAnswer: "O nie! Szkoda, \u017Ce nie posiadasz {QUANTITY} {NAME}. Czy m\xF3g\u0142by\u015B
+    spr\xF3bowa\u0107 jeszcze raz? Mo\u017Ce uda\u0142oby Ci si\u0119 je zdoby\u0107.
+    B\u0119d\u0119 wdzi\u0119czny za Twoje dalsze poszukiwania. Dzi\u0119kuj\u0119!"

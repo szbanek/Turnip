@@ -16,3 +16,10 @@ MonoBehaviour:
     {NAME}? Mamy zbli\u017Caj\u0105ce si\u0119 \u015Bwi\u0119to, a moja rodzina uwielbia
     tradycyjne ziemniaki puree. Twoja pomoc w tej kwestii by\u0142aby naprawd\u0119
     cenna!"
+  positiveAnswer: "Serdeczne podzi\u0119kowania za przyniesienie {QUANTITY} {NAME}.
+    Moja rodzina b\u0119dzie zachwycona tradycyjnym puree. Twoja hojno\u015B\u0107
+    jest niezwyk\u0142a. Dzi\u0119kuj\u0119 Ci!"
+  negativeAnswer: "Och, szkoda, \u017Ce nie masz wystarczaj\u0105cej ilo\u015Bci
+    {NAME} dla mojego puree. Czy m\xF3g\u0142by\u015B spr\xF3bowa\u0107 zapyta\u0107
+    s\u0105siad\xF3w lub poszuka\u0107 na ich polach? By\u0142oby wspaniale, gdyby\u015B
+    jeszcze spr\xF3bowa\u0142. Dzi\u0119kuj\u0119 za Twoje wysi\u0142ki!"

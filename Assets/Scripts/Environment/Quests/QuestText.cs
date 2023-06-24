@@ -9,4 +9,12 @@ public class QuestText : ScriptableObject
     [TextArea]
     private string text;
     public string Text => text;
+    [SerializeField]
+    [TextArea]
+    private string positiveAnswer;
+    public string PositiveAnswer => positiveAnswer;
+    [SerializeField]
+    [TextArea]
+    private string negativeAnswer;
+    public string NegativeAnswer => negativeAnswer;
 }

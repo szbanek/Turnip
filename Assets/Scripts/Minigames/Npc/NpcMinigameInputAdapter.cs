@@ -6,7 +6,12 @@ using UnityEngine.InputSystem;
 
 public class NpcMinigameInputAdapter : MonoBehaviour, IInputAdapter
 {
-    public event EventHandler OnAnyClick;
+    private NpcMinigameLogic logic;
+    private Vector2 pos;
+    private void Start()
+    {
+        logic = GetComponent<NpcMinigameLogic>();
+    }
     public void MouseMoveRelative(Vector2 deltaPos)
     {
         return;
@@ -14,7 +19,7 @@ public class NpcMinigameInputAdapter : MonoBehaviour, IInputAdapter
 
     public void MouseMovePosition(Vector2 deltaPos)
     {
-        return;
+        pos = deltaPos;
     }
 
     public void KeyboardW(bool pressed)
@@ -39,6 +44,9 @@ public class NpcMinigameInputAdapter : MonoBehaviour, IInputAdapter
 
     public void MouseClick(bool pressed)
     {
-        if (pressed) OnAnyClick?.Invoke(this, null);
+        if (pressed)
+        {
+            logic.Click(pos);
+        }
     }
 }

@@ -6,11 +6,14 @@ using UnityEngine;
 public class NpcMinigameManager : MonoBehaviour, IMinigameManager
 {
     private NpcMinigameInputAdapter adadpter;
+    private NpcMinigameLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
     private void Start()
     {
         adadpter = GetComponent<NpcMinigameInputAdapter>();
-        adadpter.OnAnyClick += (_,_) => EndMinigame(false);
+        logic = GetComponent<NpcMinigameLogic>();
+        logic.OnLoseEvent += (_,_) => EndMinigame(false);
+        logic.OnWinEvent += (_,_) => EndMinigame(true);
     }
     private void EndMinigame(bool win)
     {
