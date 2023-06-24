@@ -18,10 +18,10 @@ public class EnvironmentInteractor : MonoBehaviour
     [SerializeField]
     private bool debugInfo;
 
-    private GameObject selectedObject = null;
+    private IInteractable selectedObject = null;
     private CharacterController characterController;
 
-    private HashSet<GameObject> selectedObjects = new HashSet<GameObject>();
+    private List<IInteractable> selectedObjects = new List<IInteractable>();
 
     private void Start()
     {
@@ -38,7 +38,10 @@ public class EnvironmentInteractor : MonoBehaviour
         {
             if (collider.CompareTag("Interactive"))
             {
-                selectedObjects.Add(collider.gameObject);
+                if (collider.TryGetComponent(out IInteractable interactable))
+                {
+                    selectedObjects.Add(interactable);
+                }
             }
         }
         UpdateSelectedObject();
@@ -46,29 +49,47 @@ public class EnvironmentInteractor : MonoBehaviour
 
     private void UpdateSelectedObject()
     {
-        GameObject minSelect = null;
+        IInteractable minSelect = null;
         float minDistance = Mathf.Infinity;
-        foreach (GameObject select in selectedObjects)
+        foreach (IInteractable selected in selectedObjects)
         {
-            float distance = (select.transform.position - transform.position).magnitude;
+            float distance = (selected.Position - transform.position).magnitude;
             if (distance <= minDistance)
             {
                 minDistance = distance;
-                minSelect = select;
+                minSelect = selected;
             }
         }
-        if (selectedObject != minSelect && debugInfo)
+        bool unselect = false;
+        bool select = false;
+        if (selectedObject != minSelect)
         {
+            unselect = true;
             if (minSelect == null)
             {
-                Debug.LogFormat("Selected nothing");
+                if (debugInfo)
+                {
+                    Debug.LogFormat("Selected nothing");
+                }
             }
             else
             {
-                Debug.LogFormat("Selected object '{0}'", minSelect.name);
+                if (debugInfo)
+                {
+                    Debug.LogFormat("Selected object");
+                }
+                select = true;
             }
         }
+        if (selectedObject != null && unselect)
+        {
+            selectedObject.Unselect();
+        }
         selectedObject = minSelect;
+        if (selectedObject != null && select)
+        {
+            selectedObject.Select();
+        }
     }
 
     private bool IsScreenPointInViewport(Vector3 screenPos)
@@ -85,7 +106,7 @@ public class EnvironmentInteractor : MonoBehaviour
         {
             if (debugInfo)
             {
-                Debug.LogFormat("Interacting with '{0}'", selectedObject.name);
+                Debug.LogFormat("Interacting with object");
             }
             //selectedObject.GetComponent<Triggers.InteractiveTrigger>()?.Interact();
         }
