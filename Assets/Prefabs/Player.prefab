@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: -1161634678213818434}
   - component: {fileID: -4460253253598149906}
   - component: {fileID: 6950851884722892950}
+  - component: {fileID: 1896393468317315262}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -484,6 +485,27 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 2196193311756998979}
+--- !u!114 &1896393468317315262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed079623f6ed72c4ca69eb85593262a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxStamina: 0
+  StaminaRegen: 0
+  SprintSpeed: 8
+  JumpCost: 0
+  HasSense: 0
+  SenseRange: 0
+  AdditionalVegetableChance: 0
+  MinigameBonus: 0
+  TradeBonus: 0
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0

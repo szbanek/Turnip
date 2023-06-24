@@ -127,4 +127,16 @@ public class PlayerInputAdapter : MonoBehaviour
             inputAdapter.KeyboardD(context.started);
         }
     }
+
+    public void Sprint(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            movement.SetSprintState(true);
+        }
+        else if(context.canceled)
+        {
+            movement.SetSprintState(false);
+        }
+    }
 }

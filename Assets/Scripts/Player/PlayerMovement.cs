@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(PlayerStats))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -30,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public bool MovementEnabled = true;
 
+    private PlayerStats playerStats;
+
     private CharacterController characterController;
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -37,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 right;
     private Vector2 inputSpeed;
     private bool jump;
+    private bool sprint;
     private bool lastGroundedState = true;
     private bool lastWalkingState = true;
 
@@ -63,9 +67,15 @@ public class PlayerMovement : MonoBehaviour
         UpdateDirectionVectors();
     }
 
+    public void SetSprintState(bool state)
+    {
+        sprint = state;
+    }
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
+        playerStats = GetComponent<PlayerStats>();
         UpdateDirectionVectors();
     }
 
@@ -73,8 +83,9 @@ public class PlayerMovement : MonoBehaviour
     {
         float movementDirectionY = moveDirection.y;
         Vector3 currentSpeed;
-        currentSpeed.x = normalSpeed * inputSpeed.y;
-        currentSpeed.y = normalSpeed * inputSpeed.x;
+        float speed = sprint ? playerStats.SprintSpeed : normalSpeed;
+        currentSpeed.x = speed * inputSpeed.y;
+        currentSpeed.y = speed * inputSpeed.x;
         moveDirection = (forward * currentSpeed.x) + (right * currentSpeed.y);
         if (jump)
         {
