@@ -27,10 +27,15 @@ public class UIItemInventory : MonoBehaviour
 
     private void PopulateInventory()
     {
+        if(inventory.Items.Count > inventorySlots.Length)
+        {
+            throw new ArgumentOutOfRangeException("Too many items in inventory");
+        }
         int i = 0;
         foreach(PlayerItem item in inventory.Items)
         {
             inventorySlots[i].Item = item;
+            i++;
         }
     }
 

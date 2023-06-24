@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsListParent: {fileID: 7446898251878453023}
-  inventorySlots:
+  equippedSlots:
     pairs:
     - Key:
         item: 2
