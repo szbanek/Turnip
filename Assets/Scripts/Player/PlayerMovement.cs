@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(PlayerStats))]
+[RequireComponent(typeof(PlayerStamina))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -37,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerStats playerStats;
     private CharacterController characterController;
+    private PlayerStamina stamina;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 right;
     private Vector2 inputSpeed;
     private bool jump;
+    private bool sprintInput;
     private bool sprint;
     private bool lastGroundedState = true;
     private bool lastWalkingState = true;
@@ -55,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        if (characterController.isGrounded)
+        if (characterController.isGrounded && stamina.TryJump())
         {
             jump = true;
             animationController.StartJump();
@@ -71,26 +74,30 @@ public class PlayerMovement : MonoBehaviour
         UpdateDirectionVectors();
     }
 
-    public void SetSprintState(bool state)
+    public void SetSprintInput(bool input)
     {
-        sprint = state;
+        sprintInput = input;
     }
 
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
         playerStats = GetComponent<PlayerStats>();
+        stamina = GetComponent<PlayerStamina>();
         UpdateDirectionVectors();
     }
 
     private void Update()
     {
         float movementDirectionY = moveDirection.y;
+
+        UpdateSprintState();
         Vector3 currentSpeed;
         float speed = sprint ? playerStats.SprintSpeed : normalSpeed;
         currentSpeed.x = speed * inputSpeed.y;
         currentSpeed.y = speed * inputSpeed.x;
         moveDirection = (forward * currentSpeed.x) + (right * currentSpeed.y);
+
         if (jump)
         {
             moveDirection.y = jumpSpeed;
@@ -139,5 +146,34 @@ public class PlayerMovement : MonoBehaviour
     {
         forward = transform.TransformDirection(Vector3.forward);
         right = transform.TransformDirection(Vector3.right);
+    }
+
+    private void UpdateSprintState()
+    {
+        if (sprintInput)
+        {
+            if (sprint)
+            {
+                if (!stamina.TryContinueRun())
+                {
+                    sprint = false;
+                    sprintInput = false;
+                    animationController.StopRunning();
+                }
+            }
+            else
+            {
+                if (stamina.TryStartRun())
+                {
+                    sprint = true;
+                    sprintInput = true;
+                    animationController.StartRunning();
+                }
+                else
+                {
+                    sprintInput = false;
+                }
+            }
+        }
     }
 }

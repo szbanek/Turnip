@@ -154,11 +154,11 @@ public class PlayerInputAdapter : MonoBehaviour
     {
         if (context.started)
         {
-            movement.SetSprintState(true);
+            movement.SetSprintInput(true);
         }
         else if(context.canceled)
         {
-            movement.SetSprintState(false);
+            movement.SetSprintInput(false);
         }
     }
 

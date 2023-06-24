@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: -4460253253598149906}
   - component: {fileID: 6950851884722892950}
   - component: {fileID: 1896393468317315262}
+  - component: {fileID: 6741387975173446621}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -423,15 +424,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed079623f6ed72c4ca69eb85593262a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxStamina: 0
-  StaminaRegen: 0
+  MaxStamina: 20
+  StaminaRegen: 1
   SprintSpeed: 8
-  JumpCost: 0
+  JumpCost: 10
   HasSense: 0
   SenseRange: 0
   AdditionalVegetableChance: 0
   MinigameBonus: 0
   TradeBonus: 0
+--- !u!114 &6741387975173446621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d5ab42070303440afd0de76ece0c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0
