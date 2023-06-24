@@ -25,6 +25,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float gravity;
 
+    [Header("References")]
+    [SerializeField]
+    private PlayerAnimationController animationController;
+
     public System.EventHandler Landed;
     public System.EventHandler<bool> WalkingStateChanged;
 
@@ -32,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
     public bool MovementEnabled = true;
 
     private PlayerStats playerStats;
-
     private CharacterController characterController;
+
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private Vector3 forward;
@@ -54,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         if (characterController.isGrounded)
         {
             jump = true;
-            //_animationController.StartJump();
+            animationController.StartJump();
         }
     }
 
@@ -112,13 +116,13 @@ public class PlayerMovement : MonoBehaviour
         {
             WalkingStateChanged?.Invoke(this, false);
             lastWalkingState = false;
-            //_animationController.StopWalking();
+            animationController.StopWalking();
         }
         if (lastWalkingState == false && characterController.isGrounded && inputSpeed != Vector2.zero)
         {
             WalkingStateChanged?.Invoke(this, true);
             lastWalkingState = true;
-            //_animationController.StartWalking(direction);
+            animationController.StartWalking();
         }
     }
 
@@ -127,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
         if (lastGroundedState == false && characterController.isGrounded == true)
         {
             Landed?.Invoke(this, null);
-            //_animationController.StopJump();
+            animationController.StopJump();
         }
     }
 
