@@ -10,6 +10,8 @@ public class WasdClickLogic : MonoBehaviour
     [SerializeField]
     private float timeLimit = 10;
     [SerializeField]
+    private float timePenalty = 2f;
+    [SerializeField]
     private UIBarController timer;
     [SerializeField]
     private UIBarController clicksCounter;
@@ -18,6 +20,7 @@ public class WasdClickLogic : MonoBehaviour
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private int currentClicks = 0;
+    private float counter = 0;
     private wasd keyToClick;
     private enum wasd
     {
@@ -39,7 +42,11 @@ public class WasdClickLogic : MonoBehaviour
                 OnWinEvent?.Invoke(this, null);
             }
         }
-
+        else
+        {
+            counter += timePenalty;
+            timer.ChangeValueInverted(counter, timeLimit);
+        }
     }
 
     private void Start()
@@ -53,7 +60,6 @@ public class WasdClickLogic : MonoBehaviour
 
     private IEnumerator TimeCourutine()
     {
-        float counter = 0;
         while ((counter += Time.deltaTime) < timeLimit)
         {
             timer.ChangeValueInverted(counter, timeLimit);

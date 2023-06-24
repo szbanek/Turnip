@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredClicks: 10
   timeLimit: 20
+  timePenalty: 2
   timer: {fileID: 2557364277593176347}
   clicksCounter: {fileID: 429301378063539060}
   keyImages:
