@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VillagerHat01
   m_EditorClassIdentifier: 
   prefab: {fileID: 4954493305871755921, guid: f933178d28b9a1142bfe3ced70118a1e, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 3db20d1d8f07bf24daa62b07541fc8e6, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: 9516524e447d5bc43aa6f8cfa5d90380, type: 3}
   slot: 0

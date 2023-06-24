@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VillagerJacket01
   m_EditorClassIdentifier: 
   prefab: {fileID: 4954493305871755921, guid: 139eb8ac389b8c346a9a59a5a45f66e5, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 8514c1936113b2549a24026c448b1402, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: 698f319410cac8d4f930ee9263f3d3ca, type: 3}
   slot: 1

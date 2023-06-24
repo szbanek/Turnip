@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GuardArmour05
   m_EditorClassIdentifier: 
   prefab: {fileID: 198521355705227493, guid: 5039be495614d3d4b90206e4202a647d, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 8514c1936113b2549a24026c448b1402, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: a76c0f4edf3703c41ae77c1c201f679c, type: 3}
   slot: 1

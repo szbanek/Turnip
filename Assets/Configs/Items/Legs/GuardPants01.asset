@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GuardPants01
   m_EditorClassIdentifier: 
   prefab: {fileID: 2501499006257147798, guid: 561265dec0df6214ea3ba725c2085ec9, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 1e7144f69a452e040a827f277e9d2c28, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: 7b523392aed349643afcfea3a8535005, type: 3}
   slot: 2

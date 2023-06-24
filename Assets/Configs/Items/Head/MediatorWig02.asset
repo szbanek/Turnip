@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MediatorWig02
   m_EditorClassIdentifier: 
   prefab: {fileID: 1029304035969929709, guid: 757f0ddbe5711d540a9d4cbe8958db75, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 3db20d1d8f07bf24daa62b07541fc8e6, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: e0f0c897b178a2842895db7a43b51748, type: 3}
   slot: 0

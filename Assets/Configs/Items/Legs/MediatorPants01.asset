@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MediatorPants01
   m_EditorClassIdentifier: 
   prefab: {fileID: 203432177977947527, guid: 0f51574a420d7ef47a17d02cc8751249, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 1e7144f69a452e040a827f277e9d2c28, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: baea7159febfa214b8c9724fb50f68f4, type: 3}
   slot: 2

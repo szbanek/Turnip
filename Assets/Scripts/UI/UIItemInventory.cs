@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SearchService;
 
 public class UIItemInventory : MonoBehaviour
 {
@@ -32,10 +33,13 @@ public class UIItemInventory : MonoBehaviour
             throw new ArgumentOutOfRangeException("Too many items in inventory");
         }
         int i = 0;
+        print("Items");
         foreach(PlayerItem item in inventory.Items)
         {
             inventorySlots[i].Item = item;
-            inventorySlots[i].OnItemPressed += (slot, item) => EquipItem((UIItemSlot)slot, item);
+            Debug.Log(item.Mesh.name);
+            inventorySlots[i].OnItemPressed -= EquipItem;
+            inventorySlots[i].OnItemPressed += EquipItem;
             i++;
         }
     }
@@ -49,12 +53,16 @@ public class UIItemInventory : MonoBehaviour
         }
     }
 
-    private void EquipItem(UIItemSlot slot, PlayerItem item)
+    private void EquipItem(object slotObject, PlayerItem item)
     {
-        PlayerItem.ItemSlotType slotType = item.Slot;
+        UIItemSlot slot = (UIItemSlot)slotObject;
+        PlayerItem.ItemSlotType slotType = item.SlotType;
         PlayerItem currentInSlot = inventory.Slots[slotType];
         inventory.Slots[slotType] = item;
         inventory.UpdateItemsInSlots();
+        PopulateEquipment();
         slot.Item = currentInSlot;
+        inventory.Items.Remove(item);
+        inventory.Items.Add(currentInSlot);
     }
 }

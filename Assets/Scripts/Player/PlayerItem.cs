@@ -20,7 +20,7 @@ public class PlayerItem : ScriptableObject
 
     [SerializeField]
     private ItemSlotType slot;
-    public ItemSlotType Slot => slot;
+    public ItemSlotType SlotType => slot;
 
     private SkinnedMeshRenderer meshRenderer; 
 

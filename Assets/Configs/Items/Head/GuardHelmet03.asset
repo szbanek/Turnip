@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GuardHelmet03
   m_EditorClassIdentifier: 
   prefab: {fileID: 2518119960205358145, guid: 02b47fa7ab8d96d4c90b980e7da22aef, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 3db20d1d8f07bf24daa62b07541fc8e6, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: e8df434fee5abc44395ee28b1d4da2c5, type: 3}
   slot: 0

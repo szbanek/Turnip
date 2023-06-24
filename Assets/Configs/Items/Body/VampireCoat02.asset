@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VampireCoat02
   m_EditorClassIdentifier: 
   prefab: {fileID: 7652074770805415885, guid: ed02c6a68faad5d4984662f0e4656e69, type: 3}
-  inventoryIcon: {fileID: 21300000, guid: 8514c1936113b2549a24026c448b1402, type: 3}
+  inventoryIcon: {fileID: 21300000, guid: 2a907a71e5fc96a40bdf52dbbd592e43, type: 3}
   slot: 1

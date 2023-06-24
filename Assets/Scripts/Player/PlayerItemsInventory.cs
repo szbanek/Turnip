@@ -14,9 +14,7 @@ public class PlayerItemsInventory : MonoBehaviour
     private SerializedDictionary<PlayerItem.ItemSlotType, PlayerItem> slotsContent;
     public SerializedDictionary<PlayerItem.ItemSlotType, PlayerItem> Slots => slotsContent;
 
-    [SerializeField]
-    private List<PlayerItem> items;
-    public List<PlayerItem> Items => items;
+    public List<PlayerItem> Items;
 
     private void Start()
     {

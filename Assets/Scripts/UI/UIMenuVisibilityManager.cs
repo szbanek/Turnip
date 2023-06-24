@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class UIMenuVisibilityManager : MonoBehaviour
 {
@@ -31,11 +32,13 @@ public class UIMenuVisibilityManager : MonoBehaviour
         ApplyVisibilityChange();
     }
 
-    public void SwitchMenu()
+    public void SwitchMenu(InputAction.CallbackContext context)
     {
-        menuShown = !menuShown;
-        ApplyVisibilityChange();
-
+        if (context.started)
+        {
+            menuShown = !menuShown;
+            ApplyVisibilityChange();
+        }
     }
 
     private void ApplyVisibilityChange()
