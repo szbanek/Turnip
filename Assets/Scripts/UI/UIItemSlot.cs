@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Button))]
 [RequireComponent(typeof(Image))]
 public class UIItemSlot : MonoBehaviour
 {
@@ -19,10 +19,14 @@ public class UIItemSlot : MonoBehaviour
     }
 
     private Image image;
+    private Button button;
 
     public void Start()
     {
         image = GetComponent<Image>();
+        button = GetComponent<Button>();
+        button.onClick.AddListener(OnClick);
+        OnItemSet();
     }
 
     private void OnItemSet()
@@ -30,16 +34,18 @@ public class UIItemSlot : MonoBehaviour
         if (item == null)
         {
             image.color = Color.clear;
+            button.interactable = false;
         }
         else
         {
             image.sprite = item.InventoryIcon;
             image.color = Color.white;
+            button.interactable = true;
         }
     }
 
-    private void OnMouseDown()
+    private void OnClick()
     {
-        Debug.Log("Clicked on slot");
+        Debug.Log("Clicked");
     }
 }
