@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8000966781605958693}
   - component: {fileID: 8000966781605958692}
   - component: {fileID: 2423850107232742285}
+  - component: {fileID: 7216152913948830559}
   m_Layer: 5
   m_Name: VegetablesScreen
   m_TagString: Untagged
@@ -106,6 +107,24 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &7216152913948830559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000966781605958694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1d8e210d42b1446b6a2634ce1f44c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 3429411414194486503}
+  - {fileID: 5465202700693299918}
+  - {fileID: 1568370402167445439}
+  - {fileID: 3291509770212287159}
+  - {fileID: 5381744962776565909}
 --- !u!1001 &2021752119840469549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114,6 +133,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8000966781605958695}
     m_Modifications:
+    - target: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: vegetable
+      value: 
+      objectReference: {fileID: 11400000, guid: 574a249a2150d3f45b8318839fd7f6a0, type: 2}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot
@@ -202,9 +225,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809459820811401244, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: Marchew
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935294635104158756, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c7a2acdeb14c8f4a9bed9fd246312bb, type: 3}
+    - target: {fileID: 9142795891135287540, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: Bardzo pyszne warzywo. Popularne w Machwlandzie.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+--- !u!114 &3429411414194486503 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+  m_PrefabInstance: {fileID: 2021752119840469549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8a64ddd00cb1f408b0f986be6ffd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &9216043842040294105 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
@@ -218,6 +264,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8000966781605958695}
     m_Modifications:
+    - target: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: vegetable
+      value: 
+      objectReference: {fileID: 11400000, guid: 232d8a4d60e34144ea3a22fa8b6d7812, type: 2}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (3)
@@ -306,9 +356,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809459820811401244, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: Papryka
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935294635104158756, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fc630e306736a074caa19bba8a4be92e, type: 3}
+    - target: {fileID: 9142795891135287540, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: "Najcz\u0119\u015Bciej sk\u0142adowana w Pojemniku."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+--- !u!114 &3291509770212287159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+  m_PrefabInstance: {fileID: 2176586517415963773}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8a64ddd00cb1f408b0f986be6ffd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &9070120161104409737 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
@@ -322,6 +395,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8000966781605958695}
     m_Modifications:
+    - target: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: vegetable
+      value: 
+      objectReference: {fileID: 11400000, guid: d53703fa0edf692499539079eed4dd7a, type: 2}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (2)
@@ -410,9 +487,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809459820811401244, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: Rzepa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935294635104158756, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec48650fb126fa04d89f4b46d0150af4, type: 3}
+    - target: {fileID: 9142795891135287540, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: "Jaka jest ka\u017Cdy widzi."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+--- !u!114 &1568370402167445439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+  m_PrefabInstance: {fileID: 2763798155814099317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8a64ddd00cb1f408b0f986be6ffd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &5021997487710978433 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
@@ -426,6 +526,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8000966781605958695}
     m_Modifications:
+    - target: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: vegetable
+      value: 
+      objectReference: {fileID: 11400000, guid: 13cd6328554b4204881006941cde445d, type: 2}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (1)
@@ -514,6 +618,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809459820811401244, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: Chrzan
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935294635104158756, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bc05d27d66053845afaf443881275a6, type: 3}
+    - target: {fileID: 9142795891135287540, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: "Ulubiona przyprawa francuskich wampirzych przemitnik\xF3w."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
@@ -522,6 +638,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
   m_PrefabInstance: {fileID: 8665294789145848836}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5465202700693299918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+  m_PrefabInstance: {fileID: 8665294789145848836}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8a64ddd00cb1f408b0f986be6ffd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8734397028706747999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,6 +657,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8000966781605958695}
     m_Modifications:
+    - target: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: vegetable
+      value: 
+      objectReference: {fileID: 11400000, guid: 79b51cb2d4bb47745855e886259ad4d7, type: 2}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (4)
@@ -618,6 +749,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809459820811401244, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: "Sa\u0142ata"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935294635104158756, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c5de8a1242f1094ca513f5dee75005f, type: 3}
+    - target: {fileID: 9142795891135287540, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_text
+      value: Niestety to nie te zielone.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
@@ -626,3 +769,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
   m_PrefabInstance: {fileID: 8734397028706747999}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5381744962776565909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3718006634019065546, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+  m_PrefabInstance: {fileID: 8734397028706747999}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8a64ddd00cb1f408b0f986be6ffd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

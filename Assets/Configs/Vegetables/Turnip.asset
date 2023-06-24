@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Turnip
   m_EditorClassIdentifier: 
   type: 4
-  icon: {fileID: 0}
+  description: "Jaka jest ka\u017Cdy widzi."
+  icon: {fileID: 21300000, guid: ec48650fb126fa04d89f4b46d0150af4, type: 3}
   minigames:
   - {fileID: 2416979339778843704, guid: 18896512800a10e498cc76942c687977, type: 3}

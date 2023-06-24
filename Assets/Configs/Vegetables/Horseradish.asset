@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Horseradish
   m_EditorClassIdentifier: 
   type: 3
-  icon: {fileID: 0}
+  description: "Ulubiona przyprawa francuskich wampirzych przemitnik\xF3w."
+  icon: {fileID: 21300000, guid: 2bc05d27d66053845afaf443881275a6, type: 3}
   minigames:
   - {fileID: 707958366025699345, guid: 8736c47c7eac89643885e0af8b61812b, type: 3}
