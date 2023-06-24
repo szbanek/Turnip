@@ -16,5 +16,6 @@ MonoBehaviour:
   description: Bardzo pyszne warzywo. Popularne w Marchwlandzie.
   icon: {fileID: 21300000, guid: 7c7a2acdeb14c8f4a9bed9fd246312bb, type: 3}
   minigames:
+  - {fileID: 9165419858033168015, guid: f215deb3b2fbff6449423631aa69c8ca, type: 3}
   - {fileID: 3070424196384904782, guid: d411ef224ef846a44b16fc1425b18bb6, type: 3}
   - {fileID: 4322711869705882289, guid: 6fef3c2c5162808429a9ed4df2de6523, type: 3}
