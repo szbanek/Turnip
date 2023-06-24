@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName="Scriptable Objects/Vegetable")]
 public class Vegetable : ScriptableObject
 {
-    public enum VegetableType { Carrot, Lettuce, Pepper, Horseradish, Turnip }
+    public enum VegetableType { Carrot, Lettuce, Pepper, Horseradish, Turnip, Npc}
 
     [SerializeField]
     private VegetableType type;
