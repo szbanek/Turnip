@@ -28,7 +28,7 @@ public class SnakeItem : MonoBehaviour
     private void Update()
     {
         print(transform.up);
-        transform.Translate(transform.up * 0.1f, Space.World);
+        transform.Translate(transform.up * speed * Time.deltaTime, Space.World);
         Vector2 snakePosition = goalTransform.InverseTransformPoint(transform.position);
         if (goalTransform.rect.Contains(snakePosition))
         {

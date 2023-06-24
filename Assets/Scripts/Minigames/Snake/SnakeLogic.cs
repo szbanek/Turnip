@@ -7,12 +7,8 @@ public class SnakeLogic : MonoBehaviour
 {
     [SerializeField]
     private float timeLimit = 10;
-    // [SerializeField]
-    // private UIBarController timer;
-    // [SerializeField]
-    // private UIBarController clicksCounter;
-    // [SerializeField]
-    // private SerializedDictionary<wasd, UIImageColorer> keyImages;
+    [SerializeField]
+    private UIBarController timer;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private SnakeItem snake;
@@ -55,9 +51,7 @@ public class SnakeLogic : MonoBehaviour
     {
         currentDirection = wasd.w;
         snake.OnGoalReachedEvent += (_, win) => HandleEvent(win);
-        // keyImages[currentDirection].ColorImage();
-        // clicksCounter.ChangeValue(0, 1);
-        // timer.ChangeValueInverted(0, 1);
+        timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());
     }
 
@@ -86,7 +80,7 @@ public class SnakeLogic : MonoBehaviour
     {
         while ((counter += Time.deltaTime) < timeLimit)
         {
-            // timer.ChangeValueInverted(counter, timeLimit);
+            timer.ChangeValueInverted(counter, timeLimit);
             yield return null;
         }
         OnLoseEvent?.Invoke(this, null);

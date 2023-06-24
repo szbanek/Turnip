@@ -18,3 +18,4 @@ MonoBehaviour:
   minigames:
   - {fileID: 707958366025699345, guid: 8736c47c7eac89643885e0af8b61812b, type: 3}
   - {fileID: 7903948005427713481, guid: bbbcf3769ba0c514895c99295294ab88, type: 3}
+  - {fileID: 5122834791637458983, guid: ccbe4ea7aa9fb4142a85aa7a3eb0dd5f, type: 3}
