@@ -14,112 +14,18 @@ public class PlayerInputAdapter : MonoBehaviour
     [HideInInspector]
     public IInputAdapter inputAdapter = null;
 
-    private Vector2 lastMoveInput = Vector2.zero;
-
     public void Move(InputAction.CallbackContext context)
     {
-        Vector2 moveInput = context.ReadValue<Vector2>();
-
         if (inputAdapter != null)
         {
-            switch (moveInput.x)
-            {
-                case > 0:
-                    switch (lastMoveInput.x)
-                    {
-                        case < 0:
-                            inputAdapter.KeyboardA(false);
-                            inputAdapter.KeyboardD(true);
-                            break;
-
-                        case 0:
-                            inputAdapter.KeyboardD(true);
-                            break;
-                    }
-                    break;
-
-                case < 0:
-                    switch (lastMoveInput.x)
-                    {
-                        case > 0:
-                            inputAdapter.KeyboardD(false);
-                            inputAdapter.KeyboardA(true);
-                            break;
-
-                        case 0:
-                            inputAdapter.KeyboardA(true);
-                            break;
-                    }
-                    break;
-
-                case 0:
-                    switch(lastMoveInput.x)
-                    {
-                        case > 0:
-                            inputAdapter.KeyboardD(false);
-                            break;
-
-                        case < 0:
-                            inputAdapter.KeyboardA(false);
-                            break;
-                    }
-                    break;
-            }
-
-            switch (moveInput.y)
-            {
-                case > 0:
-                    switch (lastMoveInput.y)
-                    {
-                        case < 0:
-                            inputAdapter.KeyboardS(false);
-                            inputAdapter.KeyboardW(true);
-                            break;
-
-                        case 0:
-                            inputAdapter.KeyboardW(true);
-                            break;
-                    }
-                    break;
-
-                case < 0:
-                    switch (lastMoveInput.y)
-                    {
-                        case > 0:
-                            inputAdapter.KeyboardW(false);
-                            inputAdapter.KeyboardS(true);
-                            break;
-
-                        case 0:
-                            inputAdapter.KeyboardS(true);
-                            break;
-                    }
-                    break;
-
-                case 0:
-                    switch (lastMoveInput.y)
-                    {
-                        case > 0:
-                            inputAdapter.KeyboardW(false);
-                            break;
-
-                        case < 0:
-                            inputAdapter.KeyboardS(false);
-                            break;
-                    }
-                    break;
-            }
-            lastMoveInput = moveInput;
             return;
         }
 
         if (!EnableMovement)
         {
-            lastMoveInput = moveInput;
             return;
         }
-        movement.Move(moveInput);
-        lastMoveInput = moveInput;
+        movement.Move(context.ReadValue<Vector2>());
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -154,7 +60,7 @@ public class PlayerInputAdapter : MonoBehaviour
         movement.Look(context.ReadValue<Vector2>());
     }
 
-    public void MouseClick(InputAction.CallbackContext context)
+    public void Interact(InputAction.CallbackContext context)
     {
         if (inputAdapter != null)
         {
@@ -166,5 +72,51 @@ public class PlayerInputAdapter : MonoBehaviour
         }
     }
 
+    public void KeyboardW(InputAction.CallbackContext context)
+    {
+        if (inputAdapter == null)
+        {
+            return;
+        }
+        if (context.started || context.canceled)
+        {
+            inputAdapter.KeyboardW(context.started);
+        }
+    }
 
+    public void KeyboardA(InputAction.CallbackContext context)
+    {
+        if (inputAdapter == null)
+        {
+            return;
+        }
+        if (context.started || context.canceled)
+        {
+            inputAdapter.KeyboardA(context.started);
+        }
+    }
+
+    public void KeyboardS(InputAction.CallbackContext context)
+    {
+        if (inputAdapter == null)
+        {
+            return;
+        }
+        if (context.started || context.canceled)
+        {
+            inputAdapter.KeyboardS(context.started);
+        }
+    }
+
+    public void KeyboardD(InputAction.CallbackContext context)
+    {
+        if (inputAdapter == null)
+        {
+            return;
+        }
+        if (context.started || context.canceled)
+        {
+            inputAdapter.KeyboardD(context.started);
+        }
+    }
 }
