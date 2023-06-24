@@ -9,6 +9,7 @@ public class SpamUpManager : MonoBehaviour, IMinigameManager
     public event EventHandler<bool> OnMinigameEndEvent;
     public void EndMinigame(bool win)
     {
+        Debug.Log(win);
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
     }
