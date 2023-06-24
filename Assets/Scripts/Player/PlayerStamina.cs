@@ -49,6 +49,10 @@ public class PlayerStamina : MonoBehaviour
     private void LateUpdate()
     {
         currentStamina += playerStats.StaminaRegen * Time.deltaTime;
+        if(currentStamina > playerStats.MaxStamina)
+        {
+            currentStamina = playerStats.MaxStamina;
+        }
         UIHUDController.Instance.StaminaBar.ChangeValue(currentStamina, playerStats.MaxStamina);
     }
 }
