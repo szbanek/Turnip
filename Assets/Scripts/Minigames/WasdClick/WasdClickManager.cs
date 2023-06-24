@@ -3,14 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpamUpManager : MonoBehaviour, IMinigameManager
+public class WasdClickManager : MonoBehaviour, IMinigameManager
 {
-    private SpamUpInputAdadpter adadpter;
-    private SpamUpLogic logic;
+    private WasdClickInputAdapter adadpter;
+    private WasdClickLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
     private void Start()
     {
-        adadpter = GetComponent<SpamUpInputAdadpter>();
+        adadpter = GetComponent<WasdClickInputAdapter>();
+        logic = GetComponent<WasdClickLogic>();
         logic.OnLoseEvent += (_,_) => EndMinigame(false);
         logic.OnWinEvent += (_,_) => EndMinigame(true);
     }

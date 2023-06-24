@@ -353,7 +353,7 @@
                 {
                     "name": "",
                     "id": "a29f1948-9348-4757-b3ce-fb46ec61d38f",
-                    "path": "<SwitchProControllerHID>/buttonEast",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
