@@ -7,14 +7,14 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     [Header("Config")]
     [SerializeField]
     private Vector3 iconPosition;
-    [SerializeField]
-    private List<GameObject> minigames;
 
     [Header("References")]
     [SerializeField]
     private GameObject interactionIconPrefab;
     [SerializeField]
     private InteractionIconData interactionIconData;
+    [SerializeField]
+    private Vegetable vegetable;
 
     private InteractionIconController interactionIconController = null;
     public Vector3 Position => transform.position;
@@ -22,8 +22,8 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        int index = Random.Range(0, minigames.Count);
-        MinigameManager.Instance.SpawnMinigame(minigames[index], gameObject);
+        int index = Random.Range(0, vegetable.Minigames.Count);
+        MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], gameObject);
     }
 
     public void Select()

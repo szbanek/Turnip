@@ -1844,6 +1844,7 @@ MonoBehaviour:
   interactionIconCanvas: {fileID: 815102628}
   minigamePanel: {fileID: 1334062862}
   minigameCanvas: {fileID: 831182039}
+  staminaBar: {fileID: 0}
 --- !u!1 &1671827626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,10 +2053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
-  minigames:
-  - {fileID: 4651109796331769096, guid: 89d007639ab03324a960b36b12e19b3a, type: 3}
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: bfe6b04bfdb47d44ca33df44cbff4b2a, type: 2}
+  vegetable: {fileID: 11400000, guid: 574a249a2150d3f45b8318839fd7f6a0, type: 2}
 --- !u!1001 &2012546266
 PrefabInstance:
   m_ObjectHideFlags: 0
