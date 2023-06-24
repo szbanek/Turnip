@@ -5,7 +5,9 @@ using UnityEngine.InputSystem;
 
 public interface IInputAdapter
 {
-    public void MouseMove(Vector2 deltaPos);
+    public void MouseMoveRelative(Vector2 deltaPos);
+    public void MouseMovePosition(Vector2 deltaPos);
+
     public void KeyboardW(bool pressed);
     public void KeyboardA(bool pressed);
     public void KeyboardS(bool pressed);

@@ -15,7 +15,12 @@ public class WasdClickInputAdapter : MonoBehaviour, IInputAdapter
     }
 
 
-    public void MouseMove(Vector2 deltaPos)
+    public void MouseMoveRelative(Vector2 deltaPos)
+    {
+        return;
+    }
+
+    public void MouseMovePosition(Vector2 deltaPos)
     {
         return;
     }

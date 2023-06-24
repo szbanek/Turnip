@@ -51,7 +51,7 @@ public class PlayerInputAdapter : MonoBehaviour
     {
         if (inputAdapter != null)
         {
-            inputAdapter.MouseMove(context.ReadValue<Vector2>());
+            inputAdapter.MouseMoveRelative(context.ReadValue<Vector2>());
             return;
         }
 

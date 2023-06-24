@@ -14,8 +14,12 @@ public class SpamUpInputAdadpter : MonoBehaviour, IInputAdapter
         logic = GetComponent<SpamUpLogic>();
     }
 
+    public void MouseMoveRelative(Vector2 deltaPos)
+    {
+        return;
+    }
 
-    public void MouseMove(Vector2 deltaPos)
+    public void MouseMovePosition(Vector2 deltaPos)
     {
         return;
     }

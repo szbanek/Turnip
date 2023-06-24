@@ -14,9 +14,14 @@ public class MinigameInputAdapter : MonoBehaviour
     {
         adapter = adapterSerialised as IInputAdapter;
     }
-    public void MouseMove(InputAction.CallbackContext context)
+    public void MouseMoveRelative(InputAction.CallbackContext context)
     {
-        adapter.MouseMove(context.ReadValue<Vector2>());
+        adapter.MouseMoveRelative(context.ReadValue<Vector2>());
+    }
+
+    public void MouseMovePosition(InputAction.CallbackContext context)
+    {
+        adapter.MouseMovePosition(context.ReadValue<Vector2>());
     }
 
     public void KeyboardW(InputAction.CallbackContext context)
@@ -27,7 +32,6 @@ public class MinigameInputAdapter : MonoBehaviour
 
     public void KeyboardA(InputAction.CallbackContext context)
     {
-        Debug.Log('a');
         if (context.started) adapter.KeyboardA(true);
         if (context.canceled) adapter.KeyboardA(false);
     }
