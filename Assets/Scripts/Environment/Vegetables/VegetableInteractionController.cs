@@ -16,6 +16,8 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     [SerializeField]
     private Vegetable vegetable;
 
+    public event System.EventHandler OnPickedUp;
+
     private InteractionIconController interactionIconController = null;
     public Vector3 Position => transform.position;
     private bool selected = false;
@@ -55,6 +57,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         {
             FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 1);
         }
+        OnPickedUp?.Invoke(this, null);
         Destroy(gameObject);
     }
 
