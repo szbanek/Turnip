@@ -1,0 +1,64 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpinLogic : MonoBehaviour
+{
+    [SerializeField]
+    GameObject center;
+    [SerializeField]
+    private int requiredSpins = 10;
+    [SerializeField]
+    private float reduceClicksCooldown = 1f;
+    [SerializeField]
+    private float timeLimit = 10;
+    public event EventHandler OnWinEvent;
+    public event EventHandler OnLoseEvent;
+    private float currentAngle = 0;
+    private int currentSpins = 0;
+
+    public void IncreaseClicks(Vector2 vector)
+    {
+        Vector3 tmp = center.transform.position - new Vector3(vector.x, vector.y, 0);
+        float angle = SignedAngleBetween(center.transform.position, tmp);
+        if (angle>currentAngle)
+        {
+            currentAngle = angle;
+        }
+        else if(360 - currentAngle < 20 && angle < 20)
+        {
+            currentAngle = angle;
+            currentSpins++;
+            Debug.Log(currentSpins);
+        }
+        if (currentSpins >= requiredSpins)
+        {
+            OnWinEvent?.Invoke(this, null);
+        }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(TimeCourutine());
+    }
+
+    private IEnumerator TimeCourutine()
+    {
+        for (int i = 0; i <= timeLimit; i++)
+        {
+            yield return new WaitForSeconds(1);
+        }
+        OnLoseEvent?.Invoke(this, null);
+    }
+
+    float SignedAngleBetween(Vector3 a, Vector3 b)
+    {
+        float angle = Vector3.SignedAngle(a, b, Vector3.forward); //Returns the angle between -180 and 180.
+        if (angle < 0)
+        {
+            angle = 360 - angle * -1;
+        }
+        return (angle);
+    }
+}
