@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SearchService;
+using UnityEngine.UI;
 
 public class UIItemInventory : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class UIItemInventory : MonoBehaviour
     private GameObject itemsListParent;
     [SerializeField]
     private SerializedDictionary<PlayerItem.ItemSlotType, UIItemSlot> equippedSlots;
+    [SerializeField]
+    private Text statsText;
+    [SerializeField]
+    [Multiline]
+    private string statsString;
 
     private PlayerItemsInventory inventory;
     private UIItemSlot[] inventorySlots;
@@ -24,6 +30,12 @@ public class UIItemInventory : MonoBehaviour
         inventory = FindObjectOfType<PlayerItemsInventory>();
         PopulateEquipment();
         PopulateInventory();
+        statsText.text = string.Format(statsString,
+            inventory.TotalModifier.SprintSpeed,
+            inventory.TotalModifier.MaxStamina,
+            inventory.TotalModifier.StaminaRegen,
+            inventory.TotalModifier.JumpCost,
+            inventory.TotalModifier.AdditionalVegetableChance);
     }
 
     private void PopulateInventory()
@@ -33,7 +45,6 @@ public class UIItemInventory : MonoBehaviour
             throw new ArgumentOutOfRangeException("Too many items in inventory");
         }
         int i = 0;
-        print("Items");
         foreach(ItemInstance item in inventory.Items)
         {
             inventorySlots[i].Item = item;
@@ -63,5 +74,11 @@ public class UIItemInventory : MonoBehaviour
         slot.Item = currentInSlot;
         inventory.Items.Remove(item);
         inventory.Items.Add(currentInSlot);
+        statsText.text = string.Format(statsString,
+            inventory.TotalModifier.SprintSpeed,
+            inventory.TotalModifier.MaxStamina,
+            inventory.TotalModifier.StaminaRegen,
+            inventory.TotalModifier.JumpCost,
+            inventory.TotalModifier.AdditionalVegetableChance);
     }
 }
