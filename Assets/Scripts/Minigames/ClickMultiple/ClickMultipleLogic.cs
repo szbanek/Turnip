@@ -10,6 +10,10 @@ public class ClickMultipleLogic : MonoBehaviour
     private int requiredClicks = 10;
     [SerializeField]
     private float timeLimit = 10;
+    [SerializeField]
+    private UIBarController timer;
+    [SerializeField]
+    private UIBarController clickCounter;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private List<ClickMultipleItem> peppers;
@@ -35,12 +39,19 @@ public class ClickMultipleLogic : MonoBehaviour
     }
     private void Start()
     {
+        clickCounter.ChangeValue(0, 1);
+        timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());
     }
 
     private IEnumerator TimeCourutine()
     {
-        yield return new WaitForSeconds(timeLimit);
+        float counter = 0;
+        while ((counter += Time.deltaTime) < timeLimit)
+        {
+            timer.ChangeValueInverted(counter, timeLimit);
+            yield return null;
+        }
         OnLoseEvent?.Invoke(this, null);
     }
 
@@ -53,6 +64,7 @@ public class ClickMultipleLogic : MonoBehaviour
     private void PepperPulledUp()
     {
         clickedPeppers++;
+        clickCounter.ChangeValue(clickedPeppers, requiredClicks);
         if (clickedPeppers >= requiredClicks)
         {
             OnWinEvent?.Invoke(this, null);

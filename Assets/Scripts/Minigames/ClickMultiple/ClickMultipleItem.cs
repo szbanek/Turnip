@@ -10,6 +10,8 @@ public class ClickMultipleItem : MonoBehaviour
     private ClickMultipleLogic logic;
     [SerializeField]
     private float speed = 1f;
+    [SerializeField]
+    private RectTransform gameArea;
     public event EventHandler OnPulledUpEvent;
     private Vector3 direction;
     private float rightBoundary;
@@ -24,12 +26,11 @@ public class ClickMultipleItem : MonoBehaviour
             logic = GetComponentInParent<ClickMultipleLogic>();
         }
         logic.NewPepper(this);
-        RectTransform logicTransform = logic.transform as RectTransform;
         RectTransform pepperTransform = transform as RectTransform;
-        rightBoundary = logicTransform.rect.xMax - logicTransform.rect.xMin - pepperTransform.rect.width/2;
-        leftBoundary = pepperTransform.rect.width/2;
-        upperBoundary = logicTransform.rect.yMax - logicTransform.rect.yMin - pepperTransform.rect.height/2;
-        lowerBoundary = pepperTransform.rect.height/2;
+        rightBoundary = gameArea.position.x + gameArea.rect.xMax - (pepperTransform.rect.width * Mathf.Sqrt(2)) / 2;
+        leftBoundary = gameArea.position.x + gameArea.rect.xMin + (pepperTransform.rect.width * Mathf.Sqrt(2)) / 2;
+        upperBoundary = gameArea.position.y + gameArea.rect.yMax - (pepperTransform.rect.width * Mathf.Sqrt(2)) / 2;
+        lowerBoundary = gameArea.position.y + gameArea.rect.yMin + (pepperTransform.rect.width * Mathf.Sqrt(2)) / 2;
     }
     private void Update()
     {
