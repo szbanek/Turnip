@@ -529,14 +529,41 @@ MonoBehaviour:
     pairs:
     - Key:
         item: 2
-      Value: {fileID: 11400000, guid: 2f939e6bff7e82c47ba7349dce5c3315, type: 2}
+      Value:
+        Item: {fileID: 11400000, guid: 2f939e6bff7e82c47ba7349dce5c3315, type: 2}
+        Modifier:
+          MaxStamina: 0
+          StaminaRegen: 0
+          SprintSpeed: 0
+          JumpCost: 0
+          SenseRange: 0
+          AdditionalVegetableChance: 0
+          MinigameBonus: 0
     - Key:
         item: 1
-      Value: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
+      Value:
+        Item: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
+        Modifier:
+          MaxStamina: 0
+          StaminaRegen: 0
+          SprintSpeed: 0
+          JumpCost: 0
+          SenseRange: 0
+          AdditionalVegetableChance: 0
+          MinigameBonus: 0
     - Key:
         item: 0
-      Value: {fileID: 11400000, guid: fc6e8df24ce99f74fa3c0b827fc551be, type: 2}
-  items: []
+      Value:
+        Item: {fileID: 11400000, guid: fc6e8df24ce99f74fa3c0b827fc551be, type: 2}
+        Modifier:
+          MaxStamina: 0
+          StaminaRegen: 0
+          SprintSpeed: 0
+          JumpCost: 0
+          SenseRange: 0
+          AdditionalVegetableChance: 0
+          MinigameBonus: 0
+  Items: []
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0

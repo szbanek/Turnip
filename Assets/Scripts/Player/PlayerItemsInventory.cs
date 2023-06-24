@@ -11,10 +11,10 @@ public class PlayerItemsInventory : MonoBehaviour
 
     [Header("Slots")]
     [SerializeField]
-    private SerializedDictionary<PlayerItem.ItemSlotType, PlayerItem> slotsContent;
-    public SerializedDictionary<PlayerItem.ItemSlotType, PlayerItem> Slots => slotsContent;
+    private SerializedDictionary<PlayerItem.ItemSlotType, ItemInstance> slotsContent;
+    public SerializedDictionary<PlayerItem.ItemSlotType, ItemInstance> Slots => slotsContent;
 
-    public List<PlayerItem> Items;
+    public List<ItemInstance> Items;
 
     private void Start()
     {
@@ -26,8 +26,8 @@ public class PlayerItemsInventory : MonoBehaviour
         PlayerItem.ItemSlotType[] slots = (PlayerItem.ItemSlotType[])Enum.GetValues(typeof(PlayerItem.ItemSlotType));
         foreach (PlayerItem.ItemSlotType slot in slots)
         {
-            renderers[slot].sharedMaterials = slotsContent[slot].Materials;
-            renderers[slot].sharedMesh = slotsContent[slot].Mesh;
+            renderers[slot].sharedMaterials = slotsContent[slot].Item.Materials;
+            renderers[slot].sharedMesh = slotsContent[slot].Item.Mesh;
         }
     }
 }

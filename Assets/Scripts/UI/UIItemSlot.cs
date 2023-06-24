@@ -7,8 +7,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class UIItemSlot : MonoBehaviour
 {
-    private PlayerItem item;
-    public PlayerItem Item
+    private ItemInstance item;
+    public ItemInstance Item
     {
         get => item;
         set
@@ -21,7 +21,7 @@ public class UIItemSlot : MonoBehaviour
     private Image image;
     private Button button;
 
-    public event System.EventHandler<PlayerItem> OnItemPressed;
+    public event System.EventHandler<ItemInstance> OnItemPressed;
 
     public void Start()
     {
@@ -40,7 +40,7 @@ public class UIItemSlot : MonoBehaviour
         }
         else
         {
-            image.sprite = item.InventoryIcon;
+            image.sprite = item.Item.InventoryIcon;
             image.color = Color.white;
             button.interactable = true;
         }
