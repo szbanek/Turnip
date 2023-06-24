@@ -13,7 +13,7 @@ public class HardestGameItem : MonoBehaviour
     private GameObject goalZone;
     public event EventHandler<bool> OnGoalReachedEvent;
     private bool held = false;
-    void Start()
+    void Awake()
     {
         if (logic == null)
         {
