@@ -51,6 +51,10 @@ public class SimonLogic : MonoBehaviour
                 Debug.Log(keyToClick[currentClicks]);
             }
         }
+        else
+        {
+            OnLoseEvent?.Invoke(this, null);
+        }
 
     }
 
