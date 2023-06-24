@@ -16,6 +16,9 @@ public class PlayerItemsInventory : MonoBehaviour
 
     public List<ItemInstance> Items;
 
+    private PlayerStatsModifier totalModifier;
+    public PlayerStatsModifier TotalModifier => totalModifier;
+
     private void Start()
     {
         UpdateItemsInSlots();
@@ -23,11 +26,13 @@ public class PlayerItemsInventory : MonoBehaviour
 
     public void UpdateItemsInSlots()
     {
+        totalModifier = new PlayerStatsModifier();
         PlayerItem.ItemSlotType[] slots = (PlayerItem.ItemSlotType[])Enum.GetValues(typeof(PlayerItem.ItemSlotType));
         foreach (PlayerItem.ItemSlotType slot in slots)
         {
             renderers[slot].sharedMaterials = slotsContent[slot].Item.Materials;
             renderers[slot].sharedMesh = slotsContent[slot].Item.Mesh;
+            totalModifier += slotsContent[slot].Modifier;
         }
     }
 }

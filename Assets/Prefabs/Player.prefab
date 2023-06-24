@@ -450,15 +450,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed079623f6ed72c4ca69eb85593262a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxStamina: 20
-  StaminaRegen: 1
-  SprintSpeed: 8
-  JumpCost: 10
-  HasSense: 0
-  SenseRange: 0
-  AdditionalVegetableChance: 0
-  MinigameBonus: 0
-  TradeBonus: 0
+  maxStamina: 20
+  staminaRegen: 1
+  sprintSpeed: 6
+  jumpCost: 10
+  additionalVegetableChance: 0
+  minigameBonus: 0
 --- !u!114 &6741387975173446621
 MonoBehaviour:
   m_ObjectHideFlags: 0
