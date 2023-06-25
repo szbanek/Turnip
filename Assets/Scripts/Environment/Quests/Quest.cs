@@ -19,7 +19,6 @@ public class Quest
         this.text = text;
         this.text = this.text.Replace("{NAME}", Vegetable.TypeToString(type));
         this.text = this.text.Replace("{QUANTITY}", quantity.ToString());
-        Debug.Log(text);
         this.positiveAnswer = positiveAnswer;
         this.positiveAnswer = this.positiveAnswer.Replace("{NAME}", Vegetable.TypeToString(type));
         this.positiveAnswer = this.positiveAnswer.Replace("{QUANTITY}", quantity.ToString());

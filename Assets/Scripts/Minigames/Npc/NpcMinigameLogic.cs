@@ -16,10 +16,9 @@ public class NpcMinigameLogic : MonoBehaviour
 
     public void Click(Vector2 vector)
     {
-        if (done) return;
         RectTransform rectTransform = button.transform as RectTransform;
         Vector2 localMousePosition = rectTransform.InverseTransformPoint(vector);
-        if (rectTransform.rect.Contains(localMousePosition))
+        if (rectTransform.rect.Contains(localMousePosition) && !done)
         {
             if (inventory.TryRemoveItem(quest.Type, quest.Quantity))
             {
@@ -29,9 +28,13 @@ public class NpcMinigameLogic : MonoBehaviour
             else
             {
                 textField.ChangeText(quest.NegativeAnswer);
-                if(done) OnWinEvent?.Invoke(this, null);
-                else OnLoseEvent?.Invoke(this, null);
+
             }
+        }
+        else
+        {
+            if (done) OnWinEvent?.Invoke(this, null);
+            else OnLoseEvent?.Invoke(this, null);
         }
     }
     private void Start()
