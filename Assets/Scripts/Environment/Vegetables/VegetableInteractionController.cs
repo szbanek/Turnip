@@ -32,7 +32,6 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         if (questManager != null)
         {
             MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], this, questManager.Quest);
-            Unselect();
             return;
         }
         MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], this);
@@ -64,12 +63,16 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
 
     public void MinigameEnd(bool win)
     {
+        if (questManager != null)
+        {
+            return;
+        }
         if (win)
         {
             FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 1);
             OnPickedUp?.Invoke(this, null);
-            Destroy(gameObject);
         }
+        Destroy(gameObject);
     }
 
     private void Start()

@@ -6,6 +6,8 @@ public class MinigameManager : Singleton<MinigameManager>
 {
     private RectTransform minigameCanvas;
     private RectTransform minigamePanel;
+    private RectTransform npcCanvas;
+    private RectTransform npcPanel;
     private PlayerInputAdapter playerInputAdapter;
 
     private GameObject currentMinigame = null;
@@ -15,7 +17,11 @@ public class MinigameManager : Singleton<MinigameManager>
     {
         minigameCanvas = UIHUDController.Instance.MinigameCanvas;
         minigamePanel = UIHUDController.Instance.MinigamePanel;
+        npcCanvas = UIHUDController.Instance.NPCCanvas;
+        npcPanel = UIHUDController.Instance.NPCPanel;
         playerInputAdapter = FindObjectOfType<PlayerInputAdapter>();
+        minigamePanel.gameObject.SetActive(false);
+        npcPanel.gameObject.SetActive(false);
     }
 
     public void SpawnMinigame(GameObject minigame, VegetableInteractionController spawner)
@@ -31,8 +37,8 @@ public class MinigameManager : Singleton<MinigameManager>
     public void SpawnMinigame(GameObject minigame, VegetableInteractionController spawner, Quest quest)
     {
         CursorManager.Instance.UnlockCursor();
-        minigamePanel.gameObject.SetActive(true);
-        currentMinigame = Instantiate(minigame, minigameCanvas);
+        npcPanel.gameObject.SetActive(true);
+        currentMinigame = Instantiate(minigame, npcCanvas);
         currentMinigame.GetComponent<NpcMinigameLogic>()?.SetQuest(quest);
         currentMinigameSpawner = spawner;
         playerInputAdapter.inputAdapter = currentMinigame.GetComponent<IInputAdapter>();
@@ -43,6 +49,7 @@ public class MinigameManager : Singleton<MinigameManager>
     {
         CursorManager.Instance.LockCursor();
         minigamePanel.gameObject.SetActive(false);
+        npcPanel.gameObject.SetActive(false);
         playerInputAdapter.inputAdapter = null;
         Destroy(currentMinigame);
         currentMinigameSpawner.MinigameEnd(win);

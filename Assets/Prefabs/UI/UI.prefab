@@ -76,6 +76,83 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 4041860964421208550, guid: 6a63999d276db3444ace1e6a9d9b85d8, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+--- !u!1 &1054861728125611086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6640281054750515746}
+  - component: {fileID: 1720901754059499305}
+  - component: {fileID: 8426417283102191953}
+  m_Layer: 5
+  m_Name: NpcPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6640281054750515746
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054861728125611086}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4689249220924842008}
+  m_Father: {fileID: 7784593862266786729}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.4}
+  m_AnchoredPosition: {x: 0, y: 12.000006}
+  m_SizeDelta: {x: -40, y: -19.999989}
+  m_Pivot: {x: 0.5, y: 0.4}
+--- !u!222 &1720901754059499305
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054861728125611086}
+  m_CullTransparentMesh: 1
+--- !u!114 &8426417283102191953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054861728125611086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c305edb27ae44764cb9d359ecaa30676, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2335014790982445080
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +230,51 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2379123954636561095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4689249220924842008}
+  - component: {fileID: 6864113073691064692}
+  m_Layer: 5
+  m_Name: NpcCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4689249220924842008
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2379123954636561095}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6640281054750515746}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -28, y: -28}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6864113073691064692
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2379123954636561095}
+  m_CullTransparentMesh: 1
 --- !u!1 &6402532371598660816
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +354,7 @@ RectTransform:
   m_Children:
   - {fileID: 9010069405758294127}
   - {fileID: 2956270391621171918}
+  - {fileID: 6640281054750515746}
   - {fileID: 8160333008205206714}
   - {fileID: 1076600816628813033}
   m_Father: {fileID: 0}
@@ -321,6 +444,8 @@ MonoBehaviour:
   minigameCanvas: {fileID: 1967864358018675609}
   staminaBar: {fileID: 6830855817451837235}
   menuVisibilityManager: {fileID: 7322693844146301275}
+  npcPanel: {fileID: 6640281054750515746}
+  npcCanvas: {fileID: 4689249220924842008}
 --- !u!1001 &7784593862968601632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332,6 +457,10 @@ PrefabInstance:
     - target: {fileID: 1225644013961045070, guid: 168391d2459a5b3408487c400865e6ff, type: 3}
       propertyPath: m_Name
       value: UIHUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225644013961045070, guid: 168391d2459a5b3408487c400865e6ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1225644013961045071, guid: 168391d2459a5b3408487c400865e6ff, type: 3}
       propertyPath: m_Pivot.x
@@ -920,6 +1049,10 @@ PrefabInstance:
     - target: {fileID: 2105218959262748418, guid: 354e9e847c71e8c4c8d84889bb74d085, type: 3}
       propertyPath: m_Name
       value: UIMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105218959262748418, guid: 354e9e847c71e8c4c8d84889bb74d085, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2105218959262748419, guid: 354e9e847c71e8c4c8d84889bb74d085, type: 3}
       propertyPath: m_Pivot.x
