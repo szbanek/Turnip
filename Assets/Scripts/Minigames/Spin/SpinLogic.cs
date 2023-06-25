@@ -37,7 +37,6 @@ public class SpinLogic : MonoBehaviour
         {
             currentAngle = angle;
             currentSpins++;
-            Debug.Log(currentSpins);
         }
         spins.ChangeValue(totalCurrentAngle, totalRequiredAngle);
         lettuce.rotation = Quaternion.Euler(0, 0, -totalCurrentAngle);

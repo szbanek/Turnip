@@ -26,7 +26,6 @@ public class SpamUpLogic : MonoBehaviour
     {
         currentClicks++;
         ChangedValue();
-        Debug.Log(currentClicks);
         if (currentClicks >= requiredClicks)
         {
             OnWinEvent?.Invoke(this, null);

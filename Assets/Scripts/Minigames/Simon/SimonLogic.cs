@@ -41,14 +41,9 @@ public class SimonLogic : MonoBehaviour
             }
             keyImages[keyToClick[currentClicks]].ColorImage();
             currentClicks++;
-            // Debug.Log(currentClicks);
             if (currentClicks >= requiredClicks)
             {
                 OnWinEvent?.Invoke(this, null);
-            }
-            else
-            {
-                Debug.Log(keyToClick[currentClicks]);
             }
         }
         else
@@ -65,7 +60,6 @@ public class SimonLogic : MonoBehaviour
         {
             keyToClick.Add((wasd)UnityEngine.Random.Range(0, 4));
         }
-        Debug.Log(keyToClick[0]);
         StartCoroutine(StartCourutine());
     }
 

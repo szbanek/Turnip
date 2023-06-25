@@ -37,7 +37,6 @@ public class SpamLeftRightLogic : MonoBehaviour
             turnip.rotation = Quaternion.Euler(0, 0, (keyToClick == wasd.a ? angle : -angle) + startAngle);
 
             keyToClick = keyToClick == wasd.a ? wasd.d : wasd.a;
-            Debug.Log(currentClicks);
             if (currentClicks >= requiredClicks)
             {
                 OnWinEvent?.Invoke(this, null);

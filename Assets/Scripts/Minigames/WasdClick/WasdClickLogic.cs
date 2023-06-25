@@ -36,7 +36,6 @@ public class WasdClickLogic : MonoBehaviour
             keyImages[keyToClick].DecolorImage();
             keyToClick = (wasd)UnityEngine.Random.Range(0, 4);
             keyImages[keyToClick].ColorImage();
-            Debug.Log(currentClicks);
             if (currentClicks >= requiredClicks)
             {
                 OnWinEvent?.Invoke(this, null);

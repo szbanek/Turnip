@@ -49,7 +49,6 @@ public class DanceLogic : MonoBehaviour
             }
             else
             {
-                Debug.Log(arrows[currentClicks]);
                 SpawnTurnip();
             }
         }
@@ -67,7 +66,6 @@ public class DanceLogic : MonoBehaviour
         {
             arrows.Add((ad)UnityEngine.Random.Range(0, 2));
         }
-        Debug.Log(arrows[currentClicks]);
         SpawnTurnip();
     }
 
@@ -81,7 +79,6 @@ public class DanceLogic : MonoBehaviour
 
         if (barValue > currentClicks + hitAccuracy)
         {
-            print(barValue);
             OnLoseEvent?.Invoke(this, null);
         }
     }

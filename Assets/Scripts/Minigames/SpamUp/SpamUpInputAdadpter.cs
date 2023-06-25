@@ -50,7 +50,6 @@ public class SpamUpInputAdadpter : MonoBehaviour, IInputAdapter
         if (pressed)
         {
             logic.IncreaseClicks();
-            Debug.Log("increased");
         }
     }
 }

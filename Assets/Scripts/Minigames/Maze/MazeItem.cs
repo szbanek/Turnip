@@ -60,7 +60,5 @@ public class MazeItem : MonoBehaviour
     {
         upSpeed = Math.Max(upSpeed - difficulty, 20f);
         xSpeed += difficulty;
-        print(upSpeed);
-        print(xSpeed);
     }
 }
