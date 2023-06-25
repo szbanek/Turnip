@@ -6,6 +6,13 @@ using UnityEngine.UI;
 
 public class NpcMinigameLogic : MonoBehaviour
 {
+    [SerializeField]
+    private RandomSoundPlayer introPlayer;
+    [SerializeField]
+    private RandomSoundPlayer acceptPlayer;
+    [SerializeField]
+    private RandomSoundPlayer refusePlayer;
+
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private Quest quest;
@@ -24,12 +31,13 @@ public class NpcMinigameLogic : MonoBehaviour
             {
                 done = true;
                 textField.ChangeText(quest.PositiveAnswer);
+                acceptPlayer.PlayRandom();
                 button.ChangeText("");
             }
             else
             {
                 textField.ChangeText(quest.NegativeAnswer);
-
+                refusePlayer.PlayRandom();
             }
         }
         else
@@ -41,6 +49,7 @@ public class NpcMinigameLogic : MonoBehaviour
     private void Start()
     {
         inventory = FindObjectOfType<PlayerVegetableInventory>();
+        introPlayer.PlayRandom();
     }
 
     private void HandleEvent(bool win)

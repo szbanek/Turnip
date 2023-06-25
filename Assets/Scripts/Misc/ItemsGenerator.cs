@@ -13,13 +13,13 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
     [SerializeField]
     private string[] adjectives;
 
-    public string RandomAdjective => adjectives[UnityEngine.Random.Range(0, adjectives.Length - 1)];
+    public string RandomAdjective => adjectives[UnityEngine.Random.Range(0, adjectives.Length)];
 
     public ItemInstance GenerateItem(PlayerItem item)
     {
         PlayerStatsModifier statsModifier = new PlayerStatsModifier();
         var choices = Enum.GetValues(typeof(PlayerTree.Choice));
-        switch ((PlayerTree.Choice)choices.GetValue(UnityEngine.Random.Range(0, choices.Length - 1)))
+        switch ((PlayerTree.Choice)choices.GetValue(UnityEngine.Random.Range(0, choices.Length)))
         {
             case PlayerTree.Choice.MaxStanima:
                 statsModifier.MaxStamina = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
