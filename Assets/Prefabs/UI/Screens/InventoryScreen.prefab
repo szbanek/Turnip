@@ -369,7 +369,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 150, y: 150}
   m_Spacing: {x: 4, y: 4}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -615,7 +615,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 26
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2228,11 +2228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5214,11 +5214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7129,11 +7129,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7467126917173899557, guid: 62645defe2d3f1c4b93df4de0d47a1ba, type: 3}
       propertyPath: m_LocalPosition.x
