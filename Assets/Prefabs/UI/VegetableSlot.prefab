@@ -68,11 +68,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 36
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 46
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -148,11 +148,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 32
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 46
     m_Alignment: 8
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -273,8 +273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 53, y: 0}
-  m_SizeDelta: {x: -114, y: -8}
+  m_AnchoredPosition: {x: 103, y: 0}
+  m_SizeDelta: {x: -214, y: -8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &364486388097996402
 CanvasRenderer:
@@ -350,7 +350,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: -8, y: 45}
+  m_SizeDelta: {x: -8, y: 135}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3374910793564986734
 CanvasRenderer:
@@ -382,7 +382,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 15
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -431,7 +431,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 4, y: -4}
-  m_SizeDelta: {x: 414, y: 110}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3718006634019065546
 MonoBehaviour:
@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7825665777104995198, guid: 83911c83e786fe740a8086edb794bc1c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7825665777104995198, guid: 83911c83e786fe740a8086edb794bc1c, type: 3}
       propertyPath: m_SizeDelta.y
