@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7903680072305194097, guid: fdbc91779e49a054ba1e3ec819dcc720, type: 3}
-  minSpawnTime: 0
-  maxSpawnTime: 0
-  startSpawnPercent: 0
+  minSpawnTime: 60
+  maxSpawnTime: 300
+  startSpawnPercent: 100
