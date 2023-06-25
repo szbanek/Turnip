@@ -215,7 +215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7380766226396019850
@@ -271,7 +271,7 @@ MonoBehaviour:
   label: {fileID: 6190466259298095323}
   vegetableString: Otrzymano warzywo
   itemString: Otrzymano przedmiot
-  localYPos: 170
+  localYPos: 20
   moveTime: 0.5
   stopTime: 0.5
 --- !u!1001 &1019819607190169298

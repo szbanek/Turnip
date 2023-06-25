@@ -88,6 +88,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
                 {
                     Destroy(questMarker);
                 }
+                UIPopUp.Instance.PopUp(UIPopUp.PopUpType.Item);
                 StartCoroutine(GenerateQuestCoroutine());
             }
             return;
@@ -97,6 +98,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             FindObjectOfType<PlayerExperience>().AddExperience(vegetable.ExpGiven);
             FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type,
             1 + (int)(stats.AdditionalVegetableChance / 100 + Random.Range(0f, 0.49f)));
+            UIPopUp.Instance.PopUp(UIPopUp.PopUpType.Vegetable);
             OnPickedUp?.Invoke(this, null);
             Destroy(gameObject);
         }

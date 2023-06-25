@@ -21,6 +21,7 @@ public class UIPopUp : Singleton<UIPopUp>
     private float stopTime;
 
     private float startYPos;
+    private float endYPos;
     private RectTransform rectTransform;
 
     private bool isPoppingUp = false;
@@ -28,7 +29,8 @@ public class UIPopUp : Singleton<UIPopUp>
     private void Start()
     {
         rectTransform = transform as RectTransform;
-        startYPos = rectTransform.localPosition.y;
+        startYPos = rectTransform.position.y;
+        endYPos = localYPos;
     }
 
     public void PopUp(PopUpType type)
@@ -50,9 +52,9 @@ public class UIPopUp : Singleton<UIPopUp>
         while ((counter += Time.deltaTime) < moveTime)
         {
             yield return null;
-            Vector3 pos = rectTransform.localPosition;
-            pos.y = Mathf.Lerp(startYPos, localYPos, counter/moveTime);
-            rectTransform.localPosition = pos;
+            Vector3 pos = rectTransform.position;
+            pos.y = Mathf.Lerp(startYPos, endYPos, counter/moveTime);
+            rectTransform.position = pos;
         }
 
         yield return new WaitForSeconds(stopTime);
@@ -60,9 +62,9 @@ public class UIPopUp : Singleton<UIPopUp>
         while ((counter -= Time.deltaTime) > 0)
         {
             yield return null;
-            Vector3 pos = rectTransform.localPosition;
-            pos.y = Mathf.Lerp(startYPos, localYPos, counter / moveTime);
-            rectTransform.localPosition = pos;
+            Vector3 pos = rectTransform.position;
+            pos.y = Mathf.Lerp(startYPos, endYPos, counter / moveTime);
+            rectTransform.position = pos;
         }
 
         isPoppingUp = false;

@@ -1540,6 +1540,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5842187819738685170, guid: 801dc86d73a3a774e80a4bbdb5266650, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5852283444072815311, guid: 801dc86d73a3a774e80a4bbdb5266650, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2823,9 +2827,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
+  minQuestGenerationTime: 0
+  maxQuestGenerationTime: 0
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: bfe6b04bfdb47d44ca33df44cbff4b2a, type: 2}
   vegetable: {fileID: 11400000, guid: 0fc8422a08412cf4197bf3f47689f75f, type: 2}
+  questMarkerPrefab: {fileID: 0}
+  questMarkerOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &1874652136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2951,6 +2959,7 @@ MonoBehaviour:
   quantity: 0
   exp: 0
   questText: {fileID: 0}
+  item: {fileID: 0}
 --- !u!1001 &2012546266
 PrefabInstance:
   m_ObjectHideFlags: 0
