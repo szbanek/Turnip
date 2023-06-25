@@ -95,10 +95,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterButton
       objectReference: {fileID: 0}
-    - target: {fileID: 5469506665401194998, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -228,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194998, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Pivot.x
@@ -361,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194998, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Pivot.x
