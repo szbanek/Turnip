@@ -17,6 +17,7 @@ public class NpcQuestManager : MonoBehaviour
     PlayerItem item;
     private Quest quest;
     public Quest Quest => quest;
+
     void Start()
     {
         if(questText == null)

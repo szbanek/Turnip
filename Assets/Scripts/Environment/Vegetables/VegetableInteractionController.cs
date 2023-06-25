@@ -1,3 +1,4 @@
+using System.CodeDom.Compiler;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,10 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     [Header("Config")]
     [SerializeField]
     private Vector3 iconPosition;
+    [SerializeField]
+    private float minQuestGenerationTime;
+    [SerializeField]
+    private float maxQuestGenerationTime;
 
     [Header("References")]
     [SerializeField]
@@ -16,6 +21,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     private InteractionIconData interactionIconData;
     [SerializeField]
     private Vegetable vegetable;
+
     private PlayerStats stats;
     private NpcQuestManager questManager;
 
@@ -70,7 +76,8 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             {
                 FindObjectOfType<PlayerExperience>().AddExperience(questManager.Quest.Exp);
                 FindObjectOfType<PlayerItemsInventory>().Items.Add(questManager.Quest.Item);
-                questManager.GenerateNewQuest();
+                gameObject.tag = "Untagged";
+                StartCoroutine(GenerateQuestCoroutine());
             }
             return;
         }
@@ -82,6 +89,13 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             OnPickedUp?.Invoke(this, null);
             Destroy(gameObject);
         }
+    }
+
+    private IEnumerator GenerateQuestCoroutine()
+    {
+        yield return new WaitForSeconds(Random.Range(minQuestGenerationTime, maxQuestGenerationTime));
+        questManager.GenerateNewQuest();
+        gameObject.tag = "Interactive";
     }
 
     private void Start()

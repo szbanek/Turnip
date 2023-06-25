@@ -42,5 +42,5 @@ public class Quest
     private float exp;
     public float Exp => exp;
     private ItemInstance item;
-    public ItemInstance Item => Item;
+    public ItemInstance Item => item;
 }
