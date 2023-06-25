@@ -49,7 +49,7 @@ public class SnakeLogic : MonoBehaviour
 
     private void Start()
     {
-        currentDirection = wasd.w;
+        currentDirection = wasd.a;
         snake.OnGoalReachedEvent += (_, win) => HandleEvent(win);
         timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());

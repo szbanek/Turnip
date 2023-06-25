@@ -97,7 +97,7 @@ public class DanceLogic : MonoBehaviour
                 turnipDestination = dTurnip.position;
                 break;
         }
-        turnipDestination.y += 5;
+        turnipDestination.y += 5 + hitAccuracy*height;
         turnipStart = turnipDestination;
         turnipStart.y -= height;
         turnip.position = turnipStart;

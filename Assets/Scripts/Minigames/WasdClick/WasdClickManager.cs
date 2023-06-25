@@ -22,4 +22,9 @@ public class WasdClickManager : MonoBehaviour, IMinigameManager
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
     }
+
+    public void SetDifficulty(float difficulty)
+    {
+        throw new NotImplementedException();
+    }
 }
