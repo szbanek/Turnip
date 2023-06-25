@@ -6,11 +6,19 @@ using UnityEngine.UI;
 
 public class CatchLogic : MonoBehaviour
 {
+    [SerializeField]
+    private UIBarController counter;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private CatchBar bar;
     private List<CatchItem> lettuces = new List<CatchItem>();
     private int clickedlettuces = 0;
+
+
+    private void Start()
+    {
+        counter.ChangeValue(0, 1);
+    }
 
     public void NewLettuce(CatchItem lettuce)
     {
@@ -26,6 +34,7 @@ public class CatchLogic : MonoBehaviour
             return;
         }
         clickedlettuces++;
+        counter.ChangeValue(clickedlettuces, lettuces.Count);
         if (clickedlettuces >= lettuces.Count)
         {
             OnWinEvent?.Invoke(this, null);

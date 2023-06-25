@@ -17,5 +17,6 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 1c5de8a1242f1094ca513f5dee75005f, type: 3}
   minigames:
   - {fileID: 4651109796331769096, guid: 89d007639ab03324a960b36b12e19b3a, type: 3}
+  - {fileID: 7090021894488886450, guid: c8d03297953d597449816ef876bdfc7e, type: 3}
   - {fileID: 8877655434090412953, guid: 1adfc968204a4d84c9d2a45fd111518a, type: 3}
   expGiven: 1
