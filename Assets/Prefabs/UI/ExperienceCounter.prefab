@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4844341925719801533}
   - component: {fileID: 2294242646545274496}
   - component: {fileID: 23014995634710858}
+  - component: {fileID: 8155000492652834337}
   m_Layer: 5
   m_Name: ExperienceCounter
   m_TagString: Untagged
@@ -186,6 +187,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &8155000492652834337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675093797403743732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b1a2783a064f004fbdcc99c712129e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 4699140184740377879}
+  exp: {fileID: 8625671148943915963}
+  points: {fileID: 88949196973690151}
+  levelText: 'Poziom:'
+  pointsText: 'Dostepne punkty:'
 --- !u!1 &5236723595775803872
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,3 +436,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6867206056916579837, guid: c251c5412b25da447b279a729b31af36, type: 3}
   m_PrefabInstance: {fileID: 5429044550501017210}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8625671148943915963 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4387453217206771137, guid: c251c5412b25da447b279a729b31af36, type: 3}
+  m_PrefabInstance: {fileID: 5429044550501017210}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8326d2ce731c5845bd3665d9b832d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

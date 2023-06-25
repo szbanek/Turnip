@@ -10,11 +10,12 @@ public class PlayerTree : MonoBehaviour
 
     [SerializeField]
     private SerializedDictionary<Choice, float> amountGiven;
+    [SerializeField]
+    private SerializedDictionary<Choice, int> levels;
 
     public PlayerStatsModifier Stats => stats;
     public SerializedDictionary<Choice, int> Levels => levels;
 
-    private SerializedDictionary<Choice, int> levels = new SerializedDictionary<Choice, int>();
     private PlayerStatsModifier stats = new PlayerStatsModifier();
 
     private PlayerExperience playerExperience;
@@ -22,10 +23,6 @@ public class PlayerTree : MonoBehaviour
     private void Start()
     {
         playerExperience = GetComponent<PlayerExperience>();
-        foreach (Choice choice in Enum.GetValues(typeof(Choice)))
-        {
-            levels[choice] = 0;
-        }
     }
 
     public void TryToLevelUp(Choice choice)

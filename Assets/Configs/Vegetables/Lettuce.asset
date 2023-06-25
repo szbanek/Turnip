@@ -18,3 +18,4 @@ MonoBehaviour:
   minigames:
   - {fileID: 4651109796331769096, guid: 89d007639ab03324a960b36b12e19b3a, type: 3}
   - {fileID: 8877655434090412953, guid: 1adfc968204a4d84c9d2a45fd111518a, type: 3}
+  expGiven: 1

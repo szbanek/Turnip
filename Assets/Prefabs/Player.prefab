@@ -538,6 +538,7 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
+        Name: 
     - Key:
         item: 1
       Value:
@@ -550,6 +551,7 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
+        Name: 
     - Key:
         item: 0
       Value:
@@ -562,6 +564,7 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
+        Name: 
   Items:
   - Item: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
     Modifier:
@@ -572,6 +575,7 @@ MonoBehaviour:
       SenseRange: 0
       AdditionalVegetableChance: 0
       MinigameBonus: 0
+    Name: 
 --- !u!114 &7450896184901940049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +621,26 @@ MonoBehaviour:
     - Key:
         item: 5
       Value: 1
+  levels:
+    pairs:
+    - Key:
+        item: 0
+      Value: 0
+    - Key:
+        item: 1
+      Value: 0
+    - Key:
+        item: 2
+      Value: 0
+    - Key:
+        item: 3
+      Value: 0
+    - Key:
+        item: 4
+      Value: 0
+    - Key:
+        item: 5
+      Value: 0
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0

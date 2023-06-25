@@ -19,3 +19,4 @@ MonoBehaviour:
   - {fileID: 249285008473608460, guid: 6e2932d544a2179478954e43c77728ed, type: 3}
   - {fileID: 7199878396609550894, guid: 6b1465c90cd101d4eb26af2e1cf55ccb, type: 3}
   - {fileID: 1337205202478007096, guid: 207fd023d6cfae54c91128efc2147621, type: 3}
+  expGiven: 1
