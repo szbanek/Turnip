@@ -20,7 +20,11 @@ public class CatchLogic : MonoBehaviour
 
     private void LettucePulledUp(bool win)
     {
-        if(!win) OnLoseEvent?.Invoke(this, null);
+        if(!win) 
+        {
+            OnLoseEvent?.Invoke(this, null);
+            return;
+        }
         clickedlettuces++;
         if (clickedlettuces >= lettuces.Count)
         {
