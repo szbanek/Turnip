@@ -541,7 +541,7 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-        Name: 
+        Name: "D\u0142ugie Spodnie Dyplomaty"
     - Key:
         item: 1
       Value:
@@ -554,7 +554,7 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-        Name: 
+        Name: "Szykowny \u017Bakiet Dyplomaty"
     - Key:
         item: 0
       Value:
@@ -567,7 +567,7 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-        Name: 
+        Name: Smutna Peruka Dyplomaty
   Items:
   - Item: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
     Modifier:
@@ -578,7 +578,7 @@ MonoBehaviour:
       SenseRange: 0
       AdditionalVegetableChance: 0
       MinigameBonus: 0
-    Name: 
+    Name: "Zielony \u017Bakiet Dyplomaty"
 --- !u!114 &7450896184901940049
 MonoBehaviour:
   m_ObjectHideFlags: 0
