@@ -41,4 +41,9 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetBool("Jump", false);
     }
+
+    public void PickUpItem()
+    {
+        animator.SetTrigger("GetItem");
+    }
 }

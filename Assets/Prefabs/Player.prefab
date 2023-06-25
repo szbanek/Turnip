@@ -501,6 +501,7 @@ MonoBehaviour:
     - Key:
         item: 0
       Value: 0
+  animationController: {fileID: 3141030549990021000}
 --- !u!114 &7370878092730852031
 MonoBehaviour:
   m_ObjectHideFlags: 0
