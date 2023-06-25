@@ -54588,6 +54588,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2871928542628517201, guid: e95dbd2e081afa246aea1f194c064f80, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871928543186686510, guid: e95dbd2e081afa246aea1f194c064f80, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871928543775719093, guid: e95dbd2e081afa246aea1f194c064f80, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2871928543949925933, guid: e95dbd2e081afa246aea1f194c064f80, type: 3}
       propertyPath: m_Name
       value: Terrain
@@ -54635,6 +54647,10 @@ PrefabInstance:
     - target: {fileID: 2871928543949925934, guid: e95dbd2e081afa246aea1f194c064f80, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871928544088874962, guid: e95dbd2e081afa246aea1f194c064f80, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
