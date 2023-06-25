@@ -43,6 +43,6 @@ public class SnakeItem : MonoBehaviour
 
     public void SetDifficulty(float difficulty)
     {
-        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
+        speed = Math.Max(speed - difficulty/10, 0.1f);
     }
 }

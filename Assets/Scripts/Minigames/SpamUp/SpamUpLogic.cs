@@ -79,7 +79,7 @@ public class SpamUpLogic : MonoBehaviour
     {
         requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
         timeLimit += difficulty;
-        reduceClicksCooldown = (int)(Math.Max(reduceClicksCooldown - difficulty/10, 0));
+        reduceClicksCooldown += difficulty/10;
         StartManual();
     }
 }

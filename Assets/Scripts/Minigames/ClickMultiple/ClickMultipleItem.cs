@@ -19,18 +19,18 @@ public class ClickMultipleItem : MonoBehaviour
     private float upperBoundary;
     private float lowerBoundary;
 
-    private void Start()
+    private void Awake()
     {
-        direction = Vector3.zero;
-    }
-    private void StartManual()
-    {
-        direction = new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f), 0).normalized * speed;
         if (logic == null)
         {
             logic = GetComponentInParent<ClickMultipleLogic>();
         }
         logic.NewPepper(this);
+    }
+    private void StartManual()
+    {
+        direction = new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f), 0).normalized * speed;
+
         RectTransform pepperTransform = transform as RectTransform;
         rightBoundary = gameArea.position.x + gameArea.rect.xMax - (pepperTransform.rect.width * Mathf.Sqrt(2)) / 2;
         leftBoundary = gameArea.position.x + gameArea.rect.xMin + (pepperTransform.rect.width * Mathf.Sqrt(2)) / 2;
@@ -50,14 +50,14 @@ public class ClickMultipleItem : MonoBehaviour
         }
     }
 
-    public void clickMultiple()
+    public void Click()
     {
         OnPulledUpEvent?.Invoke(this, null);
     }
 
     public void SetDifficulty(float difficulty)
     {
-        speed = (int)(Math.Max(speed - difficulty / 10, 0.1));
+        speed = Math.Max(speed - difficulty / 10, 0.1f);
         StartManual();
     }
 }

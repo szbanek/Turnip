@@ -14,7 +14,7 @@ public class OsuLogic : MonoBehaviour
     // private UIBarController timer;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
-    private List<OsuItem> peppers;
+    private List<OsuItem> peppers = new List<OsuItem>();
     private int clickedPeppers = 0;
 
 
@@ -29,11 +29,6 @@ public class OsuLogic : MonoBehaviour
                 pepper.Click();
             }
         }
-    }
-
-    private void Awake()
-    {
-        peppers = new List<OsuItem>();
     }
     private void StartManual()
     {
@@ -68,7 +63,7 @@ public class OsuLogic : MonoBehaviour
 
     public void SetDifficulty(float difficulty)
     {
-        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
+        speed = Math.Max(speed - difficulty/10, 0.1f);
         StartManual();
     }
 }
