@@ -541,7 +541,7 @@ MonoBehaviour:
     - Key:
         item: 1
       Value:
-        Item: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
+        Item: {fileID: 11400000, guid: 6fcdc4c8be13db44baa7717265d753b6, type: 2}
         Modifier:
           MaxStamina: 0
           StaminaRegen: 0
@@ -562,7 +562,16 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-  Items: []
+  Items:
+  - Item: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
+    Modifier:
+      MaxStamina: 0
+      StaminaRegen: 0
+      SprintSpeed: 0
+      JumpCost: 0
+      SenseRange: 0
+      AdditionalVegetableChance: 0
+      MinigameBonus: 0
 --- !u!114 &7450896184901940049
 MonoBehaviour:
   m_ObjectHideFlags: 0
