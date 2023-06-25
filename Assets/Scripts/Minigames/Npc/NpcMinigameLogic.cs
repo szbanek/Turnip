@@ -24,6 +24,7 @@ public class NpcMinigameLogic : MonoBehaviour
             {
                 done = true;
                 textField.ChangeText(quest.PositiveAnswer);
+                button.ChangeText("");
             }
             else
             {
