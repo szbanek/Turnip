@@ -3399,6 +3399,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelScripts
       objectReference: {fileID: 0}
+    - target: {fileID: 7503152275518153647, guid: 392ff90c08e7cf54abb7692dd84317f5, type: 3}
+      propertyPath: quests.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503152275518153647, guid: 392ff90c08e7cf54abb7692dd84317f5, type: 3}
+      propertyPath: quests.Array.data[0]
+      value: 
+      objectReference: {fileID: 1874652135}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 392ff90c08e7cf54abb7692dd84317f5, type: 3}

@@ -33,6 +33,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     private GameObject questMarker;
 
     public event System.EventHandler OnPickedUp;
+    public event System.EventHandler QuestCompleteEvent;
 
     private InteractionIconController interactionIconController = null;
     public Vector3 Position => transform.position;
@@ -90,6 +91,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
                 }
                 UIPopUp.Instance.PopUp(UIPopUp.PopUpType.Item);
                 StartCoroutine(GenerateQuestCoroutine());
+                QuestCompleteEvent?.Invoke(this, null);
             }
             return;
         }
