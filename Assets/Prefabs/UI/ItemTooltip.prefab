@@ -83,7 +83,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.6
 --- !u!223 &4982848902461619768
 Canvas:
   m_ObjectHideFlags: 0
@@ -119,10 +119,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 16
-    m_Right: 16
-    m_Top: 12
-    m_Bottom: 12
+    m_Left: 22
+    m_Right: 22
+    m_Top: 16
+    m_Bottom: 16
   m_ChildAlignment: 0
   m_Spacing: 4
   m_ChildForceExpandWidth: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 16
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -341,11 +341,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 22
+    m_FontSize: 62
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 62
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
