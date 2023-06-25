@@ -84,6 +84,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 40d23d75bf2585b489ab2367bfcd4b03, type: 2}
   adjectives:
   - "Zwyk\u0142y"
+  - Kolorowy
+  - Zadziorny
+  - Elegancki
+  - Twardy
+  - "Staro\u015Bwiecki"
+  - Magiczny
+  - "Pot\u0119\u017Cny"
+  - Zbrojny
+  - Tropikalny
+  - Nietypowy
+  - Mistyczny
+  - "Kusz\u0105cy"
+  - Szlachetny
+  - Opancerzony
+  - "Intryguj\u0105cy"
 --- !u!1 &2807570025857123488
 GameObject:
   m_ObjectHideFlags: 0
