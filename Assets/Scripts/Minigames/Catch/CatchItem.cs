@@ -39,7 +39,7 @@ public class CatchItem : MonoBehaviour
         leftBoundary = gameArea.position.x + gameArea.rect.xMin + (lettuceTransform.rect.width);
         upperBoundary = gameArea.position.y + gameArea.rect.yMax - (lettuceTransform.rect.width);
         lowerBoundary = gameArea.position.y + gameArea.rect.yMin + (lettuceTransform.rect.width);
-        gameOverBoundary = lowerBoundary + 40;
+        gameOverBoundary = lowerBoundary + (upperBoundary-lowerBoundary)/10;
     }
     private void Update()
     {
