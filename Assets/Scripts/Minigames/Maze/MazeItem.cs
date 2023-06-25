@@ -12,7 +12,7 @@ public class MazeItem : MonoBehaviour
     [SerializeField]
     private MazeLogic logic;
     [SerializeField]
-    private float speed = 1f;
+    private float xSpeed = 1f;
     [SerializeField]
     private float upSpeed = 1f;
     public event EventHandler<bool> OnGoalReachedEvent;
@@ -31,7 +31,7 @@ public class MazeItem : MonoBehaviour
     }
     private void Update()
     {
-        float x = moving ? speed : 0;
+        float x = moving ? xSpeed : 0;
         x = left ? -x : x;
         transform.position += new Vector3(x, upSpeed, 0) * Time.deltaTime;
         if (transform.localPosition.y > goalHeight)
@@ -54,5 +54,11 @@ public class MazeItem : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         OnGoalReachedEvent?.Invoke(this, false);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        upSpeed = (int)(Math.Max(upSpeed - difficulty/10, 0.1));
+        xSpeed += difficulty/10;
     }
 }

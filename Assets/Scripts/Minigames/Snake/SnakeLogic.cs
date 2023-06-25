@@ -47,7 +47,7 @@ public class SnakeLogic : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void StartManual()
     {
         currentDirection = wasd.a;
         snake.OnGoalReachedEvent += (_, win) => HandleEvent(win);
@@ -95,5 +95,12 @@ public class SnakeLogic : MonoBehaviour
     {
         if(win) OnWinEvent?.Invoke(this, null);
         else OnLoseEvent?.Invoke(this, null);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        timeLimit += difficulty;
+        snake.SetDifficulty(difficulty);
+        StartManual();
     }
 }

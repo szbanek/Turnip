@@ -8,7 +8,7 @@ public class HardestGameManager : MonoBehaviour, IMinigameManager
     private HardestGameInputAdapter adadpter;
     private HardestGameLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<HardestGameInputAdapter>();
         logic = GetComponent<HardestGameLogic>();
@@ -21,5 +21,14 @@ public class HardestGameManager : MonoBehaviour, IMinigameManager
         if(!win) Debug.Log("You lost");
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        logic.SetDifficulty(difficulty);
+    }
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }

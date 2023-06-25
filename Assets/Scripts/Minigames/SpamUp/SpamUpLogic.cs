@@ -33,7 +33,7 @@ public class SpamUpLogic : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void StartManual()
     {
         YSpan.x = carrot.position.y;
         YSpan.y = carrot.position.y + carrot.rect.height / 2;
@@ -73,5 +73,13 @@ public class SpamUpLogic : MonoBehaviour
             yield return null;
         }
         OnLoseEvent?.Invoke(this, null);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
+        timeLimit += difficulty;
+        reduceClicksCooldown = (int)(Math.Max(reduceClicksCooldown - difficulty/10, 0));
+        StartManual();
     }
 }

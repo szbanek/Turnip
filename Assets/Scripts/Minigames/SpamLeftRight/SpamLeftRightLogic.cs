@@ -46,7 +46,7 @@ public class SpamLeftRightLogic : MonoBehaviour
 
     }
 
-    private void Start()
+    private void StartManual()
     {
         keyToClick = wasd.a;
         startAngle = turnip.rotation.eulerAngles.z;
@@ -64,5 +64,12 @@ public class SpamLeftRightLogic : MonoBehaviour
             yield return null;
         }
         OnLoseEvent?.Invoke(this, null);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
+        timeLimit += difficulty;
+        StartManual();
     }
 }

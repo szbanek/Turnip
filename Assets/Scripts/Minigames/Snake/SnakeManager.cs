@@ -8,7 +8,7 @@ public class SnakeManager : MonoBehaviour, IMinigameManager
     private SnakeInputAdapter adadpter;
     private SnakeLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<SnakeInputAdapter>();
         logic = GetComponent<SnakeLogic>();
@@ -21,5 +21,14 @@ public class SnakeManager : MonoBehaviour, IMinigameManager
         if(!win) Debug.Log("You lost");
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        logic.SetDifficulty(difficulty);
+    }
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }

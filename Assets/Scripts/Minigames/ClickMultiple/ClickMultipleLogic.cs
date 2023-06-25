@@ -37,7 +37,7 @@ public class ClickMultipleLogic : MonoBehaviour
     {
         peppers = new List<ClickMultipleItem>();
     }
-    private void Start()
+    private void StartManual()
     {
         clickCounter.ChangeValue(0, 1);
         timer.ChangeValueInverted(0, 1);
@@ -69,5 +69,13 @@ public class ClickMultipleLogic : MonoBehaviour
         {
             OnWinEvent?.Invoke(this, null);
         }
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
+        timeLimit += difficulty;
+        foreach (ClickMultipleItem pepper in peppers) pepper.SetDifficulty(difficulty);
+        StartManual();
     }
 }

@@ -8,7 +8,7 @@ public class SpamLeftRightManager : MonoBehaviour, IMinigameManager
     private SpamLeftRightInputAdapter adadpter;
     private SpamLeftRightLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<SpamLeftRightInputAdapter>();
         logic = GetComponent<SpamLeftRightLogic>();
@@ -21,5 +21,14 @@ public class SpamLeftRightManager : MonoBehaviour, IMinigameManager
         if(!win) Debug.Log("You lost");
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        logic.SetDifficulty(difficulty);
+    }
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }

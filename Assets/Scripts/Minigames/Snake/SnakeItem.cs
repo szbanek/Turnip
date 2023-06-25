@@ -40,4 +40,9 @@ public class SnakeItem : MonoBehaviour
     {
         OnGoalReachedEvent?.Invoke(this, false);
     }
+
+    public void SetDifficulty(float difficulty)
+    {
+        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
+    }
 }

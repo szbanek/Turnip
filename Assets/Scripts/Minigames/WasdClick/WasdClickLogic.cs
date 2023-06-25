@@ -49,7 +49,7 @@ public class WasdClickLogic : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void StartManual()
     {
         keyToClick = (wasd)UnityEngine.Random.Range(0, 4);
         keyImages[keyToClick].ColorImage();
@@ -66,5 +66,13 @@ public class WasdClickLogic : MonoBehaviour
             yield return null;
         }
         OnLoseEvent?.Invoke(this, null);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
+        timeLimit += difficulty;
+        timePenalty = (int)(Math.Max(timePenalty - difficulty, 0));
+        StartManual();
     }
 }

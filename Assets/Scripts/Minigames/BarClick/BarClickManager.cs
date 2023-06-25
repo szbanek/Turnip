@@ -8,7 +8,7 @@ public class BarClickManager : MonoBehaviour, IMinigameManager
     private BarClickInputAdadpter adadpter;
     private BarClickLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<BarClickInputAdadpter>();
         logic = GetComponent<BarClickLogic>();
@@ -21,5 +21,14 @@ public class BarClickManager : MonoBehaviour, IMinigameManager
         if(!win) Debug.Log("You lost");
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        logic.SetDifficulty(difficulty);
+    }
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }

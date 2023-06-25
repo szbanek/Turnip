@@ -35,7 +35,7 @@ public class OsuLogic : MonoBehaviour
     {
         peppers = new List<OsuItem>();
     }
-    private void Start()
+    private void StartManual()
     {
         // timer.ChangeValueInverted(0, 1);
         peppers[clickedPeppers].StartAction(speed, hitAccuracy);
@@ -64,5 +64,11 @@ public class OsuLogic : MonoBehaviour
         {
             peppers[clickedPeppers].StartAction(speed, hitAccuracy);
         }
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
+        StartManual();
     }
 }

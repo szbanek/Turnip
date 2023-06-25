@@ -8,7 +8,7 @@ public class SpamUpManager : MonoBehaviour, IMinigameManager
     private SpamUpInputAdadpter adadpter;
     private SpamUpLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<SpamUpInputAdadpter>();
         logic = GetComponent<SpamUpLogic>();
@@ -21,5 +21,14 @@ public class SpamUpManager : MonoBehaviour, IMinigameManager
         if(!win) Debug.Log("You lost");
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        logic.SetDifficulty(difficulty);
+    }
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }

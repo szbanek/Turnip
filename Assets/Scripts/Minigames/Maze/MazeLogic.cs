@@ -36,4 +36,9 @@ public class MazeLogic : MonoBehaviour
     {
         this.lettuce = lettuce;
     }
+
+    public void SetDifficulty(float difficulty)
+    {
+        lettuce.SetDifficulty(difficulty);
+    }
 }

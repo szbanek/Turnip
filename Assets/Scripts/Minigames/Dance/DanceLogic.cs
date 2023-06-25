@@ -61,7 +61,6 @@ public class DanceLogic : MonoBehaviour
 
     private void Start()
     {
-        counter.ChangeValue(0, 1);
         maximum = requiredClicks + 1;
         arrows = new List<ad>();
         for (int i = 0; i < requiredClicks; i++)
@@ -69,6 +68,11 @@ public class DanceLogic : MonoBehaviour
             arrows.Add((ad)UnityEngine.Random.Range(0, 2));
         }
         Debug.Log(arrows[currentClicks]);
+    }
+
+    private void StartManual()
+    {
+        counter.ChangeValue(0, 1);
         SpawnTurnip();
     }
 
@@ -101,5 +105,13 @@ public class DanceLogic : MonoBehaviour
         turnipStart = turnipDestination;
         turnipStart.y -= height;
         turnip.position = turnipStart;
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
+        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
+        hitAccuracy += difficulty/10;
+        StartManual();
     }
 }

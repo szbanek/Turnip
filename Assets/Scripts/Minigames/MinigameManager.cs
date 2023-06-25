@@ -9,6 +9,7 @@ public class MinigameManager : Singleton<MinigameManager>
     private RectTransform npcCanvas;
     private RectTransform npcPanel;
     private PlayerInputAdapter playerInputAdapter;
+    private PlayerStats stats;
 
     private GameObject currentMinigame = null;
     private VegetableInteractionController currentMinigameSpawner = null;
@@ -20,6 +21,7 @@ public class MinigameManager : Singleton<MinigameManager>
         npcCanvas = UIHUDController.Instance.NPCCanvas;
         npcPanel = UIHUDController.Instance.NPCPanel;
         playerInputAdapter = FindObjectOfType<PlayerInputAdapter>();
+        stats = FindObjectOfType<PlayerStats>();
         minigamePanel.gameObject.SetActive(false);
         npcPanel.gameObject.SetActive(false);
     }
@@ -27,22 +29,19 @@ public class MinigameManager : Singleton<MinigameManager>
     public void SpawnMinigame(GameObject minigame, VegetableInteractionController spawner)
     {
         CursorManager.Instance.UnlockCursor();
-        minigamePanel.gameObject.SetActive(true);
-        currentMinigame = Instantiate(minigame, minigameCanvas);
+        npcPanel.gameObject.SetActive(true);
+        currentMinigame = Instantiate(minigame, npcCanvas);
+        IMinigameManager manager = currentMinigame.GetComponent<IMinigameManager>();
+        manager.SetDifficulty(stats.MinigameBonus/10);
         currentMinigameSpawner = spawner;
         playerInputAdapter.inputAdapter = currentMinigame.GetComponent<IInputAdapter>();
-        currentMinigame.GetComponent<IMinigameManager>().OnMinigameEndEvent += (_, e) => OnMinigameEnd(e);
+        manager.OnMinigameEndEvent += (_, e) => OnMinigameEnd(e);
     }
 
     public void SpawnMinigame(GameObject minigame, VegetableInteractionController spawner, Quest quest)
     {
-        CursorManager.Instance.UnlockCursor();
-        npcPanel.gameObject.SetActive(true);
-        currentMinigame = Instantiate(minigame, npcCanvas);
-        currentMinigame.GetComponent<NpcMinigameLogic>()?.SetQuest(quest);
-        currentMinigameSpawner = spawner;
-        playerInputAdapter.inputAdapter = currentMinigame.GetComponent<IInputAdapter>();
-        currentMinigame.GetComponent<IMinigameManager>().OnMinigameEndEvent += (_, e) => OnMinigameEnd(e);
+        SpawnMinigame(minigame, spawner);
+        currentMinigame.GetComponent<IMinigameManager>().SetQuest(quest);
     }
 
     private void OnMinigameEnd(bool win)

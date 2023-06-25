@@ -47,7 +47,7 @@ public class SpinLogic : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void StartManual()
     {
         spins.ChangeValue(0, 1);
         timer.ChangeValueInverted(0, 1);
@@ -73,5 +73,12 @@ public class SpinLogic : MonoBehaviour
             angle = 360 - angle * -1;
         }
         return (360-angle);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredSpins = (int)(Math.Max(requiredSpins - difficulty, 1));
+        timeLimit += difficulty;
+        StartManual();
     }
 }

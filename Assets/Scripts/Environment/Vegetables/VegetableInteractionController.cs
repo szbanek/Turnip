@@ -16,6 +16,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     private InteractionIconData interactionIconData;
     [SerializeField]
     private Vegetable vegetable;
+    private PlayerStats stats;
     private NpcQuestManager questManager;
 
     public event System.EventHandler OnPickedUp;
@@ -69,7 +70,8 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         }
         if (win)
         {
-            FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 1);
+            FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 
+            1+(int)(stats.AdditionalVegetableChance+UnityEngine.Random.Range(0f, 0.5f)));
             OnPickedUp?.Invoke(this, null);
         }
         Destroy(gameObject);
@@ -78,6 +80,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     private void Start()
     {
         questManager = GetComponent<NpcQuestManager>();
+        stats = FindObjectOfType<PlayerStats>();
         if (interactionIconPrefab == null)
         {
             Debug.LogError("No interactionIconPrefab in VegatableInteractionController");

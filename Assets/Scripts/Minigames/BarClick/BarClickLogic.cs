@@ -23,7 +23,7 @@ public class BarClickLogic : MonoBehaviour
     private float barValue = 0f;
     private Vector2 xRange = Vector2.zero;
 
-    private void Start()
+    private void StartManual()
     {
         Vector2 anchorMax = sweetSpot.anchorMax;
         Vector2 anchorMin = sweetSpot.anchorMin;
@@ -64,5 +64,12 @@ public class BarClickLogic : MonoBehaviour
             minimum = temp;
             t = 0.0f;
         }
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
+        hitBarSize += difficulty;
+        StartManual();
     }
 }

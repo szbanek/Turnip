@@ -33,7 +33,7 @@ public class ClickLogic : MonoBehaviour
     {
         peppers = new List<ClickItem>();
     }
-    private void Start()
+    private void StartManual()
     {
         timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());
@@ -63,5 +63,11 @@ public class ClickLogic : MonoBehaviour
         {
             OnWinEvent?.Invoke(this, null);
         }
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        timeLimit += difficulty;
+        StartManual();
     }
 }

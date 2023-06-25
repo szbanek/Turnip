@@ -58,7 +58,7 @@ public class SimonLogic : MonoBehaviour
 
     }
 
-    private void Start()
+    private void StartManual()
     {
         keyToClick = new List<wasd>();
         for (int i = 0; i < requiredClicks; i++)
@@ -92,5 +92,12 @@ public class SimonLogic : MonoBehaviour
             yield return null;
         }
         OnLoseEvent?.Invoke(this, null);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
+        timeLimit += difficulty;
+        StartManual();
     }
 }

@@ -8,7 +8,7 @@ public class SpinManager : MonoBehaviour, IMinigameManager
     private SpinInputAdadpter adadpter;
     private SpinLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<SpinInputAdadpter>();
         logic = GetComponent<SpinLogic>();
@@ -21,5 +21,14 @@ public class SpinManager : MonoBehaviour, IMinigameManager
         if(!win) Debug.Log("You lost");
         adadpter.Stopped = true;
         OnMinigameEndEvent?.Invoke(this, win);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        logic.SetDifficulty(difficulty);
+    }
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }

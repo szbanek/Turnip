@@ -18,7 +18,12 @@ public class ClickMultipleItem : MonoBehaviour
     private float leftBoundary;
     private float upperBoundary;
     private float lowerBoundary;
-    void Start()
+
+    private void Start()
+    {
+        direction = Vector3.zero;
+    }
+    private void StartManual()
     {
         direction = new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f), 0).normalized * speed;
         if (logic == null)
@@ -35,11 +40,11 @@ public class ClickMultipleItem : MonoBehaviour
     private void Update()
     {
         transform.position += direction;
-        if(transform.position.x <= leftBoundary || transform.position.x >= rightBoundary)
+        if (transform.position.x <= leftBoundary || transform.position.x >= rightBoundary)
         {
             direction.x = -direction.x;
         }
-        if(transform.position.y <= lowerBoundary || transform.position.y >= upperBoundary)
+        if (transform.position.y <= lowerBoundary || transform.position.y >= upperBoundary)
         {
             direction.y = -direction.y;
         }
@@ -48,5 +53,11 @@ public class ClickMultipleItem : MonoBehaviour
     public void clickMultiple()
     {
         OnPulledUpEvent?.Invoke(this, null);
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        speed = (int)(Math.Max(speed - difficulty / 10, 0.1));
+        StartManual();
     }
 }

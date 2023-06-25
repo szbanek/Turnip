@@ -36,7 +36,7 @@ public class HardestGameLogic : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void StartManual()
     {
         lettuce.OnGoalReachedEvent += (_, win) => HandleEvent(win);
         timer.ChangeValueInverted(0, 1);
@@ -64,5 +64,11 @@ public class HardestGameLogic : MonoBehaviour
     public void NewLettuce(HardestGameItem lettuce)
     {
         this.lettuce = lettuce;
+    }
+
+    public void SetDifficulty(float difficulty)
+    {
+        timeLimit += difficulty;
+        StartManual();
     }
 }

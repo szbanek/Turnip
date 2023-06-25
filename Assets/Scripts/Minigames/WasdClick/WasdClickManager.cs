@@ -8,7 +8,7 @@ public class WasdClickManager : MonoBehaviour, IMinigameManager
     private WasdClickInputAdapter adadpter;
     private WasdClickLogic logic;
     public event EventHandler<bool> OnMinigameEndEvent;
-    private void Start()
+    private void Awake()
     {
         adadpter = GetComponent<WasdClickInputAdapter>();
         logic = GetComponent<WasdClickLogic>();
@@ -25,6 +25,11 @@ public class WasdClickManager : MonoBehaviour, IMinigameManager
 
     public void SetDifficulty(float difficulty)
     {
-        throw new NotImplementedException();
+        logic.SetDifficulty(difficulty);
+    }
+
+    public void SetQuest(Quest quest)
+    {
+        return;
     }
 }
