@@ -12,14 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 6
   m_EditorClassIdentifier: 
-  text: "Dzie\u0144 dobry! Czy m\xF3g\u0142by\u015B mi pom\xF3c zdoby\u0107 {QUANTITY}
-    {NAME}? Jestem szefem kuchni w restauracji i pilnie potrzebuj\u0119 tego warzywa
-    do naszego nowego specja\u0142u. Je\u015Bli mia\u0142by\u015B jakiekolwiek {NAME}
-    do oddania, by\u0142bym niezmiernie wdzi\u0119czny!"
-  positiveAnswer: "Ogromne podzi\u0119kowania za zdobycie {QUANTITY} {NAME}. Dzi\u0119ki
-    Tobie nasz nowy specja\u0142 w restauracji b\u0119dzie wyj\u0105tkowy. Tw\xF3j
-    wk\u0142ad ma ogromne znaczenie. Jeszcze raz, dzi\u0119kuj\u0119!"
-  negativeAnswer: "Oh nie! Nie masz {QUANTITY} {NAME} dla naszego nowego specja\u0142u
-    w restauracji? To naprawd\u0119 przykre. Czy wiesz, gdzie jeszcze mogliby\u015Bmy
-    szuka\u0107? By\u0142bym wdzi\u0119czny za ka\u017Cd\u0105 wskaz\xF3wk\u0119
-    lub sugesti\u0119. Dzi\u0119kuj\u0119 za Twoje starania!"
+  text: Dzien dobry! Czy moglbys mi pomoc zdobyc {QUANTITY} {NAME}? Jestem szefem
+    kuchni w restauracji i pilnie potrzebuje tego warzywa do naszego nowego specjalu.
+    Jesli mialbys jakiekolwiek {NAME} do oddania, bylbym niezmiernie wdzieczny!
+  positiveAnswer: "Ogromne podziekowania za zdobycie {QUANTITY} {NAME}. Dzieki Tobie
+    nasz nowy \r\nspecjal w restauracji bedzie wyjatkowy. Twoj wklad ma ogromne znaczenie.
+    Jeszcze raz, dziekuje!"
+  negativeAnswer: Oh nie! Nie masz {QUANTITY} {NAME} dla naszego nowego specjalu
+    w restauracji? To naprawde przykre. Czy wiesz, gdzie jeszcze moglibysmy szukac?
+    Bylbym wdzieczny za kazda wskazowke lub sugestie. Dziekuje za Twoje starania!
