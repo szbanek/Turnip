@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4124662206914270592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 10000, z: 4}
+  m_LocalScale: {x: 4, y: 100000, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,4 +98,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer: {fileID: 1533608579955121540}
   fadeRange: {x: 5, y: 20}
-  maxAlpha: 0.6
+  color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
