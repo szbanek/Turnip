@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8000966781605958695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -137,6 +137,14 @@ PrefabInstance:
       propertyPath: vegetable
       value: 
       objectReference: {fileID: 11400000, guid: 574a249a2150d3f45b8318839fd7f6a0, type: 2}
+    - target: {fileID: 3737106090411016499, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: Marchew
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235455859161792309, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: Bardzo pyszne warzywo. Popularne w Marchwlandzie.
+      objectReference: {fileID: 0}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot
@@ -159,7 +167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.x
@@ -167,15 +175,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -207,11 +215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -268,6 +276,14 @@ PrefabInstance:
       propertyPath: vegetable
       value: 
       objectReference: {fileID: 11400000, guid: 232d8a4d60e34144ea3a22fa8b6d7812, type: 2}
+    - target: {fileID: 3737106090411016499, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: Papryka
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235455859161792309, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: "Najcz\u0119\u015Bciej sk\u0142adowana w Pojemniku."
+      objectReference: {fileID: 0}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (3)
@@ -290,7 +306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.x
@@ -298,15 +314,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -338,11 +354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 310
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -399,6 +415,14 @@ PrefabInstance:
       propertyPath: vegetable
       value: 
       objectReference: {fileID: 11400000, guid: d53703fa0edf692499539079eed4dd7a, type: 2}
+    - target: {fileID: 3737106090411016499, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: Rzepa
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235455859161792309, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: "Jaka jest ka\u017Cdy widzi."
+      objectReference: {fileID: 0}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (2)
@@ -421,7 +445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.x
@@ -429,15 +453,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -469,11 +493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -530,6 +554,14 @@ PrefabInstance:
       propertyPath: vegetable
       value: 
       objectReference: {fileID: 11400000, guid: 13cd6328554b4204881006941cde445d, type: 2}
+    - target: {fileID: 3737106090411016499, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: Chrzan
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235455859161792309, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: "Ulubiona przyprawa francuskich wampirzych przemytnik\xF3w."
+      objectReference: {fileID: 0}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (1)
@@ -552,7 +584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.x
@@ -560,15 +592,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -600,11 +632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 310
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -661,6 +693,14 @@ PrefabInstance:
       propertyPath: vegetable
       value: 
       objectReference: {fileID: 11400000, guid: 79b51cb2d4bb47745855e886259ad4d7, type: 2}
+    - target: {fileID: 3737106090411016499, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: "Sa\u0142ata"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235455859161792309, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
+      propertyPath: m_Text
+      value: Niestety to nie te zielone.
+      objectReference: {fileID: 0}
     - target: {fileID: 6858760830681383092, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_Name
       value: VegetableSlot (4)
@@ -683,7 +723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.x
@@ -691,15 +731,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -731,11 +771,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 7199923045510093044, guid: d615dacc95d77684ebc0b6afe1626b97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

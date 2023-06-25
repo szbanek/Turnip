@@ -87,9 +87,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: Postac
       objectReference: {fileID: 0}
-    - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
-      propertyPath: m_Type
-      value: 1
+    - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194996, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Name
@@ -129,7 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_LocalPosition.x
@@ -214,17 +214,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: Warzywa
       objectReference: {fileID: 0}
-    - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194996, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Name
       value: VegetablesButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469506665401194998, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Pivot.x
@@ -260,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_LocalPosition.x
@@ -310,12 +302,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5469506665488963649, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
-      propertyPath: m_text
-      value: 'Vegetables
-
-'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
@@ -347,9 +333,13 @@ PrefabInstance:
       propertyPath: m_Text
       value: Ekwipunek
       objectReference: {fileID: 0}
-    - target: {fileID: 5469506665401194993, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
-      propertyPath: m_Type
-      value: 1
+    - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194996, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Name
@@ -393,7 +383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5469506665401194999, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_LocalPosition.x
@@ -474,6 +464,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 882173438764671139}
     m_Modifications:
+    - target: {fileID: 8507909844536341784, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341786, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -504,11 +498,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341786, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341786, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341786, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -557,6 +551,30 @@ PrefabInstance:
     - target: {fileID: 8507909844536341786, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIMenuVisibilityManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341789, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
       propertyPath: m_Name
