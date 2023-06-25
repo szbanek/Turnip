@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerExperience : MonoBehaviour
 {
     [SerializeField]
     private float requiredExperience;
+
+    [SerializeField]
+    private AudioClip levelUpClip;
 
     private int currentLevel;
     private int availablePoints;
@@ -16,8 +20,11 @@ public class PlayerExperience : MonoBehaviour
     public float CurrentExperience => currentExperience;
     public float RequiredExperience => requiredExperience;
 
+    private AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         currentLevel = 1;
         availablePoints = 0;
         currentExperience = 0;
@@ -28,6 +35,7 @@ public class PlayerExperience : MonoBehaviour
         currentExperience += exp;
         while (currentExperience >= requiredExperience)
         {
+            audioSource.PlayOneShot(levelUpClip);
             currentLevel++;
             availablePoints++;
             currentExperience -= requiredExperience;
