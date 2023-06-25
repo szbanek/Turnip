@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8e23b3185488346909916c469cf2b6, type: 3}
   m_Name: GuardPants01
   m_EditorClassIdentifier: 
+  itemName: Nagolenniki Gwardzisty
   prefab: {fileID: 2501499006257147798, guid: 561265dec0df6214ea3ba725c2085ec9, type: 3}
   inventoryIcon: {fileID: 21300000, guid: 7b523392aed349643afcfea3a8535005, type: 3}
   slot: 2
