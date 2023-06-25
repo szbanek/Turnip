@@ -13,6 +13,11 @@ public class MainQuestManager : Singleton<MainQuestManager>
 
     private void Start()
     {
+        if (quests.Count == 0)
+        {
+            return;
+        }
+
         foreach (var quest in quests)
         {
             quest.QuestCompleteEvent += OnQuestComplete;
