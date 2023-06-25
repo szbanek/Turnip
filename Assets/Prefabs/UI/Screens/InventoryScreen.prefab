@@ -520,7 +520,9 @@ MonoBehaviour:
     Koszt skoku: {3}
 
     Szansa na dodatkowe
-    warzywo:  {4}%'
+    warzywo:  {4}%
+
+    Umiejetnosci zbierackie: {5}'
 --- !u!114 &3610733190042162722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +617,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
-    m_FontSize: 32
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -626,19 +628,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Statystyki ekwipunku:
+  m_Text: 'Szybkosc biegu: x
 
-    Szybkosc biegu: x
+    Maksymalna kondycja: x
 
-    Maksymalna kondycja:
+    Regeneracja kondycji:
     x
-
-    Regeneracja kondycji: x
 
     Koszt skoku: x
 
-    Szansa na dodatkowe warzywo:
-    x'
+    Szansa na dodatkowe warzywo: x%
+
+    Umiejetnosci
+    zbierackie: x'
 --- !u!1001 &79758347351154482
 PrefabInstance:
   m_ObjectHideFlags: 0

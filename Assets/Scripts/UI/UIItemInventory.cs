@@ -18,6 +18,7 @@ public class UIItemInventory : MonoBehaviour
     private string statsString;
 
     private PlayerItemsInventory inventory;
+    private PlayerStats stats;
     private UIItemSlot[] inventorySlots;
 
     private void Start()
@@ -28,14 +29,16 @@ public class UIItemInventory : MonoBehaviour
     public void OnMenuEnabled()
     {
         inventory = FindObjectOfType<PlayerItemsInventory>();
+        stats = FindObjectOfType<PlayerStats>();
         PopulateEquipment();
         PopulateInventory();
         statsText.text = string.Format(statsString,
-            inventory.TotalModifier.SprintSpeed,
-            inventory.TotalModifier.MaxStamina,
-            inventory.TotalModifier.StaminaRegen,
-            inventory.TotalModifier.JumpCost,
-            inventory.TotalModifier.AdditionalVegetableChance);
+            stats.SprintSpeed,
+            stats.MaxStamina,
+            stats.StaminaRegen,
+            stats.JumpCost,
+            stats.AdditionalVegetableChance,
+            stats.MinigameBonus);
     }
 
     private void PopulateInventory()
@@ -75,10 +78,11 @@ public class UIItemInventory : MonoBehaviour
         inventory.Items.Remove(item);
         inventory.Items.Add(currentInSlot);
         statsText.text = string.Format(statsString,
-            inventory.TotalModifier.SprintSpeed,
-            inventory.TotalModifier.MaxStamina,
-            inventory.TotalModifier.StaminaRegen,
-            inventory.TotalModifier.JumpCost,
-            inventory.TotalModifier.AdditionalVegetableChance);
+            stats.SprintSpeed,
+            stats.MaxStamina,
+            stats.StaminaRegen,
+            stats.JumpCost,
+            stats.AdditionalVegetableChance,
+            stats.MinigameBonus);
     }
 }
