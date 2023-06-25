@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8544288659640636953}
   - component: {fileID: -3708159703057108750}
   - component: {fileID: -2523333646883363395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pepper
   m_TagString: Interactive
   m_Icon: {fileID: 0}
@@ -225,6 +225,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
+  minQuestGenerationTime: 0
+  maxQuestGenerationTime: 0
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: 352f77923c09ae940a9c9fb0981a5706, type: 2}
   vegetable: {fileID: 11400000, guid: 232d8a4d60e34144ea3a22fa8b6d7812, type: 2}
+  questMarkerPrefab: {fileID: 0}
+  questMarkerOffset: {x: 0, y: 0, z: 0}

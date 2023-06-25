@@ -39,6 +39,9 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
             case PlayerTree.Choice.MinigameBonus:
                 statsModifier.MinigameBonus = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
                 break;
+            case PlayerTree.Choice.SenseRange:
+                statsModifier.SenseRange = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
         }
         ItemInstance instance = new ItemInstance(item, statsModifier, RandomAdjective + " " + item.ItemName);
         return instance;

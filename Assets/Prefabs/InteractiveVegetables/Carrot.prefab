@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2437321772766328043}
   - component: {fileID: 4531121201994235995}
   - component: {fileID: 3291066233214284994}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Carrot
   m_TagString: Interactive
   m_Icon: {fileID: 0}
@@ -114,9 +114,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
+  minQuestGenerationTime: 0
+  maxQuestGenerationTime: 0
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: 7e31d17942e721e4c9b7fee683163c85, type: 2}
   vegetable: {fileID: 11400000, guid: 574a249a2150d3f45b8318839fd7f6a0, type: 2}
+  questMarkerPrefab: {fileID: 0}
+  questMarkerOffset: {x: 0, y: 0, z: 0}
 --- !u!82 &4531121201994235995
 AudioSource:
   m_ObjectHideFlags: 0

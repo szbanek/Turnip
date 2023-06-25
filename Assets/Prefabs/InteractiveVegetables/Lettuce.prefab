@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5708407499393911271}
   - component: {fileID: 2119459700687430517}
   - component: {fileID: 2012243061811093679}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Lettuce
   m_TagString: Interactive
   m_Icon: {fileID: 0}
@@ -102,9 +102,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
+  minQuestGenerationTime: 0
+  maxQuestGenerationTime: 0
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: 5c8391b20619e2f43b0f73bcdb225708, type: 2}
   vegetable: {fileID: 11400000, guid: 79b51cb2d4bb47745855e886259ad4d7, type: 2}
+  questMarkerPrefab: {fileID: 0}
+  questMarkerOffset: {x: 0, y: 0, z: 0}
 --- !u!135 &5708407499393911271
 SphereCollider:
   m_ObjectHideFlags: 0

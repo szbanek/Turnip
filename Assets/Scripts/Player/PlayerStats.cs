@@ -24,6 +24,10 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     private float minigameBonus;
 
+    [Header("Vegetable sense")]
+    [SerializeField]
+    private float senseRange;
+
     private PlayerItemsInventory inventory;
     private PlayerTree playerTree;
 
@@ -39,4 +43,5 @@ public class PlayerStats : MonoBehaviour
     public float JumpCost => jumpCost + inventory.TotalModifier.JumpCost + playerTree.Stats.JumpCost;
     public float AdditionalVegetableChance => additionalVegetableChance + inventory.TotalModifier.AdditionalVegetableChance + playerTree.Stats.AdditionalVegetableChance;
     public float MinigameBonus => minigameBonus + inventory.TotalModifier.MinigameBonus + playerTree.Stats.MinigameBonus;
+    public float SenseRange => senseRange + inventory.TotalModifier.SenseRange + playerTree.Stats.SenseRange;
 }

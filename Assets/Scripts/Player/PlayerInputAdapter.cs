@@ -10,6 +10,8 @@ public class PlayerInputAdapter : MonoBehaviour
     private PlayerMovement movement;
     [SerializeField]
     private EnvironmentInteractor interactor;
+    [SerializeField]
+    private PlayerVegetableSense sense;
 
     [HideInInspector]
     public bool EnableMovement = true;
@@ -184,6 +186,11 @@ public class PlayerInputAdapter : MonoBehaviour
         {
             UIHUDController.Instance.MenuVisibilityManager.SwitchMenu();
         }
+    }
+
+    public void SenseVegetables(InputAction.CallbackContext context)
+    {
+        sense.Sense();
     }
 
     private void Update()

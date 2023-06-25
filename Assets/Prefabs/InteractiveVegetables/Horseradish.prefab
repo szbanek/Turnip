@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7638968891499472938}
   - component: {fileID: 8251892789996620138}
   - component: {fileID: 9099021768813652278}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Horseradish
   m_TagString: Interactive
   m_Icon: {fileID: 0}
@@ -113,9 +113,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
+  minQuestGenerationTime: 0
+  maxQuestGenerationTime: 0
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: decb287893eb9014d89925173d785fe9, type: 2}
   vegetable: {fileID: 11400000, guid: 13cd6328554b4204881006941cde445d, type: 2}
+  questMarkerPrefab: {fileID: 0}
+  questMarkerOffset: {x: 0, y: 0, z: 0}
 --- !u!82 &8251892789996620138
 AudioSource:
   m_ObjectHideFlags: 0

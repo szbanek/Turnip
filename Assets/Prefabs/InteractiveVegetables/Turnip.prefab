@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -879622852631072014}
   - component: {fileID: 9169503248084478889}
   - component: {fileID: 8682562865439988387}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Turnip
   m_TagString: Interactive
   m_Icon: {fileID: 0}
@@ -114,9 +114,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPosition: {x: 0, y: 1, z: 0}
+  minQuestGenerationTime: 0
+  maxQuestGenerationTime: 0
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: e960763ed11a5ea4e9eeb2062cf78bf2, type: 2}
   vegetable: {fileID: 11400000, guid: d53703fa0edf692499539079eed4dd7a, type: 2}
+  questMarkerPrefab: {fileID: 0}
+  questMarkerOffset: {x: 0, y: 0, z: 0}
 --- !u!82 &9169503248084478889
 AudioSource:
   m_ObjectHideFlags: 0

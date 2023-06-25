@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 8426453596091323793}
   - component: {fileID: 4195195192893889838}
   - component: {fileID: 225810945408054408}
+  - component: {fileID: 1215391066439077406}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: -4460253253598149906}
   interactor: {fileID: 7237087009769299724}
+  sense: {fileID: 1215391066439077406}
   EnableMovement: 1
 --- !u!114 &-4460253253598149906
 MonoBehaviour:
@@ -437,6 +439,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8310841f-2666-42f5-948e-7c34e9fb2d97
     m_ActionName: Player/Run[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1161634678213818434}
+        m_TargetAssemblyTypeName: PlayerInputAdapter, Assembly-CSharp
+        m_MethodName: SenseVegetables
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 181bc02d-fb27-41c3-a0af-24d742a6b7fe
+    m_ActionName: Player/VegetableSense[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -460,6 +478,7 @@ MonoBehaviour:
   jumpCost: 10
   additionalVegetableChance: 0
   minigameBonus: 0
+  senseRange: 10
 --- !u!114 &6741387975173446621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,7 +647,7 @@ MonoBehaviour:
   levels:
     pairs:
     - Key:
-        item: 0
+        item: 6
       Value: 0
     - Key:
         item: 1
@@ -644,6 +663,9 @@ MonoBehaviour:
       Value: 0
     - Key:
         item: 5
+      Value: 0
+    - Key:
+        item: 0
       Value: 0
 --- !u!82 &4195195192893889838
 AudioSource:
@@ -761,6 +783,21 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ce5c8420c8aca4f4caba37bfecf01c5e, type: 3}
   - {fileID: 8300000, guid: 367787151d9e4df45a343fd16aeecb4e, type: 3}
   - {fileID: 8300000, guid: a88f8b695a81ea740a42ffbc0891cf1c, type: 3}
+--- !u!114 &1215391066439077406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ead87a3421b336499b5544f29c77116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linePrefab: {fileID: 2742501894288557860, guid: 4cca2737043299d41ad2c6228417af9f, type: 3}
+  linesVisibilityDuration: 5
+  linesLength: 1
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0

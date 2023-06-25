@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerExperience))]
 public class PlayerTree : MonoBehaviour
 {
-    public enum Choice { MaxStanima, StaminaRegen, SprintSpeed, JumpCost, AdditionalVegetableChance, MinigameBonus }
+    public enum Choice { MaxStanima, StaminaRegen, SprintSpeed, JumpCost, AdditionalVegetableChance, MinigameBonus, SenseRange }
 
     [SerializeField]
     private SerializedDictionary<Choice, float> amountGiven;
@@ -52,6 +52,9 @@ public class PlayerTree : MonoBehaviour
                 break;
             case Choice.MinigameBonus:
                 stats.MinigameBonus += amountGiven[choice];
+                break;
+            case Choice.SenseRange:
+                stats.SenseRange += amountGiven[choice];
                 break;
         }
     }
