@@ -9,6 +9,7 @@ public class RandomSoundPlayer : MonoBehaviour
     private AudioClip[] clips;
 
     private AudioSource audioSource;
+    private bool isPlaying = false;
 
     private void Start()
     {
@@ -18,5 +19,27 @@ public class RandomSoundPlayer : MonoBehaviour
     public void PlayRandom()
     {
         audioSource.PlayOneShot(clips[Random.Range(0, clips.Length)]);
+    }
+
+    public void PlayContinous()
+    {
+        isPlaying = true;
+    }
+
+    public void StopContnousPlaying()
+    {
+        isPlaying = false;
+        audioSource.Stop();
+    }
+
+    private void Update()
+    {
+        if(isPlaying)
+        {
+            if(!audioSource.isPlaying)
+            {
+                PlayRandom();
+            }
+        }
     }
 }

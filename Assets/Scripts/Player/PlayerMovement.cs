@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(PlayerStats))]
 [RequireComponent(typeof(PlayerStamina))]
+[RequireComponent(typeof(RandomSoundPlayer))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerStats playerStats;
     private CharacterController characterController;
     private PlayerStamina stamina;
+    private RandomSoundPlayer soundPlayer;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -84,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         playerStats = GetComponent<PlayerStats>();
         stamina = GetComponent<PlayerStamina>();
+        soundPlayer = GetComponent<RandomSoundPlayer>();
         UpdateDirectionVectors();
     }
 
@@ -124,12 +127,14 @@ public class PlayerMovement : MonoBehaviour
             WalkingStateChanged?.Invoke(this, false);
             lastWalkingState = false;
             animationController.StopWalking();
+            soundPlayer.StopContnousPlaying();
         }
         if (lastWalkingState == false && characterController.isGrounded && inputSpeed != Vector2.zero)
         {
             WalkingStateChanged?.Invoke(this, true);
             lastWalkingState = true;
             animationController.StartWalking();
+            soundPlayer.PlayContinous();
         }
     }
 
