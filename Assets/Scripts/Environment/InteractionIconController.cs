@@ -13,7 +13,7 @@ public class InteractionIconController : MonoBehaviour
 
     [Header("References")]
     [SerializeField]
-    private TextMeshProUGUI text;
+    private Text text;
     [SerializeField]
     private Image icon;
     [SerializeField]
