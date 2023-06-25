@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 787300562765832561}
-  color: {r: 1, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 0.20784314, b: 0, a: 1}
 --- !u!1 &796186271203617578
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 7978343660396444839}
-  color: {r: 1, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 0.20784314, b: 0, a: 1}
 --- !u!1 &3314836665030463832
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 133204451569531506}
-  color: {r: 1, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 0.20784314, b: 0, a: 1}
 --- !u!1 &7183721974617580675
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 6023991221803712316}
-  color: {r: 1, g: 0.9991259, b: 0, a: 1}
+  color: {r: 1, g: 0.20769599, b: 0, a: 1}
 --- !u!1 &7903948005427713481
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,10 +748,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredClicks: 5
-  timeLimit: 10
+  timeLimit: 3
   timer: {fileID: 8190286897407568911}
-  lightupDuration: 0.5
-  downDuration: 0.2
+  lightupDuration: 0.3
+  downDuration: 0.1
   keyImages:
     pairs:
     - Key:
