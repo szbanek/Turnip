@@ -20,7 +20,6 @@ public class CatchItem : MonoBehaviour
     private float leftBoundary;
     private float upperBoundary;
     private float lowerBoundary;
-    private float gameOverBoundary;
 
     private void Awake()
     {
@@ -39,7 +38,6 @@ public class CatchItem : MonoBehaviour
         leftBoundary = gameArea.position.x + gameArea.rect.xMin + (lettuceTransform.rect.width);
         upperBoundary = gameArea.position.y + gameArea.rect.yMax - (lettuceTransform.rect.width);
         lowerBoundary = gameArea.position.y + gameArea.rect.yMin + (lettuceTransform.rect.width);
-        gameOverBoundary = lowerBoundary + (upperBoundary-lowerBoundary)/10;
     }
     private void Update()
     {
@@ -48,11 +46,11 @@ public class CatchItem : MonoBehaviour
         {
             direction.x = -direction.x;
         }
-        if (transform.position.y <= lowerBoundary || transform.position.y >= upperBoundary)
+        if (transform.position.y >= upperBoundary)
         {
             direction.y = -direction.y;
         }
-        if (transform.position.y <= gameOverBoundary)
+        if (transform.position.y <= lowerBoundary)
         {
             OnPulledUpEvent?.Invoke(null, false);
         }
