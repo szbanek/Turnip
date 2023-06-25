@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cf51c01df3db94cba23b98dcec9e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iconPosition: {x: 0, y: 1, z: 0}
+  iconPosition: {x: 0, y: 2.03, z: 0}
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: 1f3bca87e41fe604292f1e390591f406, type: 2}
   vegetable: {fileID: 11400000, guid: 0fc8422a08412cf4197bf3f47689f75f, type: 2}
@@ -184,6 +184,7 @@ MonoBehaviour:
   quantity: 0
   exp: 0
   questText: {fileID: 0}
+  item: {fileID: 0}
 --- !u!136 &1701178944667147191
 CapsuleCollider:
   m_ObjectHideFlags: 0
