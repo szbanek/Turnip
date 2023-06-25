@@ -15,9 +15,8 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
 
     public string RandomAdjective => adjectives[UnityEngine.Random.Range(0, adjectives.Length - 1)];
 
-    public ItemInstance GenerateItem()
+    public ItemInstance GenerateItem(PlayerItem item)
     {
-        PlayerItem item = itemsPrefabs[UnityEngine.Random.Range(0, itemsPrefabs.Length)];
         PlayerStatsModifier statsModifier = new PlayerStatsModifier();
         var choices = Enum.GetValues(typeof(PlayerTree.Choice));
         switch ((PlayerTree.Choice)choices.GetValue(UnityEngine.Random.Range(0, choices.Length - 1)))
@@ -43,5 +42,11 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
         }
         ItemInstance instance = new ItemInstance(item, statsModifier, RandomAdjective + " " + item.ItemName);
         return instance;
+    }
+
+    public ItemInstance GenerateItem()
+    {
+        PlayerItem item = itemsPrefabs[UnityEngine.Random.Range(0, itemsPrefabs.Length)];
+        return GenerateItem(item);
     }
 }

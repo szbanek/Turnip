@@ -19,7 +19,7 @@ MonoBehaviour:
   positiveAnswer: "Dzi\u0119kuj\u0119 Ci z ca\u0142ego serca za dostarczenie {QUANTITY}
     {NAME}. Teraz mog\u0119 stworzy\u0107 magiczn\u0105 atmosfer\u0119 na \u015Bwi\u0119to.
     Twoje {NAME} s\u0105 niezast\u0105pione. Jestem Ci ogromnie wdzi\u0119czny!"
-  negativeAnswer: "Och, to smutne, \u017Ce nie masz kilku {NAME} do dekoracji na
-    \u015Bwi\u0119to. Czy m\xF3g\u0142by\u015B spr\xF3bowa\u0107 poszuka\u0107 ich
-    w innych miejscach? Mo\u017Ce s\u0105 jakie\u015B ogrody lub grz\u0105dki. Dzi\u0119kuj\u0119
-    za Twoje starania!"
+  negativeAnswer: "Och, to smutne, \u017Ce nie masz {QUANTITY} {NAME} do dekoracji
+    na \u015Bwi\u0119to. Czy m\xF3g\u0142by\u015B spr\xF3bowa\u0107 poszuka\u0107
+    ich w innych miejscach? Mo\u017Ce s\u0105 jakie\u015B ogrody lub grz\u0105dki.
+    Dzi\u0119kuj\u0119 za Twoje starania!"

@@ -11,8 +11,8 @@ public class Quest
         string text,
         string positiveAnswer,
         string negativeAnswer,
-        float exp
-        // items
+        float exp,
+        ItemInstance item
     )
     {
         this.type = type;
@@ -27,6 +27,7 @@ public class Quest
         this.negativeAnswer = this.negativeAnswer.Replace("{NAME}", Vegetable.TypeToString(type));
         this.negativeAnswer = this.negativeAnswer.Replace("{QUANTITY}", quantity.ToString());
         this.exp = exp;
+        this.item = item;
     }
     private Vegetable.VegetableType type;
     public Vegetable.VegetableType Type => type;
@@ -40,4 +41,6 @@ public class Quest
     public string NegativeAnswer => negativeAnswer;
     private float exp;
     public float Exp => exp;
+    private ItemInstance item;
+    public ItemInstance Item => Item;
 }

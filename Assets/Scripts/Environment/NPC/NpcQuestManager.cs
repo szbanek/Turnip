@@ -13,6 +13,8 @@ public class NpcQuestManager : MonoBehaviour
     private float exp;
     [SerializeField]
     private QuestText questText;
+    [SerializeField]
+    PlayerItem item;
     private Quest quest;
     public Quest Quest => quest;
     void Start()
@@ -29,7 +31,8 @@ public class NpcQuestManager : MonoBehaviour
                 questText.Text,
                 questText.PositiveAnswer,
                 questText.NegativeAnswer,
-                exp
+                exp,
+                item
             );
         }
     }

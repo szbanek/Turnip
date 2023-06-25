@@ -69,7 +69,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             if (win)
             {
                 FindObjectOfType<PlayerExperience>().AddExperience(questManager.Quest.Exp);
-                FindObjectOfType<PlayerItemsInventory>().Items.Add(ItemsGenerator.Instance.GenerateItem());
+                FindObjectOfType<PlayerItemsInventory>().Items.Add(questManager.Quest.Item);
                 questManager.GenerateNewQuest();
             }
             return;

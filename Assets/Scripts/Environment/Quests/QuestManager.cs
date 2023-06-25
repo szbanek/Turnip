@@ -10,14 +10,16 @@ public class QuestManager : Singleton<QuestManager>
     private List<QuestText> texts;
     public Quest GetNewQuest()
     {
+        int tmp = UnityEngine.Random.Range(0, texts.Count);
         return new Quest
         (
             (Vegetable.VegetableType)UnityEngine.Random.Range(0, 5),
             UnityEngine.Random.Range(1, 6),
-            texts[UnityEngine.Random.Range(0, texts.Count)].Text,
-            texts[UnityEngine.Random.Range(0, texts.Count)].PositiveAnswer,
-            texts[UnityEngine.Random.Range(0, texts.Count)].NegativeAnswer,
-            Random.Range(expRange.x, expRange.y)
+            texts[tmp].Text,
+            texts[tmp].PositiveAnswer,
+            texts[tmp].NegativeAnswer,
+            Random.Range(expRange.x, expRange.y),
+            ItemsGenerator.Instance.GenerateItem()
         );
     }
 
@@ -28,7 +30,8 @@ public class QuestManager : Singleton<QuestManager>
         string text,
         string positiveAnswer,
         string negativeAnswer,
-        float exp
+        float exp,
+        PlayerItem item
     )
     {
         return new Quest
@@ -38,7 +41,8 @@ public class QuestManager : Singleton<QuestManager>
             text,
             positiveAnswer,
             negativeAnswer,
-            exp
+            exp,
+            ItemsGenerator.Instance.GenerateItem(item)
         );
     }
 }
