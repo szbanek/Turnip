@@ -60,7 +60,7 @@ MonoBehaviour:
   interactionIconData: {fileID: 11400000, guid: 1f3bca87e41fe604292f1e390591f406, type: 2}
   vegetable: {fileID: 11400000, guid: 0fc8422a08412cf4197bf3f47689f75f, type: 2}
   questMarkerPrefab: {fileID: 1783935159139454906, guid: 8dc25f6af55689047a8e7496502b5222, type: 3}
-  questMarkerOffset: {x: 0, y: 3.5, z: 0}
+  questMarkerOffset: {x: 0, y: 3, z: 0}
 --- !u!82 &9169503248084478889
 AudioSource:
   m_ObjectHideFlags: 0
