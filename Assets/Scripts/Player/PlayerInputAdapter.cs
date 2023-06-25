@@ -27,11 +27,13 @@ public class PlayerInputAdapter : MonoBehaviour
 
         if (inputAdapter != null)
         {
+            movement.Move(Vector2.zero);
             return;
         }
 
         if (!EnableMovement)
         {
+            movement.Move(Vector2.zero);
             return;
         }
         movement.Move(context.ReadValue<Vector2>());
@@ -100,7 +102,10 @@ public class PlayerInputAdapter : MonoBehaviour
         {
             return;
         }
-        interactor.InteractWithSelected();
+        if (context.started)
+        {
+            interactor.InteractWithSelected();
+        }
     }
 
     public void KeyboardW(InputAction.CallbackContext context)
