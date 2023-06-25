@@ -71,17 +71,17 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
                 FindObjectOfType<PlayerExperience>().AddExperience(questManager.Quest.Exp);
                 FindObjectOfType<PlayerItemsInventory>().Items.Add(ItemsGenerator.Instance.GenerateItem());
                 questManager.GenerateNewQuest();
-            }            
+            }
             return;
         }
         if (win)
         {
             FindObjectOfType<PlayerExperience>().AddExperience(vegetable.ExpGiven);
-            FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 
-            1+(int)(stats.AdditionalVegetableChance+UnityEngine.Random.Range(0f, 0.5f)));
+            FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type,
+            1 + (int)(stats.AdditionalVegetableChance + UnityEngine.Random.Range(0f, 0.5f)));
             OnPickedUp?.Invoke(this, null);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 
     private void Start()

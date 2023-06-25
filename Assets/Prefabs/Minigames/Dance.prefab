@@ -538,7 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredClicks: 6
   speed: 3
-  hitAccuracy: 0.5
+  hitAccuracy: 0.2
   height: 150
   aTurnip: {fileID: 4842405846504112997}
   dTurnip: {fileID: 970809273028983847}

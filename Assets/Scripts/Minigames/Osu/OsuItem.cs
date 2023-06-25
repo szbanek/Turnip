@@ -25,7 +25,7 @@ public class OsuItem : MonoBehaviour
     private float endValue = 0f;
     private float t = 0f;
     private float circleValue = 2f;
-    void Start()
+    void Awake()
     {
         if (logic == null)
         {

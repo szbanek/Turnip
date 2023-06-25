@@ -16,7 +16,7 @@ public class ClickMultipleLogic : MonoBehaviour
     private UIBarController clickCounter;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
-    private List<ClickMultipleItem> peppers;
+    private List<ClickMultipleItem> peppers = new List<ClickMultipleItem>();
     private int clickedPeppers = 0;
 
 
@@ -28,14 +28,9 @@ public class ClickMultipleLogic : MonoBehaviour
             Vector2 localMousePosition = rectTransform.InverseTransformPoint(position);
             if (rectTransform.rect.Contains(localMousePosition))
             {
-                pepper.clickMultiple();
+                pepper.Click();
             }
         }
-    }
-
-    private void Awake()
-    {
-        peppers = new List<ClickMultipleItem>();
     }
     private void StartManual()
     {
@@ -73,9 +68,9 @@ public class ClickMultipleLogic : MonoBehaviour
 
     public void SetDifficulty(float difficulty)
     {
+        foreach (ClickMultipleItem pepper in peppers) pepper.SetDifficulty(difficulty);
         requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
         timeLimit += difficulty;
-        foreach (ClickMultipleItem pepper in peppers) pepper.SetDifficulty(difficulty);
         StartManual();
     }
 }

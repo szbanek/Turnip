@@ -26,4 +26,66 @@ public class PlayerStatsModifier
         value.MinigameBonus = a.MinigameBonus + b.MinigameBonus;
         return value;
     }
+
+    public override string ToString()
+    {
+        string res = "";
+        if (MaxStamina != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Maksymalna kondycja: " + MaxStamina.ToString();
+        }
+        if (StaminaRegen != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Regeneracja kondycji: " + StaminaRegen.ToString();
+        }
+        if (SprintSpeed != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Szybkość biegu: " + SprintSpeed.ToString();
+        }
+        if (JumpCost != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Koszt skoku: " + JumpCost.ToString();
+        }
+        if (SenseRange != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Zasięg zmysłów: " + SenseRange.ToString();
+        }
+        if (AdditionalVegetableChance != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Szansa na dodatkowe warzywo: " + AdditionalVegetableChance.ToString();
+        }
+        if (MinigameBonus != 0)
+        {
+            if (res.Length > 0)
+            {
+                res += "\n";
+            }
+            res += "Umiejętności zbierackie: " + MinigameBonus.ToString();
+        }
+        return res;
+    }
 }

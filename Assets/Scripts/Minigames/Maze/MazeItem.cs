@@ -12,9 +12,9 @@ public class MazeItem : MonoBehaviour
     [SerializeField]
     private MazeLogic logic;
     [SerializeField]
-    private float xSpeed = 1f;
+    private float xSpeed = 60f;
     [SerializeField]
-    private float upSpeed = 1f;
+    private float upSpeed = 60f;
     public event EventHandler<bool> OnGoalReachedEvent;
     private float goalHeight;
     private bool left = false;
@@ -58,7 +58,9 @@ public class MazeItem : MonoBehaviour
 
     public void SetDifficulty(float difficulty)
     {
-        upSpeed = (int)(Math.Max(upSpeed - difficulty/10, 0.1));
-        xSpeed += difficulty/10;
+        upSpeed = Math.Max(upSpeed - difficulty, 20f);
+        xSpeed += difficulty;
+        print(upSpeed);
+        print(xSpeed);
     }
 }

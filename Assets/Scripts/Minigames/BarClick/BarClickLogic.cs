@@ -68,8 +68,8 @@ public class BarClickLogic : MonoBehaviour
 
     public void SetDifficulty(float difficulty)
     {
-        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
-        hitBarSize += difficulty;
+        speed = Math.Max(speed - difficulty/10, 0.1f);
+        hitBarSize += difficulty/10;
         StartManual();
     }
 }

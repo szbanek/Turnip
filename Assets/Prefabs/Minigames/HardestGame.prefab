@@ -1403,7 +1403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362b81880d9b2c64182888ad99817ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 10
+  timeLimit: 7
   timer: {fileID: 3039100761594935057}
 --- !u!114 &8877655434090412952
 MonoBehaviour:

@@ -9,7 +9,7 @@ public class ClickItem : MonoBehaviour
     [SerializeField]
     private ClickLogic logic;
     public event EventHandler OnPulledUpEvent;
-    void Start()
+    void Awake()
     {
         if (logic == null)
         {

@@ -12,7 +12,7 @@ public class ClickLogic : MonoBehaviour
     private UIBarController timer;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
-    private List<ClickItem> peppers;
+    private List<ClickItem> peppers= new List<ClickItem>();
     private int clickedPeppers = 0;
 
 
@@ -28,15 +28,11 @@ public class ClickLogic : MonoBehaviour
             }
         }
     }
-
-    private void Awake()
-    {
-        peppers = new List<ClickItem>();
-    }
     private void StartManual()
     {
         timer.ChangeValueInverted(0, 1);
         StartCoroutine(TimeCourutine());
+        print(peppers.Count);
     }
 
     private IEnumerator TimeCourutine()

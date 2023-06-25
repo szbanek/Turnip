@@ -24,7 +24,7 @@ public class DanceLogic : MonoBehaviour
     private UIBarController counter;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
-    private List<ad> arrows;
+    private List<ad> arrows = new List<ad>();
     private int currentClicks = 0;
     private float minimum = -1.0f;
     private float maximum;
@@ -59,33 +59,29 @@ public class DanceLogic : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void StartManual()
     {
+        counter.ChangeValue(0, 1);
         maximum = requiredClicks + 1;
-        arrows = new List<ad>();
         for (int i = 0; i < requiredClicks; i++)
         {
             arrows.Add((ad)UnityEngine.Random.Range(0, 2));
         }
         Debug.Log(arrows[currentClicks]);
-    }
-
-    private void StartManual()
-    {
-        counter.ChangeValue(0, 1);
         SpawnTurnip();
     }
 
     private void Update()
     {
-        barValue = Mathf.Lerp(minimum, maximum, t);
+        barValue = Mathf.LerpUnclamped(minimum, maximum, t);
 
-        t += 0.5f * Time.deltaTime * speed / (requiredClicks+2);
+        t += 0.5f * Time.deltaTime * speed / (requiredClicks + 2);
 
-        turnip.position = Vector3.LerpUnclamped(turnipStart, turnipDestination, barValue - currentClicks + hitAccuracy);
+        turnip.position = Vector3.LerpUnclamped(turnipStart, turnipDestination, barValue - currentClicks + 1 + hitAccuracy);
 
-        if (t > 1.0f || barValue > currentClicks + hitAccuracy)
+        if (barValue > currentClicks + hitAccuracy)
         {
+            print(barValue);
             OnLoseEvent?.Invoke(this, null);
         }
     }
@@ -101,17 +97,20 @@ public class DanceLogic : MonoBehaviour
                 turnipDestination = dTurnip.position;
                 break;
         }
-        turnipDestination.y += 5 + hitAccuracy*height;
+        turnipDestination.y += 5;
         turnipStart = turnipDestination;
         turnipStart.y -= height;
         turnip.position = turnipStart;
+        // print((aTurnip.position, dTurnip.position));
+        // print(turnipStart);
+        // print(turnipDestination);
     }
 
     public void SetDifficulty(float difficulty)
     {
         requiredClicks = (int)(Math.Max(requiredClicks - difficulty, 1));
-        speed = (int)(Math.Max(speed - difficulty/10, 0.1));
-        hitAccuracy += difficulty/10;
+        speed = Math.Max(speed - difficulty, 1f);
+        hitAccuracy += difficulty / 10;
         StartManual();
     }
 }
