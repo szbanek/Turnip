@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592f8af7100e3d44ea6a14b7486e93ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 2
   hitBarSize: 0.2
   bar: {fileID: 7967941170338296111}
   sweetSpot: {fileID: 9089646654466845986}

@@ -261,9 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847fe70b83d351f43aac8630cc595ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 100
+  timeLimit: 2.5
   timer: {fileID: 4771594023629385855}
-  counter: {fileID: 0}
 --- !u!114 &1563060371574991010
 MonoBehaviour:
   m_ObjectHideFlags: 0

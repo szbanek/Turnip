@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Horseradish
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d11df094571c439d6b16c36f603bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5925854482456046069}
+  prefab: {fileID: 2069002375301994140, guid: eecc504307399ea4293e83e6aa1f88bb, type: 3}
   minSpawnTime: 60
   maxSpawnTime: 300
   startSpawnPercent: 100

@@ -267,8 +267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb0bf1f9baca0645a9d33c616abc52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredClicks: 10
-  timeLimit: 10
+  requiredClicks: 8
+  timeLimit: 3
   timer: {fileID: 5864217861825865985}
   clickCounter: {fileID: 3362687147839058669}
 --- !u!114 &7199878396609550890

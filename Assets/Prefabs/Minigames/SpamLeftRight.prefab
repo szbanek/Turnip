@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf93836fc304354d934d383581c561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredClicks: 10
-  timeLimit: 10
+  requiredClicks: 12
+  timeLimit: 3
   angle: 20
   timer: {fileID: 340582279272124366}
   clicksCounter: {fileID: 1732686547793842171}

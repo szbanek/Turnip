@@ -154,9 +154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63a4ea2f45f2644fa68cbd6d85c1ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredClicks: 10
-  reduceClicksCooldown: 1
-  timeLimit: 10
+  requiredClicks: 12
+  reduceClicksCooldown: 0.35
+  timeLimit: 4
   timer: {fileID: 1421214223864545353}
   clickCounter: {fileID: 4742409372607473062}
   carrot: {fileID: 2487843366413387906}

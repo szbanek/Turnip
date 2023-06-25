@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 4651109796373170061}
-  requiredSpins: 10
-  timeLimit: 100
+  requiredSpins: 8
+  timeLimit: 3
   timer: {fileID: 1902367194136829676}
   spins: {fileID: 5504396087239040034}
   lettuce: {fileID: 6304162773114279925}
