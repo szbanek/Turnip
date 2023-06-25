@@ -32,7 +32,7 @@ public class CatchItem : MonoBehaviour
     }
     private void StartManual()
     {
-        direction = new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-4f, 4f), 0).normalized * speed;
+        direction = Vector3.down;
 
         RectTransform lettuceTransform = transform as RectTransform;
         rightBoundary = gameArea.position.x + gameArea.rect.xMax - (lettuceTransform.rect.width);
