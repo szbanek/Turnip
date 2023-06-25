@@ -1,7 +1,7 @@
 Sałaciany dziadyga
 
 1.IN
-Witaj, czcigodny nieznajomy! Wybacz moją śmiałość, ale na twoim miejscu nie nosiłbym tego purpurowego ubioru: nasze królestwo nie ma najlepszych stosunków z legitymującymi się nim wampirami chrzanowymi, i mogą spotkać cię nieprzyjemności w zetknięciu ze strażami pałacowymi. [TAB - Ekwipunek] A szkoda... Chrzan jest bardzo cenną przyprawą, ja niby mogę prowadzić swoje własne pola sałaty ale tęsknię za czasem kiedy można było bez problemu importować chrzan... Słuchaj, może mógłbyś mi pomóc? Widzę, żeś światowy człowiek. Przynieś mi 8 CHRZANU, a obiecuję ci, że nie pożałujesz! Z tego co wiem, możesz go znaleźć w okolicy gór lub wampirzych plantacji.
+Witaj, czcigodny nieznajomy! Wybacz moją śmiałość, ale na twoim miejscu nie nosiłbym tego purpurowego ubioru: nasze królestwo nie ma najlepszych stosunków z legitymującymi się nim wampirami chrzanowymi, i mogą spotkać cię nieprzyjemności w zetknięciu ze strażami pałacowymi. [TAB - Ekwipunek] A szkoda... Chrzan jest bardzo cenną przyprawą, ja niby mogę prowadzić swoje własne pola sałaty ale tęsknię za czasem kiedy można było bez problemu importować chrzan... Słuchaj, może mógłbyś mi pomóc? Widzę, żeś światowy człowiek. Przynieś mi 8 CHRZANU, a obiecuję ci, że nie pożałujesz! Z tego co wiem, możesz go znaleźć w [!!!!] okolicy gór lub wampirzych plantacji.
 
 1.OUT
 Aaach, chrzan! Dziękuję, to cenny nabytek dla mnie i mojej rodziny. Mam nadzieję że nie miałeś problemów z Chrzanzą - te wampiry potrafią być naprawdę nieobliczalne. Proszę, przyjmij ten kapelusz jako dowód mojej wdzięczności. Był w mojej rodzinie od pokoleń, a należał do mojego dalekiego przodka, który z nim na głowie żeglował po morzach i oceanach, daleko od brzegów tej wyspy. Teraz należy do ciebie. Proszę, noś go z dumą.
@@ -17,7 +17,7 @@ Hm...? A, to ty. Widzę że masz sałatę. Dowiodłeś swej determinacji, zatem 
 Wampir pogranicznik
 
 3.IN
-Stać! Ktoś ty...? Ach. Mediator. Chcesz zatrzymać tę wojnę, co? Hej, nie obawiaj się, może i jesteśmy wampirami ale to nie czyni z nas bezmyślnych potworów. Kto wie, może nawet ci się uda, Hrabia Gahlammon, choć potrafi wpaść w wielki gniew, zawsze chętnie słucha rozsądnych argumentów. Przy okazji, mam do ciebie taką osobistą sprawę. Rozbiliśmy tu obóz dobrych kilka tygodni temu i powoli kończą się nam zapasy żywności. Co gorsza, jakiś sabotażysta podłożył do naszej strawy czosnek i kilku chłopaków porządnie się struło. Wsparłbyś nas może? Wszystko o co proszę to 7 PAPRYKI. Możesz znaleźć ją w pustynnym kraju na wschodzie. Z tego co mi wiadomo, zwykle rośnie na rozległych, otwartych przestrzeniach, możesz też zawitać na plantację na północnym zachodzie stąd, by mieć bogate zbiory. Z góry dziękuję ci za pomoc.
+Stać! Ktoś ty...? Ach. Mediator. Chcesz zatrzymać tę wojnę, co? Hej, nie obawiaj się, może i jesteśmy wampirami ale to nie czyni z nas bezmyślnych potworów. Kto wie, może nawet ci się uda, Hrabia Gahlammon, choć potrafi wpaść w wielki gniew, zawsze chętnie słucha rozsądnych argumentów. Przy okazji, mam do ciebie taką osobistą sprawę. Rozbiliśmy tu obóz dobrych kilka tygodni temu i powoli kończą się nam zapasy żywności. Co gorsza, jakiś sabotażysta podłożył do naszej strawy czosnek i kilku chłopaków porządnie się struło. Wsparłbyś nas może? Wszystko o co proszę to 7 PAPRYKI. Możesz znaleźć ją w pustynnym kraju na [!!!!] wschodzie. Z tego co mi wiadomo, zwykle rośnie na rozległych, otwartych przestrzeniach, możesz też zawitać na plantację na północnym zachodzie stąd, by mieć bogate zbiory. Z góry dziękuję ci za pomoc.
 
 3.OUT
 Wielkie dzięki mediatorze! Nie wiem co byśmy zrobili bez ciebie! Niestety, choć bardzo chcę się odwdzięczyć, nie jestem w stanie specjalnie ci pomóc w twojej misji. Mogę najwyżej poradzić żebyś udał się do purpurowego zamku i porozmawiał ze strażnikiem przy głównej bramie. Wyjaśnij mu wszystko, a na pewno ci pomoże.
@@ -29,3 +29,36 @@ Mediator... Mogę cię przpuścić, ale odradzam. Hrabia Gahlammon jest obecnie 
 
 4.OUT
 Przyniosłeś składniki, wspaniale. Hrabia Gahlammon na pewno się ucieszy, osobiście dostarczę mu gotowy posiłek razem z twoim listem pokojowym, Hrabia uspokoił się już i jest chętny do rokowań. Zdołałeś właśnie utrzymać pokój w bardzo ryzykownej sytuacji, nie pora jednak świętować. Przygotowywaliśmy się na wypadek walki od dłuższego czasu i postawiliśmy naszych sojuszników na tyłach sałaciarzy w stan gotowości. Jeśli nie otrzymają oni listu wstrzymującego podpisanego przez Hrabiego Gahlammona, za parę dni przypuszczą atak. Musisz jak najprędzej dostarczyć ten list aby zapobiec rozlewowi krwi i utrzymać pokój w Pięciu Królestwach.
+
+////////////////////////////////////////////////////////////////////////////////////
+Sałaciany dziadyga
+
+1.IN
+Witaj, nieznajomy! Hm, na twoim miejscu nie nosilbym tego purpurowego ubioru: nasze krolestwo nie ma najlepszych stosunkow z tymi wampirami chrzanowymi, i moga spotkac cie nieprzyjemnosci w zetknieciu ze strazami palacowymi. [TAB - Ekwipunek] A szkoda... Chrzan jest bardzo cenna przyprawa, ja niby mam swoje wlasne pola salaty, ale tesknie za czasem kiedy mozna bylo importowac chrzan... Sluchaj, moglbys mi pomoc? Przynies mi 8 CHRZANU, a obiecuje ci, ze nie pozalujesz! Z tego co wiem, mozesz go znalezc w okolicy gor lub wampirzych plantacji.
+
+1.OUT
+Aaach, chrzan! Dziekuje, to cenny nabytek dla mnie i mojej rodziny. Mam nadzieje ze nie miales problemow z Chrzanza - te wampiry potrafia być naprawde nieobliczalne. Prosze, przyjmij ten kapelusz jako dowod mojej wdziecznosci. Byl w mojej rodzinie od pokolen, a nalezał do mojego dalekiego przodka, ktory z nim na glowie zeglowal po morzach i oceanach, daleko od brzegow tej wyspy. Teraz nalezy do ciebie. Prosze, nos go z duma.
+
+Strażnik sałaty
+
+2.IN
+Mediator! Slyszalem o tym że do nas zmierzasz. Tak sie jednak sklada ze jestem dosyc nieufny wobec nieznajomych i mam opory przed wpuszczeniem kogos kto nie dowiedzie swojej przyjazni wobec naszego krolestwa. Przynies mi 6 SALAT, symbolu naszej gospodarki. Jest tak powszechna, ze znajdziesz ja w okolicy dowolnej wioski. Dowiedz w ten sposób, ze jestes godzien naszego zaufania. Wtedy pozwole ci przejsc.
+
+2.OUT
+Widze ze masz salate. Daj mi ten list - masz moje slowo, ze dostarcze go do Jego Wysokosci. Co do twojej sprawy: niedawne spiecie na granicy z Chrzanowym Imperium doprowadzilo do zaognienia naszych stosunkow z wampirami. Spiesz sie, Hrabia Gahlammon nie bedzie zwlekal wiecznie z wydaniem wojskom rozkazu do ataku, wiec jak najszybciej musisz mu dostarczyc ten list. Wez jeszcze ten pancerz w ramach podziekowan.
+
+Wampir pogranicznik
+
+3.IN
+Stac! Ktos ty...? Ach. Mediator. Hej, nie obawiaj się, moze i jestesmy wampirami ale to nie czyni z nas potworow. Hrabia Gahlammon, choc potrafi wpasc w wielki gniew, zawsze chetnie slucha rozsadnych argumentow. Przy okazji, mam do ciebie taka osobista sprawe. Powoli koncza sie nam zapasy zywnosci. Co gorsza, ktos podlozyl do naszej strawy czosnek. Wsparlbys nas? Prosze tylko o 7 PAPRYKI. Z tego co mi wiadomo, zwykle rosnie na rozleglych, otwartych przestrzeniach, mozesz tez zawitac na plantacje na polnocnym zachodzie stad, by miec bogate zbiory.
+
+3.OUT
+Wielkie dzieki mediatorze! Nie wiem co bysmy zrobili bez ciebie! Niestety, choc bardzo chce sie odwdzieczyc, nie jestem w stanie specjalnie ci pomoc w twojej misji. Moge najwyzej poradzic zebys udal sie do purpurowego zamku i porozmawial ze straznikiem przy glownej bramie. Wyjasnij mu wszystko, a na pewno ci pomoze.
+
+Wampir strażnik zamku
+
+4.IN
+Mediator... Moge cie przpuscic, ale odradzam. Hrabia Gahlammon jest obecnie w bardzo, bardzo zlym nastroju, sugeruje ci powrocic tutaj po jakims czasie. Przy okazji, moze rozejrzalbys sie za pewnymi skladnikami, ktorych brakuje naszemu kucharzowi do przyrzadzenia Hrabiemu posilku? Potrzeba nam jedynie 6 RZEPY, ktora czesto rosnie przy goscincu. Dobry posilek i chwila odpoczynku na pewno pomoga naszemu Panu w ochlonieciu z obecnego stanu.
+
+4.OUT
+Przyniosles skladniki, wspaniale. Hrabia Gahlammon na pewno sie ucieszy, dostarcze mu twoj list pokojowy. Zdolales wlasnie utrzymac pokoj w bardzo ryzykownej sytuacji, nie pora jednak swietowac. Przygotowywalismy sie na wypadek walki od dluzszego czasu i postawilismy naszych sojusznikow na tylach salaciarzy w stan gotowosci. Jesli nie otrzymaja oni listu wstrzymujacego podpisanego przez Hrabiego Gahlammona, za pare dni przypuszcza atak. Musisz jak najpredzej dostarczyc ten list aby zapobiec rozlewowi krwi i utrzymac pokoj w Pieciu Krolestwach.

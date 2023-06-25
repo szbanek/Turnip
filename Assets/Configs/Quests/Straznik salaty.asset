@@ -12,21 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Straznik salaty
   m_EditorClassIdentifier: 
-  text: "Mediator! S\u0142ysza\u0142em o tym \u017Ce do nas zmierzasz. Tak si\u0119
-    jednak sk\u0142ada \u017Ce jestem dosy\u0107 nieufny wobec nieznajomych i mam
-    opory przed wpuszczeniem kogo\u015B kto nie dowiedzie swojej przyja\u017Ani wobec
-    naszego kr\xF3lestwa. Przynie\u015B mi 6 SA\u0141AT, symbolu naszej gospodarki.
-    Jest tak powszechna, \u017Ce znajdziesz j\u0105 w okolicy dowolnej wioski. Dowied\u017A
-    w ten spos\xF3b, \u017Ce jeste\u015B godzien naszego zaufania. Wtedy pozwol\u0119
-    ci przej\u015B\u0107."
-  positiveAnswer: "Hm...? A, to ty. Widz\u0119 \u017Ce masz sa\u0142at\u0119. Dowiod\u0142e\u015B
-    swej determinacji, zatem daj mi ten list - masz moje s\u0142owo \u017Ce dostarcz\u0119
-    go do Jego Wysoko\u015Bci. Ty natomiast musisz natychmiast rusza\u0107 w drog\u0119:
-    niedawne spi\u0119cie na granicy z Chrzanowym Imperium doprowadzi\u0142o do zaognienia
-    naszych stosunk\xF3w z wampirami i tylko ty mo\u017Cesz powstrzyma\u0107 nadchodz\u0105c\u0105
-    wojn\u0119. \u015Apiesz si\u0119, Hrabia Gahlammon nie b\u0119dzie zwleka\u0142
-    wiecznie z wydaniem swoim wojskom rozkazu do ataku, wi\u0119c jak najszybciej
-    musisz mu dostarczy\u0107 ten list. We\u017A jeszcze ten pancerz: nie chcemy
-    by sta\u0142a ci si\u0119 przypadkowa krzywda gdy b\u0119dziesz wchodzi\u0142
-    na terytorium wampir\xF3w."
+  text: "Mediator! Slyszalem o tym \u017Ce do nas zmierzasz. Tak sie jednak sklada
+    ze jestem dosyc nieufny wobec nieznajomych i mam opory przed wpuszczeniem kogos
+    kto nie dowiedzie swojej przyjazni wobec naszego krolestwa. Przynies mi 6 SALAT,
+    symbolu naszej gospodarki. Jest tak powszechna, ze znajdziesz ja w okolicy dowolnej
+    wioski. Dowiedz w ten spos\xF3b, ze jestes godzien naszego zaufania. Wtedy pozwole
+    ci przejsc"
+  positiveAnswer: 'Widze ze masz salate. Daj mi ten list - masz moje slowo, ze dostarcze
+    go do Jego Wysokosci. Co do twojej sprawy: niedawne spiecie na granicy z Chrzanowym
+    Imperium doprowadzilo do zaognienia naszych stosunkow z wampirami. Spiesz sie,
+    Hrabia Gahlammon nie bedzie zwlekal wiecznie z wydaniem wojskom rozkazu do ataku,
+    wiec jak najszybciej musisz mu dostarczyc ten list. Wez jeszcze ten pancerz w
+    ramach podziekowan.'
   negativeAnswer: "Nie przejdziesz dop\xF3ki nie dasz mi 6 sa\u0142at."
