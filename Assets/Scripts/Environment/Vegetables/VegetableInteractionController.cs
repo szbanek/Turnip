@@ -16,6 +16,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     private InteractionIconData interactionIconData;
     [SerializeField]
     private Vegetable vegetable;
+    private NpcQuestManager questManager;
 
     public event System.EventHandler OnPickedUp;
 
@@ -28,6 +29,12 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     public void Interact()
     {
         int index = Random.Range(0, vegetable.Minigames.Count);
+        if (questManager != null)
+        {
+            MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], this, questManager.Quest);
+            Unselect();
+            return;
+        }
         MinigameManager.Instance.SpawnMinigame(vegetable.Minigames[index], this);
         soundPlayer.PlayRandom();
         Unselect();
@@ -60,13 +67,14 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         if (win)
         {
             FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type, 1);
+            OnPickedUp?.Invoke(this, null);
+            Destroy(gameObject);
         }
-        OnPickedUp?.Invoke(this, null);
-        Destroy(gameObject);
     }
 
     private void Start()
     {
+        questManager = GetComponent<NpcQuestManager>();
         if (interactionIconPrefab == null)
         {
             Debug.LogError("No interactionIconPrefab in VegatableInteractionController");

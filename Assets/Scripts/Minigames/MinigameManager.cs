@@ -28,6 +28,17 @@ public class MinigameManager : Singleton<MinigameManager>
         currentMinigame.GetComponent<IMinigameManager>().OnMinigameEndEvent += (_, e) => OnMinigameEnd(e);
     }
 
+    public void SpawnMinigame(GameObject minigame, VegetableInteractionController spawner, Quest quest)
+    {
+        CursorManager.Instance.UnlockCursor();
+        minigamePanel.gameObject.SetActive(true);
+        currentMinigame = Instantiate(minigame, minigameCanvas);
+        currentMinigame.GetComponent<NpcMinigameLogic>()?.SetQuest(quest);
+        currentMinigameSpawner = spawner;
+        playerInputAdapter.inputAdapter = currentMinigame.GetComponent<IInputAdapter>();
+        currentMinigame.GetComponent<IMinigameManager>().OnMinigameEndEvent += (_, e) => OnMinigameEnd(e);
+    }
+
     private void OnMinigameEnd(bool win)
     {
         CursorManager.Instance.LockCursor();

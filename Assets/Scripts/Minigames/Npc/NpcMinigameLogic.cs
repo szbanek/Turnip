@@ -16,12 +16,12 @@ public class NpcMinigameLogic : MonoBehaviour
 
     public void Click(Vector2 vector)
     {
-        if(done) return;
+        if (done) return;
         RectTransform rectTransform = button.transform as RectTransform;
         Vector2 localMousePosition = rectTransform.InverseTransformPoint(vector);
         if (rectTransform.rect.Contains(localMousePosition))
         {
-            if(inventory.TryRemoveItem(quest.Type, quest.Quantity))
+            if (inventory.TryRemoveItem(quest.Type, quest.Quantity))
             {
                 done = true;
                 textField.ChangeText(quest.PositiveAnswer);
@@ -29,12 +29,13 @@ public class NpcMinigameLogic : MonoBehaviour
             else
             {
                 textField.ChangeText(quest.NegativeAnswer);
+                if(done) OnWinEvent?.Invoke(this, null);
+                else OnLoseEvent?.Invoke(this, null);
             }
         }
     }
     private void Start()
     {
-        quest = QuestManager.Instance.GetNewQuest();
         inventory = FindObjectOfType<PlayerVegetableInventory>();
     }
 
@@ -43,15 +44,20 @@ public class NpcMinigameLogic : MonoBehaviour
         if (win) OnWinEvent?.Invoke(this, null);
         else OnLoseEvent?.Invoke(this, null);
     }
-    public string GetButtonText(NpcMinigameButton button)
+    public void NewButton(NpcMinigameButton button)
     {
         this.button = button;
-        return $"Daj {quest.Quantity} {quest.Type}";
     }
 
     public void NewTextField(NpcMinigameText textField)
     {
         this.textField = textField;
-        this.textField.ChangeText(quest.Text);
+    }
+
+    public void SetQuest(Quest quest)
+    {
+        this.quest = quest;
+        textField.ChangeText(quest.Text);
+        button.ChangeText($"Daj {quest.Quantity} {Vegetable.TypeToString(quest.Type)}");
     }
 }

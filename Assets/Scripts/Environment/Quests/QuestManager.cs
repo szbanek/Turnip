@@ -17,4 +17,23 @@ public class QuestManager : Singleton<QuestManager>
             texts[UnityEngine.Random.Range(0, texts.Count)].NegativeAnswer
         );
     }
+
+    public Quest GetNewQuest
+    (
+        Vegetable.VegetableType type,
+        int quantity,
+        string text,
+        string positiveAnswer,
+        string negativeAnswer
+    )
+    {
+        return new Quest
+        (
+            type,
+            quantity,
+            text,
+            positiveAnswer,
+            negativeAnswer
+        );
+    }
 }

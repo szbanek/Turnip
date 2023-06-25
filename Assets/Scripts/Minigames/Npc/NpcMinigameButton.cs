@@ -4,17 +4,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class NpcMinigameButton : MonoBehaviour
 {
     [SerializeField]
     private NpcMinigameLogic logic;
-    private String buttonText;
-    private void Start()
+    private Text textField;
+    private void Awake()
     {
+        textField = GetComponent<Text>();
         if (logic == null)
         {
             logic = GetComponentInParent<NpcMinigameLogic>();
         }
-        buttonText = logic.GetButtonText(this);
+        logic.NewButton(this);
+    }
+
+    public void ChangeText(String text)
+    {
+        textField.text = text;
     }
 }
