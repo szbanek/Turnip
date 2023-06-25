@@ -102,6 +102,10 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             OnPickedUp?.Invoke(this, null);
             Destroy(gameObject);
         }
+        else
+        {
+            Select();
+        }
     }
 
     private IEnumerator GenerateQuestCoroutine()
