@@ -22,8 +22,15 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     [SerializeField]
     private Vegetable vegetable;
 
+    [Header("Quest marker")]
+    [SerializeField]
+    private GameObject questMarkerPrefab;
+    [SerializeField]
+    private Vector3 questMarkerOffset;
+
     private PlayerStats stats;
     private NpcQuestManager questManager;
+    private GameObject questMarker;
 
     public event System.EventHandler OnPickedUp;
 
@@ -77,6 +84,10 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
                 FindObjectOfType<PlayerExperience>().AddExperience(questManager.Quest.Exp);
                 FindObjectOfType<PlayerItemsInventory>().Items.Add(questManager.Quest.Item);
                 gameObject.tag = "Untagged";
+                if (questMarker)
+                {
+                    Destroy(questMarker);
+                }
                 StartCoroutine(GenerateQuestCoroutine());
             }
             return;
@@ -85,7 +96,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         {
             FindObjectOfType<PlayerExperience>().AddExperience(vegetable.ExpGiven);
             FindObjectOfType<PlayerVegetableInventory>().AddItem(vegetable.Type,
-            1 + (int)(stats.AdditionalVegetableChance/100 + UnityEngine.Random.Range(0f, 0.49f)));
+            1 + (int)(stats.AdditionalVegetableChance / 100 + Random.Range(0f, 0.49f)));
             OnPickedUp?.Invoke(this, null);
             Destroy(gameObject);
         }
@@ -96,6 +107,10 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(Random.Range(minQuestGenerationTime, maxQuestGenerationTime));
         questManager.GenerateNewQuest();
         gameObject.tag = "Interactive";
+        if (questMarkerPrefab != null)
+        {
+            questMarker = Instantiate(questMarkerPrefab, transform.position + questMarkerOffset, transform.rotation);
+        }
     }
 
     private void Start()
@@ -111,6 +126,11 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             Debug.LogError("No interactionIconData in VegatableInteractionController");
         }
         soundPlayer = GetComponent<RandomSoundPlayer>();
+
+        if (questManager != null && questMarkerPrefab != null)
+        {
+            questMarker = Instantiate(questMarkerPrefab, transform.position + questMarkerOffset, transform.rotation);
+        }
     }
 
     private void OnDrawGizmosSelected()
