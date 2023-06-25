@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class HardestGameLogic : MonoBehaviour
 {
+    [SerializeField]
+    private float timeLimit = 10;
+    [SerializeField]
+    private UIBarController timer;
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
     private HardestGameItem lettuce;
@@ -35,6 +39,19 @@ public class HardestGameLogic : MonoBehaviour
     private void Start()
     {
         lettuce.OnGoalReachedEvent += (_, win) => HandleEvent(win);
+        timer.ChangeValueInverted(0, 1);
+        StartCoroutine(TimeCourutine());
+    }
+
+    private IEnumerator TimeCourutine()
+    {
+        float counter = 0;
+        while ((counter += Time.deltaTime) < timeLimit)
+        {
+            timer.ChangeValueInverted(counter, timeLimit);
+            yield return null;
+        }
+        OnLoseEvent?.Invoke(this, null);
     }
 
     private void HandleEvent(bool win)

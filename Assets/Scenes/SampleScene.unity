@@ -1848,6 +1848,7 @@ GameObject:
   - component: {fileID: 1874652135}
   - component: {fileID: 1874652137}
   - component: {fileID: 1874652136}
+  - component: {fileID: 1874652138}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Interactive
@@ -1948,7 +1949,7 @@ MonoBehaviour:
   iconPosition: {x: 0, y: 1, z: 0}
   interactionIconPrefab: {fileID: 8376920458564338007, guid: f5d4050fc8ef39641b9791195ab38a0f, type: 3}
   interactionIconData: {fileID: 11400000, guid: bfe6b04bfdb47d44ca33df44cbff4b2a, type: 2}
-  vegetable: {fileID: 11400000, guid: 13cd6328554b4204881006941cde445d, type: 2}
+  vegetable: {fileID: 11400000, guid: 0fc8422a08412cf4197bf3f47689f75f, type: 2}
 --- !u!114 &1874652136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,6 +2059,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1874652138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874652130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbdad33c7748624ca20f4685b3d0361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  quantity: 0
+  questText: {fileID: 0}
 --- !u!1001 &2012546266
 PrefabInstance:
   m_ObjectHideFlags: 0
