@@ -48,6 +48,7 @@ public class UIItemSlot : MonoBehaviour
             image.color = Color.white;
             button.interactable = true;
             tooltipSpawner.enabled = true;
+            tooltipSpawner.SetItemInstance(item);
         }
     }
 

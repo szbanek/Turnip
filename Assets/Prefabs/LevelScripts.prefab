@@ -82,6 +82,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2417080152d2aeb48b046bf8ccd9dc9a, type: 2}
   - {fileID: 11400000, guid: d5581fdce9652e743908268f7260aaaa, type: 2}
   - {fileID: 11400000, guid: 40d23d75bf2585b489ab2367bfcd4b03, type: 2}
+  adjectives:
+  - "Zwyk\u0142y"
 --- !u!1 &2807570025857123488
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,10 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
     private Vector2 itemStatRange;
     [SerializeField]
     private PlayerItem[] itemsPrefabs;
+    [SerializeField]
+    private string[] adjectives;
+
+    public string RandomAdjective => adjectives[UnityEngine.Random.Range(0, adjectives.Length - 1)];
 
     public ItemInstance GenerateItem()
     {
@@ -37,7 +41,7 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
                 statsModifier.MinigameBonus = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
                 break;
         }
-        ItemInstance instance = new ItemInstance(item, statsModifier);
+        ItemInstance instance = new ItemInstance(item, statsModifier, RandomAdjective + " " + item.ItemName);
         return instance;
     }
 }

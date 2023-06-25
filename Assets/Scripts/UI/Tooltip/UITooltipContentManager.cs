@@ -20,11 +20,18 @@ public class UITooltipContentManager : MonoBehaviour
 
     private void Start()
     {
-        layoutElement = GetComponent<LayoutElement>();
+        if (layoutElement == null)
+        {
+            layoutElement = GetComponent<LayoutElement>();
+        }
     }
 
     public void SetContent(string headerText, string contentText)
     {
+        if (layoutElement == null)
+        {
+            layoutElement = GetComponent<LayoutElement>();
+        }
         header.text = headerText;
         content.text = contentText;
         layoutElement.enabled = Mathf.Max(header.text.Length, content.text.Length) > maxLength;
