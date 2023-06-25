@@ -39,7 +39,7 @@ public class DanceLogic : MonoBehaviour
 
     public void Click(string key)
     {
-        if (key == arrows[currentClicks].ToString() && Math.Abs(barValue - currentClicks) < hitAccuracy)
+        if (key == arrows[currentClicks].ToString() && Math.Abs(aTurnip.position.y - turnip.position.y) < height*hitAccuracy)
         {
             currentClicks++;
             counter.ChangeValue(currentClicks, requiredClicks);
