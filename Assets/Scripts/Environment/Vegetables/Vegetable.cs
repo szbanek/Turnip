@@ -25,6 +25,10 @@ public class Vegetable : ScriptableObject
     private List<GameObject> minigames;
     public List<GameObject> Minigames => minigames;
 
+    [SerializeField]
+    private float expGiven;
+    public float ExpGiven => expGiven;
+
     public string Name => TypeToString(type);
 
     public static string TypeToString(VegetableType type)

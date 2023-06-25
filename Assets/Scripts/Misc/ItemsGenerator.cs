@@ -1,17 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class ItemsGenerator : Singleton<ItemsGenerator>
 {
     [SerializeField]
-    private GameObject[] itemsPrefabs;
+    private Vector2 itemStatRange;
+    [SerializeField]
+    private PlayerItem[] itemsPrefabs;
 
     public ItemInstance GenerateItem()
     {
-        PlayerItem item = itemsPrefabs[Random.Range(0, itemsPrefabs.Length)].GetComponent<PlayerItem>();
+        PlayerItem item = itemsPrefabs[UnityEngine.Random.Range(0, itemsPrefabs.Length)];
         PlayerStatsModifier statsModifier = new PlayerStatsModifier();
-        statsModifier.SprintSpeed = Random.Range(0, 10);
+        var choices = Enum.GetValues(typeof(PlayerTree.Choice));
+        switch ((PlayerTree.Choice)choices.GetValue(UnityEngine.Random.Range(0, choices.Length - 1)))
+        {
+            case PlayerTree.Choice.MaxStanima:
+                statsModifier.MaxStamina = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
+            case PlayerTree.Choice.StaminaRegen:
+                statsModifier.StaminaRegen = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
+            case PlayerTree.Choice.SprintSpeed:
+                statsModifier.SprintSpeed = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
+            case PlayerTree.Choice.JumpCost:
+                statsModifier.JumpCost = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
+            case PlayerTree.Choice.AdditionalVegetableChance:
+                statsModifier.AdditionalVegetableChance = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
+            case PlayerTree.Choice.MinigameBonus:
+                statsModifier.MinigameBonus = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
+                break;
+        }
         ItemInstance instance = new ItemInstance(item, statsModifier);
         return instance;
     }
