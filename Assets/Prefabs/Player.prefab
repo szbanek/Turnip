@@ -116,6 +116,8 @@ GameObject:
   - component: {fileID: 6741387975173446621}
   - component: {fileID: 5315703240809581415}
   - component: {fileID: 7370878092730852031}
+  - component: {fileID: 7450896184901940049}
+  - component: {fileID: 8426453596091323793}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -561,6 +563,51 @@ MonoBehaviour:
           AdditionalVegetableChance: 0
           MinigameBonus: 0
   Items: []
+--- !u!114 &7450896184901940049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4594cd1b7f66af54097675fdf26df6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredExperience: 20
+--- !u!114 &8426453596091323793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062298701816995124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d16030c704bb3b41baa0c8abcf2a12a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountGiven:
+    pairs:
+    - Key:
+        item: 0
+      Value: 1
+    - Key:
+        item: 1
+      Value: 1
+    - Key:
+        item: 2
+      Value: 1
+    - Key:
+        item: 3
+      Value: 1
+    - Key:
+        item: 4
+      Value: 1
+    - Key:
+        item: 5
+      Value: 1
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0

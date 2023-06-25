@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerItemsInventory))]
+[RequireComponent(typeof(PlayerTree))]
 public class PlayerStats : MonoBehaviour
 {
     [Header("Stamina")]
@@ -24,16 +25,18 @@ public class PlayerStats : MonoBehaviour
     private float minigameBonus;
 
     private PlayerItemsInventory inventory;
+    private PlayerTree playerTree;
 
     private void Awake()
     {
         inventory = GetComponent<PlayerItemsInventory>();
+        playerTree = GetComponent<PlayerTree>();
     }
 
-    public float MaxStamina => maxStamina + inventory.TotalModifier.MaxStamina;
-    public float StaminaRegen => staminaRegen + inventory.TotalModifier.StaminaRegen;
-    public float SprintSpeed => sprintSpeed + inventory.TotalModifier.SprintSpeed;
-    public float JumpCost => jumpCost + inventory.TotalModifier.JumpCost;
-    public float AdditionalVegetableChance => additionalVegetableChance + inventory.TotalModifier.AdditionalVegetableChance;
-    public float MinigameBonus => minigameBonus + inventory.TotalModifier.MinigameBonus;
+    public float MaxStamina => maxStamina + inventory.TotalModifier.MaxStamina + playerTree.Stats.MaxStamina;
+    public float StaminaRegen => staminaRegen + inventory.TotalModifier.StaminaRegen + playerTree.Stats.StaminaRegen;
+    public float SprintSpeed => sprintSpeed + inventory.TotalModifier.SprintSpeed + playerTree.Stats.SprintSpeed;
+    public float JumpCost => jumpCost + inventory.TotalModifier.JumpCost + playerTree.Stats.JumpCost;
+    public float AdditionalVegetableChance => additionalVegetableChance + inventory.TotalModifier.AdditionalVegetableChance + playerTree.Stats.AdditionalVegetableChance;
+    public float MinigameBonus => minigameBonus + inventory.TotalModifier.MinigameBonus + playerTree.Stats.MinigameBonus;
 }
