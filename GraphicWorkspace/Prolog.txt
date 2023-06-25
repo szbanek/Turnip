@@ -1,0 +1,8 @@
+Pokój nie jest łatwy do utrzymania. Na każdym kroku pojawiają się konflikty i ryzyko wojny. Gdy sytuacja między pięcioma królestwami staje się coraz bardziej napięta, tylko wyjątkowy mediator będzie w stanie opanować sytuację. Zrób wszystko co w twojej mocy, aby dostarczyć list dyplomatyczny do Władcy Sałaty. Jednak to może być za mało. Musisz nawiązać kontakt z pozostałymi krajami: wzgórzystej Rzepy, śnieżnego Chrzanu, nadbrzeżnej Marchwi i pustynnej Papryki. Nie będzie to łatwe zadanie. Przygotuj się na ryzyko i poświęcenie. Nic jednak nie jest warte więcej niż pokój w krainie. 
+Szerokiej drogi, Mediatorze!
+
+
+// bez polskich znaków
+
+Pokoj nie jest latwy do utrzymania. Na kazdym kroku pojawiaja sie konflikty i ryzyko wojny. Gdy sytuacja miedzy piecioma krolestwami staje sie coraz bardziej napieta, tylko wyjatkowy mediator bedzie w stanie opanowac sytuacje. Zrob wszystko co w twojej mocy, aby dostarczyc list dyplomatyczny do Wladcy Salaty. Jednak to moze byc za malo. Musisz nawiazac kontakt z pozostalymi krajami: wzgorzystej Rzepy, snieznego Chrzanu, nadbrzeznej Marchwi i pustynnej Papryki. Nie bedzie to latwe zadanie. Przygotuj sie na ryzyko i poswiecenie. Nic jednak nie jest warte wiecej niz pokoj w krainie. 
+Szerokiej drogi, Mediatorze!
