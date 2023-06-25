@@ -10,7 +10,7 @@ public class NpcMinigameText : MonoBehaviour
     [SerializeField]
     private NpcMinigameLogic logic;
     private Text textField;
-    private void Start()
+    private void Awake()
     {
         textField = GetComponent<Text>();
         if (logic == null)
