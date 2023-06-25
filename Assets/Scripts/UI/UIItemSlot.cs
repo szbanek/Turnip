@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
 [RequireComponent(typeof(Image))]
+[RequireComponent(typeof(UITooltipSpawner))]
 public class UIItemSlot : MonoBehaviour
 {
     private ItemInstance item;
@@ -20,13 +21,15 @@ public class UIItemSlot : MonoBehaviour
 
     private Image image;
     private Button button;
+    private UITooltipSpawner tooltipSpawner;
 
     public event System.EventHandler<ItemInstance> OnItemPressed;
 
-    public void Start()
+    private void Start()
     {
         image = GetComponent<Image>();
         button = GetComponent<Button>();
+        tooltipSpawner = GetComponent<UITooltipSpawner>();
         button.onClick.AddListener(OnClick);
         OnItemSet();
     }
@@ -37,12 +40,14 @@ public class UIItemSlot : MonoBehaviour
         {
             image.color = Color.clear;
             button.interactable = false;
+            tooltipSpawner.enabled = false;
         }
         else
         {
             image.sprite = item.Item.InventoryIcon;
             image.color = Color.white;
             button.interactable = true;
+            tooltipSpawner.enabled = true;
         }
     }
 
