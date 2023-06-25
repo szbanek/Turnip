@@ -1048,7 +1048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5122834791679568390}
   - component: {fileID: 5122834791679568411}
-  - component: {fileID: 5122834791679568389}
+  - component: {fileID: 5759229052358876536}
   - component: {fileID: 5122834791679568388}
   - component: {fileID: 5122834791679568391}
   m_Layer: 5
@@ -1087,8 +1087,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5122834791679568385}
   m_CullTransparentMesh: 1
---- !u!61 &5122834791679568389
-BoxCollider2D:
+--- !u!58 &5759229052358876536
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1100,19 +1100,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24799728, y: -1.2404366}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 15.80674, y: 43.753563}
-  m_EdgeRadius: 0
+  m_Radius: 6.66
 --- !u!50 &5122834791679568388
 Rigidbody2D:
   serializedVersion: 4
@@ -2088,7 +2078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -135}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2, y: -12.7}
+  m_AnchoredPosition: {x: -2, y: -0.10000038}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6738390401113487067
