@@ -628,22 +628,22 @@ MonoBehaviour:
     pairs:
     - Key:
         item: 0
-      Value: 1
+      Value: 5
     - Key:
         item: 1
-      Value: 1
+      Value: 0.25
     - Key:
         item: 2
-      Value: 1
+      Value: 1.5
     - Key:
         item: 3
-      Value: 1
+      Value: -1.5
     - Key:
         item: 4
-      Value: 1
+      Value: 10
     - Key:
         item: 5
-      Value: 1
+      Value: 2.5
   levels:
     pairs:
     - Key:
