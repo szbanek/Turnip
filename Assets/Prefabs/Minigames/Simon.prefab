@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 787300562765832561}
-  color: {r: 0.32941177, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 0, a: 1}
 --- !u!1 &796186271203617578
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 7978343660396444839}
-  color: {r: 0.32941177, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 0, a: 1}
 --- !u!1 &3314836665030463832
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 133204451569531506}
-  color: {r: 0.32941177, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 0, a: 1}
 --- !u!1 &7183721974617580675
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 6023991221803712316}
-  color: {r: 0.32791972, g: 1, b: 0, a: 1}
+  color: {r: 1, g: 0.9991259, b: 0, a: 1}
 --- !u!1 &7903948005427713481
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +751,7 @@ MonoBehaviour:
   timeLimit: 10
   timer: {fileID: 8190286897407568911}
   lightupDuration: 0.5
-  downDuration: 0
+  downDuration: 0.2
   keyImages:
     pairs:
     - Key:
