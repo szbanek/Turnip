@@ -101,9 +101,6 @@ public class DanceLogic : MonoBehaviour
         turnipStart = turnipDestination;
         turnipStart.y -= height;
         turnip.position = turnipStart;
-        // print((aTurnip.position, dTurnip.position));
-        // print(turnipStart);
-        // print(turnipDestination);
     }
 
     public void SetDifficulty(float difficulty)
