@@ -16,7 +16,7 @@ public class PlayerItemsInventory : MonoBehaviour
 
     public List<ItemInstance> Items;
 
-    private PlayerStatsModifier totalModifier;
+    private PlayerStatsModifier totalModifier = new PlayerStatsModifier();
     public PlayerStatsModifier TotalModifier => totalModifier;
 
     private void Start()

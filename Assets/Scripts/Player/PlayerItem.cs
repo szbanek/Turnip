@@ -25,16 +25,29 @@ public class PlayerItem : ScriptableObject
     private ItemSlotType slot;
     public ItemSlotType SlotType => slot;
 
-    private SkinnedMeshRenderer meshRenderer; 
+    private SkinnedMeshRenderer meshRenderer;
 
-    public Mesh Mesh => meshRenderer.sharedMesh;
-    public Material[] Materials => meshRenderer.sharedMaterials;
+    public Mesh Mesh
+    { 
+        get 
+        { 
+            if (meshRenderer == null)
+            {
+                meshRenderer = prefab.GetComponentInChildren<SkinnedMeshRenderer>();
+            }
+            return meshRenderer.sharedMesh;
+        }
+    }
 
-    private void OnValidate()
-    {
-        if(prefab != null)
+    public Material[] Materials 
+    { 
+        get 
         {
-            meshRenderer = prefab.GetComponentInChildren<SkinnedMeshRenderer>();
+            if (meshRenderer == null)
+            {
+                meshRenderer = prefab.GetComponentInChildren<SkinnedMeshRenderer>();
+            }
+            return meshRenderer.sharedMaterials;
         }
     }
 }
