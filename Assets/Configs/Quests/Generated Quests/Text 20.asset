@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
+  m_Name: Text 20
+  m_EditorClassIdentifier: 
+  text: Witaj! Jestesmy w trakcie organizacji festiwalu kulinarnego, a moje zapasy
+    warzyw sie wyczerpaly. Czy moglbys przyniesc mi {QUANTITY} {NAME}, abysmy mogli
+    kontynuowac przygotowania?
+  positiveAnswer: Doskonala praca! Te warzywa pomoga w przygotowaniu pysznych dan
+    na festiwalu. Oto twoja zasluzona nagroda.
+  negativeAnswer: Czy jeszcze mozesz sprobowac zdobyc {QUANTITY} {NAME}? Bez nich
+    nie bedziemy mieli wystarczajaco duzo dan na festiwalu.

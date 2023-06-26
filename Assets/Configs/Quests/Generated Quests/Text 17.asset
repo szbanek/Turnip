@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
+  m_Name: Text 17
+  m_EditorClassIdentifier: 
+  text: Witaj, wojowniku! Istnieje legendarna potrawa, ktora wymaga bardzo pikantnych
+    {NAME}. Zbierz {QUANTITY} z nich, abysmy mogli przygotowac to wyjatkowe danie.
+  positiveAnswer: Niesamowite! Te pikantne {NAME} sa idealne do naszej legendarnego
+    dania. Oto twoja nagroda za pomoc.
+  negativeAnswer: Czy mozesz jeszcze sprobowac zdobyc {QUANTITY} {NAME}? Bez nich
+    nie bedziemy mogli przygotowac naszej wyjatkowej potrawy.
