@@ -58,7 +58,7 @@ public static class UIUtils
         }
     }
 
-    public static IEnumerator CanvasGroupFadeCoroutine(CanvasGroup canvasGroup, float duration, Fade fadeDirection, Func<bool> additionalConditions = null)
+    public static IEnumerator CanvasGroupFadeCoroutine(CanvasGroup canvasGroup, float duration, Fade fadeDirection, Func<bool> additionalConditions = null, bool disableGameObject = true)
     {
         additionalConditions ??= () => true;
 
@@ -82,7 +82,7 @@ public static class UIUtils
             yield return null;
         }
 
-        if (fadeDirection == Fade.FadeOut && additionalConditions())
+        if (fadeDirection == Fade.FadeOut && additionalConditions() && disableGameObject)
         {
             canvasGroup.gameObject.SetActive(false);
         }

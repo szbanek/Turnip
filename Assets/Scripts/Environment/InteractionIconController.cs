@@ -33,6 +33,14 @@ public class InteractionIconController : MonoBehaviour
         StartCoroutine(UIUtils.CanvasGroupFadeCoroutine(canvasGroup, fadeDuration, UIUtils.Fade.FadeIn, () => isShown));
     }
 
+    public void ShowIcon(Sprite sprite, Vector3 position)
+    {
+        icon.sprite = sprite;
+        followedPosition = position;
+        isShown = true;
+        StartCoroutine(UIUtils.CanvasGroupFadeCoroutine(canvasGroup, fadeDuration, UIUtils.Fade.FadeIn, () => isShown));
+    }
+
     public void HideIcon()
     {
         StartCoroutine(HideCoroutine());
@@ -40,7 +48,7 @@ public class InteractionIconController : MonoBehaviour
 
     private IEnumerator HideCoroutine()
     {
-        yield return StartCoroutine(UIUtils.CanvasGroupFadeCoroutine(canvasGroup, fadeDuration, UIUtils.Fade.FadeOut));
+        yield return StartCoroutine(UIUtils.CanvasGroupFadeCoroutine(canvasGroup, fadeDuration, UIUtils.Fade.FadeOut, null, false));
         OnHideEvent?.Invoke(this, null);
     }
 

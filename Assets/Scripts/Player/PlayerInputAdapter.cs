@@ -190,7 +190,14 @@ public class PlayerInputAdapter : MonoBehaviour
 
     public void SenseVegetables(InputAction.CallbackContext context)
     {
-        sense.Sense();
+        if (context.started)
+        {
+            sense.StartSense();
+        }
+        else if (context.canceled)
+        {
+            sense.StopSense();
+        }
     }
 
     private void Update()

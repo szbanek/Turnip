@@ -37,6 +37,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
 
     private InteractionIconController interactionIconController = null;
     public Vector3 Position => transform.position;
+    public Sprite VegetableIcon => vegetable.Icon;
     private bool selected = false;
 
     private RandomSoundPlayer soundPlayer;
@@ -61,8 +62,11 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             return;
         }
         selected = true;
-        interactionIconController = Instantiate(interactionIconPrefab, UIHUDController.Instance.InteractionIconCanvas).GetComponent<InteractionIconController>();
-        interactionIconController.ShowIcon(interactionIconData, transform.position + iconPosition);
+        if (interactionIconController == null)
+        {
+            interactionIconController = Instantiate(interactionIconPrefab, UIHUDController.Instance.InteractionIconCanvas).GetComponent<InteractionIconController>();
+            interactionIconController.ShowIcon(interactionIconData, transform.position + iconPosition);
+        }
     }
 
     public void Unselect()
@@ -72,8 +76,12 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
             return;
         }
         selected = false;
-        interactionIconController.OnHideEvent += (_, _) => Destroy(interactionIconController.gameObject);
-        interactionIconController.HideIcon();
+        if (interactionIconController != null)
+        {
+            interactionIconController.OnHideEvent += (e, _) => Destroy(((MonoBehaviour)e).gameObject);
+            interactionIconController.HideIcon();
+            interactionIconController = null;
+        }
     }
 
     public void MinigameEnd(bool win)

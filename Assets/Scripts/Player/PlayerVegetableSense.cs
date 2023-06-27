@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,55 +8,80 @@ using UnityEngine;
 public class PlayerVegetableSense : MonoBehaviour
 {
     [SerializeField]
-    private GameObject linePrefab;
+    [Range(0.00001f, 1)]
+    private float fovMultiplier;
     [SerializeField]
-    private float linesVisibilityDuration;
+    private float fovDuration;
     [SerializeField]
-    private float linesLength;
+    private GameObject iconPrefab;
 
-    private List<PlayerSenseLine> lines = new List<PlayerSenseLine>();
+    private bool isSensing = false;
+    private float standardFOV;
+    private float fovSpeed;
 
-    private Coroutine currentCoroutine;
+    private float fovTarget;
+
     private PlayerStats playerStats;
+    private Dictionary<VegetableInteractionController, InteractionIconController> activeIcons = new Dictionary<VegetableInteractionController, InteractionIconController>();
 
     private void Start()
     {
+        standardFOV = Camera.main.fieldOfView;
+        fovTarget = Camera.main.fieldOfView;
+        fovSpeed = (standardFOV - standardFOV * fovMultiplier) / fovDuration;
         playerStats = GetComponent<PlayerStats>();
     }
 
-    public void Sense()
+    private void Update()
     {
-        if (currentCoroutine != null)
+        Camera.main.fieldOfView = Mathf.MoveTowards(Camera.main.fieldOfView, fovTarget, fovSpeed * Time.deltaTime);
+
+        if (!isSensing)
         {
             return;
         }
 
         Collider[] vegetables = Physics.OverlapSphere(transform.position, playerStats.SenseRange, LayerMask.GetMask("Vegetables"));
-        foreach (Collider vegetable in vegetables)
+        var controllers = vegetables.Select(e => { return e.GetComponent<VegetableInteractionController>(); });
+        foreach (VegetableInteractionController controller in controllers)
         {
-            PlayerSenseLine line = CreateLine(vegetable);
-            lines.Add(line);
+            if (!activeIcons.ContainsKey(controller))
+            {
+                activeIcons.Add(controller, Instantiate(iconPrefab, UIHUDController.Instance.InteractionIconCanvas).GetComponent<InteractionIconController>());
+                activeIcons[controller].ShowIcon(controller.VegetableIcon, controller.Position);
+            }
         }
-        currentCoroutine = StartCoroutine(ClearLinesCoroutine());
+        List<VegetableInteractionController> toRemove = new List<VegetableInteractionController>();
+        foreach (VegetableInteractionController controller in activeIcons.Keys)
+        {
+            if (!controllers.Contains(controller))
+            {
+                toRemove.Add(controller);
+                activeIcons[controller].OnHideEvent += (_, _) => Destroy(activeIcons[controller].gameObject);
+                activeIcons[controller].HideIcon();
+            }
+        }
+        foreach (var controller in toRemove)
+        {
+            activeIcons.Remove(controller);
+        }
     }
 
-    private IEnumerator ClearLinesCoroutine()
+    public void StartSense()
     {
-        yield return new WaitForSeconds(linesVisibilityDuration);
-        foreach (PlayerSenseLine line in lines)
-        {
-            Destroy(line.gameObject);
-        }
-        lines.Clear();
-        currentCoroutine = null;
+        isSensing = true;
+        fovTarget = standardFOV * fovMultiplier;
     }
 
-    private PlayerSenseLine CreateLine(Collider vegetable)
+    public void StopSense()
     {
-        PlayerSenseLine line = Instantiate(linePrefab).GetComponent<PlayerSenseLine>();
-        line.StartTransform = transform;
-        line.EndTransform = vegetable.transform;
-        line.Length = linesLength;
-        return line;
+        foreach (var icon in activeIcons)
+        {
+            icon.Value.OnHideEvent += (e, _) => Destroy(((MonoBehaviour)e).gameObject);
+            icon.Value.HideIcon();
+        }
+        activeIcons.Clear();
+        isSensing = false;
+        fovTarget = standardFOV;
     }
 }

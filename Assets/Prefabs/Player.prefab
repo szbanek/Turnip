@@ -795,9 +795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ead87a3421b336499b5544f29c77116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linePrefab: {fileID: 2742501894288557860, guid: 4cca2737043299d41ad2c6228417af9f, type: 3}
-  linesVisibilityDuration: 5
-  linesLength: 1
+  fovMultiplier: 0.85
+  fovDuration: 0.15
+  iconPrefab: {fileID: 8376920458564338007, guid: c1c3fd0234ebf5b4f82f3c93e982eb5c, type: 3}
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0
