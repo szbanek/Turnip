@@ -21,6 +21,8 @@ public class PlayerVegetableSense : MonoBehaviour
 
     private float fovTarget;
 
+    private float maxAngle = 120;
+
     private PlayerStats playerStats;
     private Dictionary<VegetableInteractionController, InteractionIconController> activeIcons = new Dictionary<VegetableInteractionController, InteractionIconController>();
 
@@ -41,10 +43,20 @@ public class PlayerVegetableSense : MonoBehaviour
             return;
         }
 
-        Collider[] vegetables = Physics.OverlapSphere(transform.position, playerStats.SenseRange, LayerMask.GetMask("Vegetables"));
+        Collider[] colliders = Physics.OverlapSphere(transform.position, playerStats.SenseRange, LayerMask.GetMask("Vegetables"));
+        var vegetables = colliders.Where(x =>
+        {
+            Vector3 vegetablePosition = x.transform.position - transform.position;
+            vegetablePosition.y = 0;
+            return Vector3.Angle(transform.forward, vegetablePosition.normalized) <= maxAngle;
+        });
         var controllers = vegetables.Select(e => { return e.GetComponent<VegetableInteractionController>(); });
         foreach (VegetableInteractionController controller in controllers)
         {
+            if (controller == null)
+            {
+                continue;
+            }
             if (!activeIcons.ContainsKey(controller))
             {
                 activeIcons.Add(controller, Instantiate(iconPrefab, UIHUDController.Instance.InteractionIconCanvas).GetComponent<InteractionIconController>());
