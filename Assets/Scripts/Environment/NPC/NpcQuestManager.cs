@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(VegetableInteractionController))]
 public class NpcQuestManager : MonoBehaviour
 {
     [Header("Quest")]
+    [SerializeField]
+    private bool usePredefinedQuest;
     [SerializeField]
     private Vegetable.VegetableType type;
     [SerializeField]
@@ -15,14 +18,21 @@ public class NpcQuestManager : MonoBehaviour
     private QuestText questText;
     [SerializeField]
     PlayerItem item;
+    [SerializeField]
+    private InteractionIconData predefinedQuestIconData;
+
     private Quest quest;
     public Quest Quest => quest;
 
+    VegetableInteractionController controller;
+
     void Start()
     {
-        if(questText == null)
+        controller = GetComponent<VegetableInteractionController>();
+        if(!usePredefinedQuest)
         {
             quest = QuestManager.Instance.GetNewQuest();
+            controller.PredefinedIconData = null;
         }
         else
         {
@@ -35,11 +45,13 @@ public class NpcQuestManager : MonoBehaviour
                 exp,
                 item
             );
+            controller.PredefinedIconData = predefinedQuestIconData;
         }
     }
 
     public void GenerateNewQuest()
     {
         quest = QuestManager.Instance.GetNewQuest();
+        controller.PredefinedIconData = null;
     }
 }

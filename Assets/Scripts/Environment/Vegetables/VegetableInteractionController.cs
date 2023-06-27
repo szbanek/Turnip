@@ -41,6 +41,8 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
     private bool selected = false;
 
     private RandomSoundPlayer soundPlayer;
+    [HideInInspector]
+    public InteractionIconData PredefinedIconData = null;
 
     public void Interact()
     {
@@ -65,7 +67,7 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         if (interactionIconController == null)
         {
             interactionIconController = Instantiate(interactionIconPrefab, UIHUDController.Instance.InteractionIconCanvas).GetComponent<InteractionIconController>();
-            interactionIconController.ShowIcon(interactionIconData, transform.position + iconPosition);
+            interactionIconController.ShowIcon(PredefinedIconData == null ? interactionIconData : PredefinedIconData, transform.position + iconPosition);
         }
     }
 
