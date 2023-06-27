@@ -35,6 +35,7 @@ public class PlayerExperience : MonoBehaviour
         currentExperience += exp;
         while (currentExperience >= requiredExperience)
         {
+            UIPopUp.Instance.PopUp(UIPopUp.PopUpType.Level);
             audioSource.PlayOneShot(levelUpClip);
             currentLevel++;
             availablePoints++;

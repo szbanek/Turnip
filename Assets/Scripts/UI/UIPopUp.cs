@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIPopUp : Singleton<UIPopUp>
 {
-    public enum PopUpType { Vegetable, Item }
+    public enum PopUpType { Vegetable, Item, Level }
 
     [SerializeField]
     private Text label;
@@ -13,6 +13,8 @@ public class UIPopUp : Singleton<UIPopUp>
     private string vegetableString;
     [SerializeField]
     private string itemString;
+    [SerializeField]
+    private string levelString;
     [SerializeField]
     private float localYPos;
     [SerializeField]
@@ -25,6 +27,7 @@ public class UIPopUp : Singleton<UIPopUp>
     private RectTransform rectTransform;
 
     private bool isPoppingUp = false;
+    private Queue<PopUpType> awaitingPopUps = new Queue<PopUpType>();
 
     private void Start()
     {
@@ -35,17 +38,31 @@ public class UIPopUp : Singleton<UIPopUp>
 
     public void PopUp(PopUpType type)
     {
-        if (isPoppingUp)
-        {
-            return;
-        }
-
-        label.text = type == PopUpType.Vegetable ? vegetableString : itemString;
-        StartCoroutine(PopUpCoroutine());
+        awaitingPopUps.Enqueue(type);
     }
 
-    private IEnumerator PopUpCoroutine()
+    private void Update()
     {
+        if (!isPoppingUp && awaitingPopUps.Count > 0)
+        {
+            StartCoroutine(PopUpCoroutine(awaitingPopUps.Dequeue()));
+        }
+    }
+
+    private IEnumerator PopUpCoroutine(PopUpType type)
+    {
+        switch (type)
+        {
+            case PopUpType.Vegetable:
+                label.text = vegetableString;
+                break;
+            case PopUpType.Item:
+                label.text = itemString;
+                break;
+            case PopUpType.Level:
+                label.text = levelString;
+                break;
+        }
         isPoppingUp = true;
 
         float counter = 0;
