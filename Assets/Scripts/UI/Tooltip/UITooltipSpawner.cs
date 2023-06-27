@@ -28,4 +28,9 @@ public class UITooltipSpawner : MonoBehaviour, IPointerEnterHandler, IPointerExi
     {
         this.item = item;
     }
+
+    private void OnDisable()
+    {
+        Destroy(tooltip);
+    }
 }
