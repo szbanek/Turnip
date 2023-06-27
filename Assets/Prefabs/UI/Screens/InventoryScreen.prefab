@@ -442,8 +442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -17}
-  m_SizeDelta: {x: -40, y: -74}
+  m_AnchoredPosition: {x: 0, y: -32}
+  m_SizeDelta: {x: -40, y: -104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8000966781605958693
 CanvasRenderer:
@@ -508,21 +508,21 @@ MonoBehaviour:
         item: 0
       Value: {fileID: 5675102923269457179}
   statsText: {fileID: 8351565207546851458}
-  statsString: 'Statystyki ekwipunku:
+  statsString: 'Szybkosc biegu: {0:f2}
 
-    Szybkosc biegu: {0}
+    Maksymalna kondycja: {1:f2}
 
-    Maksymalna kondycja:
-    {1}
+    Regeneracja
+    kondycji: {2:f2}
 
-    Regeneracja kondycji: {2}
+    Koszt skoku: {3:f2}
 
-    Koszt skoku: {3}
+    Szansa na dodatkowe warzywo: 
+    {4:f2}%
 
-    Szansa na dodatkowe
-    warzywo:  {4}%
+    Umiejetnosci zbierackie: {5:f2}
 
-    Umiejetnosci zbierackie: {5}'
+    Zasieg zmyslu: {6:f2}'
 --- !u!114 &3610733190042162722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,19 +628,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Szybkosc biegu: x
+  m_Text: 'Szybkosc biegu: {0:f2}
 
-    Maksymalna kondycja: x
+    Maksymalna kondycja: {1:f2}
 
-    Regeneracja kondycji:
-    x
+    Regeneracja
+    kondycji: {2:f2}
 
-    Koszt skoku: x
+    Koszt skoku: {3:f2}
 
-    Szansa na dodatkowe warzywo: x%
+    Szansa na dodatkowe warzywo: 
+    {4:f2}%
 
-    Umiejetnosci
-    zbierackie: x'
+    Umiejetnosci zbierackie: {5:f2}
+
+    Zasieg zmyslu: {6:f2}'
 --- !u!1001 &79758347351154482
 PrefabInstance:
   m_ObjectHideFlags: 0

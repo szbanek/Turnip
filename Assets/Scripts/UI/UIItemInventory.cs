@@ -38,7 +38,8 @@ public class UIItemInventory : MonoBehaviour
             stats.StaminaRegen,
             stats.JumpCost,
             stats.AdditionalVegetableChance,
-            stats.MinigameBonus);
+            stats.MinigameBonus,
+            stats.SenseRange);
     }
 
     private void PopulateInventory()
@@ -83,6 +84,7 @@ public class UIItemInventory : MonoBehaviour
             stats.StaminaRegen,
             stats.JumpCost,
             stats.AdditionalVegetableChance,
-            stats.MinigameBonus);
+            stats.MinigameBonus,
+            stats.SenseRange);
     }
 }

@@ -57,7 +57,7 @@ public class PlayerVegetableSense : MonoBehaviour
             if (!controllers.Contains(controller))
             {
                 toRemove.Add(controller);
-                activeIcons[controller].OnHideEvent += (_, _) => Destroy(activeIcons[controller].gameObject);
+                activeIcons[controller].OnHideEvent += (e, _) => Destroy(((MonoBehaviour)e).gameObject);
                 activeIcons[controller].HideIcon();
             }
         }

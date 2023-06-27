@@ -36,7 +36,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Maksymalna kondycja: " + MaxStamina.ToString();
+            res += "Maksymalna kondycja: " + MaxStamina.ToString("f2");
         }
         if (StaminaRegen != 0)
         {
@@ -44,7 +44,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Regeneracja kondycji: " + StaminaRegen.ToString();
+            res += "Regeneracja kondycji: " + StaminaRegen.ToString("f2");
         }
         if (SprintSpeed != 0)
         {
@@ -52,7 +52,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Szybkość biegu: " + SprintSpeed.ToString();
+            res += "Szybkość biegu: " + SprintSpeed.ToString("f2");
         }
         if (JumpCost != 0)
         {
@@ -60,7 +60,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Koszt skoku: " + JumpCost.ToString();
+            res += "Koszt skoku: " + JumpCost.ToString("f2");
         }
         if (SenseRange != 0)
         {
@@ -68,7 +68,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Zasięg zmysłów: " + SenseRange.ToString();
+            res += "Zasięg zmysłów: " + SenseRange.ToString("f2");
         }
         if (AdditionalVegetableChance != 0)
         {
@@ -76,7 +76,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Szansa na dodatkowe warzywo: " + AdditionalVegetableChance.ToString();
+            res += "Szansa na dodatkowe warzywo: " + AdditionalVegetableChance.ToString("f2");
         }
         if (MinigameBonus != 0)
         {
@@ -84,7 +84,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Umiejętności zbierackie: " + MinigameBonus.ToString();
+            res += "Umiejętności zbierackie: " + MinigameBonus.ToString("f2");
         }
         return res;
     }
