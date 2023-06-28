@@ -11,19 +11,20 @@ public class MainQuestManager : Singleton<MainQuestManager>
 
     private GameObject indicator;
 
-    private void Start()
+    private IEnumerator Start()
     {
-        if (quests.Count == 0)
+        if (quests.Count > 0)
         {
-            return;
-        }
+            foreach (var quest in quests)
+            {
+                quest.QuestCompleteEvent += OnQuestComplete;
+            }
+            indicator = Instantiate(indicatorPrefab);
+            indicator.transform.position = quests[0].transform.position;
+            yield return null;
 
-        foreach (var quest in quests)
-        {
-            quest.QuestCompleteEvent += OnQuestComplete;
+            quests[0].StartQuest();
         }
-        indicator = Instantiate(indicatorPrefab);
-        indicator.transform.position = quests[0].transform.position;
     }
 
     private void OnQuestComplete(object obj, System.EventArgs args)
@@ -38,6 +39,7 @@ public class MainQuestManager : Singleton<MainQuestManager>
                 if (quests.Count > 0)
                 {
                     indicator.transform.position = quests[0].transform.position;
+                    quests[0].StartQuest();
                 }
                 else
                 {

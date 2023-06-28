@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(VegetableInteractionController))]
 public class NpcQuestManager : MonoBehaviour
 {
+    [SerializeField]
+    private bool waitForSignal;
+
     [Header("Quest")]
     [SerializeField]
     private bool usePredefinedQuest;
@@ -24,19 +27,44 @@ public class NpcQuestManager : MonoBehaviour
     private Quest quest;
     public Quest Quest => quest;
 
+    public bool WaitForSignal => waitForSignal;
+
     VegetableInteractionController controller;
 
     void Start()
     {
         controller = GetComponent<VegetableInteractionController>();
-        if(!usePredefinedQuest)
+        if (waitForSignal)
         {
-            quest = QuestManager.Instance.GetNewQuest();
-            controller.PredefinedIconData = null;
+            return;
+        }
+        SetQuest();
+    }
+
+    public void StartQuest()
+    {
+        if (!waitForSignal)
+        {
+            return;
+        }
+        SetQuest();
+    }
+
+    private void SetQuest()
+    {
+        if (!usePredefinedQuest)
+        {
+            GenerateNewQuest();
         }
         else
         {
-            quest = QuestManager.Instance.GetNewQuest(
+            SetPredefinedQuest();
+        }
+    }
+
+    private void SetPredefinedQuest()
+    {
+        quest = QuestManager.Instance.GetNewQuest(
                 (Vegetable.VegetableType)type,
                 quantity,
                 questText.Text,
@@ -45,8 +73,7 @@ public class NpcQuestManager : MonoBehaviour
                 exp,
                 item
             );
-            controller.PredefinedIconData = predefinedQuestIconData;
-        }
+        controller.PredefinedIconData = predefinedQuestIconData;
     }
 
     public void GenerateNewQuest()

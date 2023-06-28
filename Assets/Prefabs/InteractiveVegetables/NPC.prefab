@@ -61,6 +61,7 @@ MonoBehaviour:
   vegetable: {fileID: 11400000, guid: 0fc8422a08412cf4197bf3f47689f75f, type: 2}
   questMarkerPrefab: {fileID: 1783935159139454906, guid: 8dc25f6af55689047a8e7496502b5222, type: 3}
   questMarkerOffset: {x: 0, y: 3, z: 0}
+  PredefinedIconData: {fileID: 0}
 --- !u!82 &9169503248084478889
 AudioSource:
   m_ObjectHideFlags: 0
@@ -184,11 +185,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abbdad33c7748624ca20f4685b3d0361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitForSignal: 0
+  usePredefinedQuest: 0
   type: 0
   quantity: 0
   exp: 0
   questText: {fileID: 0}
   item: {fileID: 0}
+  predefinedQuestIconData: {fileID: 0}
 --- !u!136 &1701178944667147191
 CapsuleCollider:
   m_ObjectHideFlags: 0

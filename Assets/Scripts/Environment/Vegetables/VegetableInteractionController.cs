@@ -120,6 +120,17 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
         }
     }
 
+    public void StartQuest()
+    {
+        questManager.StartQuest();
+        if (!questManager.WaitForSignal)
+        {
+            return;
+        }
+        questMarker = Instantiate(questMarkerPrefab, transform.position + questMarkerOffset, transform.rotation);
+        gameObject.tag = "Interactive";
+    }
+
     private IEnumerator GenerateQuestCoroutine()
     {
         yield return new WaitForSeconds(Random.Range(minQuestGenerationTime, maxQuestGenerationTime));
@@ -147,7 +158,15 @@ public class VegetableInteractionController : MonoBehaviour, IInteractable
 
         if (questManager != null && questMarkerPrefab != null)
         {
-            questMarker = Instantiate(questMarkerPrefab, transform.position + questMarkerOffset, transform.rotation);
+            if (!questManager.WaitForSignal)
+            {
+                questMarker = Instantiate(questMarkerPrefab, transform.position + questMarkerOffset, transform.rotation);
+                gameObject.tag = "Interactive";
+            }
+            else
+            {
+                gameObject.tag = "Untagged";
+            }
         }
     }
 

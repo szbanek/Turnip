@@ -25736,6 +25736,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 0b86bcddce48eab40a2ab14defe82dbf, type: 2}
     - target: {fileID: 4591163227496194732, guid: dafbc1485a27fbc4195970a1118cf579, type: 3}
+      propertyPath: waitForSignal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591163227496194732, guid: dafbc1485a27fbc4195970a1118cf579, type: 3}
       propertyPath: usePredefinedQuest
       value: 1
       objectReference: {fileID: 0}
@@ -51624,6 +51628,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 1e55585d6ebfc264ab74fc3c2edeaec9, type: 2}
     - target: {fileID: 4591163227496194732, guid: dafbc1485a27fbc4195970a1118cf579, type: 3}
+      propertyPath: waitForSignal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591163227496194732, guid: dafbc1485a27fbc4195970a1118cf579, type: 3}
       propertyPath: usePredefinedQuest
       value: 1
       objectReference: {fileID: 0}
@@ -51856,6 +51864,10 @@ PrefabInstance:
       objectReference: {fileID: 2120547405}
     - target: {fileID: 7503152275518153647, guid: 392ff90c08e7cf54abb7692dd84317f5, type: 3}
       propertyPath: quests.Array.data[2]
+      value: 
+      objectReference: {fileID: 1663629987}
+    - target: {fileID: 7503152275518153647, guid: 392ff90c08e7cf54abb7692dd84317f5, type: 3}
+      propertyPath: quests.Array.data[3]
       value: 
       objectReference: {fileID: 1663629987}
     m_RemovedComponents: []
