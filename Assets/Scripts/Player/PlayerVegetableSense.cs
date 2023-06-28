@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 [RequireComponent(typeof(PlayerStats))]
 public class PlayerVegetableSense : MonoBehaviour
@@ -14,10 +15,11 @@ public class PlayerVegetableSense : MonoBehaviour
     private float fovDuration;
     [SerializeField]
     private GameObject iconPrefab;
+    [SerializeField]
+    private PostProcessVolume postProcessVolume;
 
     private bool isSensing = false;
     private float standardFOV;
-    private float fovSpeed;
 
     private float fovTarget;
 
@@ -30,13 +32,16 @@ public class PlayerVegetableSense : MonoBehaviour
     {
         standardFOV = Camera.main.fieldOfView;
         fovTarget = Camera.main.fieldOfView;
-        fovSpeed = (standardFOV - standardFOV * fovMultiplier) / fovDuration;
         playerStats = GetComponent<PlayerStats>();
+        postProcessVolume.weight = 0;
     }
 
     private void Update()
     {
+        float fovSpeed = (standardFOV - standardFOV * fovMultiplier) / fovDuration;
+        float postProcessSpeed = 1 / fovDuration;
         Camera.main.fieldOfView = Mathf.MoveTowards(Camera.main.fieldOfView, fovTarget, fovSpeed * Time.deltaTime);
+        postProcessVolume.weight = Mathf.MoveTowards(postProcessVolume.weight, isSensing ? 1 : 0, postProcessSpeed * Time.deltaTime);
 
         if (!isSensing)
         {

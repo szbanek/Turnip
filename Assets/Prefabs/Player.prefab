@@ -175,7 +175,7 @@ MonoBehaviour:
   sharedProfile: {fileID: 11400000, guid: f3df99d342629d94a9bf6824dc5cba3d, type: 2}
   isGlobal: 1
   blendDistance: 0
-  weight: 1
+  weight: 0
   priority: 1
 --- !u!1 &6062298701816995124
 GameObject:
@@ -557,7 +557,7 @@ MonoBehaviour:
   jumpCost: 10
   additionalVegetableChance: 0
   minigameBonus: 0
-  senseRange: 10
+  senseRange: 30
 --- !u!114 &6741387975173446621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,6 +877,7 @@ MonoBehaviour:
   fovMultiplier: 0.85
   fovDuration: 0.15
   iconPrefab: {fileID: 8376920458564338007, guid: c1c3fd0234ebf5b4f82f3c93e982eb5c, type: 3}
+  postProcessVolume: {fileID: 5690249583547234970}
 --- !u!1 &7030493182088949272
 GameObject:
   m_ObjectHideFlags: 0
