@@ -14944,13 +14944,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 7571948907520372800, guid: 801dc86d73a3a774e80a4bbdb5266650, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -32
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7784593862266786725, guid: 801dc86d73a3a774e80a4bbdb5266650, type: 3}
       propertyPath: m_Name
       value: UI
