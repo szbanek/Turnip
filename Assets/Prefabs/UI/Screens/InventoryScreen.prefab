@@ -37,8 +37,8 @@ RectTransform:
   m_Father: {fileID: 6165546431760795008}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.4}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
@@ -115,7 +115,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6165546431760795008}
-  - component: {fileID: 2729274107082631390}
   m_Layer: 5
   m_Name: LeftPanel
   m_TagString: Untagged
@@ -141,36 +140,10 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.3, y: 1}
+  m_AnchoredPosition: {x: 8, y: 0}
+  m_SizeDelta: {x: -12, y: -16.000008}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &2729274107082631390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4522557479790505233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 1
-  m_Spacing: 4
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &6109323383130262872
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +179,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.4}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
@@ -336,10 +309,10 @@ RectTransform:
   m_Father: {fileID: 8000966781605958695}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.3, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -8, y: 0}
+  m_SizeDelta: {x: -12, y: -16}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1472258083338645192
 CanvasRenderer:
@@ -369,7 +342,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 150}
+  m_CellSize: {x: 128, y: 128}
   m_Spacing: {x: 4, y: 4}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -415,7 +388,6 @@ GameObject:
   - component: {fileID: 8000966781605958693}
   - component: {fileID: 8000966781605958692}
   - component: {fileID: 585778082052827387}
-  - component: {fileID: 3610733190042162722}
   m_Layer: 5
   m_Name: InventoryScreen
   m_TagString: Untagged
@@ -517,38 +489,12 @@ MonoBehaviour:
 
     Koszt skoku: {3:f2}
 
-    Szansa na dodatkowe warzywo: 
-    {4:f2}%
+    Szansa dodatkowego warzywa:  {4:f2}%
 
-    Umiejetnosci zbierackie: {5:f2}
+    Umiejetnosci
+    zbierackie: {5:f2}
 
     Zasieg zmyslu: {6:f2}'
---- !u!114 &3610733190042162722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8000966781605958694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 4
-    m_Right: 4
-    m_Top: 4
-    m_Bottom: 4
-  m_ChildAlignment: 0
-  m_Spacing: 4
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &8702718093130495935
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,10 +583,10 @@ MonoBehaviour:
 
     Koszt skoku: {3:f2}
 
-    Szansa na dodatkowe warzywo: 
-    {4:f2}%
+    Szansa dodatkowego warzywa:  {4:f2}%
 
-    Umiejetnosci zbierackie: {5:f2}
+    Umiejetnosci
+    zbierackie: {5:f2}
 
     Zasieg zmyslu: {6:f2}'
 --- !u!1001 &79758347351154482
