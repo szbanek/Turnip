@@ -480,21 +480,9 @@ MonoBehaviour:
         item: 0
       Value: {fileID: 5675102923269457179}
   statsText: {fileID: 8351565207546851458}
-  statsString: 'Szybkosc biegu: {0:f2}
-
-    Maksymalna kondycja: {1:f2}
-
-    Regeneracja
-    kondycji: {2:f2}
-
-    Koszt skoku: {3:f2}
-
-    Szansa dodatkowego warzywa:  {4:f2}%
-
-    Umiejetnosci
-    zbierackie: {5:f2}
-
-    Zasieg zmyslu: {6:f2}'
+  statsString: "Szybko\u015B\u0107 biegu: {0:f2}\nMaksymalna kondycja: {1:f2}\nRegeneracja
+    kondycji: {2:f2}\nKoszt skoku: {3:f2}\nSzansa dodatkowego warzywa:  {4:f2}%\nUmiejetno\u015Bci
+    zbierackie: {5:f2}\nZasi\u0119g zmys\u0142u: {6:f2}"
 --- !u!1 &8702718093130495935
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +550,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: bec4cdc71f082614e92f6277c986b70a, type: 3}
+    m_Font: {fileID: 12800000, guid: e28d93f39d368364c950dd5b5793c520, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -574,21 +562,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Szybkosc biegu: {0:f2}
-
-    Maksymalna kondycja: {1:f2}
-
-    Regeneracja
-    kondycji: {2:f2}
-
-    Koszt skoku: {3:f2}
-
-    Szansa dodatkowego warzywa:  {4:f2}%
-
-    Umiejetnosci
-    zbierackie: {5:f2}
-
-    Zasieg zmyslu: {6:f2}'
+  m_Text: "Szybko\u015B\u0107 biegu: {0:f2}\nMaksymalna kondycja: {1:f2}\nRegeneracja
+    kondycji: {2:f2}\nKoszt skoku: {3:f2}\nSzansa dodatkowego warzywa:  {4:f2}%\nUmiejetno\u015Bci
+    zbierackie: {5:f2}\nZasi\u0119g zmys\u0142u: {6:f2}"
 --- !u!1001 &79758347351154482
 PrefabInstance:
   m_ObjectHideFlags: 0

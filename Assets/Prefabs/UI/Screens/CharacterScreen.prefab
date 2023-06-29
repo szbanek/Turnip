@@ -532,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8779833844435119983, guid: 3ced5b9481ff39a4c98699cc0ae47361, type: 3}
       propertyPath: m_Text
-      value: Szansa na dodatkowe warzywo
+      value: Szansa dodatkowego warzywa
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -751,31 +751,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 8000966781605958695}
     m_Modifications:
     - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMax.x
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 596.00006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448717376723768199, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchoredPosition.y
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3675093797403743732, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
@@ -867,35 +847,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8381494317017008818, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381494317017008818, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381494317017008818, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381494317017008818, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchoredPosition.y
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8876883318519314116, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8876883318519314116, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8876883318519314116, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8876883318519314116, guid: 7499596aa01bb554eb4bba46edd88591, type: 3}
-      propertyPath: m_AnchoredPosition.y
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

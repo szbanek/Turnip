@@ -85,7 +85,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_Text
-      value: Postac
+      value: "Posta\u0107"
       objectReference: {fileID: 0}
     - target: {fileID: 2605493277300154671, guid: 2c32c75733c85d14f80db947afd5f305, type: 3}
       propertyPath: m_FontData.m_MinSize
