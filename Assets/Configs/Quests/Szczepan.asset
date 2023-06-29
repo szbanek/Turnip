@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
+  m_Name: Szczepan
+  m_EditorClassIdentifier: 
+  text: "By\u0142em w Krakowie. Powiadam panu, pi\u0119kne miasto..."
+  positiveAnswer: "Z\u0142owiek...? Czego on chce? Pewnie znowu mu czaszka nie dzia\u0142a.
+    Ach nie, musi chodzi\u0107 o te dzia\u0142ania Genera\u0142 Lory. Zajmiemy si\u0119
+    tym. Masz, zanie\u015B to pismo Hrabiego Gahlammona z Chrzanzy. B\u0119dzie wiedzia\u0142
+    co robi\u0107."
+  negativeAnswer: "Te\u017C by\u0142 pan w Krakowie?"

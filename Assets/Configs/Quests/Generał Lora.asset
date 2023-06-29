@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
+  m_Name: "Genera\u0142 Lora"
+  m_EditorClassIdentifier: 
+  text: "Ty tam, s\u0142uchaj... Nie, nie przerywaj mi! Potrzebujemy 6 CHRZANU \u017Ceby
+    przefarbowa\u0107 nasze p\u0142aszcze na fioletowo i zmyli\u0107 wampiry. Niedaleko
+    jest plantacja, trzeba tylko przekra\u015B\u0107 si\u0119 na terytorium wroga.
+    No, ruchy, ruchy."
+  positiveAnswer: "Dobra, do kot\u0142a z tym chrzanem! Hm... nie robi si\u0119 fioletowy
+    barwnik. Rozczarowuj\u0105ce... A ty co mi tu...? List? \"Armia Lorda Pojemnika
+    zmierza w stron\u0119 naszej granicy, potrzebujemy waszego wsparcia\". Co?! To
+    zmienia nasze plany! Wojska, wymarsz do Marchwlandu! A ty zanie\u015B to Lordowi
+    Pojemnikowi. Nie pu\u015Bcimy p\u0142azem takiej zniewagi!"
+  negativeAnswer: "Umiesz ty liczy\u0107 czy nie? Gdzie ty tu widzisz sze\u015B\u0107
+    chrzanu?"
