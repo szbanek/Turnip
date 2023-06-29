@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 19
   m_EditorClassIdentifier: 
-  text: Odkrylem tajemniczy warzywniak, w ktorym rosna niezwykle warzywa. Zbierz
-    {QUANTITY} {NAME} i przynies je do mnie, abym mogl zrobic eksperymentalne danie.
-  positiveAnswer: Niezwykle! Te unikalne warzywa dodadza smaku mojemu eksperymentalnemu
-    daniu. Oto nagroda za pomoc w ich zebraniu.
-  negativeAnswer: Czy mozesz jeszcze sprobowac zdobyc {QUANTITY} {NAME}? Bez nich
-    nie bede mogl stworzyc mojego eksperymentalnego dania.
+  text: "Odkry\u0142em tajemniczy warzywniak, w kt\xF3rym rosn\u0105 niezwyk\u0142e
+    warzywa. Zbierz {QUANTITY} {NAME} i przynie\u015B je do mnie, abym m\xF3g\u0142
+    zrobi\u0107 eksperymentalne danie."
+  positiveAnswer: "Niezwyk\u0142e! Te unikalne warzywa dodadz\u0105 smaku mojemu
+    eksperymentalnemu daniu. Oto nagroda za pomoc w ich zebraniu."
+  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
+    {NAME}? Bez nich nie b\u0119d\u0119 m\xF3g\u0142 stworzy\u0107 mojego eksperymentalnego
+    dania."

@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 5
   m_EditorClassIdentifier: 
-  text: Przepraszam, ze przeszkadzam, ale czy mialbys okolo {QUANTITY} {NAME}? Planuje
-    zrobic pikantny sos na impreze w moim sasiedztwie, ale brakuje mi tego kluczowego
-    skladnika. Twoja pomoc bylaby nieoceniona!
-  positiveAnswer: Niesamowicie! Dziekuje za {QUANTITY} {NAME}. Moj pikantny sos bedzie
-    teraz doskonaly na impreze. Twoja pomoc jest bezcenna. Bardzo Ci dziekuje!
-  negativeAnswer: "Och, szkoda, ze nie masz okolo {QUANTITY} {NAME} na moj pikantny
-    sos. Czy wiesz, gdzie jeszcze moglbym sprobowac znalezc to warzywo? Moze sa inne
-    pola, \r\ngdzie mogliby je miec. Dziekuje za Twoje dalsze poszukiwania!"
+  text: "Przepraszam, \u017Ce przeszkadzam, ale czy mia\u0142by\u015B oko\u0142o
+    {QUANTITY} {NAME}? Planuj\u0119 zrobi\u0107 pikantny sos na imprez\u0119 w moim
+    s\u0105siedztwie, ale brakuje mi tego kluczowego sk\u0142adnika. Twoja pomoc
+    by\u0142aby nieoceniona!"
+  positiveAnswer: "Niesamowicie! Dzi\u0119kuj\u0119 za {QUANTITY} {NAME}. M\xF3j
+    pikantny sos b\u0119dzie teraz doskona\u0142y na imprez\u0119. Twoja pomoc jest
+    bezcenna. Bardzo Ci dzi\u0119kuj\u0119!"
+  negativeAnswer: "Och, szkoda, \u017Ce nie mam oko\u0142o {QUANTITY} {NAME} na Tw\xF3j
+    pikantny sos. Czy wiesz, gdzie jeszcze m\xF3g\u0142bym spr\xF3bowa\u0107 znale\u017A\u0107
+    to warzywo? Mo\u017Ce s\u0105 inne pola, gdzie mogliby je mie\u0107. Dzi\u0119kuj\u0119
+    za Twoje dalsze poszukiwania!"

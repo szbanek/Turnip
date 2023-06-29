@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 15
   m_EditorClassIdentifier: 
-  text: Witaj! Slyszalem o {NAME}, ktore rosna. Potrzebuje {QUANTITY} {NAME} do mojej
-    kolekcji. Czy mozesz je znalezc?
-  positiveAnswer: Niesamowite! Te {NAME} sa prawdziwie unikalne. Oto twoja nagroda
-    za pomoc w ich zebraniu.
-  negativeAnswer: Czy masz jeszcze szanse zdobyc {QUANTITY} {NAME}? To byloby niezwykle
-    uzupelnienie mojej kolekcji.
+  text: "Witaj! S\u0142ysza\u0142em o {NAME}, kt\xF3re rosn\u0105. Potrzebuj\u0119
+    {QUANTITY} {NAME} do mojej kolekcji. Czy mo\u017Cesz je znale\u017A\u0107?"
+  positiveAnswer: "Niesamowite! Te {NAME} s\u0105 prawdziwie unikalne. Oto twoja
+    nagroda za pomoc w ich zebraniu."
+  negativeAnswer: "Czy masz jeszcze szans\u0119 zdoby\u0107 {QUANTITY} {NAME}? To
+    by\u0142oby niezwyk\u0142e uzupe\u0142nienie mojej kolekcji."

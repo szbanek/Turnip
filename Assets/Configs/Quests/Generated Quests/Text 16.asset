@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 16
   m_EditorClassIdentifier: 
-  text: Poszukiwacz zlota potrzebuje twojej pomocy! Znajdz i przynies mu {QUANTITY}
-    {NAME}, ktore sa ukryte na mapie. Czy podejmiesz wyzwanie?
-  positiveAnswer: Jestes niesamowity! Przyniosles mi {NAME}! Oto twoja zasluzona
-    nagroda, a ja moge kontynuowac swoje poszukiwania zlota.
-  negativeAnswer: Wyglada na to, ze jeszcze masz szanse zdobyc {QUANTITY} {NAME}.
-    Nie trac nadziei!
+  text: "Poszukiwacz z\u0142ota potrzebuje Twojej pomocy! Znajd\u017A i przynie\u015B
+    mu {QUANTITY} {NAME}, kt\xF3re s\u0105 ukryte na mapie. Czy podejmiesz wyzwanie?"
+  positiveAnswer: "Jeste\u015B niesamowity! Przynios\u0142e\u015B mi {NAME}! Oto
+    Twoja zas\u0142u\u017Cona nagroda, a ja mog\u0119 kontynuowa\u0107 swoje poszukiwania
+    z\u0142ota."
+  negativeAnswer: "Wygl\u0105da na to, \u017Ce jeszcze masz szans\u0119 zdoby\u0107
+    {QUANTITY} {NAME}. Nie trac nadziei!"

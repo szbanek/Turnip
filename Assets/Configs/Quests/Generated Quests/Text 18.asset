@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 18
   m_EditorClassIdentifier: 
-  text: Wioska potrzebuje twojej pomocy w zalesianiu okolicy. Zbierz {QUANTITY} {NAME},
-    abysmy mogli zaczac proces odbudowy lasow.
-  positiveAnswer: Dzieki tobie nasza wioska stanie sie bardziej zielona! Oto twoja
-    zasluzona nagroda za pomoc w rewitalizacji naszego srodowiska.
-  negativeAnswer: Czy nadal mozesz pomoc nam w zbieraniu {QUANTITY} {NAME}? Bez nich
-    nie bedziemy w stanie zalesic okolicy.
+  text: "Wioska potrzebuje Twojej pomocy w zalesianiu okolicy. Zbierz {QUANTITY}
+    {NAME}, aby\u015Bmy mogli zacz\u0105\u0107 proces odbudowy las\xF3w."
+  positiveAnswer: "Dzi\u0119ki Tobie nasza wioska stanie si\u0119 bardziej zielona!
+    Oto Twoja zas\u0142u\u017Cona nagroda za pomoc w rewitalizacji naszego \u015Brodowiska."
+  negativeAnswer: "Czy nadal mo\u017Cesz pom\xF3c nam w zbieraniu {QUANTITY} {NAME}?
+    Bez nich nie b\u0119dziemy w stanie zalesi\u0107 okolicy."

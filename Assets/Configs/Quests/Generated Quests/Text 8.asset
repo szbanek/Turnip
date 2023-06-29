@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 8
   m_EditorClassIdentifier: 
-  text: "Przyjacielu, czy moge poprosic o {QUANTITY} {NAME}? Moje dzieci nie przepadaja
-    za warzywami, ale zawsze chetnie jedza je w postaci puree. Jesli moglbys \r\nmi
-    pomoc, bylbym niezmiernie wdzieczny!"
-  positiveAnswer: Bardzo dziekuje za przyniesienie {QUANTITY} {NAME}. Moje dzieci
-    beda teraz cieszyc sie pysznym puree. Twoja zyczliwosc jest nieoceniona. Serdecznie
-    Ci dziekuje!
-  negativeAnswer: O nie! Nie masz {QUANTITY} {NAME} dla mojego puree? Szkoda. Czy
-    moglbys zapytac wsrod sasiadow lub rodziny? Byc moze ktos mialby jakies warzywa
-    do oddania. Bede wdzieczny za Twoje dalsze poszukiwania. Dziekuje!
+  text: "Przyjacielu, czy mog\u0119 poprosi\u0107 o {QUANTITY} {NAME}? Moje dzieci
+    nie przepadaj\u0105 za warzywami, ale zawsze ch\u0119tnie jedz\u0105 je w postaci
+    puree. Jesli m\xF3g\u0142by\u015B mi pom\xF3c, by\u0142bym niezmiernie wdzi\u0119czny!"
+  positiveAnswer: "Bardzo dzi\u0119kuj\u0119 za przyniesienie {QUANTITY} {NAME}.
+    Moje dzieci b\u0119d\u0105 teraz cieszy\u0107 si\u0119 pysznym puree. Twoja \u017Cyczliwo\u015B\u0107
+    jest nieoceniona. Serdecznie Ci dzi\u0119kuj\u0119!"
+  negativeAnswer: "O nie! Nie masz {QUANTITY} {NAME} dla mojego puree? Szkoda. Czy
+    mog\u0142by\u015B zapyta\u0107 w\u015Br\xF3d s\u0105siad\xF3w lub rodziny? By\u0107
+    mo\u017Ce kto\u015B mia\u0142by jakie\u015B warzywa do oddania. B\u0119d\u0119
+    wdzi\u0119czny za Twoje dalsze poszukiwania. Dzi\u0119kuj\u0119!"

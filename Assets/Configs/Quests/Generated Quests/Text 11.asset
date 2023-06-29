@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 11
   m_EditorClassIdentifier: 
-  text: Hej, podrozniku! W mojej hodowli {NAME} pojawily sie chwasty i zagrazaja
-    uprawom. Potrzebuje, abys zebral {QUANTITY} {NAME}, abysmy mogli zabezpieczyc
-    nasze zapasy zywnosci.
-  positiveAnswer: Wspaniale! Dzieki twojej pomocy nasze zapasy sa teraz bezpieczne.
-    Oto nagroda, jaka obiecalem.
-  negativeAnswer: Czy mozesz jeszcze sprobowac znalezc {QUANTITY} {NAME}? Bez nich
-    nasza hodowla jest zagrozona.
+  text: "Hej, podr\xF3\u017Cniku! W mojej hodowli {NAME} pojawi\u0142y si\u0119 chwasty
+    i zagra\u017Caj\u0105 uprawom. Potrzebuj\u0119, aby\u015B zebra\u0142 {QUANTITY}
+    {NAME}, aby\u015Bmy mogli zabezpieczy\u0107 nasze zapasy \u017Cywno\u015Bci."
+  positiveAnswer: "Wspaniale! Dzi\u0119ki Twojej pomocy nasze zapasy s\u0105 teraz
+    bezpieczne. Oto nagroda, jak\u0105 obieca\u0142em."
+  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 znale\u017A\u0107 {QUANTITY}
+    {NAME}? Bez nich nasza hodowla jest zagro\u017Cona."

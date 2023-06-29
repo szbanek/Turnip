@@ -12,17 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Wampir pogranicznik
   m_EditorClassIdentifier: 
-  text: "Stac! Ktos ty...? Ach. Mediator. Hej, nie obawiaj si\u0119, moze i jestesmy
-    wampirami ale to nie czyni z nas potworow. Hrabia Gahlammon, choc potrafi wpasc
-    w wielki gniew, zawsze chetnie slucha rozsadnych argumentow. Przy okazji, mam
-    do ciebie taka osobista sprawe. Powoli koncza sie nam zapasy zywnosci. Co gorsza,
-    ktos podlozyl do naszej strawy czosnek. Wsparlbys nas? Prosze tylko o 7 PAPRYKI.
-    Z tego co mi wiadomo, zwykle rosnie na rozleglych, otwartych przestrzeniach,
-    mozesz tez zawitac na plantacje na polnocnym zachodzie stad, by miec bogate zbiory."
-  positiveAnswer: Wielkie dzieki mediatorze! Nie wiem co bysmy zrobili bez ciebie!
-    Niestety, choc bardzo chce sie odwdzieczyc, nie jestem w stanie specjalnie ci
-    pomoc w twojej misji. Moge najwyzej poradzic zebys udal sie do purpurowego zamku
-    i porozmawial ze straznikiem przy glownej bramie. Wyjasnij mu wszystko, a na
-    pewno ci pomoze.
+  text: "Sta\u0107! Kto\u015B ty...? Ach. Mediator. Hej, nie obawiaj si\u0119, mo\u017Ce
+    i jeste\u015Bmy wampirami ale to nie czyni z nas potwor\xF3w. Hrabia Gahlammon,
+    cho\u0107 potrafi wpa\u015B\u0107 w wielki gniew, zawsze ch\u0119tnie s\u0142ucha
+    rozs\u0105dnych argument\xF3w. Przy okazji, mam do ciebie tak\u0105 osobist\u0105
+    spraw\u0119. Powoli ko\u0144cz\u0105 si\u0119 nam zapasy \u017Cywno\u015Bci.
+    Co gorsza, kto\u015B pod\u0142o\u017Cy\u0142 do naszej strawy czosnek. Wspar\u0142by\u015B
+    nas? Prosz\u0119 tylko o 7 PAPRYKI. Z tego co mi wiadomo, zwykle ro\u015Bnie
+    na rozleg\u0142ych, otwartych przestrzeniach, mo\u017Cesz te\u017C zawitac na
+    plantacje na p\xF3\u0142nocnym zachodzie st\u0105d, by mie\u0107 bogate zbiory."
+  positiveAnswer: "Wielkie dzi\u0119ki mediatorze! Nie wiem co by\u015Bmy zrobili
+    bez ciebie! Niestety, cho\u0107 bardzo chc\u0119 si\u0119 odwdzi\u0119czy\u0107,
+    nie jestem w stanie specjalnie ci pom\xF3c w twojej misji. Mog\u0119 najwy\u017Cej
+    poradzi\u0107 \u017Ceby\u015B uda\u0142 si\u0119 do purpurowego zamku i porozmawia\u0142
+    ze stra\u017Cnikiem przy g\u0142ownej bramie. Wyja\u015Bnij mu wszystko, a na
+    pewno ci pomo\u017Ce."
   negativeAnswer: "Widz\u0119 \u017Ce nie masz dla mnie papryki. Szkoda, liczy\u0142em
     na Twoj\u0105 pomoc."

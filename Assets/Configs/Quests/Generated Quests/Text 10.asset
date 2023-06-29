@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 10
   m_EditorClassIdentifier: 
-  text: Czesc! Moje ziolowe ogrodki zostaly zniszczone przez burze. Potrzebuje {QUANTITY}
-    {NAME}, aby moc przygotowac lekarstwa dla chorych. Czy mozesz mi pomoc?
-  positiveAnswer: Doskonale! {QUANTITY} {NAME}, ktorych dostarczyles, pomoga wielu
-    potrzebujacym. Oto twoja nagroda za pomoc.
-  negativeAnswer: Czy mozesz jeszcze sprobowac znalezc {QUANTITY} {NAME}? Bez nich
-    nie bede w stanie pomoc potrzebujacym.
+  text: "Cze\u015B\u0107! Moje zio\u0142owe ogr\xF3dki zosta\u0142y zniszczone przez
+    burze. Potrzebuj\u0119 {QUANTITY} {NAME}, aby m\xF3c przygotowa\u0107 lekarstwa
+    dla chorych. Czy mo\u017Cesz mi pom\xF3c?"
+  positiveAnswer: "Doskonale! {QUANTITY} {NAME}, kt\xF3rych dostarczy\u0142e\u015B,
+    pomog\u0105 wielu potrzebuj\u0105cym. Oto Twoja nagroda za pomoc."
+  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 znale\u017A\u0107 {QUANTITY}
+    {NAME}? Bez nich nie b\u0119d\u0119 w stanie pom\xF3c potrzebuj\u0105cym."

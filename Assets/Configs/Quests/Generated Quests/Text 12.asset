@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 12
   m_EditorClassIdentifier: 
-  text: Witaj! Zbliza sie Halloween, a moje skladniki na potrawy z {NAME} sie skonczyly.
-    Czy mozesz przyniesc mi {QUANTITY} {NAME} z pobliskiego lasu?
-  positiveAnswer: Fantastycznie! Teraz bede mogl przygotowac pyszne potrawy na Halloween.
-    Oto twoja zasluzona nagroda.
-  negativeAnswer: Czy masz jeszcze szanse przyniesc mi {QUANTITY} {NAME}? Bez nich
-    nie bede w stanie przygotowac potraw na Halloween.
+  text: "Witaj! Zbli\u017Ca si\u0119 Halloween, a moje sk\u0142adniki na potrawy
+    z {NAME} si\u0119 sko\u0144czy\u0142y. Czy mo\u017Cesz przynie\u015B\u0107 mi
+    {QUANTITY} {NAME} z pobliskiego lasu?"
+  positiveAnswer: "Fantastycznie! Teraz b\u0119d\u0119 m\xF3g\u0142 przygotowa\u0107
+    pyszne potrawy na Halloween. Oto Twoja zas\u0142u\u017Cona nagroda."
+  negativeAnswer: "Czy masz jeszcze szans\u0119 przynie\u015B\u0107 mi {QUANTITY}
+    {NAME}? Bez nich nie b\u0119d\u0119 w stanie przygotowa\u0107 potraw na Halloween."

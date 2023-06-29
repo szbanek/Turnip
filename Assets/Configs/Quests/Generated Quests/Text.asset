@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text
   m_EditorClassIdentifier: 
-  text: "Przepraszam, czy m\xF3g\u0142by\u015B mi pomoc? Poszukuje {QUANTITY} {NAME}
-    do mojej specjalnej zupy. Potrzebuj\u0119 ich jak najszybciej, wi\u0119c je\u015Bli
-    masz jakiekolwiek warzywa do oddania, by\u0142bym bardzo wdzi\u0119czny."
-  positiveAnswer: "Bardzo dzi\u0119kuj\u0119 za przyniesienie {QUANTITY} {NAME}!
-    Twoja pomoc jest nieoceniona. Teraz b\u0119d\u0119 mogl ugotowac moja specjaln\u0105
-    zup\u0119. Jestem Ci ogromnie wdzi\u0119czny!"
-  negativeAnswer: "Ojej, bardzo mi przykro, ze nie masz wystarczaj\u0105cej ilosci
-    {NAME} dla mojej zupy. Czy mo\u017Cesz zapytac wsrod swoich znajomych, czy nie
-    maj\u0105 przypadkiem jakich\u015B warzyw do oddania? Naprawde zalezy mi na nich.
-    Dziekuje za Twoje wysilki!"
+  text: "Przepraszam, czy m\xF3g\u0142by\u015B mi pom\xF3c? Poszukuj\u0119 {QUANTITY}
+    {NAME} do mojej specjalnej zupy. Potrzebuj\u0119 ich jak najszybciej, wi\u0119c
+    je\u015Bli masz jakiekolwiek warzywa do oddania, by\u0142bym bardzo wdzi\u0119czny."
+  positiveAnswer: "\r\nBardzo dzi\u0119kuj\u0119 za przyniesienie {QUANTITY} {NAME}!
+    Twoja pomoc jest nieoceniona. Teraz b\u0119d\u0119 m\xF3g\u0142 ugotowa\u0107
+    moj\u0105 specjaln\u0105 zup\u0119. Jestem Ci ogromnie wdzi\u0119czny!"
+  negativeAnswer: "Ojej, bardzo mi przykro, \u017Ce nie masz wystarczaj\u0105cej
+    ilo\u015Bci {NAME} dla mojej zupy. Czy mo\u017Cesz zapyta\u0107 w\u015Br\xF3d
+    swoich znajomych, czy nie maj\u0105 przypadkiem jakich\u015B warzyw do oddania?
+    Naprawd\u0119 zale\u017Cy mi na nich. Dzi\u0119kuj\u0119 za Twoje wysi\u0142ki!"

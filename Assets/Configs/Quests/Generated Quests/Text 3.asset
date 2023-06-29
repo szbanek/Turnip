@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 3
   m_EditorClassIdentifier: 
-  text: Witaj! Czy bylbys tak mily i dostarczyl mi {QUANTITY} {NAME}? Mamy zblizajace
-    sie swieto, a moja rodzina uwielbia tradycyjne ziemniaki puree. Twoja pomoc w
-    tej kwestii bylaby naprawde cenna!
-  positiveAnswer: Serdeczne podziekowania za przyniesienie {QUANTITY} {NAME}. Moja
-    rodzina bedzie zachwycona tradycyjnym puree. Twoja hojnosc jest niezwykla. Dziekuje
-    Ci!
-  negativeAnswer: "Och, szkoda, ze nie masz wystarczajacej ilosci {NAME} dla mojego
-    puree. Czy \r\nmoglbys sprobowac zapytac sasiadow lub poszukac na ich polach?
-    Byloby wspaniale, gdybys jeszcze sprobowal. Dziekuje za Twoje wysilki!"
+  text: "Witaj! Czy by\u0142by\u015B tak mi\u0142y i dostarczy\u0142 mi {QUANTITY}
+    {NAME}? Mamy zbli\u017Caj\u0105ce si\u0119 \u015Bwi\u0119to, a moja rodzina uwielbia
+    tradycyjne ziemniaki puree. Twoja pomoc w tej kwestii by\u0142aby naprawd\u0119
+    cenna!"
+  positiveAnswer: "Serdeczne podzi\u0119kowania za przyniesienie {QUANTITY} {NAME}.
+    Moja rodzina b\u0119dzie zachwycona tradycyjnym puree. Twoja hojno\u015B\u0107
+    jest niezwyk\u0142a. Dzi\u0119kuj\u0119 Ci!"
+  negativeAnswer: "Och, szkoda, \u017Ce nie masz wystarczaj\u0105cej ilo\u015Bci
+    {NAME} dla mojego puree. Czy m\xF3g\u0142by\u015B spr\xF3bowa\u0107 zapyta\u0107
+    s\u0105siad\xF3w lub poszuka\u0107 na ich polach? By\u0142oby wspaniale, gdyby\u015B
+    jeszcze spr\xF3bowa\u0142. Dzi\u0119kuj\u0119 za Twoje wysi\u0142ki!"

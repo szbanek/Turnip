@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 13
   m_EditorClassIdentifier: 
-  text: Slyszalem o legendarnym warzywniku, ktory rosnie w glebi lasu. Zbierz {QUANTITY}
-    {NAME} z tego magicznego ogrodu, a bede wdzieczny.
-  positiveAnswer: Nie moge uwierzyc, ze udalo ci sie dotrzec do warzywnika! To niezwykle!
-    Oto twoja nagroda za odwage.
-  negativeAnswer: Nie poddawaj sie! Sprobuj jeszcze raz dotrzec do magicznego ogrodu
-    i zebrania {QUANTITY} {NAME}.
+  text: "S\u0142ysza\u0142em o legendarnym warzywniku, kt\xF3ry ro\u015Bnie w g\u0142\u0119bi
+    lasu. Zbierz {QUANTITY} {NAME} z tego magicznego ogrodu, a b\u0119d\u0119 wdzi\u0119czny."
+  positiveAnswer: "Nie mog\u0119 uwierzy\u0107, \u017Ce uda\u0142o ci si\u0119 dotrze\u0107
+    do warzywnika! To niezwyk\u0142e! Oto twoja nagroda za odwag\u0119."
+  negativeAnswer: "Nie poddawaj si\u0119! Spr\xF3buj jeszcze raz dotrze\u0107 do
+    magicznego ogrodu i zebra\u0107 {QUANTITY} {NAME}."

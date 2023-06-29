@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 6
   m_EditorClassIdentifier: 
-  text: Dzien dobry! Czy moglbys mi pomoc zdobyc {QUANTITY} {NAME}? Jestem szefem
-    kuchni w restauracji i pilnie potrzebuje tego warzywa do naszego nowego specjalu.
-    Jesli mialbys jakiekolwiek {NAME} do oddania, bylbym niezmiernie wdzieczny!
-  positiveAnswer: "Ogromne podziekowania za zdobycie {QUANTITY} {NAME}. Dzieki Tobie
-    nasz nowy \r\nspecjal w restauracji bedzie wyjatkowy. Twoj wklad ma ogromne znaczenie.
-    Jeszcze raz, dziekuje!"
-  negativeAnswer: Oh nie! Nie masz {QUANTITY} {NAME} dla naszego nowego specjalu
-    w restauracji? To naprawde przykre. Czy wiesz, gdzie jeszcze moglibysmy szukac?
-    Bylbym wdzieczny za kazda wskazowke lub sugestie. Dziekuje za Twoje starania!
+  text: "Dzie\u0144 dobry! Niestety, jako model j\u0119zykowy dzia\u0142aj\u0105cy
+    wirtualnie, nie jestem w stanie dostarcza\u0107 fizycznych przedmiot\xF3w, takich
+    jak warzywa. Jednak mog\u0119 udzieli\u0107 Ci informacji lub pom\xF3c w inny
+    spos\xF3b. Je\u015Bli masz jakie\u015B pytania dotycz\u0105ce przepisu na specja\u0142
+    lub potrzebujesz porad kulinarnej, ch\u0119tnie Ci pomog\u0119!"
+  positiveAnswer: "Ogromne podzi\u0119kowania za zdobycie {QUANTITY} {NAME}. Dzi\u0119ki
+    Tobie nasz nowy specja\u0142 w restauracji b\u0119dzie wyj\u0105tkowy. Tw\xF3j
+    wk\u0142ad ma ogromne znaczenie. Jeszcze raz, dzi\u0119kuj\u0119!"
+  negativeAnswer: "Oh nie! Nie mam {QUANTITY} {NAME} dla waszego nowego specja\u0142u
+    w restauracji? To naprawd\u0119 przykre. Czy wiesz, gdzie jeszcze mogliby\u015Bmy
+    szuka\u0107? By\u0142bym wdzi\u0119czny za ka\u017Cd\u0105 wskaz\xF3wk\u0119
+    lub sugesti\u0119. Dzi\u0119kuj\u0119 za Twoje starania!"

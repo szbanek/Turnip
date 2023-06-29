@@ -12,17 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Salaciany dziadyga
   m_EditorClassIdentifier: 
-  text: 'Witaj, nieznajomy! Hm, na twoim miejscu nie nosilbym tego purpurowego ubioru:
-    nasze krolestwo nie ma najlepszych stosunkow z tymi wampirami chrzanowymi, i
-    moga spotkac cie nieprzyjemnosci w zetknieciu ze strazami palacowymi. [TAB -
-    Ekwipunek] A szkoda... Chrzan jest bardzo cenna przyprawa, ja niby mam swoje
-    wlasne pola salaty, ale tesknie za czasem kiedy mozna bylo importowac chrzan...
-    Sluchaj, moglbys mi pomoc? Przynies mi 8 CHRZANU, a obiecuje ci, ze nie pozalujesz!
-    Z tego co wiem, mozesz go znalezc w okolicy gor lub wampirzych plantacji.'
-  positiveAnswer: "Aaach, chrzan! Dziekuje, to cenny nabytek dla mnie i mojej rodziny.
-    Mam nadzieje ze nie miales problemow z Chrzanza - te wampiry potrafia by\u0107
-    naprawde nieobliczalne. Prosze, przyjmij ten kapelusz jako dowod mojej wdziecznosci.
-    Byl w mojej rodzinie od pokolen, a naleza\u0142 do mojego dalekiego przodka,
-    ktory z nim na glowie zeglowal po morzach i oceanach, daleko od brzegow tej wyspy.
-    Teraz nalezy do ciebie. Prosze, nos go z duma."
+  text: "Witaj, nieznajomy! Hm, na twoim miejscu nie nosi\u0142bym tego purpurowego
+    ubioru: nasze kr\xF3lestwo nie ma najlepszych stosunk\xF3w z tymi wampirami chrzanowymi,
+    i mog\u0105 spotka\u0107 ci\u0119 nieprzyjemno\u015Bci w zetkni\u0119ciu ze stra\u017Cami
+    pa\u0142acowymi. [TAB - Ekwipunek] A szkoda... Chrzan jest bardzo cenn\u0105
+    przypraw\u0105, ja niby mam swoje wlasne pola sa\u0142aty, ale t\u0119skni\u0119
+    za czasem kiedy mo\u017Cna by\u0142o importowa\u0107 chrzan... S\u0142uchaj,
+    m\xF3g\u0142by\u015B mi pom\xF3c? Przynie\u015B mi 8 CHRZANU, a obiecuj\u0119
+    ci, \u017Ce nie po\u017Ca\u0142ujesz! Z tego co wiem, mo\u017Cesz go znale\u017A\u0107
+    w okolicy g\xF3r lub wampirzych plantacji."
+  positiveAnswer: "Aaach, chrzan! Dziekuj\u0119, to cenny nabytek dla mnie i mojej
+    rodziny. Mam nadziej\u0119 \u017Ce nie mia\u0142e\u015B problem\xF3w z Chrzanz\u0105
+    - te wampiry potrafi\u0105 by\u0107 naprawd\u0119 nieobliczalne. Prosz\u0119,
+    przyjmij ten kapelusz jako dow\xF3d mojej wdzi\u0119czno\u015Bci. By\u0142 w
+    mojej rodzinie od pokole\u0144, a nale\u017Ca\u0142 do mojego dalekiego przodka,
+    kt\xF3ry, z nim na glowie, \u017Ceglowa\u0142 po morzach i oceanach, daleko od
+    brzeg\xF3w tej wyspy. Teraz nale\u017Cy do ciebie. Prosz\u0119, no\u015B go z
+    dum\u0105."
   negativeAnswer: "Nie masz 8 Chrzanu? Przyjd\u017A do mnie jak je zdob\u0119dziesz!"

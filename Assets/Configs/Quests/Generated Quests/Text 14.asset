@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 14
   m_EditorClassIdentifier: 
-  text: Mam problem z uprawa {NAME}. Potrzebuje, abys znalazl {QUANTITY} {NAME},
-    ktore sa odporne na szkodniki. Czy jestes w stanie mi pomoc?
-  positiveAnswer: Doskonale! Teraz bede mogl rozwijac swoja uprawe bez obaw o szkodniki.
-    Oto nagroda za twoje starania.
-  negativeAnswer: Czy mozesz jeszcze poszukac {QUANTITY} {NAME}? Bez nich moja uprawa
-    jest zagrozona.
+  text: "Mam problem z upraw\u0105 {NAME}. Potrzebuj\u0119, aby\u015B znalaz\u0142
+    {QUANTITY} {NAME}, kt\xF3re s\u0105 odporne na szkodniki. Czy jeste\u015B w stanie
+    mi pom\xF3c?"
+  positiveAnswer: "Doskonale! Teraz b\u0119d\u0119 m\xF3g\u0142 rozwija\u0107 swoj\u0105
+    upraw\u0119 bez obaw o szkodniki. Oto nagroda za Twoje starania."
+  negativeAnswer: "Czy mo\u017Cesz jeszcze poszuka\u0107 {QUANTITY} {NAME}? Bez nich
+    moja uprawa jest zagro\u017Cona."

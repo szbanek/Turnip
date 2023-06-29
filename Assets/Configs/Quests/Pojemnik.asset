@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Pojemnik
   m_EditorClassIdentifier: 
-  text: "Szykon zesz\u0142a ta papryka, prawda, Hrabio Gahlammonie? S\u0142uchaj,
+  text: "Szybko zesz\u0142a ta papryka, prawda, Hrabio Gahlammonie? S\u0142uchaj,
     Mediatorze, widz\u0119 \u017Ce masz list, ale czy m\xF3g\u0142by\u015B uzupe\u0142ni\u0107
     nasze zapasy? 10 PAPRYKI b\u0119dzie jak znalaz\u0142. Wielce ci dzi\u0119kuj\u0119."
   positiveAnswer: "Idealnie, starczy do wieczora. Daj mi prosz\u0119 ten list...

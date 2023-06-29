@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 17
   m_EditorClassIdentifier: 
-  text: Witaj, wojowniku! Istnieje legendarna potrawa, ktora wymaga bardzo pikantnych
-    {NAME}. Zbierz {QUANTITY} z nich, abysmy mogli przygotowac to wyjatkowe danie.
-  positiveAnswer: Niesamowite! Te pikantne {NAME} sa idealne do naszej legendarnego
-    dania. Oto twoja nagroda za pomoc.
-  negativeAnswer: Czy mozesz jeszcze sprobowac zdobyc {QUANTITY} {NAME}? Bez nich
-    nie bedziemy mogli przygotowac naszej wyjatkowej potrawy.
+  text: "Witaj, wojowniku! Istnieje legendarna potrawa, kt\xF3ra wymaga bardzo pikantnych
+    {NAME}. Zbierz {QUANTITY} z nich, aby\u015Bmy mogli przygotowa\u0107 to wyj\u0105tkowe
+    danie."
+  positiveAnswer: "Niesamowite! Te pikantne {NAME} s\u0105 idealne do naszego legendarnego
+    dania. Oto twoja nagroda za pomoc."
+  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
+    {NAME}? Bez nich nie b\u0119dziemy mogli przygotowa\u0107 naszej wyj\u0105tkowej
+    potrawy."
