@@ -148,6 +148,42 @@ MonoBehaviour:
     m_Localized: "ty janie cubie drugi co spawnujesz minigejmy do obs\u0142ugi"
     m_Metadata:
       m_Items: []
+  - m_Id: 255302377934848
+    m_Localized: Nowa Gra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255306949726208
+    m_Localized: "Tw\xF3rcy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255312326823936
+    m_Localized: "Wyjd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255653806084096
+    m_Localized: Rozpocznij
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255317641007104
+    m_Localized: "Gra napisana na Mage Game Jam 2023\nPrzygotowana przez: Adam Gahlammon
+      Dachtera, Andrzej Pojemnik Gauza, Szymon Z\u0142owiek Kaczmarek, Laura Lentilek
+      Robi\u0144ska, Stefan Szczepan Zb\u0105szyniak\n\n\nDodatkowe assety:\nhttps://opengameart.org/content/tiny-weeds\nhttps://opengameart.org/content/multi-stylized-grass\nhttps://opengameart.org/content/bushes\nhttps://opengameart.org/content/rope-fence\nhttps://opengameart.org/content/daniel-anderssons-medieval-themed-models\nhttps://opengameart.org/content/2d-vegetables\nhttps://opengameart.org/content/pixel-fonts-by-pix3m\nhttps://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud\nhttps://app.sloyd.ai/editor\nhttps://pixabay.com/music/main-title-medieval-epic-adventure-action-heroic-powerful-opener-intro-117935/\nhttps://icons8.com/icons/set/keyboard-key"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255769187192832
+    m_Localized: "Pok\xF3j nie jest \u0142atwy do utrzymania. Na ka\u017Cdym kroku
+      pojawiaj\u0105 si\u0119 konflikty i ryzyko wojny. Gdy sytuacja mi\u0119dzy
+      pi\u0119cioma kr\xF3lestwami staje si\u0119 coraz bardziej napi\u0119ta, tylko
+      wyj\u0105tkowy mediator b\u0119dzie w stanie opanowa\u0107 sytuacj\u0119. Zr\xF3b
+      wszystko, co w twojej mocy, aby dostarczy\u0107 list dyplomatyczny do W\u0142adcy
+      Sa\u0142aty. Jednak to mo\u017Ce by\u0107 za ma\u0142o. Musisz nawi\u0105za\u0107
+      kontakt z pozosta\u0142ymi krajami: wzg\xF3rzystej Rzepy, \u015Bnie\u017Cnego
+      Chrzanu, nadbrze\u017Cnej Marchwi i pustynnej Papryki. Nie b\u0119dzie to \u0142atwe
+      zadanie. Przygotuj si\u0119 na ryzyko i po\u015Bwi\u0119cenie. Nic jednak nie
+      jest warte wi\u0119cej ni\u017C pok\xF3j w krainie.\r\n\r\nSzerokiej drogi,
+      Mediatorze!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

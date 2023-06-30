@@ -143,6 +143,30 @@ MonoBehaviour:
     m_Key: jan
     m_Metadata:
       m_Items: []
+  - m_Id: 255302377934848
+    m_Key: new_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255306949726208
+    m_Key: credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255312326823936
+    m_Key: quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255317641007104
+    m_Key: credits_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255653806084096
+    m_Key: begin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255769187192832
+    m_Key: intro
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

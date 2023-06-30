@@ -160,6 +160,72 @@ MonoBehaviour:
     m_Localized: Hey, Janie Cubie, what's up with spawning those mini-games for maintenance?
     m_Metadata:
       m_Items: []
+  - m_Id: 255302377934848
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255306949726208
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255312326823936
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255653806084096
+    m_Localized: Begin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255317641007104
+    m_Localized: 'Game made during Mage Game Jam 2023 at CDV
+
+      Made by: Adam
+      Gahlammon Dachtera, Andrzej Pojemnik Gauza, Szymon Zlowiek Kaczmarek, Laura
+      Lentilek Robinska, Stefan Szczepan Zbaszyniak
+
+
+
+      Additional assets:
+
+      https://opengameart.org/content/tiny-weeds
+
+      https://opengameart.org/content/multi-stylized-grass
+
+      https://opengameart.org/content/bushes
+
+      https://opengameart.org/content/rope-fence
+
+      https://opengameart.org/content/daniel-anderssons-medieval-themed-models
+
+      https://opengameart.org/content/2d-vegetables
+
+      https://opengameart.org/content/pixel-fonts-by-pix3m
+
+      https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud
+
+      https://app.sloyd.ai/editor
+
+      https://pixabay.com/music/main-title-medieval-epic-adventure-action-heroic-powerful-opener-intro-117935/
+
+      https://icons8.com/icons/set/keyboard-key'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255769187192832
+    m_Localized: 'Peace is not easy to maintain. Conflicts and the risk of war arise
+      at every step. As the situation between the five kingdoms becomes increasingly
+      tense, only an exceptional mediator will be able to control the situation.
+      Do everything in your power to deliver the diplomatic letter to the Lettucian
+      King. However, that may not be enough. You must establish contact with the
+      remaining countries: the hilly Turnip, the snowy Horseradish, the coastal Carrot,
+      and the desert Pepper. It will not be an easy task. Prepare yourself for risk
+      and sacrifice. But nothing is worth more than peace in the realm.
+
+      
+
+      Safe
+      travels, Mediator!'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

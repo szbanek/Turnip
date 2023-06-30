@@ -588,58 +588,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1250526102}
     m_Modifications:
     - target: {fileID: 795294807, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_Text
-      value: "Pokoj nie jest latwy do utrzymania. Na kazdym kroku pojawiaja sie konflikty
-        i ryzyko wojny. Gdy sytuacja miedzy piecioma krolestwami staje sie coraz
-        bardziej napieta, tylko wyjatkowy mediator bedzie w stanie opanowac sytuacje.
-        Zrob wszystko co w twojej mocy, aby dostarczyc list dyplomatyczny do Wladcy
-        Salaty. Jednak to moze byc za malo. Musisz nawiazac kontakt z pozostalymi
-        krajami: wzgorzystej Rzepy, snieznego Chrzanu, nadbrzeznej Marchwi i pustynnej
-        Papryki. Nie bedzie to latwe zadanie. Przygotuj sie na ryzyko i poswiecenie.
-        Nic jednak nie jest warte wiecej niz pokoj w krainie. \r\n\nSzerokiej drogi,
-        Mediatorze!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 795294807, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 795294807, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 1273736873, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_Text
-      value: 'Gra napisana na Mage Game Jam 2023
-
-        Przygotowana przez: Adam
-        Gahlammon Dachtera, Andrzej Pojemnik Gauza, Szymon Zlowiek Kaczmarek, Laura
-        Lentilek Robinska, Stefan Szczepan Zbaszyniak
-
-        
-
-        Assety:
-
-        https://opengameart.org/content/tiny-weeds
-
-        https://opengameart.org/content/multi-stylized-grass
-
-        https://opengameart.org/content/bushes
-
-        https://opengameart.org/content/rope-fence
-
-        https://opengameart.org/content/daniel-anderssons-medieval-themed-models
-
-        https://opengameart.org/content/2d-vegetables
-
-        https://opengameart.org/content/pixel-fonts-by-pix3m
-
-        https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud
-
-        https://app.sloyd.ai/editor
-
-        https://pixabay.com/music/main-title-medieval-epic-adventure-action-heroic-powerful-opener-intro-117935/
-
-        https://icons8.com/icons/set/keyboard-key'
       objectReference: {fileID: 0}
     - target: {fileID: 1273736873, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -656,10 +610,6 @@ PrefabInstance:
     - target: {fileID: 671413086157109845, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 671413086157109847, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2605493276252879458, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_Text
@@ -674,16 +624,8 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3725590683723837202, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 3725590683723837202, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 3725590683723837202, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 180
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4769651214742793125, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_Sprite
@@ -696,22 +638,6 @@ PrefabInstance:
     - target: {fileID: 4769651214742793127, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469506663866713943, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469506663866713943, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469506664300462778, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469506664300462778, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6664467619479246794, guid: 607728dc9eb4b8144baab029d48cbc8e, type: 3}
       propertyPath: m_FontData.m_FontSize
