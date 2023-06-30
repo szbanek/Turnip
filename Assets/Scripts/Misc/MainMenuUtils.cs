@@ -23,6 +23,7 @@ public class MainMenuUtils : MonoBehaviour
     {
         introPanel.SetActive(false);
         mainPanel.SetActive(true);
+        localeButton.onClick.AddListener(ChangeLocale);
 
         if (currentLocale == 0)
         {
@@ -34,7 +35,6 @@ public class MainMenuUtils : MonoBehaviour
         }
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[currentLocale];
 
-        localeButton.onClick.AddListener(ChangeLocale);
         ChangeLocale();
     }
 
