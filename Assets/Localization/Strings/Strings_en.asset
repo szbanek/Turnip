@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Strings_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b1e660db31acf9e4499b0ffc2bb3d035, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 83677155328
+    m_Localized: Pepper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323901722624
+    m_Localized: Carrot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451941240832
+    m_Localized: Turnip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532765478912
+    m_Localized: Lettuce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659697700864
+    m_Localized: Horseradish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209339953188864
+    m_Localized: ----
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209341920317440
+    m_Localized: ----
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208333186011136
+    m_Localized: Lettuce be real, this is just crispy water.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208327859245056
+    m_Localized: Most commonly stored in Container.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208329666990080
+    m_Localized: Very tasty vegetable. Popular in Carrountry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208331269214208
+    m_Localized: It's what it's.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208335182499840
+    m_Localized: Favorite spice of French vampire smugglers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212117882671104
+    m_Localized: The End
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212024886562816
+    m_Localized: Next level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212019643682816
+    m_Localized: Received a vegetable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212022277705728
+    m_Localized: Received an item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213552825372672
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213713433661440
+    m_Localized: Vegetables
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214040530653184
+    m_Localized: Character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214556648148992
+    m_Localized: 'Level:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214594568851456
+    m_Localized: 'Available points:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215358217392128
+    m_Localized: Max Stamina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215526392205312
+    m_Localized: Stamina Regeneration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215583938056192
+    m_Localized: Sprint Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215625398751232
+    m_Localized: Jump Cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215667069161472
+    m_Localized: Additional Vegetable Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215821964808192
+    m_Localized: Gathering Skill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215895209938944
+    m_Localized: Vegetable Sense Range
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216131026292736
+    m_Localized: 'Sprint Speed: {0:f2}
+
+      Max Stamina: {1:f2}
+
+      Stamina
+      Regeneration: {2:f2}
+
+      Jump Cost: {3:f2}
+
+      Additional Vegetable Chance:
+      {4:f2}%
+
+      Gathering Skill: {5:f2}
+
+      Vegetable Sense Range: {6:f2}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 237879998287872
+    m_Localized: Quest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 237929172307968
+    m_Localized: Deliver the letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238071812198400
+    m_Localized: Hey, Janie Cubie, what's up with spawning those mini-games for maintenance?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

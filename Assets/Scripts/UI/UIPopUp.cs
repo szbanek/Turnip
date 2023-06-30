@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization;
 
 public class UIPopUp : Singleton<UIPopUp>
 {
-    public enum PopUpType { Vegetable, Item, Level }
+    public enum PopUpType { Vegetable, Item, Level, TheEnd }
 
     [SerializeField]
     private Text label;
     [SerializeField]
-    private string vegetableString;
+    private LocalizedString vegetableString;
     [SerializeField]
-    private string itemString;
+    private LocalizedString itemString;
     [SerializeField]
-    private string levelString;
+    private LocalizedString levelString;
+    [SerializeField]
+    private LocalizedString theEndString;
     [SerializeField]
     private float localYPos;
     [SerializeField]
@@ -54,13 +57,16 @@ public class UIPopUp : Singleton<UIPopUp>
         switch (type)
         {
             case PopUpType.Vegetable:
-                label.text = vegetableString;
+                label.text = vegetableString.GetLocalizedString();
                 break;
             case PopUpType.Item:
-                label.text = itemString;
+                label.text = itemString.GetLocalizedString();
                 break;
             case PopUpType.Level:
-                label.text = levelString;
+                label.text = levelString.GetLocalizedString();
+                break;
+            case PopUpType.TheEnd:
+                label.text = theEndString.GetLocalizedString();
                 break;
         }
         isPoppingUp = true;

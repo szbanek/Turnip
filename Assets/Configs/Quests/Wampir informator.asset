@@ -12,11 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Wampir informator
   m_EditorClassIdentifier: 
-  text: "Co ja tu widz\u0119... nowy przyjezdny. Nie wiem czy wiesz, ale w\u0142a\u015Bnie
-    wprowadzili\u015Bmy nowy podatek i zanim pomog\u0119 ci w czymkolwiek, musisz
-    dostarczy\u0107 mi 6 RZEPY. Przykro mi, takie s\u0105 przepisy."
-  positiveAnswer: "Podatek uiszczony teraz twoja sprawa. List do Hrabiego? Niestety
-    musz\u0119 ci\u0119 rozczarowa\u0107, nasz pan wyjecha\u0142 tymczasowo w odwiedziny
-    do Lorda Pojemnika, ogl\u0105da\u0107 rozgrywki Pi\u0142ki Kopanej, popijaj\u0105c
-    szlachetne trunki. Musisz pojecha\u0107 w stron\u0119 Papryczanej Pustyni."
-  negativeAnswer: "Ale wiesz \u017Ce za oszustwa podatkowe trafia si\u0119 do wi\u0119zienia?"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19470031261696
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19470945619968
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19471818035200
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

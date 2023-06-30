@@ -67,9 +67,7 @@ public class NpcQuestManager : MonoBehaviour
         quest = QuestManager.Instance.GetNewQuest(
                 (Vegetable.VegetableType)type,
                 quantity,
-                questText.Text,
-                questText.PositiveAnswer,
-                questText.NegativeAnswer,
+                questText,
                 exp,
                 item
             );

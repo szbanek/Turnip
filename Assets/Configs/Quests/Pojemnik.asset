@@ -12,13 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Pojemnik
   m_EditorClassIdentifier: 
-  text: "Szybko zesz\u0142a ta papryka, prawda, Hrabio Gahlammonie? S\u0142uchaj,
-    Mediatorze, widz\u0119 \u017Ce masz list, ale czy m\xF3g\u0142by\u015B uzupe\u0142ni\u0107
-    nasze zapasy? 10 PAPRYKI b\u0119dzie jak znalaz\u0142. Wielce ci dzi\u0119kuj\u0119."
-  positiveAnswer: "Idealnie, starczy do wieczora. Daj mi prosz\u0119 ten list...
-    Ach, wspaniale. Genera\u0142 Lora wyrusza do portu aby pop\u0142yn\u0105\u0107
-    na koncert. Hrabio Gahlammonie, my\u015Bl\u0119 \u017Ce to moment na nasz ruch,
-    kiedy Rzepospolita jest ods\u0142oni\u0119ta. Jeszcze tu jeste\u015B, Mediatorze?
-    Nie jeste\u015B nam ju\u017C d\u0142u\u017Cej potrzebny, to ju\u017C koniec.
-    The end."
-  negativeAnswer: "To nie wygl\u0105da jak 10 papryki."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18864487010304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18867032952832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18874452676608
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

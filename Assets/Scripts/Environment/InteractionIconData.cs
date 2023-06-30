@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [CreateAssetMenu(menuName="Scriptable Objects/Interaction Icon Data")]
 public class InteractionIconData : ScriptableObject
 {
     [SerializeField]
-    private string text;
-    public string Text => text;
+    private LocalizedString text;
+    public string Text => text.GetLocalizedString();
 
     [SerializeField]
     private Sprite icon;

@@ -8,24 +8,14 @@ public class Quest
     (
         Vegetable.VegetableType type,
         int quantity,
-        string text,
-        string positiveAnswer,
-        string negativeAnswer,
+        QuestText questText,
         float exp,
         ItemInstance item
     )
     {
         this.type = type;
         this.quantity = quantity;
-        this.text = text;
-        this.text = this.text.Replace("{NAME}", Vegetable.TypeToString(type));
-        this.text = this.text.Replace("{QUANTITY}", quantity.ToString());
-        this.positiveAnswer = positiveAnswer;
-        this.positiveAnswer = this.positiveAnswer.Replace("{NAME}", Vegetable.TypeToString(type));
-        this.positiveAnswer = this.positiveAnswer.Replace("{QUANTITY}", quantity.ToString());
-        this.negativeAnswer = negativeAnswer;
-        this.negativeAnswer = this.negativeAnswer.Replace("{NAME}", Vegetable.TypeToString(type));
-        this.negativeAnswer = this.negativeAnswer.Replace("{QUANTITY}", quantity.ToString());
+        this.questText = questText;
         this.exp = exp;
         this.item = item;
     }
@@ -33,14 +23,20 @@ public class Quest
     public Vegetable.VegetableType Type => type;
     private int quantity;
     public int Quantity => quantity;
-    private string text;
-    public string Text => text;
-    private string positiveAnswer;
-    public string PositiveAnswer => positiveAnswer;
-    private string negativeAnswer;
-    public string NegativeAnswer => negativeAnswer;
+    private QuestText questText;
+    public string Text => ReplaceNameQuantity(questText.Text);
+
+    public string PositiveAnswer => ReplaceNameQuantity(questText.PositiveAnswer);
+
+    public string NegativeAnswer => ReplaceNameQuantity(questText.NegativeAnswer);
+
     private float exp;
     public float Exp => exp;
     private ItemInstance item;
     public ItemInstance Item => item;
+
+    private string ReplaceNameQuantity(string text)
+    {
+        return text.Replace("{NAME}", Vegetable.TypeToString(type)).Replace("{QUANTITY}", quantity.ToString());
+    }
 }

@@ -12,20 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Wampir pogranicznik
   m_EditorClassIdentifier: 
-  text: "Sta\u0107! Kto\u015B ty...? Ach. Mediator. Hej, nie obawiaj si\u0119, mo\u017Ce
-    i jeste\u015Bmy wampirami ale to nie czyni z nas potwor\xF3w. Hrabia Gahlammon,
-    cho\u0107 potrafi wpa\u015B\u0107 w wielki gniew, zawsze ch\u0119tnie s\u0142ucha
-    rozs\u0105dnych argument\xF3w. Przy okazji, mam do ciebie tak\u0105 osobist\u0105
-    spraw\u0119. Powoli ko\u0144cz\u0105 si\u0119 nam zapasy \u017Cywno\u015Bci.
-    Co gorsza, kto\u015B pod\u0142o\u017Cy\u0142 do naszej strawy czosnek. Wspar\u0142by\u015B
-    nas? Prosz\u0119 tylko o 7 PAPRYKI. Z tego co mi wiadomo, zwykle ro\u015Bnie
-    na rozleg\u0142ych, otwartych przestrzeniach, mo\u017Cesz te\u017C zawitac na
-    plantacje na p\xF3\u0142nocnym zachodzie st\u0105d, by mie\u0107 bogate zbiory."
-  positiveAnswer: "Wielkie dzi\u0119ki mediatorze! Nie wiem co by\u015Bmy zrobili
-    bez ciebie! Niestety, cho\u0107 bardzo chc\u0119 si\u0119 odwdzi\u0119czy\u0107,
-    nie jestem w stanie specjalnie ci pom\xF3c w twojej misji. Mog\u0119 najwy\u017Cej
-    poradzi\u0107 \u017Ceby\u015B uda\u0142 si\u0119 do purpurowego zamku i porozmawia\u0142
-    ze stra\u017Cnikiem przy g\u0142ownej bramie. Wyja\u015Bnij mu wszystko, a na
-    pewno ci pomo\u017Ce."
-  negativeAnswer: "Widz\u0119 \u017Ce nie masz dla mnie papryki. Szkoda, liczy\u0142em
-    na Twoj\u0105 pomoc."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19557952262144
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19559680315392
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19562184314880
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

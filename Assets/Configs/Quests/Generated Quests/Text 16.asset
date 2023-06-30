@@ -12,10 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 16
   m_EditorClassIdentifier: 
-  text: "Poszukiwacz z\u0142ota potrzebuje Twojej pomocy! Znajd\u017A i przynie\u015B
-    mu {QUANTITY} {NAME}, kt\xF3re s\u0105 ukryte na mapie. Czy podejmiesz wyzwanie?"
-  positiveAnswer: "Jeste\u015B niesamowity! Przynios\u0142e\u015B mi {NAME}! Oto
-    Twoja zas\u0142u\u017Cona nagroda, a ja mog\u0119 kontynuowa\u0107 swoje poszukiwania
-    z\u0142ota."
-  negativeAnswer: "Wygl\u0105da na to, \u017Ce jeszcze masz szans\u0119 zdoby\u0107
-    {QUANTITY} {NAME}. Nie trac nadziei!"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9756698480640
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9779016372224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9795554512896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

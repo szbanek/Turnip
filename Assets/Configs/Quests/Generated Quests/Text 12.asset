@@ -12,10 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 12
   m_EditorClassIdentifier: 
-  text: "Witaj! Zbli\u017Ca si\u0119 Halloween, a moje sk\u0142adniki na potrawy
-    z {NAME} si\u0119 sko\u0144czy\u0142y. Czy mo\u017Cesz przynie\u015B\u0107 mi
-    {QUANTITY} {NAME} z pobliskiego lasu?"
-  positiveAnswer: "Fantastycznie! Teraz b\u0119d\u0119 m\xF3g\u0142 przygotowa\u0107
-    pyszne potrawy na Halloween. Oto Twoja zas\u0142u\u017Cona nagroda."
-  negativeAnswer: "Czy masz jeszcze szans\u0119 przynie\u015B\u0107 mi {QUANTITY}
-    {NAME}? Bez nich nie b\u0119d\u0119 w stanie przygotowa\u0107 potraw na Halloween."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9538775027712
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9559394226176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9571268300800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

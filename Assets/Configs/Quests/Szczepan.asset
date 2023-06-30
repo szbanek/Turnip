@@ -12,9 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Szczepan
   m_EditorClassIdentifier: 
-  text: "By\u0142em w Krakowie. Powiadam panu, pi\u0119kne miasto..."
-  positiveAnswer: "Z\u0142owiek...? Czego on chce? Pewnie znowu mu czaszka nie dzia\u0142a.
-    Ach nie, musi chodzi\u0107 o te dzia\u0142ania Genera\u0142 Lory. Zajmiemy si\u0119
-    tym. Masz, zanie\u015B to pismo Hrabiego Gahlammona z Chrzanzy. B\u0119dzie wiedzia\u0142
-    co robi\u0107."
-  negativeAnswer: "Te\u017C by\u0142 pan w Krakowie?"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19333057875968
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19333728964608
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19336941801472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -12,24 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Wampir straznik zamku
   m_EditorClassIdentifier: 
-  text: "Mediator... Mog\u0119 ci\u0119 przpu\u015Bci\u0107, ale odradzam. Hrabia
-    Gahlammon jest obecnie w bardzo, bardzo z\u0142ym nastroju, sugeruj\u0119 ci
-    powr\xF3ci\u0107 tutaj po jakim\u015B czasie. Przy okazji, moze rozejrza\u0142by\u015B
-    si\u0119 za pewnymi sk\u0142adnikami, kt\xF3rych brakuje naszemu kucharzowi do
-    przyrz\u0105dzenia Hrabiemu posi\u0142ku? Potrzeba nam jedynie 6 RZEPY, kt\xF3ra
-    cz\u0119sto ro\u015Bnie przy go\u015Bci\u0144cu. Dobry posi\u0142ek i chwila
-    odpoczynku na pewno pomog\u0105 naszemu Panu w och\u0142oni\u0119ciu z obecnego
-    stanu."
-  positiveAnswer: "Przynios\u0142e\u015B sk\u0142adniki, wspaniale. Hrabia Gahlammon
-    na pewno si\u0119 ucieszy, dostarcz\u0119 mu tw\xF3j list pokojowy. Zdo\u0142a\u0142e\u015B
-    w\u0142a\u015Bnie utrzyma\u0107 pok\xF3j w bardzo ryzykownej sytuacji, nie pora
-    jednak \u015Bwi\u0119towa\u0107. Przygotowywali\u015Bmy si\u0119 na wypadek walki
-    od d\u0142u\u017Cszego czasu i postawili\u015Bmy naszych sojusznik\xF3w na ty\u0142ach
-    sa\u0142aciarzy w stan gotowo\u015Bci. Je\u015Bli nie otrzymaj\u0105 oni listu
-    wstrzymuj\u0105cego podpisanego przez Hrabiego Gahlammona, za par\u0119 dni przypuszcz\u0105
-    atak. Musisz jak najpr\u0119dzej dostarczy\u0107 ten list aby zapobiec rozlewowi
-    krwi i utrzyma\u0107 pok\xF3j w Pi\u0119ciu Kr\xF3lestwach."
-  negativeAnswer: "Hrabia Gahlammon jest g\u0142odny. Do jego ulubionego posi\u0142ku
-    potrzeba nam jedynie 6 RZEPY, kt\xF3ra cz\u0119sto ro\u015Bnie przy go\u015Bci\u0144cu.
-    Dobry posi\u0142ek i chwila odpoczynku na pewno pomog\u0105 naszemu Panu w och\u0142oni\u0119ciu
-    z obecnego stanu."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19669692715008
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19671651454976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19673043963904
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

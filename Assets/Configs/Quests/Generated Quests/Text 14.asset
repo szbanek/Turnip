@@ -12,10 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 14
   m_EditorClassIdentifier: 
-  text: "Mam problem z upraw\u0105 {NAME}. Potrzebuj\u0119, aby\u015B znalaz\u0142
-    {QUANTITY} {NAME}, kt\xF3re s\u0105 odporne na szkodniki. Czy jeste\u015B w stanie
-    mi pom\xF3c?"
-  positiveAnswer: "Doskonale! Teraz b\u0119d\u0119 m\xF3g\u0142 rozwija\u0107 swoj\u0105
-    upraw\u0119 bez obaw o szkodniki. Oto nagroda za Twoje starania."
-  negativeAnswer: "Czy mo\u017Cesz jeszcze poszuka\u0107 {QUANTITY} {NAME}? Bez nich
-    moja uprawa jest zagro\u017Cona."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9633331417088
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9652423888896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9666629996544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

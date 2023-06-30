@@ -38,6 +38,13 @@ public class UIVegetableSlot : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        icon.sprite = vegetable.Icon;
+        vegetableName.text = vegetable.Name;
+        vegetableDescription.text = vegetable.Description;
+    }
+
     public void SetAmount(int amount)
     {
         amountText.text = amount.ToString();

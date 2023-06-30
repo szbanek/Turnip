@@ -12,14 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Marchewkowy straznik
   m_EditorClassIdentifier: 
-  text: "\u017Be co? Wiadomo\u015B\u0107 od wampir\xF3w? Ekhm... Ja tam nic nie wiem!
-    Na pewno nie! I na pewno nie zmieni tego 5 MARCHWI! Kt\xF3ra na pewno nie ro\u015Bnie
-    na obrze\u017Cach wyspy!"
-  positiveAnswer: "Masz marchew? Dobra, s\u0142uchaj. Tak na prawd\u0119 to nie chcieli\u015Bmy
-    pom\xF3c wampirom. Nasz kr\xF3l zaplanowa\u0142 \u017Ce gdy one napadn\u0105
-    sa\u0142aciarzy, tomy uderzymy na nie z pomoc\u0105 Rzepospolitej. Nie wszyscy
-    tutaj jednak s\u0105 przychylni wojnie, wi\u0119c mo\u017Ce z twoj\u0105 pomoc\u0105
-    uda si\u0119 nam to odkr\u0119ci\u0107. Bierz ten list i le\u0107 do kr\xF3lestwa
-    rzepy, pr\u0119dko!"
-  negativeAnswer: "Z czym ty do cz\u0142owieka panie? Nie s\u0142ysza\u0142e\u015B
-    \u017Ce nic nie wiem?"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18324743000064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18471581388800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18493198831616
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

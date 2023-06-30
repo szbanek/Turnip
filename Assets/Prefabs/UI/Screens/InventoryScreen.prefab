@@ -480,9 +480,18 @@ MonoBehaviour:
         item: 0
       Value: {fileID: 5675102923269457179}
   statsText: {fileID: 8351565207546851458}
-  statsString: "Szybko\u015B\u0107 biegu: {0:f2}\nMaksymalna kondycja: {1:f2}\nRegeneracja
-    kondycji: {2:f2}\nKoszt skoku: {3:f2}\nSzansa dodatkowego warzywa:  {4:f2}%\nUmiejetno\u015Bci
-    zbierackie: {5:f2}\nZasi\u0119g zmys\u0142u: {6:f2}"
+  statsString:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 216131026292736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &8702718093130495935
 GameObject:
   m_ObjectHideFlags: 0

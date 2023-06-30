@@ -12,10 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 9
   m_EditorClassIdentifier: 
-  text: "Witaj, podr\xF3\u017Cniku! Moje pole zosta\u0142o najechane przez szkodniki
-    i potrzebuj\u0119 pomocy w zebraniu {QUANTITY} {NAME}, aby nakarmi\u0107 moj\u0105
-    rodzin\u0119. Czy mo\u017Cesz mi pom\xF3c?"
-  positiveAnswer: "Dzi\u0119kuj\u0119 Ci za zebranie {QUANTITY} {NAME}! Moja rodzina
-    nie b\u0119dzie teraz g\u0142odna. Oto Twoja nagroda."
-  negativeAnswer: "Czy jeszcze mo\u017Cesz mi pom\xF3c zebra\u0107 {QUANTITY} {NAME}?
-    Moja rodzina jest bardzo g\u0142odna."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9402057494528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9417194737664
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9428771016704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

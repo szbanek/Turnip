@@ -1,0 +1,696 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_pl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: 893e6883f61d87742b6433bfe3e6ef33, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3848257933312
+    m_Localized: "Przepraszam, czy m\xF3g\u0142by\u015B mi pom\xF3c? Poszukuj\u0119
+      {QUANTITY} {NAME} do mojej specjalnej zupy. Potrzebuj\u0119 ich jak najszybciej,
+      wi\u0119c je\u015Bli masz jakiekolwiek warzywa do oddania, by\u0142bym bardzo
+      wdzi\u0119czny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3851521101824
+    m_Localized: "\rBardzo dzi\u0119kuj\u0119 za przyniesienie {QUANTITY} {NAME}!
+      Twoja pomoc jest nieoceniona. Teraz b\u0119d\u0119 m\xF3g\u0142 ugotowa\u0107
+      moj\u0105 specjaln\u0105 zup\u0119. Jestem Ci ogromnie wdzi\u0119czny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3855002374144
+    m_Localized: "Ojej, bardzo mi przykro, \u017Ce nie masz wystarczaj\u0105cej ilo\u015Bci
+      {NAME} dla mojej zupy. Czy mo\u017Cesz zapyta\u0107 w\u015Br\xF3d swoich znajomych,
+      czy nie maj\u0105 przypadkiem jakich\u015B warzyw do oddania? Naprawd\u0119
+      zale\u017Cy mi na nich. Dzi\u0119kuj\u0119 za Twoje wysi\u0142ki!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8436767789056
+    m_Localized: "Dzie\u0144 dobry! Czy przypadkiem nie masz w zapasie {QUANTITY}
+      {NAME}? Organizuj\u0119 przyj\u0119cie w moim ogrodzie, a brakuje mi tego warzywa
+      do sa\u0142atek. Je\u015Bli mo\u017Cesz mi pom\xF3c, b\u0119d\u0119 bardzo
+      wdzi\u0119czny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8440567828480
+    m_Localized: "Niesamowite! Dzi\u0119kuj\u0119 za dostarczenie {QUANTITY} {NAME}.
+      Moje sa\u0142atki b\u0119d\u0105 teraz kompletnie smakowite na przyj\u0119ciu.
+      Tw\xF3j wk\u0142ad jest niezast\u0105piony. Jeszcze raz, dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8445596798976
+    m_Localized: "O nie! Szkoda, \u017Ce nie posiadasz {QUANTITY} {NAME}. Czy m\xF3g\u0142by\u015B
+      spr\xF3bowa\u0107 jeszcze raz? Mo\u017Ce uda\u0142oby Ci si\u0119 je zdoby\u0107.
+      B\u0119d\u0119 wdzi\u0119czny za Twoje dalsze poszukiwania. Dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8636374716416
+    m_Localized: "Przyjacielu, czy mog\u0119 prosi\u0107 o {QUANTITY} {NAME}? Moje
+      zwierz\u0119ta uwielbiaj\u0105 je jako przek\u0105sk\u0119, a moje zapasy w\u0142a\u015Bnie
+      si\u0119 sko\u0144czy\u0142y. Je\u015Bli mia\u0142by\u015B chwil\u0119, aby
+      mi pom\xF3c, by\u0142bym niezmiernie wdzi\u0119czny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8638710943744
+    m_Localized: "Wow! Nie mog\u0119 uwierzy\u0107, \u017Ce dostarczy\u0142e\u015B
+      {QUANTITY} {NAME} dla moich zwierz\u0105t. B\u0119d\u0105 si\u0119 nimi zajada\u0107!
+      Naprawd\u0119 doceniam Twoj\u0105 \u017Cyczliwo\u015B\u0107 i serdecznie Ci
+      dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8640657100800
+    m_Localized: "Oh nie! Nie masz {QUANTITY} {NAME} dla moich zwierz\u0105t? To
+      naprawd\u0119 szkoda. Czy wiesz, gdzie jeszcze mogliby\u015Bmy szuka\u0107?
+      Mo\u017Ce s\u0105 jakie\u015B ogrody lub farmy, gdzie mo\u017Cemy je znale\u017A\u0107.
+      Nie mog\u0119 doczeka\u0107 si\u0119, a\u017C uda Ci si\u0119 zdoby\u0107 potrzebne
+      warzywa. Dzi\u0119kuj\u0119 za Twoje starania!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8846794559488
+    m_Localized: "Witaj! Czy by\u0142by\u015B tak mi\u0142y i dostarczy\u0142 mi
+      {QUANTITY} {NAME}? Mamy zbli\u017Caj\u0105ce si\u0119 \u015Bwi\u0119to, a moja
+      rodzina uwielbia tradycyjne ziemniaki puree. Twoja pomoc w tej kwestii by\u0142aby
+      naprawd\u0119 cenna!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8848799436800
+    m_Localized: "Serdeczne podzi\u0119kowania za przyniesienie {QUANTITY} {NAME}.
+      Moja rodzina b\u0119dzie zachwycona tradycyjnym puree. Twoja hojno\u015B\u0107
+      jest niezwyk\u0142a. Dzi\u0119kuj\u0119 Ci!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8850372300800
+    m_Localized: "Och, szkoda, \u017Ce nie masz wystarczaj\u0105cej ilo\u015Bci {NAME}
+      dla mojego puree. Czy m\xF3g\u0142by\u015B spr\xF3bowa\u0107 zapyta\u0107 s\u0105siad\xF3w
+      lub poszuka\u0107 na ich polach? By\u0142oby wspaniale, gdyby\u015B jeszcze
+      spr\xF3bowa\u0142. Dzi\u0119kuj\u0119 za Twoje wysi\u0142ki!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8954391040000
+    m_Localized: "Hej! Szukam {QUANTITY} {NAME} do swojego nowego przepisu na wega\u0144sk\u0105
+      lasagn\u0119. Je\u015Bli masz jakiekolwiek warzywa, kt\xF3rymi mog\u0119 si\u0119
+      podzieli\u0107, by\u0142bym bardzo wdzi\u0119czny za Twoje wsparcie w kuchni!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8957360607232
+    m_Localized: "Dzi\u0119kuj\u0119 Ci serdecznie za {QUANTITY} {NAME}. Teraz mog\u0119
+      stworzy\u0107 wega\u0144sk\u0105 lasagn\u0119 i podzieli\u0107 si\u0119 ni\u0105
+      z innymi. Twoje warzywa pomog\u0105 stworzy\u0107 smaczne danie. Wielkie dzi\u0119ki!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8959176740864
+    m_Localized: "O nie! Brakuje Ci {QUANTITY} {NAME} do wega\u0144skiej lasagny?
+      To smutne. Czy m\xF3g\u0142by\u015B popyta\u0107 w\u015Br\xF3d swoich przyjaci\xF3\u0142
+      lub rodze\u0144stwa? By\u0107 mo\u017Ce kto\u015B ma je w nadmiarze. B\u0119d\u0119
+      wdzi\u0119czny za ka\u017Cde dodatkowe staranie. Dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9195622240256
+    m_Localized: "Przepraszam, \u017Ce przeszkadzam, ale czy mia\u0142by\u015B oko\u0142o
+      {QUANTITY} {NAME}? Planuj\u0119 zrobi\u0107 pikantny sos na imprez\u0119 w
+      moim s\u0105siedztwie, ale brakuje mi tego kluczowego sk\u0142adnika. Twoja
+      pomoc by\u0142aby nieoceniona!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9197442568192
+    m_Localized: "Niesamowicie! Dzi\u0119kuj\u0119 za {QUANTITY} {NAME}. M\xF3j pikantny
+      sos b\u0119dzie teraz doskona\u0142y na imprez\u0119. Twoja pomoc jest bezcenna.
+      Bardzo Ci dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9199082541056
+    m_Localized: "Och, szkoda, \u017Ce nie mam oko\u0142o {QUANTITY} {NAME} na Tw\xF3j
+      pikantny sos. Czy wiesz, gdzie jeszcze m\xF3g\u0142bym spr\xF3bowa\u0107 znale\u017A\u0107
+      to warzywo? Mo\u017Ce s\u0105 inne pola, gdzie mogliby je mie\u0107. Dzi\u0119kuj\u0119
+      za Twoje dalsze poszukiwania!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9244431355904
+    m_Localized: "Dzie\u0144 dobry! Czy mog\u0142by\u015B mi pom\xF3c zdoby\u0107
+      {QUANTITY} {NAME}? Jestem szefem kuchni w restauracji i pilnie potrzebuj\u0119
+      tego warzywa do naszego nowego specja\u0142u. Je\u015Bli mia\u0142by\u015B
+      jakiekolwiek {NAME} do oddania, by\u0142bym niezmiernie wdzi\u0119czny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9274315771904
+    m_Localized: "Ogromne podzi\u0119kowania za zdobycie {QUANTITY} {NAME}. Dzi\u0119ki
+      Tobie nasz nowy specja\u0142 w restauracji b\u0119dzie wyj\u0105tkowy. Tw\xF3j
+      wk\u0142ad ma ogromne znaczenie. Jeszcze raz, dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9275053969408
+    m_Localized: "Oh nie! Nie mam {QUANTITY} {NAME} dla waszego nowego specja\u0142u
+      w restauracji? To naprawd\u0119 przykre. Czy wiesz, gdzie jeszcze mogliby\u015Bmy
+      szuka\u0107? By\u0142bym wdzi\u0119czny za ka\u017Cd\u0105 wskaz\xF3wk\u0119
+      lub sugesti\u0119. Dzi\u0119kuj\u0119 za Twoje starania!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9299955552256
+    m_Localized: "Witaj! Czy przypadkiem nie mia\u0142by\u015B {QUANTITY} {NAME}
+      na sprzeda\u017C? Chcia\u0142bym udekorowa\u0107 swoje podw\xF3rko na zbli\u017Caj\u0105ce
+      si\u0119 \u015Bwi\u0119to, a {NAME} by\u0142yby idealne do stworzenia atmosfery.
+      B\u0119d\u0119 wdzi\u0119czny za ka\u017Cd\u0105 pomoc!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9316296560640
+    m_Localized: "Dzi\u0119kuj\u0119 Ci z ca\u0142ego serca za dostarczenie {QUANTITY}
+      {NAME}. Teraz b\u0119d\u0119 m\xF3g\u0142 stworzy\u0107 magiczn\u0105 atmosfer\u0119
+      na \u015Bwi\u0119to. Twoje {NAME} s\u0105 niezast\u0105pione. Jestem Ci ogromnie
+      wdzi\u0119czny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9343249158144
+    m_Localized: "Och, to smutne, \u017Ce nie mam {QUANTITY} {NAME} do dekoracji
+      na \u015Bwi\u0119to. Czy mog\u0142bym spr\xF3bowa\u0107 poszuka\u0107 ich w
+      innych miejscach? Mo\u017Ce s\u0105 jakie\u015B ogrody lub grz\u0105dki. Dzi\u0119kuj\u0119
+      za Twoje starania!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9354674442240
+    m_Localized: "Przyjacielu, czy mog\u0119 poprosi\u0107 o {QUANTITY} {NAME}? Moje
+      dzieci nie przepadaj\u0105 za warzywami, ale zawsze ch\u0119tnie jedz\u0105
+      je w postaci puree. Je\u015Bli m\xF3g\u0142by\u015B mi pom\xF3c, by\u0142bym
+      niezmiernie wdzi\u0119czny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369350311936
+    m_Localized: "Bardzo dzi\u0119kuj\u0119 za przyniesienie {QUANTITY} {NAME}. Moje
+      dzieci b\u0119d\u0105 teraz cieszy\u0107 si\u0119 pysznym puree. Twoja \u017Cyczliwo\u015B\u0107
+      jest nieoceniona. Serdecznie Ci dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9389424250880
+    m_Localized: "O nie! Nie masz {QUANTITY} {NAME} dla mojego puree? Szkoda. Czy
+      mog\u0142by\u015B zapyta\u0107 w\u015Br\xF3d s\u0105siad\xF3w lub rodziny?
+      By\u0107 mo\u017Ce kto\u015B mia\u0142by jakie\u015B warzywa do oddania. B\u0119d\u0119
+      wdzi\u0119czny za Twoje dalsze poszukiwania. Dzi\u0119kuj\u0119!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9402057494528
+    m_Localized: "Witaj, podr\xF3\u017Cniku! Moje pole zosta\u0142o najechane przez
+      szkodniki i potrzebuj\u0119 pomocy w zebraniu {QUANTITY} {NAME}, aby nakarmi\u0107
+      moj\u0105 rodzin\u0119. Czy mo\u017Cesz mi pom\xF3c?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9417194737664
+    m_Localized: "Dzi\u0119kuj\u0119 Ci za zebranie {QUANTITY} {NAME}! Moja rodzina
+      nie b\u0119dzie teraz g\u0142odna. Oto Twoja nagroda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9428771016704
+    m_Localized: "Czy jeszcze mo\u017Cesz mi pom\xF3c zebra\u0107 {QUANTITY} {NAME}?
+      Moja rodzina jest bardzo g\u0142odna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9441349734400
+    m_Localized: "Cze\u015B\u0107! Moje zio\u0142owe ogr\xF3dki zosta\u0142y zniszczone
+      przez burze. Potrzebuj\u0119 {QUANTITY} {NAME}, aby m\xF3c przygotowa\u0107
+      lekarstwa dla chorych. Czy mo\u017Cesz mi pom\xF3c?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9458659627008
+    m_Localized: "Doskonale! {QUANTITY} {NAME}, kt\xF3rych dostarczy\u0142e\u015B,
+      pomog\u0105 wielu potrzebuj\u0105cym. Oto Twoja nagroda za pomoc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9471846518784
+    m_Localized: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 znale\u017A\u0107 {QUANTITY}
+      {NAME}? Bez nich nie b\u0119d\u0119 w stanie pom\xF3c potrzebuj\u0105cym."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9485897437184
+    m_Localized: "Hej, podr\xF3\u017Cniku! W mojej hodowli {NAME} pojawi\u0142y si\u0119
+      chwasty i zagra\u017Caj\u0105 uprawom. Potrzebuj\u0119, aby\u015B zebra\u0142
+      {QUANTITY} {NAME}, aby\u015Bmy mogli zabezpieczy\u0107 nasze zapasy \u017Cywno\u015Bci."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9505447088128
+    m_Localized: "Wspaniale! Dzi\u0119ki Twojej pomocy nasze zapasy s\u0105 teraz
+      bezpieczne. Oto nagroda, jak\u0105 obieca\u0142em."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9526309556224
+    m_Localized: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 znale\u017A\u0107 {QUANTITY}
+      {NAME}? Bez nich nasza hodowla jest zagro\u017Cona."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9538775027712
+    m_Localized: "Witaj! Zbli\u017Ca si\u0119 Halloween, a moje sk\u0142adniki na
+      potrawy z {NAME} si\u0119 sko\u0144czy\u0142y. Czy mo\u017Cesz przynie\u015B\u0107
+      mi {QUANTITY} {NAME} z pobliskiego lasu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9559394226176
+    m_Localized: "Fantastycznie! Teraz b\u0119d\u0119 m\xF3g\u0142 przygotowa\u0107
+      pyszne potrawy na Halloween. Oto Twoja zas\u0142u\u017Cona nagroda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9571268300800
+    m_Localized: "Czy masz jeszcze szans\u0119 przynie\u015B\u0107 mi {QUANTITY}
+      {NAME}? Bez nich nie b\u0119d\u0119 w stanie przygotowa\u0107 potraw na Halloween."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9586447486976
+    m_Localized: "S\u0142ysza\u0142em o legendarnym warzywniku, kt\xF3ry ro\u015Bnie
+      w g\u0142\u0119bi lasu. Zbierz {QUANTITY} {NAME} z tego magicznego ogrodu,
+      a b\u0119d\u0119 wdzi\u0119czny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9604218753024
+    m_Localized: "Nie mog\u0119 uwierzy\u0107, \u017Ce uda\u0142o ci si\u0119 dotrze\u0107
+      do warzywnika! To niezwyk\u0142e! Oto twoja nagroda za odwag\u0119."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9616394817536
+    m_Localized: "Nie poddawaj si\u0119! Spr\xF3buj jeszcze raz dotrze\u0107 do magicznego
+      ogrodu i zebra\u0107 {QUANTITY} {NAME}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9633331417088
+    m_Localized: "Mam problem z upraw\u0105 {NAME}. Potrzebuj\u0119, aby\u015B znalaz\u0142
+      {QUANTITY} {NAME}, kt\xF3re s\u0105 odporne na szkodniki. Czy jeste\u015B w
+      stanie mi pom\xF3c?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9652423888896
+    m_Localized: "Doskonale! Teraz b\u0119d\u0119 m\xF3g\u0142 rozwija\u0107 swoj\u0105
+      upraw\u0119 bez obaw o szkodniki. Oto nagroda za Twoje starania."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9666629996544
+    m_Localized: "Czy mo\u017Cesz jeszcze poszuka\u0107 {QUANTITY} {NAME}? Bez nich
+      moja uprawa jest zagro\u017Cona."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9679741390848
+    m_Localized: "Witaj! S\u0142ysza\u0142em o {NAME}, kt\xF3re rosn\u0105. Potrzebuj\u0119
+      {QUANTITY} {NAME} do mojej kolekcji. Czy mo\u017Cesz je znale\u017A\u0107?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9717079085056
+    m_Localized: "Niesamowite! Te {NAME} s\u0105 prawdziwie unikalne. Oto twoja nagroda
+      za pomoc w ich zebraniu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732207939584
+    m_Localized: "Czy masz jeszcze szans\u0119 zdoby\u0107 {QUANTITY} {NAME}? To
+      by\u0142oby niezwyk\u0142e uzupe\u0142nienie mojej kolekcji."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756698480640
+    m_Localized: "Poszukiwacz z\u0142ota potrzebuje Twojej pomocy! Znajd\u017A i
+      przynie\u015B mu {QUANTITY} {NAME}, kt\xF3re s\u0105 ukryte na mapie. Czy podejmiesz
+      wyzwanie?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9779016372224
+    m_Localized: "Jeste\u015B niesamowity! Przynios\u0142e\u015B mi {NAME}! Oto Twoja
+      zas\u0142u\u017Cona nagroda, a ja mog\u0119 kontynuowa\u0107 swoje poszukiwania
+      z\u0142ota."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9795554512896
+    m_Localized: "Wygl\u0105da na to, \u017Ce jeszcze masz szans\u0119 zdoby\u0107
+      {QUANTITY} {NAME}. Nie tra\u0107 nadziei!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9808183562240
+    m_Localized: "Witaj, wojowniku! Istnieje legendarna potrawa, kt\xF3ra wymaga
+      bardzo pikantnych {NAME}. Zbierz {QUANTITY} z nich, aby\u015Bmy mogli przygotowa\u0107
+      to wyj\u0105tkowe danie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9863326076928
+    m_Localized: "Niesamowite! Te pikantne {NAME} s\u0105 idealne do naszego legendarnego
+      dania. Oto twoja nagroda za pomoc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9878731755520
+    m_Localized: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
+      {NAME}? Bez nich nie b\u0119dziemy mogli przygotowa\u0107 naszej wyj\u0105tkowej
+      potrawy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9892333883392
+    m_Localized: "Wioska potrzebuje Twojej pomocy w zalesianiu okolicy. Zbierz {QUANTITY}
+      {NAME}, aby\u015Bmy mogli zacz\u0105\u0107 proces odbudowy las\xF3w."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9915570327552
+    m_Localized: "Dzi\u0119ki Tobie nasza wioska stanie si\u0119 bardziej zielona!
+      Oto Twoja zas\u0142u\u017Cona nagroda za pomoc w rewitalizacji naszego \u015Brodowiska."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9932410458112
+    m_Localized: "Czy nadal mo\u017Cesz pom\xF3c nam w zbieraniu {QUANTITY} {NAME}?
+      Bez nich nie b\u0119dziemy w stanie zalesi\u0107 okolicy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9948541751296
+    m_Localized: "Odkry\u0142em tajemniczy warzywniak, w kt\xF3rym rosn\u0105 niezwyk\u0142e
+      warzywa. Zbierz {QUANTITY} {NAME} i przynie\u015B je do mnie, abym m\xF3g\u0142
+      zrobi\u0107 eksperymentalne danie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9968867348480
+    m_Localized: "Niezwyk\u0142e! Te unikalne warzywa dodadz\u0105 smaku mojemu eksperymentalnemu
+      daniu. Oto nagroda za pomoc w ich zebraniu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9983744544768
+    m_Localized: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
+      {NAME}? Bez nich nie b\u0119d\u0119 m\xF3g\u0142 stworzy\u0107 mojego eksperymentalnego
+      dania."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9998462357504
+    m_Localized: "Witaj! Jeste\u015Bmy w trakcie organizacji festiwalu kulinarnego,
+      a moje zapasy warzyw si\u0119 wyczerpa\u0142y. Czy mog\u0142by\u015B przynie\u015B\u0107
+      mi {QUANTITY} {NAME}, aby\u015Bmy mogli kontynuowa\u0107 przygotowania?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10019345797120
+    m_Localized: "Doskona\u0142a praca! Te warzywa pomog\u0105 w przygotowaniu pysznych
+      da\u0144 na festiwalu. Oto Twoja zas\u0142u\u017Cona nagroda."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10034038444032
+    m_Localized: "Czy jeszcze mo\u017Cesz spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
+      {NAME}? Bez nich nie b\u0119dziemy mieli wystarczaj\u0105co du\u017Co da\u0144
+      na festiwalu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17749003472896
+    m_Localized: "Hej, ty...! Tak, ty. Potrzebuj\u0119 twojej pomocy. Nie wiem czy
+      widzisz te puste naczynia po przek\u0105skach? No w\u0142a\u015Bnie, przed
+      chwil\u0105 sko\u0144czy\u0142 nam si\u0119 beton. M\xF3g\u0142by\u015B prosz\u0119
+      przynie\u015B\u0107 wi\u0119cej? Albo je\u015Bli nie uda si\u0119 betonu to
+      chocia\u017C 5 PAPRYKI? B\u0119d\u0119 bardzo wdzi\u0119czny."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17754397347840
+    m_Localized: "Uch, te papryczki to s\u0105 ostre... Sam spr\xF3buj, Lordzie Pojemniku.
+      Nie? Nie s\u0105? Ech, mniejsza z tym. Co? Masz dla mnie list, dobry cz\u0142owieku?
+      Daj go, prosz\u0119. Hmm... Zatrzyma\u0107 Genera\u0142 Lor\u0119...? Wiem!
+      Masz, to bilety na koncert pewnej grupy funkcyjnej. Gdy je dostanie, zapomni
+      o ataku na kraj papryki. Zanie\u015B je do zamku, Genera\u0142 Lora nie mo\u017Ce
+      si\u0119 dowiedzie\u0107 \u017Ce to ode mnie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17756737769472
+    m_Localized: "Czy\u017Cby\u015B uwa\u017Ca\u0142 \u017Ce beton szkodzi na z\u0119by?
+      Spokojnie, wampirom ma\u0142o co na nie szkodzi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18113966641152
+    m_Localized: "Ty tam, s\u0142uchaj... Nie, nie przerywaj mi! Potrzebujemy 6 CHRZANU
+      \u017Ceby przefarbowa\u0107 nasze p\u0142aszcze na fioletowo i zmyli\u0107
+      wampiry. Niedaleko jest plantacja, trzeba tylko przekra\u015B\u0107 si\u0119
+      na terytorium wroga. No, ruchy, ruchy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18156937285632
+    m_Localized: "Dobra, do kot\u0142a z tym chrzanem! Hm... nie robi si\u0119 fioletowy
+      barwnik. Rozczarowuj\u0105ce... A ty co mi tu...? List? \"Armia Lorda Pojemnika
+      zmierza w stron\u0119 naszej granicy, potrzebujemy waszego wsparcia\". Co?!
+      To zmienia nasze plany! Wojska, wymarsz do Marchwlandu! A ty zanie\u015B to
+      Lordowi Pojemnikowi. Nie pu\u015Bcimy p\u0142azem takiej zniewagi!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18181473964032
+    m_Localized: "Umiesz ty liczy\u0107 czy nie? Gdzie ty tu widzisz sze\u015B\u0107
+      chrzanu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18324743000064
+    m_Localized: "\u017Be co? Wiadomo\u015B\u0107 od wampir\xF3w? Ekhm... Ja tam
+      nic nie wiem! Na pewno nie! I na pewno nie zmieni tego 5 MARCHWI! Kt\xF3ra
+      na pewno nie ro\u015Bnie na obrze\u017Cach wyspy!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18471581388800
+    m_Localized: "Masz marchew? Dobra, s\u0142uchaj. Tak na prawd\u0119 to nie chcieli\u015Bmy
+      pom\xF3c wampirom. Nasz kr\xF3l zaplanowa\u0142 \u017Ce gdy one napadn\u0105
+      sa\u0142aciarzy, tomy uderzymy na nie z pomoc\u0105 Rzepospolitej. Nie wszyscy
+      tutaj jednak s\u0105 przychylni wojnie, wi\u0119c mo\u017Ce z twoj\u0105 pomoc\u0105
+      uda si\u0119 nam to odkr\u0119ci\u0107. Bierz ten list i le\u0107 do kr\xF3lestwa
+      rzepy, pr\u0119dko!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18493198831616
+    m_Localized: "Z czym ty do cz\u0142owieka panie? Nie s\u0142ysza\u0142e\u015B
+      \u017Ce nic nie wiem?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18559808573440
+    m_Localized: "K\u0142aniam si\u0119, i zanim zapyta pan o cokolwiek, ma pan mo\u017Ce
+      2 CHRZANU? Bardzo mi brakuje tego sk\u0142adnika w mojej \u017Co\u0142nierskiej
+      diecie i boj\u0119 si\u0119 \u017Ce zachoruj\u0119. Tylko pan mo\u017Ce mi
+      pom\xF3c."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18570936061952
+    m_Localized: "Wielce dzi\u0119kuj\u0119, ju\u017C odbieram list. Hmm. Bilety?
+      Genera\u0142 Lora b\u0119dzie przeszcz\u0119\u015Bliwa. Zawiadomi\u0119 j\u0105,
+      dzi\u0119kuj\u0119 ci, dobry cz\u0142owieku. Musz\u0119 ci jednak przekaza\u0107
+      pismo kt\xF3re genera\u0142 chcia\u0142a wystosowa\u0107 do Lorda Pojemnika.
+      Zanznacz jednak, daj\u0105c je, \u017Ce Genera\u0142 Lora prze\u015Ble sprostowanie
+      gdy tylko wr\xF3ci z koncertu. Gratuluj\u0119, Mediatorze. Uda\u0142o ci si\u0119
+      opanowa\u0107 sytuacj\u0119 i utrzyma\u0107 pok\xF3j w krainie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18573024825344
+    m_Localized: "Prosz\u0119. Tylko dwa chrzanu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18740931203072
+    m_Localized: "Pali. Pali. Wody. Wody. Albo zimny kompres. Lody waniliowe. Jab\u0142ko.
+      3 SA\u0141ATY. Cokolwiek. Pali!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18779866927104
+    m_Localized: "Ufff, dzi\u0119ki, dobry cz\u0142owieku... Te papryczki Lorda Pojemnika
+      naprawd\u0119 daj\u0105 popali\u0107. Co masz dla mnie? List? \"Wyra\u017Camy
+      zaniepokojenie - nie mieli\u015Bcie cassus beli na Marchwland - nie to co my
+      na was - Genera\u0142 Lora\" ... Ciekawe. Musimy si\u0119 dowiedzie\u0107 o
+      co chodzi. Zanie\u015B ten list by uruchomi\u0107 naszego tajnego agenta w
+      Marchwlandzie, Z\u0142owieka."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18781959884800
+    m_Localized: Pali!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864487010304
+    m_Localized: "Szybko zesz\u0142a ta papryka, prawda, Hrabio Gahlammonie? S\u0142uchaj,
+      Mediatorze, widz\u0119 \u017Ce masz list, ale czy m\xF3g\u0142by\u015B uzupe\u0142ni\u0107
+      nasze zapasy? 10 PAPRYKI b\u0119dzie jak znalaz\u0142. Wielce ci dzi\u0119kuj\u0119."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18867032952832
+    m_Localized: "Idealnie, starczy do wieczora. Daj mi prosz\u0119 ten list... Ach,
+      wspaniale. Genera\u0142 Lora wyrusza do portu aby pop\u0142yn\u0105\u0107 na
+      koncert. Hrabio Gahlammonie, my\u015Bl\u0119 \u017Ce to moment na nasz ruch,
+      kiedy Rzepospolita jest ods\u0142oni\u0119ta. Jeszcze tu jeste\u015B, Mediatorze?
+      Nie jeste\u015B nam ju\u017C d\u0142u\u017Cej potrzebny, to ju\u017C koniec."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874452676608
+    m_Localized: "To nie wygl\u0105da jak 10 papryki."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18970481266688
+    m_Localized: "A ty co? \u017Be niby mam ci\u0119 wpu\u015Bci\u0107? Co ty mi
+      tu za \u015Bwistek wciskasz? Ha ha, kolego, urodzi\u0142e\u015B si\u0119 wczoraj?
+      Wiesz mo\u017Ce co to jest kapitalizm? Przynie\u015B mi 4 PAPRYKI to pogadamy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18971315933184
+    m_Localized: "Prosz\u0119, prosz\u0119, jaki mi\u0142y cz\u0142owiek... To teraz
+      mog\u0119 ci wyjawi\u0107 \u017Ce osoba do kt\xF3rej zaadresowany jest ten
+      list, genera\u0142 Lora, jest aktualnie poza zamkiem. Znajdziesz j\u0105 w
+      lesie niedaleko granicy z Chrzanz\u0105."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18972268040192
+    m_Localized: "Kapitalizm. Ka-pi-ta-lizm. Wiem, trudne s\u0142owo. Ale ogarnij
+      je wreszcie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19095215673344
+    m_Localized: "Witaj, nieznajomy! Hm, na twoim miejscu nie nosi\u0142bym tego
+      purpurowego ubioru: nasze kr\xF3lestwo nie ma najlepszych stosunk\xF3w z tymi
+      wampirami chrzanowymi, i mog\u0105 spotka\u0107 ci\u0119 nieprzyjemno\u015Bci
+      w zetkni\u0119ciu ze stra\u017Cami pa\u0142acowymi. [TAB - Ekwipunek] A szkoda...
+      Chrzan jest bardzo cenn\u0105 przypraw\u0105, ja niby mam swoje wlasne pola
+      sa\u0142aty, ale t\u0119skni\u0119 za czasem kiedy mo\u017Cna by\u0142o importowa\u0107
+      chrzan... S\u0142uchaj, m\xF3g\u0142by\u015B mi pom\xF3c? Przynie\u015B mi
+      8 CHRZANU, a obiecuj\u0119 ci, \u017Ce nie po\u017Ca\u0142ujesz! Z tego co
+      wiem, mo\u017Cesz go znale\u017A\u0107 w okolicy g\xF3r lub wampirzych plantacji."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19100022345728
+    m_Localized: "Aaah, chrzan! Dziekuj\u0119, to cenny nabytek dla mnie i mojej
+      rodziny. Mam nadziej\u0119 \u017Ce nie mia\u0142e\u015B problem\xF3w z Chrzanz\u0105
+      - te wampiry potrafi\u0105 by\u0107 naprawd\u0119 nieobliczalne. Prosz\u0119,
+      przyjmij ten kapelusz jako dow\xF3d mojej wdzi\u0119czno\u015Bci. By\u0142
+      w mojej rodzinie od pokole\u0144, a nale\u017Ca\u0142 do mojego dalekiego przodka,
+      kt\xF3ry, z nim na glowie, \u017Ceglowa\u0142 po morzach i oceanach, daleko
+      od brzeg\xF3w tej wyspy. Teraz nale\u017Cy do ciebie. Prosz\u0119, no\u015B
+      go z dum\u0105."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19102111109120
+    m_Localized: "Nie masz 8 Chrzanu? Przyjd\u017A do mnie jak je zdob\u0119dziesz!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19215286013952
+    m_Localized: "Mediator! S\u0142ysza\u0142em o tym \u017Ce do nas zmierzasz. Tak
+      si\u0119 jednak sk\u0142ada \u017Ce jestem dosy\u0107 nieufny wobec nieznajomych
+      i mam opory przed wpuszczeniem kogo\u015B kto nie dowiedzie swojej przyja\u017Ani
+      wobec naszego kr\xF3lestwa. Przynie\u015B mi 6 SA\u0141AT, symbolu naszej gospodarki.
+      Jest tak powszechna, \u017Ce znajdziesz j\u0105 w okolicy dowolnej wioski.
+      Dowied\u017A w ten spos\xF3b, \u017Ce jeste\u015B godzien naszego zaufania.
+      Wtedy pozwol\u0119 ci przej\u015B\u0107."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19216267481088
+    m_Localized: "Widz\u0119 \u017Ce masz sa\u0142at\u0119. Daj mi ten list - masz
+      moje s\u0142owo, \u017Ce dostarcz\u0119 go do Jego Wysoko\u015Bci. Co do twojej
+      sprawy: niedawne spi\u0119cie na granicy z Chrzanowym Imperium doprowadzi\u0142o
+      do zaognienia naszych stosunk\xF3w z wampirami. Spiesz si\u0119, Hrabia Gahlammon
+      nie b\u0119dzie zwleka\u0142 wiecznie z wydaniem wojskom rozkazu do ataku,
+      wi\u0119c jak najszybciej musisz mu dostarczy\u0107 ten list. We\u017A jeszcze
+      ten pancerz w ramach podziekowa\u0144."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19217748070400
+    m_Localized: "Nie przejdziesz dop\xF3ki nie dasz mi 6 sa\u0142at."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19333057875968
+    m_Localized: "By\u0142em w Krakowie. Powiadam panu, pi\u0119kne miasto, z pi\u0119knym
+      wodorostem..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19333728964608
+    m_Localized: "Z\u0142owiek...? Czego on chce? Pewnie znowu mu czaszka nie dzia\u0142a.
+      Ach nie, musi chodzi\u0107 o te dzia\u0142ania Genera\u0142 Lory. Zajmiemy
+      si\u0119 tym. Masz, zanie\u015B to pismo Hrabiego Gahlammona z Chrzanzy. B\u0119dzie
+      wiedzia\u0142 co robi\u0107."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19336941801472
+    m_Localized: "Te\u017C by\u0142 pan w Krakowie?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19470031261696
+    m_Localized: "Co ja tu widz\u0119... nowy przyjezdny. Nie wiem czy wiesz, ale
+      w\u0142a\u015Bnie wprowadzili\u015Bmy nowy podatek i zanim pomog\u0119 ci w
+      czymkolwiek, musisz dostarczy\u0107 mi 6 RZEPY. Przykro mi, takie s\u0105 przepisy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19470945619968
+    m_Localized: "Podatek uiszczony, wi\u0119c teraz zajmiemy si\u0119 twoj\u0105
+      spraw\u0105. List do Hrabiego? Niestety musz\u0119 ci\u0119 rozczarowa\u0107,
+      nasz pan wyjecha\u0142 tymczasowo w odwiedziny do Lorda Pojemnika, ogl\u0105da\u0107
+      rozgrywki Pi\u0142ki Kopanej, popijaj\u0105c szlachetne trunki. Musisz pojecha\u0107
+      w stron\u0119 Papryczanej Pustyni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19471818035200
+    m_Localized: "Ale wiesz, \u017Ce za oszustwa podatkowe trafia si\u0119 do wi\u0119zienia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19557952262144
+    m_Localized: "Sta\u0107! Kto\u015B ty...? Ach. Mediator. Hej, nie obawiaj si\u0119,
+      mo\u017Ce i jeste\u015Bmy wampirami ale to nie czyni z nas potwor\xF3w. Hrabia
+      Gahlammon, cho\u0107 potrafi wpa\u015B\u0107 w wielki gniew, zawsze ch\u0119tnie
+      s\u0142ucha rozs\u0105dnych argument\xF3w. Przy okazji, mam do ciebie tak\u0105
+      osobist\u0105 spraw\u0119. Powoli ko\u0144cz\u0105 si\u0119 nam zapasy \u017Cywno\u015Bci.
+      Co gorsza, kto\u015B pod\u0142o\u017Cy\u0142 do naszej strawy czosnek. Wspar\u0142by\u015B
+      nas? Prosz\u0119 tylko o 7 PAPRYKI. Z tego co mi wiadomo, zwykle ro\u015Bnie
+      na rozleg\u0142ych, otwartych przestrzeniach, mo\u017Cesz te\u017C zawitac
+      na plantacje na p\xF3\u0142nocnym zachodzie st\u0105d, by mie\u0107 bogate
+      zbiory."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19559680315392
+    m_Localized: "Wielkie dzi\u0119ki mediatorze! Nie wiem co by\u015Bmy zrobili
+      bez ciebie! Niestety, cho\u0107 bardzo chc\u0119 si\u0119 odwdzi\u0119czy\u0107,
+      nie jestem w stanie specjalnie ci pom\xF3c w twojej misji. Mog\u0119 najwy\u017Cej
+      poradzi\u0107 \u017Ceby\u015B uda\u0142 si\u0119 do purpurowego zamku i porozmawia\u0142
+      ze stra\u017Cnikiem przy g\u0142ownej bramie. Wyja\u015Bnij mu wszystko, a
+      na pewno ci pomo\u017Ce."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19562184314880
+    m_Localized: "Widz\u0119 \u017Ce nie masz dla mnie papryki. Szkoda, liczy\u0142em
+      na Twoj\u0105 pomoc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19669692715008
+    m_Localized: "Mediator... Mog\u0119 ci\u0119 przpu\u015Bci\u0107, ale odradzam.
+      Hrabia Gahlammon jest obecnie w bardzo, bardzo z\u0142ym nastroju, sugeruj\u0119
+      ci powr\xF3ci\u0107 tutaj po jakim\u015B czasie. Przy okazji, moze rozejrza\u0142by\u015B
+      si\u0119 za pewnymi sk\u0142adnikami, kt\xF3rych brakuje naszemu kucharzowi
+      do przyrz\u0105dzenia Hrabiemu posi\u0142ku? Potrzeba nam jedynie 6 RZEPY,
+      kt\xF3ra cz\u0119sto ro\u015Bnie przy go\u015Bci\u0144cu. Dobry posi\u0142ek
+      i chwila odpoczynku na pewno pomog\u0105 naszemu Panu w och\u0142oni\u0119ciu
+      z obecnego stanu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19671651454976
+    m_Localized: "Przynios\u0142e\u015B sk\u0142adniki, wspaniale. Hrabia Gahlammon
+      na pewno si\u0119 ucieszy, dostarcz\u0119 mu tw\xF3j list pokojowy. Zdo\u0142a\u0142e\u015B
+      w\u0142a\u015Bnie utrzyma\u0107 pok\xF3j w bardzo ryzykownej sytuacji, nie
+      pora jednak \u015Bwi\u0119towa\u0107. Przygotowywali\u015Bmy si\u0119 na wypadek
+      walki od d\u0142u\u017Cszego czasu i postawili\u015Bmy naszych sojusznik\xF3w
+      na ty\u0142ach sa\u0142aciarzy w stan gotowo\u015Bci. Je\u015Bli nie otrzymaj\u0105
+      oni listu wstrzymuj\u0105cego podpisanego przez Hrabiego Gahlammona, za par\u0119
+      dni przypuszcz\u0105 atak. Musisz jak najpr\u0119dzej dostarczy\u0107 ten list
+      aby zapobiec rozlewowi krwi i utrzyma\u0107 pok\xF3j w Pi\u0119ciu Kr\xF3lestwach."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19673043963904
+    m_Localized: "Hrabia Gahlammon jest g\u0142odny. Do jego ulubionego posi\u0142ku
+      potrzeba nam jedynie 6 RZEPY, kt\xF3ra cz\u0119sto ro\u015Bnie przy go\u015Bci\u0144cu.
+      Dobry posi\u0142ek i chwila odpoczynku na pewno pomog\u0105 naszemu Panu w
+      och\u0142oni\u0119ciu z obecnego stanu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19830049345536
+    m_Localized: "C\xF3\u017C to? List z napisem \"Tajna Korespodencja\" od Lorda
+      Pojemnika? Daj mi go... sekunda! On nigdy nie wysy\u0142a list\xF3w bez sadzonek
+      papryki. Na list bez 7 PAPRYKI nie wolno mi odpowiedzie\u0107."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19833106993152
+    m_Localized: "Dobrze, to zobaczmy co napisa\u0142... O, \u0142adny mem. Dobra,
+      to oznacza \u017Ce czas si\u0119 bra\u0107 do roboty. Ale musz\u0119 jeszcze
+      uruchomi\u0107 mojego wsp\xF3lnika u sa\u0142aciarzy. Udaj si\u0119 do Wioski
+      \u015Awi\u0119tego Szczepana i znajd\u017A cz\u0142owieka kt\xF3ry przywita
+      si\u0119 zwrotem \"By\u0142em w Krakowie\". Daj mu 6 marchwi, a zrozumie \u017Ce
+      ciebie przysy\u0142am."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19834373672960
+    m_Localized: Ja pana nie znam.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

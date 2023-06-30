@@ -12,13 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 4
   m_EditorClassIdentifier: 
-  text: "Hej! Szukam {QUANTITY} {NAME} do swojego nowego przepisu na wega\u0144sk\u0105
-    lasagn\u0119. Je\u015Bli masz jakiekolwiek warzywa, kt\xF3rymi mog\u0119 si\u0119
-    podzieli\u0107, by\u0142bym bardzo wdzi\u0119czny za Twoje wsparcie w kuchni!"
-  positiveAnswer: "Dzi\u0119kuj\u0119 Ci serdecznie za {QUANTITY} {NAME}. Teraz mog\u0119
-    stworzy\u0107 wega\u0144sk\u0105 lasagn\u0119 i podzieli\u0107 si\u0119 ni\u0105
-    z innymi. Twoje warzywa pomog\u0105 stworzy\u0107 smaczne danie. Wielkie dzi\u0119ki!"
-  negativeAnswer: "O nie! Brakuje Ci {QUANTITY} {NAME} do wega\u0144skiej lasagny?
-    To smutne. Czy m\xF3g\u0142by\u015B popyta\u0107 w\u015Br\xF3d swoich przyjaci\xF3\u0142
-    lub rodze\u0144stwa? By\u0107 mo\u017Ce kto\u015B ma je w nadmiarze. B\u0119d\u0119
-    wdzi\u0119czny za ka\u017Cde dodatkowe staranie. Dzi\u0119kuj\u0119!"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8954391040000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8957360607232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8959176740864
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

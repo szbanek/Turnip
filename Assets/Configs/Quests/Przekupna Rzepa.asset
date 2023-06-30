@@ -12,12 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Przekupna Rzepa
   m_EditorClassIdentifier: 
-  text: "A ty co? \u017Be niby mam ci\u0119 wpu\u015Bci\u0107? Co ty mi tu za \u015Bwistek
-    wciskasz? Ha ha, kolego, urodzi\u0142e\u015B si\u0119 wczoraj? Wiesz mo\u017Ce
-    co to jest kapitalizm? Przynie\u015B mi 4 PAPRYKI to pogadamy."
-  positiveAnswer: "Prosz\u0119, prosz\u0119, jaki mi\u0142y cz\u0142owiek... To teraz
-    mog\u0119 ci wyjawi\u0107 \u017Ce osoba do kt\xF3rej zaadresowany jest ten list,
-    genera\u0142 Lora, jest aktualnie poza zamkiem. Znajdziesz j\u0105 w lesie niedaleko
-    granicy z Chrzanz\u0105."
-  negativeAnswer: "Kapitalizm. Ka-pi-ta-lizm. Wiem, trudne s\u0142owo. Ale ogarnij
-    je wreszcie."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18970481266688
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18971315933184
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18972268040192
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

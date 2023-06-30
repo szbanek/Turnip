@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [System.Serializable]
 public class PlayerStatsModifier
@@ -29,6 +30,8 @@ public class PlayerStatsModifier
 
     public override string ToString()
     {
+        LocalizedStringTable localizedStringTable = new LocalizedStringTable { TableReference = "Strings" };
+        var stringTable = localizedStringTable.GetTable();
         string res = "";
         if (MaxStamina != 0)
         {
@@ -36,7 +39,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Maksymalna kondycja: " + MaxStamina.ToString("f2");
+            res += stringTable.GetEntry("max_stamina").GetLocalizedString() + ": " + MaxStamina.ToString("f2");
         }
         if (StaminaRegen != 0)
         {
@@ -44,7 +47,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Regeneracja kondycji: " + StaminaRegen.ToString("f2");
+            res += stringTable.GetEntry("stamina_regen").GetLocalizedString() + ": " + StaminaRegen.ToString("f2");
         }
         if (SprintSpeed != 0)
         {
@@ -52,7 +55,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Szybkość biegu: " + SprintSpeed.ToString("f2");
+            res += stringTable.GetEntry("sprint_speed").GetLocalizedString() + ": " + SprintSpeed.ToString("f2");
         }
         if (JumpCost != 0)
         {
@@ -60,7 +63,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Koszt skoku: " + JumpCost.ToString("f2");
+            res += stringTable.GetEntry("jump_cost").GetLocalizedString() + ": " + JumpCost.ToString("f2");
         }
         if (SenseRange != 0)
         {
@@ -68,7 +71,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Zasięg zmysłów: " + SenseRange.ToString("f2");
+            res += stringTable.GetEntry("veg_sense_range").GetLocalizedString() + ": " + SenseRange.ToString("f2");
         }
         if (AdditionalVegetableChance != 0)
         {
@@ -76,7 +79,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Szansa na dodatkowe warzywo: " + AdditionalVegetableChance.ToString("f2");
+            res += stringTable.GetEntry("add_veg_chance").GetLocalizedString() + ": " + AdditionalVegetableChance.ToString("f2");
         }
         if (MinigameBonus != 0)
         {
@@ -84,7 +87,7 @@ public class PlayerStatsModifier
             {
                 res += "\n";
             }
-            res += "Umiejętności zbierackie: " + MinigameBonus.ToString("f2");
+            res += stringTable.GetEntry("gathering_skill").GetLocalizedString() + ": " + MinigameBonus.ToString("f2");
         }
         return res;
     }

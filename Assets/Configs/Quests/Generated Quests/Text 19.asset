@@ -12,11 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 19
   m_EditorClassIdentifier: 
-  text: "Odkry\u0142em tajemniczy warzywniak, w kt\xF3rym rosn\u0105 niezwyk\u0142e
-    warzywa. Zbierz {QUANTITY} {NAME} i przynie\u015B je do mnie, abym m\xF3g\u0142
-    zrobi\u0107 eksperymentalne danie."
-  positiveAnswer: "Niezwyk\u0142e! Te unikalne warzywa dodadz\u0105 smaku mojemu
-    eksperymentalnemu daniu. Oto nagroda za pomoc w ich zebraniu."
-  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
-    {NAME}? Bez nich nie b\u0119d\u0119 m\xF3g\u0142 stworzy\u0107 mojego eksperymentalnego
-    dania."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9948541751296
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9968867348480
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9983744544768
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

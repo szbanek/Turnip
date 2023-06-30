@@ -8,13 +8,15 @@ public class ItemInstance
     public PlayerItem Item;
     public PlayerStatsModifier Modifier;
 
-    public string Name;
+    public string Name => ItemsGenerator.Instance.GetAdjective(adjIndex) + " " + Item.ItemName;
     public string Description => Modifier.ToString();
 
-    public ItemInstance(PlayerItem item, PlayerStatsModifier modifier, string name)
+    private int adjIndex;
+
+    public ItemInstance(PlayerItem item, PlayerStatsModifier modifier, int adjIndex)
     {
         Item = item;
         Modifier = modifier;
-        Name = name;
+        this.adjIndex = adjIndex;
     }
 }

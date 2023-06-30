@@ -12,11 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 20
   m_EditorClassIdentifier: 
-  text: "Witaj! Jeste\u015Bmy w trakcie organizacji festiwalu kulinarnego, a moje
-    zapasy warzyw si\u0119 wyczerpa\u0142y. Czy mog\u0142by\u015B przynie\u015B\u0107
-    mi {QUANTITY} {NAME}, aby\u015Bmy mogli kontynuowa\u0107 przygotowania?"
-  positiveAnswer: "Doskona\u0142a praca! Te warzywa pomog\u0105 w przygotowaniu pysznych
-    da\u0144 na festiwalu. Oto Twoja zas\u0142u\u017Cona nagroda."
-  negativeAnswer: "Czy jeszcze mo\u017Cesz spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
-    {NAME}? Bez nich nie b\u0119dziemy mieli wystarczaj\u0105co du\u017Co da\u0144
-    na festiwalu."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9998462357504
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 10019345797120
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 10034038444032
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

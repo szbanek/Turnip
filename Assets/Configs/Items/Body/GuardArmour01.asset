@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8e23b3185488346909916c469cf2b6, type: 3}
   m_Name: GuardArmour01
   m_EditorClassIdentifier: 
-  itemName: "Napier\u015Bnik Gwardzisty"
+  itemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:84d0edcb2a5b73c4a8088b53b9d57123
+    m_TableEntryReference:
+      m_KeyId: 2154446983168
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   prefab: {fileID: 2501499006257147798, guid: 5f007490684d736438e172275bd90ad3, type: 3}
   inventoryIcon: {fileID: 21300000, guid: 2d9df63f3d5f6c741895526851ce6d0a, type: 3}
   slot: 1
+  references:
+    version: 2
+    RefIds: []

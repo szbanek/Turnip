@@ -12,12 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Papryczny Straznik
   m_EditorClassIdentifier: 
-  text: "Pali. Pali. Wody. Wody. Albo zimny kompres. Lody waniliowe. Jab\u0142ko.
-    3 SA\u0141ATY. Cokolwiek. Pali!"
-  positiveAnswer: "Ufff, dzi\u0119ki, dobry cz\u0142owieku... Te papryczki Lorda
-    Pojemnika naprawd\u0119 daj\u0105 popali\u0107. Co masz dla mnie? List? \"Wyra\u017Camy
-    zaniepokojenie - nie mieli\u015Bcie cassus beli na Marchwland - nie to co my
-    na was - Genera\u0142 Lora\"... Ciekawe. Musimy si\u0119 dowiedzie\u0107 o co
-    chodzi. Zanie\u015B ten list by uruchomi\u0107 naszego tajnego agenta w Marchwlandzie,
-    Z\u0142owieka."
-  negativeAnswer: Pali!
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18740931203072
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18779866927104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18781959884800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

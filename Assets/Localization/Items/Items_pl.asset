@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Items_pl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: 84d0edcb2a5b73c4a8088b53b9d57123, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 90719391744
+    m_Localized: "Zwyk\u0142y"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94410379264
+    m_Localized: Kolorowy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98806009856
+    m_Localized: Zadziorny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104317325312
+    m_Localized: Elegancki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110717833216
+    m_Localized: Twardy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116828934144
+    m_Localized: "Staro\u015Bwiecki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120024993792
+    m_Localized: Magiczny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121954373632
+    m_Localized: "Pot\u0119\u017Cny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123225247744
+    m_Localized: Zbrojny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124181549056
+    m_Localized: Tropikalny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125171404800
+    m_Localized: Nietypowy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126173843456
+    m_Localized: Mistyczny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129692864512
+    m_Localized: "Kusz\u0105cy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132289138688
+    m_Localized: Szlachetny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134394679296
+    m_Localized: Opancerzony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 136827375616
+    m_Localized: "Intryguj\u0105cy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2154446983168
+    m_Localized: "Napier\u015Bnik Gwardzisty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2236470792192
+    m_Localized: "Napier\u015Bnik Chrzanzy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2237376761856
+    m_Localized: "\u017Bakiet Dyplomaty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2240459575296
+    m_Localized: "P\u0142aszcz Wampira"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2241197772800
+    m_Localized: "Kurtka Wie\u015Bniaka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3016405815296
+    m_Localized: "He\u0142m Gwardzisty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3017060126720
+    m_Localized: "He\u0142m Chrzanzy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3018125479936
+    m_Localized: Peruka Dyplomaty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3019031449600
+    m_Localized: Kapelusz Wampira
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3168143151104
+    m_Localized: "Kapelusz Wie\u015Bniaka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3168818434048
+    m_Localized: Nagolenniki Gwardzisty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746994851840
+    m_Localized: Nagolenniki Chrzanzy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748995534848
+    m_Localized: Spodnie Dyplomaty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3751843467264
+    m_Localized: Spodnie Wampira
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4038100520960
+    m_Localized: "Spodnie Wie\u015Bniaka"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

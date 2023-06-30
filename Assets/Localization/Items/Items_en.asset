@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Items_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 84d0edcb2a5b73c4a8088b53b9d57123, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 136827375616
+    m_Localized: Intriguing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 134394679296
+    m_Localized: Armored
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132289138688
+    m_Localized: Noble
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129692864512
+    m_Localized: Alluring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126173843456
+    m_Localized: Mystical
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125171404800
+    m_Localized: Atypical
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124181549056
+    m_Localized: Tropical
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123225247744
+    m_Localized: Armed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121954373632
+    m_Localized: Mighty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120024993792
+    m_Localized: Magical
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110717833216
+    m_Localized: Hard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116828934144
+    m_Localized: Antiquated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90719391744
+    m_Localized: Common
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94410379264
+    m_Localized: Colorful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98806009856
+    m_Localized: Feisty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104317325312
+    m_Localized: Elegant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2154446983168
+    m_Localized: Guard Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2236470792192
+    m_Localized: Hanseradish Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2237376761856
+    m_Localized: Mediator Attire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2240459575296
+    m_Localized: Vampire Coat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2241197772800
+    m_Localized: Villager Jacket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3168143151104
+    m_Localized: Villager Hat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3019031449600
+    m_Localized: Vampire Hat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3018125479936
+    m_Localized: Madiator Wig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3017060126720
+    m_Localized: Hanseradish Helmet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3016405815296
+    m_Localized: Guard Helmet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3168818434048
+    m_Localized: Guard Pants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746994851840
+    m_Localized: Hanseradish Pants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748995534848
+    m_Localized: Mediator Pants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3751843467264
+    m_Localized: Vampire Pants
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4038100520960
+    m_Localized: Villager Pants
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

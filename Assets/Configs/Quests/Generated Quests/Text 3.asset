@@ -12,14 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 3
   m_EditorClassIdentifier: 
-  text: "Witaj! Czy by\u0142by\u015B tak mi\u0142y i dostarczy\u0142 mi {QUANTITY}
-    {NAME}? Mamy zbli\u017Caj\u0105ce si\u0119 \u015Bwi\u0119to, a moja rodzina uwielbia
-    tradycyjne ziemniaki puree. Twoja pomoc w tej kwestii by\u0142aby naprawd\u0119
-    cenna!"
-  positiveAnswer: "Serdeczne podzi\u0119kowania za przyniesienie {QUANTITY} {NAME}.
-    Moja rodzina b\u0119dzie zachwycona tradycyjnym puree. Twoja hojno\u015B\u0107
-    jest niezwyk\u0142a. Dzi\u0119kuj\u0119 Ci!"
-  negativeAnswer: "Och, szkoda, \u017Ce nie masz wystarczaj\u0105cej ilo\u015Bci
-    {NAME} dla mojego puree. Czy m\xF3g\u0142by\u015B spr\xF3bowa\u0107 zapyta\u0107
-    s\u0105siad\xF3w lub poszuka\u0107 na ich polach? By\u0142oby wspaniale, gdyby\u015B
-    jeszcze spr\xF3bowa\u0142. Dzi\u0119kuj\u0119 za Twoje wysi\u0142ki!"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8846794559488
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8848799436800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8850372300800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

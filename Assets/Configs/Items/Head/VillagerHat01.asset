@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8e23b3185488346909916c469cf2b6, type: 3}
   m_Name: VillagerHat01
   m_EditorClassIdentifier: 
-  itemName: "Kapelusz Wie\u015Bniaka"
+  itemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:84d0edcb2a5b73c4a8088b53b9d57123
+    m_TableEntryReference:
+      m_KeyId: 3168143151104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   prefab: {fileID: 4954493305871755921, guid: f933178d28b9a1142bfe3ced70118a1e, type: 3}
   inventoryIcon: {fileID: 21300000, guid: 9516524e447d5bc43aa6f8cfa5d90380, type: 3}
   slot: 0
+  references:
+    version: 2
+    RefIds: []

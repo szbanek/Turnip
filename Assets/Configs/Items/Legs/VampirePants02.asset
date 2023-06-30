@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8e23b3185488346909916c469cf2b6, type: 3}
   m_Name: VampirePants02
   m_EditorClassIdentifier: 
-  itemName: Spodnie Wampira
+  itemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:84d0edcb2a5b73c4a8088b53b9d57123
+    m_TableEntryReference:
+      m_KeyId: 3751843467264
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   prefab: {fileID: 7703059267647126250, guid: a9c9fecf232e88e46913343fb8364bbf, type: 3}
   inventoryIcon: {fileID: 21300000, guid: 0e615bf9788c9264592a7300b7fa43e2, type: 3}
   slot: 2
+  references:
+    version: 2
+    RefIds: []

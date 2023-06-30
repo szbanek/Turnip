@@ -12,9 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 18
   m_EditorClassIdentifier: 
-  text: "Wioska potrzebuje Twojej pomocy w zalesianiu okolicy. Zbierz {QUANTITY}
-    {NAME}, aby\u015Bmy mogli zacz\u0105\u0107 proces odbudowy las\xF3w."
-  positiveAnswer: "Dzi\u0119ki Tobie nasza wioska stanie si\u0119 bardziej zielona!
-    Oto Twoja zas\u0142u\u017Cona nagroda za pomoc w rewitalizacji naszego \u015Brodowiska."
-  negativeAnswer: "Czy nadal mo\u017Cesz pom\xF3c nam w zbieraniu {QUANTITY} {NAME}?
-    Bez nich nie b\u0119dziemy w stanie zalesi\u0107 okolicy."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9892333883392
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9915570327552
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9932410458112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

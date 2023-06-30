@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [CreateAssetMenu(menuName="Scriptable Objects/Vegetable")]
 public class Vegetable : ScriptableObject
@@ -11,11 +12,6 @@ public class Vegetable : ScriptableObject
     [SerializeField]
     private VegetableType type;
     public VegetableType Type => type;
-
-    [SerializeField]
-    [TextArea]
-    private string description;
-    public string Description => description;
 
     [SerializeField]
     private Sprite icon;
@@ -30,23 +26,17 @@ public class Vegetable : ScriptableObject
     public float ExpGiven => expGiven;
 
     public string Name => TypeToString(type);
+    public string Description => TypeToDescription(type);
+
+    private static LocalizedStringTable localizedStringTable = new LocalizedStringTable { TableReference = "Strings" };
 
     public static string TypeToString(VegetableType type)
     {
-        switch (type)
-        {
-            case VegetableType.Carrot:
-                return "Marchew";
-            case VegetableType.Turnip:
-                return "Rzepa";
-            case VegetableType.Pepper:
-                return "Papryka";
-            case VegetableType.Lettuce:
-                return "Sałata";
-            case VegetableType.Horseradish:
-                return "Chrzan";
-            default:
-                return "";
-        }
+        return localizedStringTable.GetTable().GetEntry(type.ToString().ToLower()).GetLocalizedString();
+    }
+
+    public static string TypeToDescription(VegetableType type)
+    {
+        return localizedStringTable.GetTable().GetEntry(type.ToString().ToLower() + "_desc").GetLocalizedString();
     }
 }

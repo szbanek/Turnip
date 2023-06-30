@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class ItemsGenerator : Singleton<ItemsGenerator>
 {
@@ -11,9 +12,9 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
     [SerializeField]
     private PlayerItem[] itemsPrefabs;
     [SerializeField]
-    private string[] adjectives;
+    private LocalizedString[] adjectives;
 
-    public string RandomAdjective => adjectives[UnityEngine.Random.Range(0, adjectives.Length)];
+    public int RandomAdjIndex => UnityEngine.Random.Range(0, adjectives.Length);
 
     public ItemInstance GenerateItem(PlayerItem item)
     {
@@ -43,7 +44,7 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
                 statsModifier.SenseRange = UnityEngine.Random.Range(itemStatRange.x, itemStatRange.y);
                 break;
         }
-        ItemInstance instance = new ItemInstance(item, statsModifier, RandomAdjective + " " + item.ItemName);
+        ItemInstance instance = new ItemInstance(item, statsModifier, RandomAdjIndex);
         return instance;
     }
 
@@ -51,5 +52,10 @@ public class ItemsGenerator : Singleton<ItemsGenerator>
     {
         PlayerItem item = itemsPrefabs[UnityEngine.Random.Range(0, itemsPrefabs.Length)];
         return GenerateItem(item);
+    }
+
+    public string GetAdjective(int index)
+    {
+        return adjectives[index].GetLocalizedString();
     }
 }

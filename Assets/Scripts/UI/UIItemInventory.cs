@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SearchService;
 using UnityEngine.UI;
+using UnityEngine.Localization;
 
 public class UIItemInventory : MonoBehaviour
 {
@@ -14,8 +15,7 @@ public class UIItemInventory : MonoBehaviour
     [SerializeField]
     private Text statsText;
     [SerializeField]
-    [Multiline]
-    private string statsString;
+    private LocalizedString statsString;
 
     private PlayerItemsInventory inventory;
     private PlayerStats stats;
@@ -32,7 +32,7 @@ public class UIItemInventory : MonoBehaviour
         stats = FindObjectOfType<PlayerStats>();
         PopulateEquipment();
         PopulateInventory();
-        statsText.text = string.Format(statsString,
+        statsText.text = string.Format(statsString.GetLocalizedString(),
             stats.SprintSpeed,
             stats.MaxStamina,
             stats.StaminaRegen,
@@ -78,7 +78,7 @@ public class UIItemInventory : MonoBehaviour
         slot.Item = currentInSlot;
         inventory.Items.Remove(item);
         inventory.Items.Add(currentInSlot);
-        statsText.text = string.Format(statsString,
+        statsText.text = string.Format(statsString.GetLocalizedString(),
             stats.SprintSpeed,
             stats.MaxStamina,
             stats.StaminaRegen,

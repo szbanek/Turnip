@@ -12,13 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: "Z\u0142owiek"
   m_EditorClassIdentifier: 
-  text: "C\xF3\u017C to? List z napisem \"Tajna Korespodencja\" od Lorda Pojemnika?
-    Daj mi go... sekunda! On nigdy nie wysy\u0142a list\xF3w bez sadzonek papryki.
-    Na list bez 7 PAPRYKI nie wolno mi odpowiedzie\u0107."
-  positiveAnswer: "Dobrze, to zobaczmy co napisa\u0142... O, \u0142adny mem. Dobra,
-    to oznacza \u017Ce czas si\u0119 bra\u0107 do roboty. Ale musz\u0119 jeszcze
-    uruchomi\u0107 mojego wsp\xF3lnika u sa\u0142aciarzy. Udaj si\u0119 do Wioski
-    \u015Awi\u0119tego Szczepana i znajd\u017A cz\u0142owieka kt\xF3ry przywita si\u0119
-    zwrotem \"By\u0142em w Krakowie\". Daj mu 6 marchwi, a zrozumie \u017Ce ciebie
-    przysy\u0142am."
-  negativeAnswer: Ja pana nie znam.
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19830049345536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19833106993152
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 19834373672960
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

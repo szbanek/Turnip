@@ -15,8 +15,6 @@ public class PlayerJump : MonoBehaviour
     [SerializeField]
     [Tooltip("How long the player needs to hold the jump button to jump to the maximum height")]
     private float jumpHoldTime = 0.7f;
-    [SerializeField]
-    private float jumpBuffer = 0.5f;
 
     [Header("Other")]
     [SerializeField]

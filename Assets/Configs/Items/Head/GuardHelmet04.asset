@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8e23b3185488346909916c469cf2b6, type: 3}
   m_Name: GuardHelmet04
   m_EditorClassIdentifier: 
-  itemName: "He\u0142m Gwardzisty"
+  itemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:84d0edcb2a5b73c4a8088b53b9d57123
+    m_TableEntryReference:
+      m_KeyId: 3016405815296
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   prefab: {fileID: 2521401344150766262, guid: 17691147065b020429a73b1cf15edb8b, type: 3}
   inventoryIcon: {fileID: 21300000, guid: b3d046173d62c8b4a902f20abd1e7653, type: 3}
   slot: 0
+  references:
+    version: 2
+    RefIds: []

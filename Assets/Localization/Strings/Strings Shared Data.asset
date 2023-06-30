@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Strings Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Strings
+  m_TableCollectionNameGuidString: b1e660db31acf9e4499b0ffc2bb3d035
+  m_Entries:
+  - m_Id: 83677155328
+    m_Key: pepper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323901722624
+    m_Key: carrot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451941240832
+    m_Key: turnip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532765478912
+    m_Key: lettuce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659697700864
+    m_Key: horseradish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208327859245056
+    m_Key: pepper_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208329666990080
+    m_Key: carrot_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208331269214208
+    m_Key: turnip_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208333186011136
+    m_Key: lettuce_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208335182499840
+    m_Key: horseradish_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209339953188864
+    m_Key: npc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209341920317440
+    m_Key: npc_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212019643682816
+    m_Key: pu_vegetable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212022277705728
+    m_Key: pu_item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212024886562816
+    m_Key: pu_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212117882671104
+    m_Key: pu_theend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213552825372672
+    m_Key: inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213713433661440
+    m_Key: vegetables
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214040530653184
+    m_Key: character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214556648148992
+    m_Key: uiexp_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214594568851456
+    m_Key: uiexp_points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215358217392128
+    m_Key: max_stamina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215526392205312
+    m_Key: stamina_regen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215583938056192
+    m_Key: sprint_speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215625398751232
+    m_Key: jump_cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215667069161472
+    m_Key: add_veg_chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215821964808192
+    m_Key: gathering_skill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215895209938944
+    m_Key: veg_sense_range
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216131026292736
+    m_Key: is_stats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 237879998287872
+    m_Key: quest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 237929172307968
+    m_Key: deliver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238071812198400
+    m_Key: jan
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3583797246630559858
+  references:
+    version: 2
+    RefIds:
+    - rid: 3583797246630559858
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1688065517590

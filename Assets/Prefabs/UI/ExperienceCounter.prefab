@@ -175,8 +175,27 @@ MonoBehaviour:
   level: {fileID: 4699140184740377879}
   exp: {fileID: 8625671148943915963}
   points: {fileID: 88949196973690151}
-  levelText: 'Poziom:'
-  pointsText: 'Dostepne punkty:'
+  levelText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 214556648148992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  pointsText:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 214594568851456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &5236723595775803872
 GameObject:
   m_ObjectHideFlags: 0

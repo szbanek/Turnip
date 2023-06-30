@@ -12,11 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 17
   m_EditorClassIdentifier: 
-  text: "Witaj, wojowniku! Istnieje legendarna potrawa, kt\xF3ra wymaga bardzo pikantnych
-    {NAME}. Zbierz {QUANTITY} z nich, aby\u015Bmy mogli przygotowa\u0107 to wyj\u0105tkowe
-    danie."
-  positiveAnswer: "Niesamowite! Te pikantne {NAME} s\u0105 idealne do naszego legendarnego
-    dania. Oto twoja nagroda za pomoc."
-  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 zdoby\u0107 {QUANTITY}
-    {NAME}? Bez nich nie b\u0119dziemy mogli przygotowa\u0107 naszej wyj\u0105tkowej
-    potrawy."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9808183562240
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9863326076928
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9878731755520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

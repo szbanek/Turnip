@@ -1,0 +1,645 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quests_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 893e6883f61d87742b6433bfe3e6ef33, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3848257933312
+    m_Localized: Excuse me, could you help me? I'm looking for {QUANTITY} {NAME}
+      for my special soup. I need them as soon as possible, so if you have any vegetables
+      to spare, I would be very grateful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3851521101824
+    m_Localized: Thank you so much for bringing {QUANTITY} {NAME}! Your help is invaluable.
+      Now I'll be able to cook my special soup. I'm extremely grateful to you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3855002374144
+    m_Localized: Oh dear, I'm really sorry that you don't have enough {NAME} for
+      my soup. Could you ask your friends if they happen to have any vegetables to
+      spare? I really need them. Thank you for your efforts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8436767789056
+    m_Localized: Good day! By any chance, do you happen to have {QUANTITY} {NAME}
+      in stock? I'm hosting a party in my garden, and I'm short on this vegetable
+      for salads. If you can help me out, I would be very grateful!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8440567828480
+    m_Localized: Incredible! Thank you for delivering {QUANTITY} {NAME}. My salads
+      will now be absolutely delicious at the party. Your contribution is irreplaceable.
+      Once again, thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8445596798976
+    m_Localized: Oh no! It's a shame that you don't have {QUANTITY} {NAME}. Could
+      you please try again? Maybe you could manage to get them. I would be grateful
+      for your further efforts. Thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8636374716416
+    m_Localized: My friend, could I please ask for {QUANTITY} {NAME}? My pets absolutely
+      love them as a snack, and I've just run out of supplies. If you could spare
+      a moment to help me, I would be incredibly grateful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8638710943744
+    m_Localized: Wow! I can't believe you delivered {QUANTITY} {NAME} for my pets.
+      They will absolutely devour them! I truly appreciate your kindness and thank
+      you warmly!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8640657100800
+    m_Localized: Oh no! You don't have {QUANTITY} {NAME} for my pets? That's really
+      disappointing. Do you know where else we could look? Maybe there are some gardens
+      or farms where we can find them. I can't wait for you to be able to get the
+      necessary vegetables. Thank you for your efforts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8846794559488
+    m_Localized: Hello! Would you be so kind as to deliver {QUANTITY} {NAME} to me?
+      We have an upcoming holiday, and my family absolutely loves traditional mashed
+      potatoes. Your assistance in this matter would be truly invaluable!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8848799436800
+    m_Localized: Thank you so much for bringing {QUANTITY} {NAME}. My family will
+      be delighted with the traditional mashed potatoes. Your generosity is extraordinary.
+      Thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8850372300800
+    m_Localized: Oh, it's a shame that you don't have enough {NAME} for my mashed
+      potatoes. Could you try asking your neighbors or look in their fields? It would
+      be wonderful if you could give it another try. Thank you for your efforts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8954391040000
+    m_Localized: Hey! I'm looking for {QUANTITY} {NAME} for my new vegan lasagna
+      recipe. If you have any vegetables that I can use, I would be very grateful
+      for your support in the kitchen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8957360607232
+    m_Localized: Thank you so much for {QUANTITY} {NAME}. Now I can create the vegan
+      lasagna and share it with others. Your vegetables will help me make a delicious
+      dish. Many thanks!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8959176740864
+    m_Localized: Oh no! You're missing {QUANTITY} {NAME} for the vegan lasagna? That's
+      sad. Could you try asking your friends or siblings? Perhaps someone has them
+      in excess. I would be grateful for any extra effort. Thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9195622240256
+    m_Localized: I'm sorry to bother you, but do you happen to have around {QUANTITY}
+      {NAME}? I'm planning to make a spicy sauce for a party in my neighborhood,
+      but I'm missing this key ingredient. Your help would be invaluable!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9197442568192
+    m_Localized: That's incredible! Thank you for {QUANTITY} {NAME}. My spicy sauce
+      will be perfect for the party now. Your help is priceless. Thank you so much!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9199082541056
+    m_Localized: Oh, it's a pity that I don't have around {QUANTITY} {NAME} for your
+      spicy sauce. Do you know where else I could try to find this vegetable? Maybe
+      there are other fields where they might have it. Thank you for your continued
+      search!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9244431355904
+    m_Localized: Hello! Could you help me acquire {QUANTITY} {NAME}? I am the head
+      chef at a restaurant, and I urgently need this vegetable for our new specialty
+      dish. If you have any {NAME} to spare, I would be immensely grateful!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9274315771904
+    m_Localized: Huge thanks for acquiring {QUANTITY} {NAME}. Thanks to you, our
+      new specialty dish at the restaurant will be exceptional. Your contribution
+      is of immense value. Once again, thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9275053969408
+    m_Localized: Oh no! I don't have {QUANTITY} {NAME} for your new specialty dish
+      at the restaurant? That's truly disappointing. Do you know where else we could
+      look? I would be grateful for any tips or suggestions. Thank you for your efforts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9299955552256
+    m_Localized: Hello! By any chance, would you have {QUANTITY} {NAME} for sale?
+      I would like to decorate my backyard for an upcoming holiday, and {NAME} would
+      be perfect for creating the atmosphere. I would be grateful for any help!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9316296560640
+    m_Localized: Thank you from the bottom of my heart for providing {QUANTITY} {NAME}.
+      Now I will be able to create a magical atmosphere for the holiday. Your {NAME}
+      are irreplaceable. I am immensely grateful to you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9343249158144
+    m_Localized: Oh, it's sad that I don't have {QUANTITY} {NAME} for holiday decorations.
+      Could I try looking for them in other places? Maybe there are some gardens
+      or flower beds. Thank you for your efforts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9354674442240
+    m_Localized: My friend, could I please ask for {QUANTITY} {NAME}? My children
+      are not fond of vegetables, but they always enjoy them when they're in the
+      form of puree. If you could help me out, I would be immensely grateful!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369350311936
+    m_Localized: Thank you so much for bringing {QUANTITY} {NAME}. My children will
+      now enjoy delicious puree. Your kindness is invaluable. I sincerely thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9389424250880
+    m_Localized: Oh no! You don't have {QUANTITY} {NAME} for my puree? That's a shame.
+      Could you ask among neighbors or family members? Perhaps someone might have
+      some vegetables to spare. I would be grateful for your continued search. Thank
+      you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9402057494528
+    m_Localized: Hello, traveler! My field has been invaded by pests, and I need
+      help gathering {QUANTITY} {NAME} to feed my family. Can you assist me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9417194737664
+    m_Localized: Thank you for gathering {QUANTITY} {NAME}! My family will not go
+      hungry now. Here is your reward.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9428771016704
+    m_Localized: Can you still help me gather {QUANTITY} {NAME}? My family is very
+      hungry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9441349734400
+    m_Localized: Hello! My herb gardens were destroyed by storms. I need {QUANTITY}
+      {NAME} to prepare medicine for the sick. Can you help me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9458659627008
+    m_Localized: Great! The {QUANTITY} {NAME} you provided will help many people
+      in need. Here is your reward for your assistance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9471846518784
+    m_Localized: Can you please try to find {QUANTITY} {NAME} again? Without them,
+      I won't be able to help those in need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9485897437184
+    m_Localized: Hey, traveler! Weeds have invaded my {NAME} plantation and are threatening
+      the crops. I need you to gather {QUANTITY} {NAME} so we can secure our food
+      supplies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9505447088128
+    m_Localized: Fantastic! Thanks to your help, our supplies are now secure. Here's
+      the reward I promised.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9526309556224
+    m_Localized: Can you please try to find {QUANTITY} {NAME} again? Without them,
+      our farm is at risk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9538775027712
+    m_Localized: Hello! Halloween is approaching, and I've run out of {NAME} for
+      my dishes. Could you bring me {QUANTITY} {NAME} from the nearby forest?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9559394226176
+    m_Localized: Fantastic! Now I'll be able to prepare delicious dishes for Halloween.
+      Here is your well-deserved reward.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9571268300800
+    m_Localized: Do you still have a chance to bring me {QUANTITY} {NAME}? Without
+      them, I won't be able to prepare dishes for Halloween.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9586447486976
+    m_Localized: I have heard of a legendary vegetable patch that grows deep within
+      the forest. Gather {QUANTITY} {NAME} from this magical garden, and I will be
+      grateful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9604218753024
+    m_Localized: I can't believe you managed to reach the vegetable patch! That's
+      incredible! Here's your reward for your bravery.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9616394817536
+    m_Localized: Don't give up! Try once again to reach the magical vegetable patch
+      and gather {QUANTITY} {NAME}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9633331417088
+    m_Localized: I have a problem with cultivating {NAME}. I need you to find {QUANTITY}
+      {NAME} that are resistant to pests. Can you help me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9652423888896
+    m_Localized: Great! Now I'll be able to develop my cultivation without worrying
+      about pests. Here's a reward for your efforts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9666629996544
+    m_Localized: Can you still look for {QUANTITY} {NAME}? Without them, my cultivation
+      is at risk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9679741390848
+    m_Localized: Hello! I've heard about {NAME} that are growing. I need {QUANTITY}
+      {NAME} for my collection. Can you find them?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9717079085056
+    m_Localized: Incredible! These {NAME} are truly unique. Here's your reward for
+      helping gather them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732207939584
+    m_Localized: Would you happen to have any {QUANTITY} {NAME} available? I'm looking
+      to add them to my collection, and it would be a great addition. Thank you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756698480640
+    m_Localized: The treasure hunter needs your help! Find and bring him {QUANTITY}
+      {NAME}, which are hidden on the map. Will you take on the challenge?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9779016372224
+    m_Localized: You're amazing! You've brought me {NAME}! Here's your well-deserved
+      reward, and I can continue my quest for gold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9795554512896
+    m_Localized: It seems you still have a chance to obtain {QUANTITY} {NAME}. Don't
+      lose hope! Keep trying!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9808183562240
+    m_Localized: Hello, warrior! There is a legendary dish that requires highly spicy
+      {NAME}. Gather {QUANTITY} of them so we can prepare this exceptional dish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9863326076928
+    m_Localized: Incredible! These spicy {NAME} are perfect for our legendary dish.
+      Here is your reward for the assistance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9878731755520
+    m_Localized: Can you please try to obtain {QUANTITY} {NAME}? Without them, we
+      won't be able to prepare our special dish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9892333883392
+    m_Localized: The village needs your help in reforesting the area. Gather {QUANTITY}
+      {NAME} so that we can begin the process of restoring the forests.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9915570327552
+    m_Localized: Thanks to you, our village will become greener! Here is your well-deserved
+      reward for helping in the revitalization of our environment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9932410458112
+    m_Localized: Can you still help us gather {QUANTITY} {NAME}? Without them, we
+      won't be able to reforest the area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9948541751296
+    m_Localized: I've discovered a mysterious vegetable garden where extraordinary
+      vegetables are growing. Gather {QUANTITY} {NAME} and bring them to me so I
+      can create an experimental dish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9968867348480
+    m_Localized: Extraordinary! These unique vegetables will add flavor to my experimental
+      dish. Here's a reward for your help in gathering them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9983744544768
+    m_Localized: Can you still try to gather {QUANTITY} {NAME}? Without them, I won't
+      be able to create my experimental dish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9998462357504
+    m_Localized: Hello! We are currently organizing a culinary festival, and my vegetable
+      supplies have run out. Could you bring me {QUANTITY} {NAME} so that we can
+      continue with the preparations?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10019345797120
+    m_Localized: Excellent job! These vegetables will help in preparing delicious
+      dishes for the festival. Here is your well-deserved reward.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10034038444032
+    m_Localized: Can you please try to find {QUANTITY} {NAME}? Without them, we won't
+      have enough dishes for the festival.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17749003472896
+    m_Localized: Hey, you...! Yes, you. I need your help. I don't know if you see
+      those empty snack bowls? Well, we just ran out of our only concrete snack -
+      concrete. Could you please bring more? Or if not rubble, at least 5 PEPPERS?
+      I would be very grateful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19834373672960
+    m_Localized: I don't know you, sir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19669692715008
+    m_Localized: Mediator... I can let you through, but I advise against it. Count
+      Gahlammon is currently in a very, very bad mood. I suggest you come back here
+      after some time. By the way, maybe you could look for certain ingredients that
+      our chef is missing to prepare a meal for the Count? We only need 6 TURNIPS,
+      which often grow near the inn. A good meal and a moment of rest will surely
+      help our Lord to recover from his current state.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19671651454976
+    m_Localized: You brought the ingredients, excellent. Count Gahlammon will surely
+      be pleased. I will deliver your peace letter to him. You have just maintained
+      peace in a very risky situation, but it is not yet time to celebrate. We have
+      been preparing for a potential conflict for a while now, and our allies are
+      positioned behind the Saalacians, ready for action. If they do not receive
+      the signed ceasefire letter from Count Gahlammon, they will launch an attack
+      in a few days. You must deliver this letter as soon as possible to prevent
+      bloodshed and maintain peace in the Five Kingdoms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19673043963904
+    m_Localized: Count Gahlammon is hungry. For his favorite meal, we only need 6
+      TURNIPS, which often grow near the inn. A good meal and a moment of rest will
+      surely help our Lord recover from the current state.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19830049345536
+    m_Localized: What's this? A letter with the inscription 'Secret Correspondence'
+      from Lord Container? Give it to me... hold on! He never sends letters without
+      pepper plants. I cannot reply to a letter without 7 PEPPERS.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19833106993152
+    m_Localized: Alright, let's see what he wrote... Oh, a funny meme. Alright, that
+      means it's time to get to work. But I still need to activate my associate among
+      the Lettucians. Go to the Village of Saint Manpling and find the man who will
+      greet you with the phrase 'I've been to Krakow'. Give him 6 carrots, and he
+      will understand that I'm sending you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19557952262144
+    m_Localized: Stop! Who are you... Ah, the Mediator. Hey, don't worry, just because
+      we're vampires doesn't make us monsters. Count Gahlammon, although prone to
+      fits of rage, always willingly listens to reasonable arguments. By the way,
+      I have a personal matter to discuss with you. Our food supplies are running
+      low. To make matters worse, someone has tainted our food with garlic. Would
+      you support us? I simply ask for 7 PEPPERS. As far as I know, they usually
+      grow in vast, open spaces. You could also visit the plantations to the northwest
+      of here for a bountiful harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19559680315392
+    m_Localized: Thank you so much, Mediator! I don't know what we would do without
+      you! Unfortunately, although I really want to repay you, I am not able to help
+      you much in your mission. The best I can do is advise you to go to the purple
+      castle and speak to the guard at the main gate. Explain everything to him,
+      and he will surely assist you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19562184314880
+    m_Localized: I see that you don't have any peppers for me. It's a pity, I was
+      counting on your help.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19470031261696
+    m_Localized: What do I see here... a new arrival. I don't know if you're aware,
+      but we've just introduced a new tax, and before I help you with anything, you
+      must bring me 6 TURNIPS. I'm sorry, those are the regulations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19470945619968
+    m_Localized: The tax has been paid, so now we will attend to your matter. A letter
+      to the Count? Unfortunately, I must disappoint you. Our lord has temporarily
+      gone to visit Lord Container to watch the Footed-Ball matches while enjoying
+      fine spirits. You'll have to head towards the Peppert.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19471818035200
+    m_Localized: Do you know that tax fraud can lead to imprisonment?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19333057875968
+    m_Localized: I've been to Krakow. I must say, it's a beautiful city, with beautiful
+      seaweed...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19333728964608
+    m_Localized: MaleFactor...? What does he want? He's probably having another issue
+      with his skull. Oh no, it must be related to General Lora's actions. We'll
+      take care of it. Here, deliver this letter from Count Gahlammon of Hanseradish.
+      He will know what to do.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19336941801472
+    m_Localized: Have you also been to Krakow?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19215286013952
+    m_Localized: Mediator! I've heard that you're heading our way. However, I must
+      admit that I'm quite skeptical of strangers and hesitant to let someone in
+      who hasn't proven their friendship towards our kingdom. Bring me 6 LETTUCES,
+      a symbol of our economy. They are so common that you can find them in the vicinity
+      of any village. Show us this way that you're worthy of our trust. Then I'll
+      allow you to pass.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19216267481088
+    m_Localized: 'I see you have the lettuce. Give me the letter - you have my word
+      that I''ll deliver it to His Highness. As for your matter: a recent conflict
+      at the border with the Hanseradish Empire has escalated our relations with
+      the vampires. Hurry up, Count Gahlammon won''t wait forever to issue the order
+      for an attack, so you must deliver this letter to him as soon as possible.
+      Take this armor as a token of gratitude.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19217748070400
+    m_Localized: You won't pass until you give me 6 lettuces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19095215673344
+    m_Localized: Hello, stranger! Hmm, if I were you, I wouldn't wear that purple
+      attire. Our kingdom doesn't have the best relationship with those horseradish
+      vampires, and you may encounter trouble with the palace guards. [TAB - Inventory]
+      Oh well... Horseradish is a precious spice, and even though I have my own lettuce
+      fields, I miss the times when we could import horseradish... Listen, could
+      you help me? Bring me 8 HORSERADISH, and I promise you won't regret it! As
+      far as I know, you can find it in the vicinity of the mountains or vampire
+      plantations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19100022345728
+    m_Localized: "Oh, horseradish! Thank you, it's a valuable acquisition for me
+      and my family. I hope you didn't encounter any trouble with the Hanseradishians
+      \u2013 those vampires can be truly unpredictable. Please accept this hat as
+      a token of my gratitude. It has been in my family for generations and belonged
+      to my distant ancestor who, with it on his head, sailed the seas and oceans
+      far from the shores of this island. Now it belongs to you. Please wear it with
+      pride."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19102111109120
+    m_Localized: You don't have 8 horseradishes? Come to me when you obtain them!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17754397347840
+    m_Localized: Ugh, these peppers are spicy... Try them yourself, Lord Container.
+      No? They're not? Oh well, never mind. What? You have a letter for me, good
+      sir? Please, give it to me. Hmm... Stop General Lora...? I know! Here, these
+      are tickets to a concert of a certain function band. Once she receives them,
+      she'll forget about attacking the Peppuntry. Take them to the castle, but make
+      sure General Lora doesn't find out they're from me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17756737769472
+    m_Localized: Do you think concrete harms teeth? But there isn't anything else
+      concrete out there... maybe besides peppers. Do you have them?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18113966641152
+    m_Localized: You there, listen... No, don't interrupt me! We need 6 HORSERADISHES
+      to dye our cloaks purple and deceive the vampires. There's a plantation nearby,
+      we just need to sneak into enemy territory. Now, move, move.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18156937285632
+    m_Localized: Alright, into the cauldron with this horseradish! Hm... no purple
+      dye is forming. Disappointing... And what's this you've got here... a letter?
+      "Lord Container's army is heading towards our border, we need your support."
+      What?! This changes our plans! Soldiers, march to Carrountry! And you, deliver
+      this to Lord Container. We won't let such an affront pass unnoticed!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18181473964032
+    m_Localized: Can you count or not? Where do you see six horseradishes here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18324743000064
+    m_Localized: What? A message from the vampires? Uh... I don't know anything about
+      it! Definitely not! And it certainly won't change with 5 CARROTS! Which definitely
+      don't grow on the outskirts of the island!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18493198831616
+    m_Localized: What are you talking about, sir? Haven't you heard that I don't
+      know anything?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18471581388800
+    m_Localized: Do you have carrots? Alright, listen. The truth is, we didn't actually
+      want to help the vampires. Our king planned that when they attack the Lettucians,
+      we would strike back with the help of the Radublic. However, not everyone here
+      is in favor of war, so maybe with your help, we can reverse this. Take this
+      letter and fly to the Radublic swiftly!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18559808573440
+    m_Localized: I bow to you, and before you ask anything, do you happen to have
+      2 HORSERADISHES? I'm in great need of this ingredient in my soldier's diet,
+      and I fear that I might fall ill. Only you can help me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18573024825344
+    m_Localized: Please. Only 2 horseradishes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18570936061952
+    m_Localized: You're welcome. I'll take the letter now. Hmm. Tickets? General
+      Lora will be overjoyed. I'll inform her. Thank you, kind sir. However, I must
+      pass on the message that the general wanted to send to Lord Container. Please
+      note, when delivering it, that General Lora will provide a clarification as
+      soon as she returns from the concert. Congratulations, Mediator. You have managed
+      to control the situation and maintain peace in the land.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18740931203072
+    m_Localized: "\rHOT! \rHOT! Water! Water! Or a cold compress! Vanilla ice cream!
+      An apple! 3 LETTUCES! Anything! \rHOT!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18781959884800
+    m_Localized: "\rHOT!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18779866927104
+    m_Localized: Phew, thanks, good sir... Those Lord Container's peppers really
+      cause a burning sensation. What do you have for me? A letter? "We express concern
+      - you did not have cassus belli on Carrountry - unlike we have on you - General
+      Lora" ... Interesting. We need to find out what's going on. Take this letter
+      to activate our secret agent in Carrounty, MaleFactor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864487010304
+    m_Localized: The peppers disappeared quickly, didn't they, Count Gahlammon? Listen,
+      Mediator, I see that you have a letter, but could you replenish our supplies?
+      10 PEPPERS would be much appreciated. Thank you very much.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874452676608
+    m_Localized: It doesn't look like 10 peppers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18867032952832
+    m_Localized: Perfect, it will last until the evening. Please give me that letter...
+      Ah, wonderful. General Lora is heading to the port to sail to the concert.
+      Lord Gahlammon, I believe it's time for our move when Radublic is exposed.
+      Are you still here, Mediator? You are no longer needed, it's the end.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18970481266688
+    m_Localized: And what about you? Are you expecting me to let you in? What kind
+      of piece of paper are you trying to give me? Ha ha, buddy, were you born yesterday?
+      Do you even know what capitalism is? Bring me 4 PEPPERS, then we can talk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18971315933184
+    m_Localized: Please, please, what a kind person you are... Now I can reveal to
+      you that the person to whom this letter is addressed, General Lora, is currently
+      outside the castle. You will find her in the forest near the border with Hanseradish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18972268040192
+    m_Localized: Capitalism. Ca-pi-ta-lism. I know, it's a difficult word. But please,
+      grasp it already.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,448 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Quests Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Quests
+  m_TableCollectionNameGuidString: 893e6883f61d87742b6433bfe3e6ef33
+  m_Entries:
+  - m_Id: 3848257933312
+    m_Key: Q0I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3851521101824
+    m_Key: Q0A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3855002374144
+    m_Key: Q0D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8436767789056
+    m_Key: Q1I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8440567828480
+    m_Key: Q1A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8445596798976
+    m_Key: Q1D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8636374716416
+    m_Key: Q2I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8638710943744
+    m_Key: Q2A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8640657100800
+    m_Key: Q2D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8846794559488
+    m_Key: Q3I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8848799436800
+    m_Key: Q3A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8850372300800
+    m_Key: Q3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8954391040000
+    m_Key: Q4I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8957360607232
+    m_Key: Q4A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8959176740864
+    m_Key: Q4D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9195622240256
+    m_Key: Q5I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9197442568192
+    m_Key: Q5A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9199082541056
+    m_Key: Q5D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9244431355904
+    m_Key: Q6I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9274315771904
+    m_Key: Q6A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9275053969408
+    m_Key: Q6D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9299955552256
+    m_Key: Q7I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9316296560640
+    m_Key: Q7A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9343249158144
+    m_Key: Q7D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9354674442240
+    m_Key: Q8I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9369350311936
+    m_Key: Q8A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9389424250880
+    m_Key: Q8D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9402057494528
+    m_Key: Q9I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9417194737664
+    m_Key: Q9A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9428771016704
+    m_Key: Q9D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9441349734400
+    m_Key: Q10I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9458659627008
+    m_Key: Q10A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9471846518784
+    m_Key: Q10D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9485897437184
+    m_Key: Q11I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9505447088128
+    m_Key: Q11A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9526309556224
+    m_Key: Q11D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9538775027712
+    m_Key: Q12I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9559394226176
+    m_Key: Q12A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9571268300800
+    m_Key: Q12D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9586447486976
+    m_Key: Q13I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9604218753024
+    m_Key: Q13A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9616394817536
+    m_Key: Q13D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9633331417088
+    m_Key: Q14I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9652423888896
+    m_Key: Q14A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9666629996544
+    m_Key: Q14D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9679741390848
+    m_Key: Q15I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9717079085056
+    m_Key: Q15A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9732207939584
+    m_Key: Q15D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9756698480640
+    m_Key: Q16I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9779016372224
+    m_Key: Q16A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9795554512896
+    m_Key: Q16D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9808183562240
+    m_Key: Q17I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9863326076928
+    m_Key: Q17A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9878731755520
+    m_Key: Q17D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9892333883392
+    m_Key: Q18I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9915570327552
+    m_Key: Q18A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9932410458112
+    m_Key: Q18D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9948541751296
+    m_Key: Q19I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9968867348480
+    m_Key: Q19A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9983744544768
+    m_Key: Q19D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9998462357504
+    m_Key: Q20I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10019345797120
+    m_Key: Q20A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10034038444032
+    m_Key: Q20D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17749003472896
+    m_Key: PGHI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17754397347840
+    m_Key: PGHA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17756737769472
+    m_Key: PGHD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18113966641152
+    m_Key: PGLI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18156937285632
+    m_Key: PGLA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18181473964032
+    m_Key: PGLD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18324743000064
+    m_Key: PMSI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18471581388800
+    m_Key: PMSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18493198831616
+    m_Key: PMSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18559808573440
+    m_Key: POBI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18570936061952
+    m_Key: POBA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18573024825344
+    m_Key: POBD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18740931203072
+    m_Key: PPSI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18779866927104
+    m_Key: PPSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18781959884800
+    m_Key: PPSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864487010304
+    m_Key: PPI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18867032952832
+    m_Key: PPA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874452676608
+    m_Key: PPD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18970481266688
+    m_Key: PPRI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18971315933184
+    m_Key: PPRA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18972268040192
+    m_Key: PPRD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19095215673344
+    m_Key: PSDI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19100022345728
+    m_Key: PSDA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19102111109120
+    m_Key: PSDD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19215286013952
+    m_Key: PSSI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19216267481088
+    m_Key: PSSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19217748070400
+    m_Key: PSSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19333057875968
+    m_Key: PSI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19333728964608
+    m_Key: PSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19336941801472
+    m_Key: PSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19470031261696
+    m_Key: PWII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19470945619968
+    m_Key: PWIA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19471818035200
+    m_Key: PWID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19557952262144
+    m_Key: PWPI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19559680315392
+    m_Key: PWPA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19562184314880
+    m_Key: PWPD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19669692715008
+    m_Key: PWSI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19671651454976
+    m_Key: PWSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19673043963904
+    m_Key: PWSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19830049345536
+    m_Key: PZI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19833106993152
+    m_Key: PZA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19834373672960
+    m_Key: PZD
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3583797246630559808
+  references:
+    version: 2
+    RefIds:
+    - rid: 3583797246630559808
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1688062754765

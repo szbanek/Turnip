@@ -12,14 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Odbiorca Biletow
   m_EditorClassIdentifier: 
-  text: "K\u0142aniam si\u0119, i zanim zapyta pan o cokolwiek, ma pan mo\u017Ce
-    2 CHRZANU? Bardzo mi brakuje tego sk\u0142adnika w mojej \u017Co\u0142nierskiej
-    diecie i boj\u0119 si\u0119 \u017Ce zachoruj\u0119. Tylko pan mo\u017Ce mi pom\xF3c."
-  positiveAnswer: "Wielce dzi\u0119kuj\u0119, ju\u017C odbieram list. Hmm. Bilety?
-    Genera\u0142 Lora b\u0119dzie przeszcz\u0119\u015Bliwa. Zawiadomi\u0119 j\u0105,
-    dzi\u0119kuj\u0119 ci, dobry cz\u0142owieku. Musz\u0119 ci jednak przekaza\u0107
-    pismo kt\xF3re genera\u0142 chcia\u0142a wystosowa\u0107 do Lorda Pojemnika.
-    Zanznacz jednak, daj\u0105c je, \u017Ce Genera\u0142 Lora prze\u015Ble sprostowanie
-    gdy tylko wr\xF3ci z koncertu. Gratuluj\u0119, Mediatorze. Uda\u0142o ci si\u0119
-    opanowa\u0107 sytuacj\u0119 i utrzyma\u0107 pok\xF3j w krainie."
-  negativeAnswer: "Prosz\u0119. Tylko dwa chrzanu."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18559808573440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18570936061952
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 18573024825344
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -12,15 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 2
   m_EditorClassIdentifier: 
-  text: "Przyjacielu, czy mog\u0119 prosi\u0107 o {QUANTITY} {NAME}? Moje zwierz\u0119ta
-    uwielbiaj\u0105 je jako przek\u0105sk\u0119, a moje zapasy w\u0142a\u015Bnie
-    si\u0119 sko\u0144czy\u0142y. Je\u015Bli mia\u0142by\u015B chwil\u0119, aby mi
-    pom\xF3c, by\u0142bym niezmiernie wdzi\u0119czny."
-  positiveAnswer: "Wow! Nie mog\u0119 uwierzy\u0107, \u017Ce dostarczy\u0142e\u015B
-    {QUANTITY} {NAME} dla moich zwierz\u0105t. B\u0119d\u0105 si\u0119 nimi zajada\u0107!
-    Naprawd\u0119 doceniam Twoj\u0105 \u017Cyczliwo\u015B\u0107 i serdecznie Ci dzi\u0119kuj\u0119!"
-  negativeAnswer: "Oh nie! Nie masz {QUANTITY} {NAME} dla moich zwierz\u0105t? To
-    naprawd\u0119 szkoda. Czy wiesz, gdzie jeszcze mogliby\u015Bmy szuka\u0107? Mo\u017Ce
-    s\u0105 jakie\u015B ogrody lub farmy, gdzie mo\u017Cemy je znale\u017A\u0107.
-    Nie mog\u0119 doczeka\u0107 si\u0119, a\u017C uda Ci si\u0119 zdoby\u0107 potrzebne
-    warzywa. Dzi\u0119kuj\u0119 za Twoje starania!"
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8636374716416
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8638710943744
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 8640657100800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

@@ -15,9 +15,7 @@ public class QuestManager : Singleton<QuestManager>
         (
             (Vegetable.VegetableType)UnityEngine.Random.Range(0, 5),
             UnityEngine.Random.Range(1, 6),
-            texts[tmp].Text,
-            texts[tmp].PositiveAnswer,
-            texts[tmp].NegativeAnswer,
+            texts[tmp],
             Random.Range(expRange.x, expRange.y),
             ItemsGenerator.Instance.GenerateItem()
         );
@@ -27,9 +25,7 @@ public class QuestManager : Singleton<QuestManager>
     (
         Vegetable.VegetableType type,
         int quantity,
-        string text,
-        string positiveAnswer,
-        string negativeAnswer,
+        QuestText questText,
         float exp,
         PlayerItem item
     )
@@ -38,9 +34,7 @@ public class QuestManager : Singleton<QuestManager>
         (
             type,
             quantity,
-            text,
-            positiveAnswer,
-            negativeAnswer,
+            questText,
             exp,
             ItemsGenerator.Instance.GenerateItem(item)
         );

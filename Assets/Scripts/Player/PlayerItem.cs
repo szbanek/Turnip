@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [CreateAssetMenu(menuName = "Scriptable Objects/Player item")]
 public class PlayerItem : ScriptableObject
@@ -13,8 +14,8 @@ public class PlayerItem : ScriptableObject
     }
 
     [SerializeField]
-    private string itemName;
-    public string ItemName => itemName;
+    private LocalizedString itemName;
+    public string ItemName => itemName.GetLocalizedString();
     [SerializeField]
     private GameObject prefab;
     [SerializeField]

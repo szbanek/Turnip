@@ -12,16 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Gahlammon
   m_EditorClassIdentifier: 
-  text: "Hej, ty...! Tak, ty. Potrzebuj\u0119 twojej pomocy. Nie wiem czy widzisz
-    te puste naczynia po przek\u0105skach? No w\u0142a\u015Bnie, przed chwil\u0105
-    sko\u0144czy\u0142 nam si\u0119 beton. M\xF3g\u0142by\u015B prosz\u0119 przynie\u015B\u0107
-    wi\u0119cej? Albo je\u015Bli nie uda si\u0119 betonu to chocia\u017C 5 PAPRYKI?
-    B\u0119d\u0119 bardzo wdzi\u0119czny."
-  positiveAnswer: "Uch, te papryczki to s\u0105 ostre... Sam spr\xF3buj, Lordzie
-    Pojemniku. Nie? Nie s\u0105? Ech, mniejsza z tym. Co? Masz dla mnie list, dobry
-    cz\u0142owieku? Daj go, prosz\u0119. Hmm... Zatrzyma\u0107 Genera\u0142 Lor\u0119...?
-    Wiem! Masz, to bilety na koncert pewnej grupy funkcyjnej. Gdy je dostanie, zapomni
-    o ataku na kraj papryki. Zanie\u015B je do zamku, Genera\u0142 Lora nie mo\u017Ce
-    si\u0119 dowiedzie\u0107 \u017Ce to ode mnie."
-  negativeAnswer: "Czy\u017Cby\u015B uwa\u017Ca\u0142 \u017Ce beton szkodzi na z\u0119by?
-    Spokojnie, wampirom ma\u0142o co na nie szkodzi."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 17749003472896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 17754397347840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 17756737769472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

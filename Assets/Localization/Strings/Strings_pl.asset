@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Strings_pl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: b1e660db31acf9e4499b0ffc2bb3d035, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 83677155328
+    m_Localized: Papryka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323901722624
+    m_Localized: Marchew
+    m_Metadata:
+      m_Items: []
+  - m_Id: 451941240832
+    m_Localized: Rzepa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532765478912
+    m_Localized: "Sa\u0142ata"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659697700864
+    m_Localized: Chrzan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209339953188864
+    m_Localized: ----
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209341920317440
+    m_Localized: ----
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208329666990080
+    m_Localized: Bardzo pyszne warzywo. Popularne w Marchwlandzie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208335182499840
+    m_Localized: "Ulubiona przyprawa francuskich wampirzych przemytnik\xF3w."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208333186011136
+    m_Localized: Niestety to nie te zielone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208327859245056
+    m_Localized: "Najcz\u0119\u015Bciej sk\u0142adowana w Pojemniku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 208331269214208
+    m_Localized: "Jaka jest ka\u017Cdy widzi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212019643682816
+    m_Localized: Otrzymano warzywo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212022277705728
+    m_Localized: Otrzymano przedmiot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212024886562816
+    m_Localized: Kolejny poziom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 212117882671104
+    m_Localized: Koniec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213552825372672
+    m_Localized: Ekwipunek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213713433661440
+    m_Localized: Warzywa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214040530653184
+    m_Localized: "Posta\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214556648148992
+    m_Localized: 'Poziom:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214594568851456
+    m_Localized: 'Dostepne punkty:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215358217392128
+    m_Localized: Maksymalna kondycja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215526392205312
+    m_Localized: Regeneracja kondycji
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215583938056192
+    m_Localized: "Szybko\u015B\u0107 biegu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215625398751232
+    m_Localized: Koszt skoku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215667069161472
+    m_Localized: Szansa dodatkowego warzywa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215821964808192
+    m_Localized: "Umiej\u0119tno\u015Bci zbierackie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215895209938944
+    m_Localized: "Zasi\u0119g warzywnego zmys\u0142u"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 216131026292736
+    m_Localized: "Szybko\u015B\u0107 biegu: {0:f2}\nMaksymalna kondycja: {1:f2}\nRegeneracja
+      kondycji: {2:f2}\nKoszt skoku: {3:f2}\nSzansa dodatkowego warzywa:  {4:f2}%\nUmiejetno\u015Bci
+      zbierackie: {5:f2}\nZasi\u0119g zmys\u0142u: {6:f2}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 237879998287872
+    m_Localized: Zadanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 237929172307968
+    m_Localized: Dostarcz List
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238071812198400
+    m_Localized: "ty janie cubie drugi co spawnujesz minigejmy do obs\u0142ugi"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

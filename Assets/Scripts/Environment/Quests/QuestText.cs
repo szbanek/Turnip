@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [CreateAssetMenu(menuName="Scriptable Objects/QuestText")]
 public class QuestText : ScriptableObject
 {
     [SerializeField]
-    [TextArea]
-    private string text;
-    public string Text => text;
+    private LocalizedString localizedText;
+    public string Text => localizedText.GetLocalizedString();
+
     [SerializeField]
-    [TextArea]
-    private string positiveAnswer;
-    public string PositiveAnswer => positiveAnswer;
+    private LocalizedString localizedPositiveAnswer;
+    public string PositiveAnswer => localizedPositiveAnswer.GetLocalizedString();
+
     [SerializeField]
-    [TextArea]
-    private string negativeAnswer;
-    public string NegativeAnswer => negativeAnswer;
+    private LocalizedString localizedNegativeAnswer;
+    public string NegativeAnswer => localizedNegativeAnswer.GetLocalizedString();
 }

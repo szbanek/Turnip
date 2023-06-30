@@ -12,10 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecb22384f3291343bb17364d04ba682, type: 3}
   m_Name: Text 11
   m_EditorClassIdentifier: 
-  text: "Hej, podr\xF3\u017Cniku! W mojej hodowli {NAME} pojawi\u0142y si\u0119 chwasty
-    i zagra\u017Caj\u0105 uprawom. Potrzebuj\u0119, aby\u015B zebra\u0142 {QUANTITY}
-    {NAME}, aby\u015Bmy mogli zabezpieczy\u0107 nasze zapasy \u017Cywno\u015Bci."
-  positiveAnswer: "Wspaniale! Dzi\u0119ki Twojej pomocy nasze zapasy s\u0105 teraz
-    bezpieczne. Oto nagroda, jak\u0105 obieca\u0142em."
-  negativeAnswer: "Czy mo\u017Cesz jeszcze spr\xF3bowa\u0107 znale\u017A\u0107 {QUANTITY}
-    {NAME}? Bez nich nasza hodowla jest zagro\u017Cona."
+  localizedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9485897437184
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedPositiveAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9505447088128
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedNegativeAnswer:
+    m_TableReference:
+      m_TableCollectionName: GUID:893e6883f61d87742b6433bfe3e6ef33
+    m_TableEntryReference:
+      m_KeyId: 9526309556224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

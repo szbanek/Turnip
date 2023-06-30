@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 519c0b3647cfa0742969995f5ce3845a
+  m_SerializeEntries:
+  - m_GUID: 893e6883f61d87742b6433bfe3e6ef33
+    m_Address: Assets/Localization/Quests/Quests Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: b1e660db31acf9e4499b0ffc2bb3d035
+    m_Address: Assets/Localization/Strings/Strings Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 84d0edcb2a5b73c4a8088b53b9d57123
+    m_Address: Assets/Localization/Items/Items Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 5eccc51a5842865438a6394d1dad7477, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fc4ad416bb984b94b810dfffa60ac0d4, type: 2}
+    - {fileID: 11400000, guid: 823c540fcf25a3b459c157422d1688b2, type: 2}
