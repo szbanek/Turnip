@@ -22,6 +22,11 @@ public class UIMenuVisibilityManager : MonoBehaviour
 
     public void ShowMenu()
     {
+        if (PauseScreen.Instance.Paused)
+        {
+            return;
+        }
+
         menuShown = true;
         ApplyVisibilityChange();
     }
@@ -34,6 +39,11 @@ public class UIMenuVisibilityManager : MonoBehaviour
 
     public void SwitchMenu()
     {
+        if (PauseScreen.Instance.Paused)
+        {
+            return;
+        }
+
         menuShown = !menuShown;
         ApplyVisibilityChange();
     }

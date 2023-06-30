@@ -15,6 +15,7 @@ public class PlayerInputAdapter : MonoBehaviour
 
     [HideInInspector]
     public bool EnableMovement = true;
+
     public IInputAdapter inputAdapter { set { ignoreInputThisFrame = true; _inputAdapter = value; } private get => _inputAdapter; }
 
     private IInputAdapter _inputAdapter = null;
@@ -197,6 +198,14 @@ public class PlayerInputAdapter : MonoBehaviour
         else if (context.canceled)
         {
             sense.StopSense();
+        }
+    }
+
+    public void Pause(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            PauseScreen.Instance.SwitchPause();
         }
     }
 

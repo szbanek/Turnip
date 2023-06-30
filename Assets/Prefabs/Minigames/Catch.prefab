@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  speed: 1
+  speed: 200
   gameArea: {fileID: 9213035958984666441}
 --- !u!1 &1971730965098572117
 GameObject:
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  speed: 1
+  speed: 200
   gameArea: {fileID: 9213035958984666441}
 --- !u!1 &4385570928138832151
 GameObject:
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
-  speed: 1
+  speed: 200
   gameArea: {fileID: 9213035958984666441}
 --- !u!1 &7090021894488886450
 GameObject:

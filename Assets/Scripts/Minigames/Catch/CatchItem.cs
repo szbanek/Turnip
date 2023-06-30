@@ -41,7 +41,7 @@ public class CatchItem : MonoBehaviour
     }
     private void Update()
     {
-        transform.position += direction;
+        transform.position += direction * speed * Time.deltaTime;
         if (transform.position.x <= leftBoundary || transform.position.x >= rightBoundary)
         {
             direction.x = -direction.x;

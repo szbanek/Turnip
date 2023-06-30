@@ -534,6 +534,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 181bc02d-fb27-41c3-a0af-24d742a6b7fe
     m_ActionName: Player/VegetableSense[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1161634678213818434}
+        m_TargetAssemblyTypeName: PlayerInputAdapter, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 089c6129-9e8d-4bb1-9c6b-c28028850280
+    m_ActionName: Player/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -639,7 +655,6 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-        Name: "D\u0142ugie Spodnie Dyplomaty"
     - Key:
         item: 1
       Value:
@@ -652,7 +667,6 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-        Name: "Szykowny \u017Bakiet Dyplomaty"
     - Key:
         item: 0
       Value:
@@ -665,7 +679,6 @@ MonoBehaviour:
           SenseRange: 0
           AdditionalVegetableChance: 0
           MinigameBonus: 0
-        Name: Smutna Peruka Dyplomaty
   Items:
   - Item: {fileID: 11400000, guid: 88b4ce6ba67edc04b991c31bd415a70b, type: 2}
     Modifier:
@@ -676,7 +689,6 @@ MonoBehaviour:
       SenseRange: 0
       AdditionalVegetableChance: 0
       MinigameBonus: 0
-    Name: "Zielony \u017Bakiet Dyplomaty"
 --- !u!114 &7450896184901940049
 MonoBehaviour:
   m_ObjectHideFlags: 0

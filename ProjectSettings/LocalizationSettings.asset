@@ -17,5 +17,5 @@ MonoBehaviour:
       m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
   m_AssetTable:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:d13892f919da8fe40bdd3bbc876eaebb
   m_TrackingChanges: 0

@@ -43,6 +43,7 @@ public class MainQuestManager : Singleton<MainQuestManager>
                 }
                 else
                 {
+                    UIPopUp.Instance.PopUp(UIPopUp.PopUpType.TheEnd);
                     Destroy(indicator);
                 }
 
