@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Button))]
 [RequireComponent(typeof(Image))]
@@ -25,7 +26,7 @@ public class UIItemSlot : MonoBehaviour
 
     public event System.EventHandler<ItemInstance> OnItemPressed;
 
-    private void Start()
+    private void Awake()
     {
         image = GetComponent<Image>();
         button = GetComponent<Button>();

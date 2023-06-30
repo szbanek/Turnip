@@ -14,6 +14,12 @@ public class Vegetable : ScriptableObject
     public VegetableType Type => type;
 
     [SerializeField]
+    private new LocalizedString name;
+
+    [SerializeField]
+    private LocalizedString description;
+
+    [SerializeField]
     private Sprite icon;
     public Sprite Icon => icon;
 
@@ -25,18 +31,6 @@ public class Vegetable : ScriptableObject
     private float expGiven;
     public float ExpGiven => expGiven;
 
-    public string Name => TypeToString(type);
-    public string Description => TypeToDescription(type);
-
-    private static LocalizedStringTable localizedStringTable = new LocalizedStringTable { TableReference = "Strings" };
-
-    public static string TypeToString(VegetableType type)
-    {
-        return localizedStringTable.GetTable().GetEntry(type.ToString().ToLower()).GetLocalizedString();
-    }
-
-    public static string TypeToDescription(VegetableType type)
-    {
-        return localizedStringTable.GetTable().GetEntry(type.ToString().ToLower() + "_desc").GetLocalizedString();
-    }
+    public string Name => name.GetLocalizedString();
+    public string Description => description.GetLocalizedString();
 }

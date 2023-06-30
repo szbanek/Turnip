@@ -23,7 +23,7 @@ public class UIItemInventory : MonoBehaviour
 
     private void Start()
     {
-        inventorySlots = itemsListParent.GetComponentsInChildren<UIItemSlot>();
+        inventorySlots ??= itemsListParent.GetComponentsInChildren<UIItemSlot>();
     }
 
     public void OnMenuEnabled()
@@ -44,7 +44,8 @@ public class UIItemInventory : MonoBehaviour
 
     private void PopulateInventory()
     {
-        if(inventory.Items.Count > inventorySlots.Length)
+        inventorySlots ??= itemsListParent.GetComponentsInChildren<UIItemSlot>();
+        if (inventory.Items.Count > inventorySlots.Length)
         {
             throw new ArgumentOutOfRangeException("Too many items in inventory");
         }

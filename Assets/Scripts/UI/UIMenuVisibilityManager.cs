@@ -13,12 +13,7 @@ public class UIMenuVisibilityManager : MonoBehaviour
     [SerializeField]
     private UIItemInventory items;
 
-    private bool menuShown;
-
-    private void Start()
-    {
-        HideMenu();
-    }
+    private bool menuShown = false;
 
     public void ShowMenu()
     {

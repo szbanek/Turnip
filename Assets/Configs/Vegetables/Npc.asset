@@ -13,8 +13,28 @@ MonoBehaviour:
   m_Name: Npc
   m_EditorClassIdentifier: 
   type: 5
-  description: 
+  name:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 209339953188864
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 209341920317440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 21300000, guid: 7c7a2acdeb14c8f4a9bed9fd246312bb, type: 3}
   minigames:
   - {fileID: 1433603687681797218, guid: 756d2f034a96cfa46848ec64c784f4cd, type: 3}
   expGiven: 0
+  references:
+    version: 2
+    RefIds: []

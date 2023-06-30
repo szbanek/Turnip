@@ -4,7 +4,6 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(LayoutElement))]
 [ExecuteInEditMode()]
 public class UITooltipContentManager : MonoBehaviour
 {
@@ -15,23 +14,11 @@ public class UITooltipContentManager : MonoBehaviour
 
     [SerializeField]
     private float maxLength;
-
+    [SerializeField]
     private LayoutElement layoutElement;
-
-    private void Start()
-    {
-        if (layoutElement == null)
-        {
-            layoutElement = GetComponent<LayoutElement>();
-        }
-    }
 
     public void SetContent(string headerText, string contentText)
     {
-        if (layoutElement == null)
-        {
-            layoutElement = GetComponent<LayoutElement>();
-        }
         header.text = headerText;
         content.text = contentText;
         layoutElement.enabled = Mathf.Max(header.text.Length, content.text.Length) > maxLength;

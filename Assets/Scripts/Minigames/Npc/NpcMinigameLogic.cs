@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization;
 
 public class NpcMinigameLogic : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class NpcMinigameLogic : MonoBehaviour
     private RandomSoundPlayer acceptPlayer;
     [SerializeField]
     private RandomSoundPlayer refusePlayer;
+    [SerializeField]
+    private LocalizedString giveString;
 
     public event EventHandler OnWinEvent;
     public event EventHandler OnLoseEvent;
@@ -20,6 +23,11 @@ public class NpcMinigameLogic : MonoBehaviour
     private NpcMinigameText textField;
     private PlayerVegetableInventory inventory;
     private bool done = false;
+
+    private string intro = ""; 
+    private string positive = "";
+    private string negative = "";
+    private string buttonText = "";
 
     public void Click(Vector2 vector)
     {
@@ -30,13 +38,13 @@ public class NpcMinigameLogic : MonoBehaviour
             if (inventory.TryRemoveItem(quest.Type, quest.Quantity))
             {
                 done = true;
-                textField.ChangeText(quest.PositiveAnswer);
+                textField.ChangeText(positive);
                 acceptPlayer.PlayRandom();
                 button.ChangeText("");
             }
             else
             {
-                textField.ChangeText(quest.NegativeAnswer);
+                textField.ChangeText(negative);
                 refusePlayer.PlayRandom();
             }
         }
@@ -46,10 +54,21 @@ public class NpcMinigameLogic : MonoBehaviour
             else OnLoseEvent?.Invoke(this, null);
         }
     }
-    private void Start()
+    private IEnumerator Start()
     {
         inventory = FindObjectOfType<PlayerVegetableInventory>();
         introPlayer.PlayRandom();
+        yield return new WaitUntil(() => quest != null);
+        LocalizedStringTable localizedStringTable = new LocalizedStringTable { TableReference = "Strings" };
+        string vegetableName = localizedStringTable.GetTable().GetEntry(quest.Type.ToString().ToLower()).GetLocalizedString();
+
+        intro = quest.Text.Replace("{NAME}", vegetableName).Replace("{QUANTITY}", quest.Quantity.ToString());
+        positive = quest.PositiveAnswer.Replace("{NAME}", vegetableName).Replace("{QUANTITY}", quest.Quantity.ToString());
+        negative = quest.NegativeAnswer.Replace("{NAME}", vegetableName).Replace("{QUANTITY}", quest.Quantity.ToString());
+        buttonText = giveString.GetLocalizedString() + " " + quest.Quantity.ToString() + " " + vegetableName;
+
+        textField.ChangeText(intro);
+        button.ChangeText(buttonText);
     }
 
     private void HandleEvent(bool win)
@@ -70,7 +89,5 @@ public class NpcMinigameLogic : MonoBehaviour
     public void SetQuest(Quest quest)
     {
         this.quest = quest;
-        textField.ChangeText(quest.Text);
-        button.ChangeText($"Daj {quest.Quantity} {Vegetable.TypeToString(quest.Type)}");
     }
 }

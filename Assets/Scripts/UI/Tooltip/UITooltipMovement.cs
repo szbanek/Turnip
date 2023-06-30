@@ -11,14 +11,14 @@ public class UITooltipMovement : MonoBehaviour
     private RectTransform rectTransform;
     private Image image;
 
-    private void Start()
+    private void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
+        rectTransform = transform as RectTransform;
         image = GetComponent<Image>();
         UpdatePosition();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         UpdatePosition();
     }
@@ -26,8 +26,25 @@ public class UITooltipMovement : MonoBehaviour
     private void UpdatePosition()
     {
         Vector2 mousePosition = Mouse.current.position.ReadUnprocessedValue();
-        rectTransform.position = mousePosition;
-        Vector2 pivot = new Vector2(mousePosition.x/Screen.width, mousePosition.y / Screen.height);
+        Vector2 trueSize = rectTransform.sizeDelta * UIHUDController.Instance.UICanvas.scaleFactor;
+        Vector2 pivot = Vector2.zero;
+        if (trueSize.y + mousePosition.y > Screen.height)
+        {
+            pivot.y = 1;
+        }
+        else
+        {
+            pivot.y = 0;
+        }
+        if (mousePosition.x < trueSize.x)
+        {
+            pivot.x = 0;
+        }
+        else
+        {
+            pivot.x = 1;
+        }
         rectTransform.pivot = pivot;
+        rectTransform.position = mousePosition;
     }
 }

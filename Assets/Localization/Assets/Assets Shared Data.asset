@@ -16,7 +16,7 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: d13892f919da8fe40bdd3bbc876eaebb
   m_Entries:
   - m_Id: 367195328512
-    m_Key: MainMenu/Prefab Mode in Context/MainMenu/MainPanel/ChangeLocale/Flag
+    m_Key: flag
     m_Metadata:
       m_Items: []
   m_Metadata:

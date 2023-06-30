@@ -19,6 +19,8 @@ public class UIHUDController : Singleton<UIHUDController>
     private RectTransform npcPanel;
     [SerializeField]
     private RectTransform npcCanvas;
+    [SerializeField]
+    private Canvas uiCanvas;
 
     public RectTransform InteractionIconCanvas => interactionIconCanvas;
     public RectTransform MinigamePanel => minigamePanel;
@@ -27,4 +29,5 @@ public class UIHUDController : Singleton<UIHUDController>
     public UIMenuVisibilityManager MenuVisibilityManager => menuVisibilityManager;
     public RectTransform NPCPanel => npcPanel;
     public RectTransform NPCCanvas => npcCanvas;
+    public Canvas UICanvas => uiCanvas;
 }

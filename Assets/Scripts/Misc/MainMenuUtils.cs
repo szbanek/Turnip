@@ -19,16 +19,23 @@ public class MainMenuUtils : MonoBehaviour
     [SerializeField]
     private int currentLocale = 0;
 
-    private IEnumerator Start()
+    private void Start()
     {
         introPanel.SetActive(false);
         mainPanel.SetActive(true);
 
-        yield return LocalizationSettings.InitializationOperation;
-
+        if (currentLocale == 0)
+        {
+            currentLocale = LocalizationSettings.AvailableLocales.Locales.Count - 1;
+        }
+        else
+        {
+            currentLocale -= 1;
+        }
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[currentLocale];
 
         localeButton.onClick.AddListener(ChangeLocale);
+        ChangeLocale();
     }
 
     public void LoadScene()

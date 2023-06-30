@@ -184,6 +184,10 @@ MonoBehaviour:
       Mediatorze!"
     m_Metadata:
       m_Items: []
+  - m_Id: 311768753377280
+    m_Localized: Daj
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

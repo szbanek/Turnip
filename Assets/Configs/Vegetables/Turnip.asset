@@ -13,10 +13,30 @@ MonoBehaviour:
   m_Name: Turnip
   m_EditorClassIdentifier: 
   type: 4
-  description: "Jaka jest ka\u017Cdy widzi."
+  name:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 451941240832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 208331269214208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 21300000, guid: ec48650fb126fa04d89f4b46d0150af4, type: 3}
   minigames:
   - {fileID: 2416979339778843704, guid: 18896512800a10e498cc76942c687977, type: 3}
   - {fileID: 7910466096049655866, guid: 3c77266bca09b034c8633f51d2d9c5e9, type: 3}
   - {fileID: 8819671605535554091, guid: 7b89d06aff3fa16439d0a5b5c289319e, type: 3}
   expGiven: 1
+  references:
+    version: 2
+    RefIds: []

@@ -680,7 +680,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
@@ -688,15 +688,23 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: HideMenu
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UIMenuVisibilityManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c04cf93e4274aa4fb9e72c99da7af5f, type: 3}
+    - target: {fileID: 8507909844536341787, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8507909844536341789, guid: 847a7ba7d33c23c44918ac7888714d40, type: 3}

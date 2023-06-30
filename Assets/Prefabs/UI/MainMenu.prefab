@@ -728,6 +728,7 @@ GameObject:
   - component: {fileID: 7936136798611388680}
   - component: {fileID: 25964014792269244}
   - component: {fileID: 7328484059692079222}
+  - component: {fileID: 4029463964081571280}
   m_Layer: 5
   m_Name: Flag
   m_TagString: Untagged
@@ -834,6 +835,27 @@ MonoBehaviour:
           m_Key: 
         m_FallbackState: 0
         m_WaitForCompletion: 0
+--- !u!114 &4029463964081571280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5489530562291311481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3448ed237915c499eafff230ba6f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 25964014792269244}
+  localizedSprite:
+    m_TableReference:
+      m_TableCollectionName: GUID:d13892f919da8fe40bdd3bbc876eaebb
+    m_TableEntryReference:
+      m_KeyId: 367195328512
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
 --- !u!1 &6536252247470102325
 GameObject:
   m_ObjectHideFlags: 0

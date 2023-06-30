@@ -281,6 +281,18 @@ MonoBehaviour:
   introPlayer: {fileID: 7217341214987031263}
   acceptPlayer: {fileID: 6009726943800206414}
   refusePlayer: {fileID: 8090691672664073547}
+  giveString:
+    m_TableReference:
+      m_TableCollectionName: GUID:b1e660db31acf9e4499b0ffc2bb3d035
+    m_TableEntryReference:
+      m_KeyId: 311768753377280
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!82 &7887227261005366848
 AudioSource:
   m_ObjectHideFlags: 0

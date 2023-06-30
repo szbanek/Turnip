@@ -220,10 +220,14 @@ MonoBehaviour:
       and the desert Pepper. It will not be an easy task. Prepare yourself for risk
       and sacrifice. But nothing is worth more than peace in the realm.
 
-      
+
 
       Safe
       travels, Mediator!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311768753377280
+    m_Localized: Give
     m_Metadata:
       m_Items: []
   references:

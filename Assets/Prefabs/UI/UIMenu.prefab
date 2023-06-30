@@ -192,6 +192,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 691022849849619170}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HideMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIMenuVisibilityManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 882173440164565640, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8456559102795634485, guid: 610b9f9398895534ab4133dfb70796eb, type: 3}
       propertyPath: screens.pairs.Array.data[0].Value
       value: 

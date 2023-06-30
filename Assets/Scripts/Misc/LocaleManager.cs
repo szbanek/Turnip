@@ -7,10 +7,8 @@ public class LocaleManager : Singleton<LocaleManager>
 { 
     private int currentLocale = 0;
 
-    private IEnumerator Start()
+    private void Start()
     {
-        yield return LocalizationSettings.InitializationOperation;
-
         currentLocale = LocalizationSettings.AvailableLocales.Locales.IndexOf(LocalizationSettings.SelectedLocale);
     }
 
